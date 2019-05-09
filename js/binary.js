@@ -388,13 +388,6 @@ Element.prototype.html = function (content) {
     return this;
 };
 
-(function ($) {
-    $.fn.setVisibility = function (make_visible) {
-        this[(make_visible ? 'remove' : 'add') + 'Class']('invisible');
-        return this;
-    };
-})(jQuery);
-
 /***/ }),
 
 /***/ "./src/javascript/_common/lib/polyfills/element.closest.js":
@@ -1123,8 +1116,6 @@ module.exports = {
 
 "use strict";
 
-
-window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 __webpack_require__(/*! babel-polyfill */ "./node_modules/babel-polyfill/lib/index.js");
 __webpack_require__(/*! promise-polyfill */ "./node_modules/promise-polyfill/promise.js");

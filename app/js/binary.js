@@ -35833,6 +35833,8 @@ var _client_base2 = _interopRequireDefault(_client_base);
 
 var _currency_base = __webpack_require__(/*! ../../../_common/base/currency_base */ "./src/javascript/_common/base/currency_base.js");
 
+var _common_functions = __webpack_require__(/*! ../../../_common/common_functions */ "./src/javascript/_common/common_functions.js");
+
 var _localize = __webpack_require__(/*! ../../../_common/localize */ "./src/javascript/_common/localize.js");
 
 var _string_util = __webpack_require__(/*! ../../../_common/string_util */ "./src/javascript/_common/string_util.js");
@@ -35893,10 +35895,10 @@ var validBarrier = function validBarrier(value) {
 };
 
 var validCompare = function validCompare(value, options) {
-    return value === $(options.to).val();
+    return value === (0, _common_functions.getElementById)(options.to.substr(1)).value;
 };
 var validNotEqual = function validNotEqual(value, options) {
-    return value !== $(options.to).val();
+    return value !== (0, _common_functions.getElementById)(options.to.substr(1)).value;
 };
 var validMin = function validMin(value, options) {
     return options.min ? value.length >= options.min : true;
