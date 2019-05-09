@@ -11905,7 +11905,7 @@ exports.default = RouteWithSubRoutes;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var website_name = exports.website_name = 'Binary.com';
+var website_name = exports.website_name = 'Deriv.com';
 var default_title = exports.default_title = website_name;
 
 /***/ }),
