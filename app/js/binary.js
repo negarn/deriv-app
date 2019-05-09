@@ -63,7 +63,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","personal_details":"personal_details","portfolio~statement":"portfolio~statement","portfolio":"portfolio","statement":"statement","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"404":"5189d05e3eada5e2fb30","account_password":"5b98c5e0011cf272df7f","api_token":"1bcb0c881a41de9bfd6e","authorized_application":"41eb62c13df5f986ea68","cashier_password":"90e23ba1132672b3e187","contract":"243c718b107d604341d6","financial_assessment":"182a107203c81d1cc33a","limits":"6122a66075b7120f5152","login_history":"92742ccaa1efb1ab65b8","personal_details":"716845b634031dd9cf95","portfolio~statement":"1239d5c20c1b75c51821","portfolio":"f1d35791cb381ba423a5","statement":"58d4a34d13ede4ecde59","self_exclusion":"226ac0134b0354423868","settings":"629b43dd5f13f4355536","vendors~smart_chart":"dd7ef6f3fe9a0d70cfc2","smart_chart":"2e6f66f84b8b29bd2d74"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","personal_details":"personal_details","portfolio~statement":"portfolio~statement","portfolio":"portfolio","statement":"statement","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"404":"5189d05e3eada5e2fb30","account_password":"5b98c5e0011cf272df7f","api_token":"1bcb0c881a41de9bfd6e","authorized_application":"41eb62c13df5f986ea68","cashier_password":"90e23ba1132672b3e187","contract":"243c718b107d604341d6","financial_assessment":"182a107203c81d1cc33a","limits":"6122a66075b7120f5152","login_history":"92742ccaa1efb1ab65b8","personal_details":"716845b634031dd9cf95","portfolio~statement":"6c07b36e8fa296a30f1b","portfolio":"311acc20c94119a49c66","statement":"2ce8f7c3d3ca32c97503","self_exclusion":"226ac0134b0354423868","settings":"629b43dd5f13f4355536","vendors~smart_chart":"dd7ef6f3fe9a0d70cfc2","smart_chart":"24e4bae1bba555fba348"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -13175,8 +13175,6 @@ var _localize = __webpack_require__(/*! ../../../../_common/localize */ "./src/j
 
 var _url = __webpack_require__(/*! ../../../../_common/url */ "./src/javascript/_common/url.js");
 
-var _url2 = _interopRequireDefault(_url);
-
 var _fullPageModal = __webpack_require__(/*! ../../Components/Elements/FullPageModal/full-page-modal.jsx */ "./src/javascript/app_2/App/Components/Elements/FullPageModal/full-page-modal.jsx");
 
 var _fullPageModal2 = _interopRequireDefault(_fullPageModal);
@@ -13199,7 +13197,7 @@ var MarketUnavailableModal = function MarketUnavailableModal(_ref) {
             confirm_button_text: (0, _localize.localize)('No, stay on BinaryNex'),
             is_visible: is_visible,
             onCancel: function onCancel() {
-                return window.open(_url2.default.websiteUrl()) && setHasOnlyForwardingContracts(false);
+                return window.open((0, _url.websiteUrl)()) && setHasOnlyForwardingContracts(false);
             },
             onConfirm: function onConfirm() {
                 return setHasOnlyForwardingContracts(false);
@@ -14019,8 +14017,6 @@ var _localize = __webpack_require__(/*! ../../../../_common/localize */ "./src/j
 
 var _url = __webpack_require__(/*! ../../../../_common/url */ "./src/javascript/_common/url.js");
 
-var _url2 = _interopRequireDefault(_url);
-
 var _localize2 = __webpack_require__(/*! ../../Components/Elements/localize.jsx */ "./src/javascript/app_2/App/Components/Elements/localize.jsx");
 
 var _localize3 = _interopRequireDefault(_localize2);
@@ -14036,7 +14032,7 @@ var _connect = __webpack_require__(/*! ../../../Stores/connect */ "./src/javascr
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var onClick = function onClick() {
-    window.location.href = _url2.default.websiteUrl();
+    window.location.href = (0, _url.websiteUrl)();
 };
 
 var Wip = function Wip(ui) {
@@ -34428,7 +34424,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // Disables moment's fallback to native Date object
 // moment will return `Invalid Date` if date cannot be parsed
 _moment2.default.createFromInputFallback = function (config) {
-  config._d = new Date(NaN);
+  config._d = new Date(NaN); // eslint-disable-line no-underscore-dangle
 };
 
 /**
@@ -35076,10 +35072,6 @@ var _client_base2 = _interopRequireDefault(_client_base);
 
 var _currency_base = __webpack_require__(/*! ../../../_common/base/currency_base */ "./src/javascript/_common/base/currency_base.js");
 
-var _check_password = __webpack_require__(/*! ../../../_common/check_password */ "./src/javascript/_common/check_password.js");
-
-var _check_password2 = _interopRequireDefault(_check_password);
-
 var _localize = __webpack_require__(/*! ../../../_common/localize */ "./src/javascript/_common/localize.js");
 
 var _string_util = __webpack_require__(/*! ../../../_common/string_util */ "./src/javascript/_common/string_util.js");
@@ -35103,13 +35095,9 @@ var validEmail = function validEmail(value) {
     return (/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,63}$/.test(value)
     );
 };
-var validPassword = function validPassword(value, options, field) {
-    if (/(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]+/.test(value)) {
-        _check_password2.default.checkPassword(field.selector);
-        return true;
-    }
-    // else
-    return false;
+var validPassword = function validPassword(value) {
+    return (/(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]+/.test(value)
+    );
 };
 var validLetterSymbol = function validLetterSymbol(value) {
     return !/[`~!@#$%^&*)(_=+[}{\]\\/";:?><,|\d]+/.test(value);
@@ -35689,13 +35677,11 @@ window.check_new_release = _check_new_release.checkNewRelease; // used by GTM to
  * git update-index --assume-unchanged src/javascript/config.js
  *
  */
-var domain_app_ids = { // these domains also being used in '_common/url.js' as supported "production domains"
-    'binary.com': 1,
-    'binary.me': 15284,
+var domain_app_ids = { // these domains as supported "production domains"
     'deriv.com': 16929
 };
 
-var getCurrentBinaryDomain = function getCurrentBinaryDomain() {
+var getCurrentProductionDomain = function getCurrentProductionDomain() {
     return Object.keys(domain_app_ids).find(function (domain) {
         return new RegExp('.' + domain + '$', 'i').test(window.location.hostname);
     });
@@ -35731,15 +35717,11 @@ var getAppId = function getAppId() {
         app_id = 1159;
     } else {
         window.localStorage.removeItem('config.default_app_id');
-        var current_domain = getCurrentBinaryDomain();
+        var current_domain = getCurrentProductionDomain();
         // TODO: remove is_new_app && deriv.com check when repos are split
         app_id = is_new_app && current_domain !== 'deriv.com' ? 15265 : domain_app_ids[current_domain] || 1;
     }
     return app_id;
-};
-
-var isBinaryApp = function isBinaryApp() {
-    return +getAppId() === binary_desktop_app_id;
 };
 
 var getSocketURL = function getSocketURL() {
@@ -35785,10 +35767,9 @@ var getSocketURL = function getSocketURL() {
 };
 
 module.exports = {
-    getCurrentBinaryDomain: getCurrentBinaryDomain,
+    getCurrentProductionDomain: getCurrentProductionDomain,
     isProduction: isProduction,
     getAppId: getAppId,
-    isBinaryApp: isBinaryApp,
     getSocketURL: getSocketURL
 };
 
