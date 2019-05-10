@@ -36445,7 +36445,7 @@ var domain_app_ids = { // these domains as supported "production domains"
 };
 
 var getCurrentProductionDomain = function getCurrentProductionDomain() {
-    return Object.keys(domain_app_ids).find(function (domain) {
+    return !/^staging\./.test(window.location.hostname) && Object.keys(domain_app_ids).find(function (domain) {
         return new RegExp('.' + domain + '$', 'i').test(window.location.hostname);
     });
 };
