@@ -117,6 +117,7 @@
                 var has_utm_source        = /utm_source/.test(search);
                 var utm_source            = has_external_referrer && !has_utm_source ? ((search ? '&' : '?') + 'utm_source=' + new URL(document.referrer).hostname) : '';
 
+                console.log('index page', (lang || 'en').toLowerCase() + '/trade' + search + utm_source);
                 window.location.href = (lang || 'en').toLowerCase() + '/trade' + search + utm_source;
             }
 
