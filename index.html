@@ -10,7 +10,7 @@
                 top.location = self.location;
             }
         </script>
-        <title>Deriv.com</title>
+        <title>Deriv.app</title>
         <meta charset="utf-8" />
         <meta name="google-site-verification" content="Myh35QddfEArh0686LcO2zMjrgv0C7L4FCBU0k0oZvU" />
         <script type="text/javascript">
@@ -117,7 +117,6 @@
                 var has_utm_source        = /utm_source/.test(search);
                 var utm_source            = has_external_referrer && !has_utm_source ? ((search ? '&' : '?') + 'utm_source=' + new URL(document.referrer).hostname) : '';
 
-                console.log('index page', (lang || 'en').toLowerCase() + '/trade' + search + utm_source);
                 window.location.href = (lang || 'en').toLowerCase() + '/trade' + search + utm_source;
             }
 

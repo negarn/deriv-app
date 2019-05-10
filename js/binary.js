@@ -12077,7 +12077,7 @@ exports.default = RouteWithSubRoutes;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var website_name = exports.website_name = 'Deriv.com';
+var website_name = exports.website_name = 'Deriv.app';
 var default_title = exports.default_title = website_name;
 
 /***/ }),
@@ -36441,7 +36441,7 @@ window.check_new_release = _check_new_release.checkNewRelease; // used by GTM to
  *
  */
 var domain_app_ids = { // these domains as supported "production domains"
-    'deriv.com': 16929
+    'deriv.app': 16929
 };
 
 var getCurrentProductionDomain = function getCurrentProductionDomain() {
