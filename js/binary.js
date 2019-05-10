@@ -1099,6 +1099,7 @@ var getSocketURL = function getSocketURL() {
 };
 
 module.exports = {
+    domain_app_ids: domain_app_ids,
     getCurrentProductionDomain: getCurrentProductionDomain,
     isProduction: isProduction,
     getAppId: getAppId,

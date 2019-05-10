@@ -297,7 +297,7 @@ exports.default = function (_ref) {
       styles = _ref$styles === undefined ? {} : _ref$styles,
       props = _objectWithoutProperties(_ref, ["styles"]);
 
-  return _react2.default.createElement("svg", _extends({ xmlns: "http://www.w3.org/2000/svg", width: "32", height: "32", viewBox: "0 0 32 32" }, props), _react2.default.createElement("g", { fill: "none" }, _react2.default.createElement("rect", { width: "32", height: "32", fill: "#00BFA5", rx: "3" }), _react2.default.createElement("path", { fill: "#FFF", d: "M23.28 8.81l-3 3.91-1.77-2.32 1.23-1.59h3.54zm2.29-1.5h-6.38a.38.38 0 0 0-.28.14l-2.27 2.95 3.65 4.79 5.58-7.29a.36.36 0 0 0-.28-.59h-.02zm-5.1 12.11l2.87 3.76h-3.5l-1.12-1.45 1.76-2.3h-.01zm.01-2.46l-3.65 4.77L19 24.54c.07.09.17.14.28.14h6.35a.36.36 0 0 0 .3-.58l-5.47-7.14h.02zM13.1 7.61a.36.36 0 0 0-.28-.14H6.35a.36.36 0 0 0-.29.59l6.17 8-6.17 8a.36.36 0 0 0 .3.58h6.44a.36.36 0 0 0 .29-.14l6.47-8.41-6.47-8.47z" })));
+  return _react2.default.createElement("svg", _extends({ xmlns: "http://www.w3.org/2000/svg", width: "30", height: "30", viewBox: "0 0 128 120" }, props), _react2.default.createElement("g", { fill: "none", fillRule: "evenodd" }, _react2.default.createElement("path", { d: "M27.7 0v.13L73.72 60 0 119.87v.13h74.44c21.72 0 40.57-15 45.46-36.16l6.16-26.7A46.65 46.65 0 0 0 80.61 0H27.7z", fill: "#21CE99" }), _react2.default.createElement("path", { fill: "#11825C", d: "M73.69 60.12L41.32 120H0z" })));
 };
 
 /***/ }),
@@ -12116,7 +12116,7 @@ var header_links = [{
         { className: 'header__logo' },
         (0, _localize.localize)('BETA')
     ),
-    text: (0, _localize.localize)('BinaryNex'),
+    text: (0, _localize.localize)('Deriv'),
     link_to: _Constants.routes.trade
 }, {
     icon: _react2.default.createElement(_Common.Icon, { icon: _NavBar.IconReports, className: 'header__icon' }),
@@ -14148,7 +14148,7 @@ var ThemeSelectSettings = function ThemeSelectSettings(_ref) {
                                 'theme-select-settings__option__title--selected': is_dark_mode
                             })
                         },
-                        _react2.default.createElement(_localize2.default, { str: 'Brand Dark' })
+                        _react2.default.createElement(_localize2.default, { str: 'Dark' })
                     )
                 ),
                 _react2.default.createElement(
@@ -36530,6 +36530,7 @@ var getSocketURL = function getSocketURL() {
 };
 
 module.exports = {
+    domain_app_ids: domain_app_ids,
     getCurrentProductionDomain: getCurrentProductionDomain,
     isProduction: isProduction,
     getAppId: getAppId,
