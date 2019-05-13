@@ -11483,7 +11483,7 @@ var MenuLinks = function MenuLinks(_ref) {
         null,
         _react2.default.createElement(
             'div',
-            { className: 'header__navbar-icons header__navbar-icons--binary-logo' },
+            { className: 'header__navbar-icons header__navbar-icons--deriv-logo' },
             _react2.default.createElement(_symbol2.default, { width: '30px', height: '30px' })
         ),
         !!items.length && _react2.default.createElement(
@@ -36502,7 +36502,7 @@ var getAppId = function getAppId() {
         window.localStorage.setItem('config.default_app_id', user_app_id); // it's being used in endpoint chrome extension - please do not remove
         app_id = user_app_id;
     } else if (/localhost/i.test(window.location.hostname)) {
-        app_id = 1159;
+        app_id = 17044;
     } else {
         window.localStorage.removeItem('config.default_app_id');
         var current_domain = getCurrentProductionDomain();

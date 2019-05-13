@@ -1403,7 +1403,7 @@ html {
     -ms-flex-item-align: center;
         align-self: center;
     height: 100%; }
-    .header__navbar-icons--binary-logo {
+    .header__navbar-icons--deriv-logo {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       display: -webkit-box;
@@ -1853,13 +1853,6 @@ html {
         display: inline-flex;
         padding: 0.8em 2em;
         border-left: 1px solid rgba(0, 0, 0, 0.04); }
-        .drawer--left .drawer__header .drawer__brand-logo .drawer__img:before {
-          display: block;
-          content: ' ';
-          background-image: url("../images/header/binary_logo_light.svg");
-          background-size: 138px 32px;
-          height: 3.2em;
-          width: 13.8em; }
     .drawer--left .drawer__footer {
       height: 4.4em;
       border-top: 1px solid rgba(0, 0, 0, 0.04);
