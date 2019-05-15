@@ -31025,6 +31025,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.showUnavailableLocationError = exports.pickDefaultSymbol = undefined;
 
+var _mobx = __webpack_require__(/*! mobx */ "./node_modules/mobx/lib/mobx.module.js");
+
 var _Services = __webpack_require__(/*! ../../../../Services */ "./src/javascript/app/Services/index.js");
 
 var _localize = __webpack_require__(/*! ../../../../../_common/localize */ "./src/javascript/_common/localize.js");
@@ -31037,8 +31039,6 @@ var _socket_base2 = _interopRequireDefault(_socket_base);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
-
 var pickDefaultSymbol = exports.pickDefaultSymbol = function pickDefaultSymbol() {
     var active_symbols = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
 
@@ -31049,43 +31049,37 @@ var pickDefaultSymbol = exports.pickDefaultSymbol = function pickDefaultSymbol()
     })[0].symbol;
 };
 
-var showUnavailableLocationError = exports.showUnavailableLocationError = function () {
-    var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(root_store) {
-        var website_status, residence_list, clients_country_code, clients_country_text;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-            while (1) {
-                switch (_context.prev = _context.next) {
-                    case 0:
-                        _context.next = 2;
-                        return _socket_base2.default.wait('website_status');
+var showUnavailableLocationError = exports.showUnavailableLocationError = (0, _mobx.flow)( /*#__PURE__*/regeneratorRuntime.mark(function _callee(showError) {
+    var website_status, residence_list, clients_country_code, clients_country_text;
+    return regeneratorRuntime.wrap(function _callee$(_context) {
+        while (1) {
+            switch (_context.prev = _context.next) {
+                case 0:
+                    _context.next = 2;
+                    return _socket_base2.default.wait('website_status');
 
-                    case 2:
-                        website_status = _context.sent;
-                        _context.next = 5;
-                        return _Services.WS.residenceList();
+                case 2:
+                    website_status = _context.sent;
+                    _context.next = 5;
+                    return _Services.WS.residenceList();
 
-                    case 5:
-                        residence_list = _context.sent;
-                        clients_country_code = website_status.website_status.clients_country;
-                        clients_country_text = (residence_list.residence_list.find(function (obj_country) {
-                            return obj_country.value === clients_country_code;
-                        }) || {}).text;
+                case 5:
+                    residence_list = _context.sent;
+                    clients_country_code = website_status.website_status.clients_country;
+                    clients_country_text = (residence_list.residence_list.find(function (obj_country) {
+                        return obj_country.value === clients_country_code;
+                    }) || {}).text;
 
 
-                        root_store.common.showError((0, _localize.localize)('If you have an account, log in to continue.'), clients_country_text ? (0, _localize.localize)('Sorry, this app is unavailable in [_1].', clients_country_text) : (0, _localize.localize)('Sorry, this app is unavailable in your current location.'), (0, _localize.localize)('Log in'), _login.redirectToLogin, false);
+                    showError((0, _localize.localize)('If you have an account, log in to continue.'), clients_country_text ? (0, _localize.localize)('Sorry, this app is unavailable in [_1].', clients_country_text) : (0, _localize.localize)('Sorry, this app is unavailable in your current location.'), (0, _localize.localize)('Log in'), _login.redirectToLogin, false);
 
-                    case 9:
-                    case 'end':
-                        return _context.stop();
-                }
+                case 9:
+                case 'end':
+                    return _context.stop();
             }
-        }, _callee, undefined);
-    }));
-
-    return function showUnavailableLocationError(_x2) {
-        return _ref.apply(this, arguments);
-    };
-}();
+        }
+    }, _callee, this);
+}));
 
 /***/ }),
 
@@ -32620,7 +32614,7 @@ var TradeStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 =
                                 if (active_symbols.error) {
                                     this.root_store.common.showError((0, _localize.localize)('Trading is unavailable at this time.'));
                                 } else if (!active_symbols.active_symbols || !active_symbols.active_symbols.length) {
-                                    (0, _activeSymbols.showUnavailableLocationError)(this.root_store);
+                                    (0, _activeSymbols.showUnavailableLocationError)(this.root_store.common.showError);
                                 }
 
                                 // Checks for finding out that the current account has access to the defined symbol in quersy string or not.
