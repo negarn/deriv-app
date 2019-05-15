@@ -32611,11 +32611,24 @@ var TradeStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 =
                             case 5:
                                 active_symbols = _context2.sent;
 
-                                if (active_symbols.error) {
-                                    this.root_store.common.showError((0, _localize.localize)('Trading is unavailable at this time.'));
-                                } else if (!active_symbols.active_symbols || !active_symbols.active_symbols.length) {
-                                    (0, _activeSymbols.showUnavailableLocationError)(this.root_store.common.showError);
+                                if (!active_symbols.error) {
+                                    _context2.next = 11;
+                                    break;
                                 }
+
+                                this.root_store.common.showError((0, _localize.localize)('Trading is unavailable at this time.'));
+                                return _context2.abrupt('return');
+
+                            case 11:
+                                if (!(!active_symbols.active_symbols || !active_symbols.active_symbols.length)) {
+                                    _context2.next = 14;
+                                    break;
+                                }
+
+                                (0, _activeSymbols.showUnavailableLocationError)(this.root_store.common.showError);
+                                return _context2.abrupt('return');
+
+                            case 14:
 
                                 // Checks for finding out that the current account has access to the defined symbol in quersy string or not.
                                 is_invalid_symbol = !!query_string_values.symbol && !active_symbols.active_symbols.find(function (s) {
@@ -32642,16 +32655,16 @@ var TradeStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 =
                                 }
 
                                 if (this.symbol) {
-                                    _context2.next = 14;
+                                    _context2.next = 21;
                                     break;
                                 }
 
-                                _context2.next = 14;
+                                _context2.next = 21;
                                 return this.processNewValuesAsync(_extends({
                                     symbol: (0, _activeSymbols.pickDefaultSymbol)(active_symbols.active_symbols)
                                 }, query_string_values));
 
-                            case 14:
+                            case 21:
 
                                 if (this.symbol) {
                                     _contractType2.default.buildContractTypesConfig(query_string_values.symbol || this.symbol).then((0, _mobx.action)(_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
@@ -32671,7 +32684,7 @@ var TradeStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 =
                                     }))));
                                 }
 
-                            case 15:
+                            case 22:
                             case 'end':
                                 return _context2.stop();
                         }
