@@ -30979,7 +30979,7 @@ var ChartBarrierStore = exports.ChartBarrierStore = (_dec = _mobx.action.bound, 
 
         _initDefineProp(this, 'hidePriceLines', _descriptor8, this);
 
-        this.color = color; // dark mode is the default mode
+        this.color = color;
         this.lineStyle = line_style || _barriers.BARRIER_LINE_STYLES.SOLID;
         this.onChange = this.onBarrierChange;
 
@@ -38315,7 +38315,7 @@ var Loading = function Loading(_ref) {
         { className: 'initial-loader' },
         _react2.default.createElement(
             'div',
-            { id: id, className: 'initial-loader__barspinner barspinner barspinner-' + (theme || 'dark') },
+            { id: id, className: 'initial-loader__barspinner barspinner barspinner-' + (theme || 'light') },
             Array.from(new Array(5)).map(function (x, inx) {
                 return _react2.default.createElement('div', { key: inx, className: 'initial-loader__barspinner--rect barspinner__rect barspinner__rect--' + (inx + 1) + ' rect' + (inx + 1) });
             })
