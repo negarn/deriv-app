@@ -1494,6 +1494,8 @@ html {
         /* postcss-bem-linter: ignore */
         /* postcss-bem-linter: ignore */
         /* postcss-bem-linter: ignore */
+        /* postcss-bem-linter: ignore */
+        /* postcss-bem-linter: ignore */
         color: rgba(0, 0, 0, 0.8); }
         .theme--light .header__menu-link-text .color1-fill {
           fill: rgba(0, 0, 0, 0.8); }
@@ -1503,7 +1505,13 @@ html {
           fill: none; }
         .theme--light .header__menu-link-text .color2-stroke {
           stroke: none; }
+        .theme--light .header__menu-link-text .color3-fill {
+          fill: rgba(0, 0, 0, 0.8); }
+        .theme--light .header__menu-link-text .color3-stroke {
+          stroke: rgba(0, 0, 0, 0.8); }
       .theme--dark .header__menu-link-text {
+        /* postcss-bem-linter: ignore */
+        /* postcss-bem-linter: ignore */
         /* postcss-bem-linter: ignore */
         /* postcss-bem-linter: ignore */
         /* postcss-bem-linter: ignore */
@@ -1517,6 +1525,10 @@ html {
           fill: none; }
         .theme--dark .header__menu-link-text .color2-stroke {
           stroke: none; }
+        .theme--dark .header__menu-link-text .color3-fill {
+          fill: #7f8397; }
+        .theme--dark .header__menu-link-text .color3-stroke {
+          stroke: #7f8397; }
       .header__menu-link-text:before {
         position: absolute;
         top: 1.4em;
