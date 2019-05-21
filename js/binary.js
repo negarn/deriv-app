@@ -36725,7 +36725,7 @@ var UIStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 = _m
 }), _descriptor4 = _applyDecoratedDescriptor(_class.prototype, 'is_dark_mode_on', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
-        return true;
+        return false;
     }
 }), _descriptor5 = _applyDecoratedDescriptor(_class.prototype, 'is_language_dialog_on', [_mobx.observable], {
     enumerable: true,
