@@ -63,7 +63,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","open_positions~portfolio~profit_table~statement":"open_positions~portfolio~profit_table~statement","open_positions~profit_table~statement":"open_positions~profit_table~statement","open_positions":"open_positions","profit_table":"profit_table","statement":"statement","portfolio":"portfolio","personal_details":"personal_details","reports":"reports","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"404":"fdd90647aa54964fb1ed","account_password":"e80bbb197cad5fe3d04b","api_token":"455796411755cc9d240f","authorized_application":"87b6b5bc246c480c716e","cashier_password":"40a473d15da490ee7be5","contract":"f77756f70cba790d20b3","financial_assessment":"f2b2875bd22a7717c1ad","limits":"b108abb5bcd4b46ba7b5","login_history":"dcb5548da21ab243acf1","open_positions~portfolio~profit_table~statement":"376e158bae33d4862480","open_positions~profit_table~statement":"0f9bf076c7828f1d761d","open_positions":"dbc0d9ffc276088349ea","profit_table":"8418b00b4dffb320a336","statement":"6e2c45498e205511293f","portfolio":"28117780a46b8812a563","personal_details":"3f27d12d238da8ef9393","reports":"8110f497c523dd5de505","self_exclusion":"7b24d88cd6b9f04ae3d0","settings":"ee411577a3c3a94f2f4e","vendors~smart_chart":"8c4ecdd53031127e35ed","smart_chart":"2e44e5faf86591428c4a"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","open_positions~portfolio~profit_table~statement":"open_positions~portfolio~profit_table~statement","open_positions~profit_table~statement":"open_positions~profit_table~statement","open_positions":"open_positions","profit_table":"profit_table","statement":"statement","portfolio":"portfolio","personal_details":"personal_details","reports":"reports","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"404":"fdd90647aa54964fb1ed","account_password":"e80bbb197cad5fe3d04b","api_token":"455796411755cc9d240f","authorized_application":"87b6b5bc246c480c716e","cashier_password":"40a473d15da490ee7be5","contract":"5eb845261cda995ecced","financial_assessment":"f2b2875bd22a7717c1ad","limits":"b108abb5bcd4b46ba7b5","login_history":"dcb5548da21ab243acf1","open_positions~portfolio~profit_table~statement":"376e158bae33d4862480","open_positions~profit_table~statement":"0f9bf076c7828f1d761d","open_positions":"a0a6b49d9b3629c7bdec","profit_table":"8418b00b4dffb320a336","statement":"6e2c45498e205511293f","portfolio":"28117780a46b8812a563","personal_details":"3f27d12d238da8ef9393","reports":"8110f497c523dd5de505","self_exclusion":"7b24d88cd6b9f04ae3d0","settings":"ee411577a3c3a94f2f4e","vendors~smart_chart":"8c4ecdd53031127e35ed","smart_chart":"2e44e5faf86591428c4a"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -6548,6 +6548,7 @@ var PositionsDrawerCard = function (_React$PureComponent) {
                 onClickRemove = _props.onClickRemove,
                 openContract = _props.openContract,
                 result = _props.result,
+                sell_price = _props.sell_price,
                 sell_time = _props.sell_time,
                 server_time = _props.server_time,
                 status = _props.status,
@@ -6646,7 +6647,7 @@ var PositionsDrawerCard = function (_React$PureComponent) {
                             _react2.default.createElement(
                                 'div',
                                 { className: 'positions-drawer-card__indicative' },
-                                _react2.default.createElement(_money2.default, { amount: indicative, currency: currency }),
+                                _react2.default.createElement(_money2.default, { amount: sell_price || indicative, currency: currency }),
                                 _react2.default.createElement(
                                     'div',
                                     { className: (0, _classnames2.default)('positions-drawer-card__indicative--movement', {
@@ -12540,18 +12541,22 @@ var MenuLinks = function MenuLinks(_ref) {
                 return item.login_only && item.login_only !== is_logged_in ? null : _react2.default.createElement(
                     _Routes.BinaryLink,
                     { key: idx, to: item.link_to, className: 'header__menu-link', active_class: 'header__menu-link--active' },
-                    item.text && _react2.default.createElement(
-                        'span',
-                        { title: item.text, className: 'header__menu-link-text' },
-                        item.icon,
-                        item.text,
-                        item.logo
-                    ),
-                    item.image && _react2.default.createElement(
-                        'span',
-                        { className: 'header__menu-link-text' },
-                        item.image,
-                        item.logo
+                    _react2.default.createElement(
+                        _react2.default.Fragment,
+                        null,
+                        item.text && _react2.default.createElement(
+                            'span',
+                            { title: item.text, className: 'header__menu-link-text' },
+                            item.icon,
+                            item.text,
+                            item.logo
+                        ),
+                        item.image && _react2.default.createElement(
+                            'span',
+                            { className: 'header__menu-link-text' },
+                            item.image,
+                            item.logo
+                        )
                     )
                 );
             })
@@ -14438,7 +14443,7 @@ var MarketUnavailableModal = function MarketUnavailableModal(_ref) {
             confirm_button_text: (0, _localize.localize)('No, stay on Deriv'),
             is_visible: is_visible,
             onCancel: function onCancel() {
-                return window.open((0, _url.websiteUrl)()) && setHasOnlyForwardingContracts(false);
+                return window.open((0, _url.urlFor)('trading', undefined, undefined, true)) && setHasOnlyForwardingContracts(false);
             },
             onConfirm: function onConfirm() {
                 return setHasOnlyForwardingContracts(false);
@@ -21257,10 +21262,44 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.getContractTypePosition = exports.getContractTypeDisplay = undefined;
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _localize = __webpack_require__(/*! ../../_common/localize */ "./src/javascript/_common/localize.js");
 
-var getContractConfig = function getContractConfig(is_high_low) {
+var getUnsupportedContracts = function getUnsupportedContracts() {
     return {
+        EXPIRYMISS: {
+            name: (0, _localize.localize)('Ends Outside'),
+            position: 'top'
+        },
+        EXPIRYRANGE: {
+            name: (0, _localize.localize)('Ends Between'),
+            position: 'bottom'
+        },
+        RANGE: {
+            name: (0, _localize.localize)('Stays Between'),
+            position: 'top'
+        },
+        UPORDOWN: {
+            name: (0, _localize.localize)('Goes Outside'),
+            position: 'bottom'
+        },
+        RESETCALL: {
+            name: (0, _localize.localize)('Reset Call'),
+            position: 'top'
+        },
+        RESETPUT: {
+            name: (0, _localize.localize)('Reset Put'),
+            position: 'bottom'
+        },
+        TICKHIGH: {
+            name: (0, _localize.localize)('High Tick'),
+            position: 'top'
+        },
+        TICKLOW: {
+            name: (0, _localize.localize)('Low Tick'),
+            position: 'bottom'
+        },
         ASIANU: {
             name: (0, _localize.localize)('Asian Up'),
             position: 'top'
@@ -21269,6 +21308,39 @@ var getContractConfig = function getContractConfig(is_high_low) {
             name: (0, _localize.localize)('Asian Down'),
             position: 'bottom'
         },
+        LBFLOATCALL: {
+            name: (0, _localize.localize)('Close-Low'),
+            position: 'top'
+        },
+        LBFLOATPUT: {
+            name: (0, _localize.localize)('High-Close'),
+            position: 'top'
+        },
+        LBHIGHLOW: {
+            name: (0, _localize.localize)('High-Low'),
+            position: 'top'
+        },
+        CALLSPREAD: {
+            name: (0, _localize.localize)('Call Spread'),
+            position: 'top'
+        },
+        PUTSPREAD: {
+            name: (0, _localize.localize)('Put Spread'),
+            position: 'bottom'
+        },
+        RUNHIGH: {
+            name: (0, _localize.localize)('Only Ups'),
+            position: 'top'
+        },
+        RUNLOW: {
+            name: (0, _localize.localize)('Only Downs'),
+            position: 'bottom'
+        }
+    };
+};
+
+var getContractConfig = function getContractConfig(is_high_low) {
+    return _extends({
         CALL: {
             name: is_high_low ? (0, _localize.localize)('Higher') : (0, _localize.localize)('Rise'),
             position: 'top'
@@ -21309,38 +21381,6 @@ var getContractConfig = function getContractConfig(is_high_low) {
             name: (0, _localize.localize)('Under'),
             position: 'bottom'
         },
-        EXPIRYMISS: {
-            name: (0, _localize.localize)('Ends Outside'),
-            position: 'top'
-        },
-        EXPIRYRANGE: {
-            name: (0, _localize.localize)('Ends Between'),
-            position: 'bottom'
-        },
-        EXPIRYRANGEE: {
-            name: (0, _localize.localize)('Ends Between'),
-            position: 'top'
-        },
-        LBFLOATCALL: {
-            name: (0, _localize.localize)('Close-Low'),
-            position: 'top'
-        },
-        LBFLOATPUT: {
-            name: (0, _localize.localize)('High-Close'),
-            position: 'bottom'
-        },
-        LBHIGHLOW: {
-            name: (0, _localize.localize)('High-Low'),
-            position: 'top'
-        },
-        RANGE: {
-            name: (0, _localize.localize)('Stays Between'),
-            position: 'top'
-        },
-        UPORDOWN: {
-            name: (0, _localize.localize)('Goes Outside'),
-            position: 'bottom'
-        },
         ONETOUCH: {
             name: (0, _localize.localize)('Touch'),
             position: 'top'
@@ -21349,16 +21389,16 @@ var getContractConfig = function getContractConfig(is_high_low) {
             name: (0, _localize.localize)('No Touch'),
             position: 'bottom'
         }
-    };
+    }, getUnsupportedContracts());
 };
 
 var getContractTypeDisplay = exports.getContractTypeDisplay = function getContractTypeDisplay(type) {
     var is_high_low = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-    return getContractConfig(is_high_low)[type].name;
+    return getContractConfig(is_high_low)[type] ? getContractConfig(is_high_low)[type].name : '';
 };
 var getContractTypePosition = exports.getContractTypePosition = function getContractTypePosition(type) {
     var is_high_low = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-    return getContractConfig(is_high_low)[type].position;
+    return getContractConfig(is_high_low)[type] ? getContractConfig(is_high_low)[type].position : 'top';
 };
 
 /***/ }),
@@ -23112,10 +23152,11 @@ var InfoBox = function InfoBox(_ref) {
 
     var Contents = _InfoBox.InfoBoxLongcode;
     var info = is_trade_page ? contract_info : replay_info;
+    var is_ready = is_contract_mode && !!info.longcode;
     return _react2.default.createElement(
         _reactTransitionGroup.CSSTransition,
         {
-            'in': is_contract_mode,
+            'in': is_ready,
             timeout: 250,
             classNames: {
                 enter: 'info-box-container--enter',
@@ -25481,16 +25522,8 @@ var DurationWrapper = function (_React$Component) {
     }, {
         key: 'componentWillReact',
         value: function componentWillReact() {
-            var simple_is_missing_duration_unit = !this.props.is_advanced_duration && this.props.simple_duration_unit === 'd' && this.props.duration_units_list.length === 4;
-            var current_duration_unit = this.props.is_advanced_duration ? this.props.advanced_duration_unit : this.props.simple_duration_unit;
             var current_duration = this.props.getDurationFromUnit(this.props.duration_unit);
-            var has_missing_duration_unit = !this.hasDurationUnit(current_duration_unit);
             var simple_is_not_type_duration = !this.props.is_advanced_duration && this.props.expiry_type !== 'duration';
-
-            if (has_missing_duration_unit || simple_is_missing_duration_unit) {
-                this.setDurationUnit();
-                return;
-            }
 
             // simple only has expiry type duration
             if (simple_is_not_type_duration) {
@@ -25508,6 +25541,14 @@ var DurationWrapper = function (_React$Component) {
     }, {
         key: 'render',
         value: function render() {
+            var current_duration_unit = this.props.is_advanced_duration ? this.props.advanced_duration_unit : this.props.simple_duration_unit;
+            var has_missing_duration_unit = !this.hasDurationUnit(current_duration_unit);
+            var simple_is_missing_duration_unit = !this.props.is_advanced_duration && this.props.simple_duration_unit === 'd' && this.props.duration_units_list.length === 4;
+
+            if (has_missing_duration_unit || simple_is_missing_duration_unit) {
+                this.setDurationUnit();
+            }
+
             return _react2.default.createElement(_duration2.default, _extends({
                 hasDurationUnit: this.hasDurationUnit
             }, this.props));
@@ -30232,6 +30273,24 @@ var PortfolioStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _de
             };
         }
     }, {
+        key: 'active_positions_totals',
+        get: function get() {
+            var indicative = 0;
+            var payout = 0;
+            var purchase = 0;
+
+            this.active_positions.forEach(function (portfolio_pos) {
+                indicative += +portfolio_pos.indicative;
+                payout += +portfolio_pos.payout;
+                purchase += +portfolio_pos.purchase;
+            });
+            return {
+                indicative: indicative,
+                payout: payout,
+                purchase: purchase
+            };
+        }
+    }, {
         key: 'active_positions',
         get: function get() {
             return this.positions.filter(function (portfolio_pos) {
@@ -30301,6 +30360,7 @@ var PortfolioStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _de
             _this5.positions[i].is_valid_to_sell = (0, _logic.isValidToSell)(contract_response);
             _this5.positions[i].result = (0, _logic.getDisplayStatus)(contract_response);
             _this5.positions[i].sell_time = (0, _logic.getEndTime)(contract_response) || contract_response.current_spot_time; // same as exit_spot, use latest spot time if no exit_tick_time
+            _this5.positions[i].sell_price = contract_response.sell_price;
             _this5.positions[i].status = 'complete';
 
             // fix for missing barrier and entry_spot
@@ -30315,7 +30375,7 @@ var PortfolioStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _de
             _this5.positions[i].is_loading = false;
         };
     }
-}), _applyDecoratedDescriptor(_class.prototype, 'pushNewPosition', [_dec9], Object.getOwnPropertyDescriptor(_class.prototype, 'pushNewPosition'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'removePositionById', [_dec10], Object.getOwnPropertyDescriptor(_class.prototype, 'removePositionById'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'accountSwitcherListener', [_dec11], Object.getOwnPropertyDescriptor(_class.prototype, 'accountSwitcherListener'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onMount', [_dec12], Object.getOwnPropertyDescriptor(_class.prototype, 'onMount'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onUnmount', [_dec13], Object.getOwnPropertyDescriptor(_class.prototype, 'onUnmount'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'totals', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'totals'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'active_positions', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'active_positions'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'all_positions', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'all_positions'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_active_empty', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_active_empty'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_empty', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_empty'), _class.prototype)), _class));
+}), _applyDecoratedDescriptor(_class.prototype, 'pushNewPosition', [_dec9], Object.getOwnPropertyDescriptor(_class.prototype, 'pushNewPosition'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'removePositionById', [_dec10], Object.getOwnPropertyDescriptor(_class.prototype, 'removePositionById'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'accountSwitcherListener', [_dec11], Object.getOwnPropertyDescriptor(_class.prototype, 'accountSwitcherListener'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onMount', [_dec12], Object.getOwnPropertyDescriptor(_class.prototype, 'onMount'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onUnmount', [_dec13], Object.getOwnPropertyDescriptor(_class.prototype, 'onUnmount'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'totals', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'totals'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'active_positions_totals', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'active_positions_totals'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'active_positions', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'active_positions'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'all_positions', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'all_positions'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_active_empty', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_active_empty'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_empty', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_empty'), _class.prototype)), _class));
 exports.default = PortfolioStore;
 
 /***/ }),
@@ -34551,7 +34611,7 @@ var TradeStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 =
         key: 'onUnmount',
         value: function onUnmount() {
             this.disposeSwitchAccount();
-            _Services.WS.forgetAll('proposal', 'ticks_history');
+            _Services.WS.forgetAll('proposal');
             this.is_trade_component_mounted = false;
         }
     }]);
