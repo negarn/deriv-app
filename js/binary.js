@@ -29203,7 +29203,6 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
                 }
                 SmartChartStore.setContractStart(date_start);
                 SmartChartStore.setContractEnd(end_time);
-                SmartChartStore.updateMargin(end_time - date_start);
 
                 if (should_update_chart_type) {
                     this.handleChartType(SmartChartStore, date_start, end_time);
@@ -29220,13 +29219,13 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
             } else if (!this.is_left_epoch_set) {
                 if (this.is_from_positions) {
                     SmartChartStore.setContractStart(date_start);
-                    SmartChartStore.updateMargin(contract_info.date_expiry - date_start);
                 }
 
                 if (contract_info.tick_count) {
                     SmartChartStore.updateGranularity(0);
                     SmartChartStore.updateChartType('mountain');
                 }
+
                 this.is_left_epoch_set = true;
                 SmartChartStore.setChartView(contract_info.purchase_time);
             }
@@ -29241,6 +29240,8 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
 
             (0, _chartBarriers.createChartBarrier)(SmartChartStore, contract_info);
             (0, _chartMarkers.createChartMarkers)(SmartChartStore, contract_info);
+
+            SmartChartStore.updateMargin((end_time || contract_info.date_expiry) - date_start);
 
             if (this.smart_chart.is_chart_ready) {
                 this.smart_chart.setIsChartLoading(false);
