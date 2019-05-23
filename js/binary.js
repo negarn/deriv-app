@@ -63,7 +63,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","open_positions~portfolio~profit_table~statement":"open_positions~portfolio~profit_table~statement","open_positions~profit_table~statement":"open_positions~profit_table~statement","open_positions":"open_positions","profit_table":"profit_table","statement":"statement","portfolio":"portfolio","personal_details":"personal_details","reports":"reports","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"404":"fdd90647aa54964fb1ed","account_password":"e80bbb197cad5fe3d04b","api_token":"455796411755cc9d240f","authorized_application":"87b6b5bc246c480c716e","cashier_password":"40a473d15da490ee7be5","contract":"c1498f6621e130ecc489","financial_assessment":"f2b2875bd22a7717c1ad","limits":"b108abb5bcd4b46ba7b5","login_history":"dcb5548da21ab243acf1","open_positions~portfolio~profit_table~statement":"376e158bae33d4862480","open_positions~profit_table~statement":"0f9bf076c7828f1d761d","open_positions":"a0a6b49d9b3629c7bdec","profit_table":"8418b00b4dffb320a336","statement":"6e2c45498e205511293f","portfolio":"28117780a46b8812a563","personal_details":"3f27d12d238da8ef9393","reports":"8110f497c523dd5de505","self_exclusion":"7b24d88cd6b9f04ae3d0","settings":"ee411577a3c3a94f2f4e","vendors~smart_chart":"0d2af5c89b2226f90ecc","smart_chart":"53143225f5adbe4d2dee"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","open_positions~portfolio~profit_table~statement":"open_positions~portfolio~profit_table~statement","open_positions~profit_table~statement":"open_positions~profit_table~statement","open_positions":"open_positions","profit_table":"profit_table","statement":"statement","portfolio":"portfolio","personal_details":"personal_details","reports":"reports","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"404":"fdd90647aa54964fb1ed","account_password":"e80bbb197cad5fe3d04b","api_token":"455796411755cc9d240f","authorized_application":"87b6b5bc246c480c716e","cashier_password":"40a473d15da490ee7be5","contract":"c1498f6621e130ecc489","financial_assessment":"f2b2875bd22a7717c1ad","limits":"b108abb5bcd4b46ba7b5","login_history":"dcb5548da21ab243acf1","open_positions~portfolio~profit_table~statement":"376e158bae33d4862480","open_positions~profit_table~statement":"0f9bf076c7828f1d761d","open_positions":"a0a6b49d9b3629c7bdec","profit_table":"8418b00b4dffb320a336","statement":"6e2c45498e205511293f","portfolio":"28117780a46b8812a563","personal_details":"3f27d12d238da8ef9393","reports":"8110f497c523dd5de505","self_exclusion":"7b24d88cd6b9f04ae3d0","settings":"ee411577a3c3a94f2f4e","vendors~smart_chart":"0d2af5c89b2226f90ecc","smart_chart":"1bd6162c21297969517e"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -29203,6 +29203,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
                 }
                 SmartChartStore.setContractStart(date_start);
                 SmartChartStore.setContractEnd(end_time);
+                SmartChartStore.updateMargin(end_time - date_start);
 
                 if (should_update_chart_type) {
                     this.handleChartType(SmartChartStore, date_start, end_time);
@@ -29219,6 +29220,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
             } else if (!this.is_left_epoch_set) {
                 if (this.is_from_positions) {
                     SmartChartStore.setContractStart(date_start);
+                    SmartChartStore.updateMargin(contract_info.date_expiry - date_start);
                 }
 
                 if (contract_info.tick_count) {
@@ -31009,7 +31011,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _dec25, _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22;
+var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _dec25, _dec26, _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23;
 
 var _extend2 = __webpack_require__(/*! extend */ "./node_modules/extend/index.js");
 
@@ -31088,7 +31090,7 @@ function _initializerWarningHelper(descriptor, context) {
     throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');
 }
 
-var SmartChartStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 = _mobx.action.bound, _dec4 = _mobx.action.bound, _dec5 = _mobx.action.bound, _dec6 = _mobx.action.bound, _dec7 = _mobx.action.bound, _dec8 = _mobx.action.bound, _dec9 = _mobx.action.bound, _dec10 = _mobx.action.bound, _dec11 = _mobx.action.bound, _dec12 = _mobx.action.bound, _dec13 = _mobx.action.bound, _dec14 = _mobx.action.bound, _dec15 = _mobx.action.bound, _dec16 = _mobx.action.bound, _dec17 = _mobx.action.bound, _dec18 = _mobx.action.bound, _dec19 = _mobx.action.bound, _dec20 = _mobx.action.bound, _dec21 = _mobx.action.bound, _dec22 = _mobx.action.bound, _dec23 = _mobx.action.bound, _dec24 = _mobx.action.bound, _dec25 = _mobx.action.bound, (_class = function (_BaseStore) {
+var SmartChartStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 = _mobx.action.bound, _dec4 = _mobx.action.bound, _dec5 = _mobx.action.bound, _dec6 = _mobx.action.bound, _dec7 = _mobx.action.bound, _dec8 = _mobx.action.bound, _dec9 = _mobx.action.bound, _dec10 = _mobx.action.bound, _dec11 = _mobx.action.bound, _dec12 = _mobx.action.bound, _dec13 = _mobx.action.bound, _dec14 = _mobx.action.bound, _dec15 = _mobx.action.bound, _dec16 = _mobx.action.bound, _dec17 = _mobx.action.bound, _dec18 = _mobx.action.bound, _dec19 = _mobx.action.bound, _dec20 = _mobx.action.bound, _dec21 = _mobx.action.bound, _dec22 = _mobx.action.bound, _dec23 = _mobx.action.bound, _dec24 = _mobx.action.bound, _dec25 = _mobx.action.bound, _dec26 = _mobx.action.bound, (_class = function (_BaseStore) {
     _inherits(SmartChartStore, _BaseStore);
 
     function SmartChartStore() {
@@ -31102,7 +31104,7 @@ var SmartChartStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _d
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SmartChartStore.__proto__ || Object.getPrototypeOf(SmartChartStore)).call.apply(_ref, [this].concat(args))), _this), _initDefineProp(_this, 'chart_type', _descriptor, _this), _initDefineProp(_this, 'granularity', _descriptor2, _this), _initDefineProp(_this, 'barriers', _descriptor3, _this), _initDefineProp(_this, 'markers', _descriptor4, _this), _initDefineProp(_this, 'is_contract_mode', _descriptor5, _this), _initDefineProp(_this, 'is_static_chart', _descriptor6, _this), _initDefineProp(_this, 'is_title_enabled', _descriptor7, _this), _initDefineProp(_this, 'start_epoch', _descriptor8, _this), _initDefineProp(_this, 'end_epoch', _descriptor9, _this), _initDefineProp(_this, 'scroll_to_left_epoch', _descriptor10, _this), _initDefineProp(_this, 'scroll_to_left_epoch_offset', _descriptor11, _this), _initDefineProp(_this, 'chart_id', _descriptor12, _this), _initDefineProp(_this, 'replay_id', _descriptor13, _this), _initDefineProp(_this, 'is_chart_loading', _descriptor14, _this), _initDefineProp(_this, 'is_chart_ready', _descriptor15, _this), _initDefineProp(_this, 'should_import_layout', _descriptor16, _this), _initDefineProp(_this, 'should_export_layout', _descriptor17, _this), _initDefineProp(_this, 'should_clear_chart', _descriptor18, _this), _initDefineProp(_this, 'trade_chart_layout', _descriptor19, _this), _this.trade_chart_symbol = null, _initDefineProp(_this, 'onMount', _descriptor20, _this), _initDefineProp(_this, 'onUnmount', _descriptor21, _this), _initDefineProp(_this, 'createBarriers', _descriptor22, _this), _this.wsSubscribe = function (request_object, callback) {
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SmartChartStore.__proto__ || Object.getPrototypeOf(SmartChartStore)).call.apply(_ref, [this].concat(args))), _this), _initDefineProp(_this, 'chart_type', _descriptor, _this), _initDefineProp(_this, 'granularity', _descriptor2, _this), _initDefineProp(_this, 'barriers', _descriptor3, _this), _initDefineProp(_this, 'markers', _descriptor4, _this), _initDefineProp(_this, 'is_contract_mode', _descriptor5, _this), _initDefineProp(_this, 'is_static_chart', _descriptor6, _this), _initDefineProp(_this, 'is_title_enabled', _descriptor7, _this), _initDefineProp(_this, 'start_epoch', _descriptor8, _this), _initDefineProp(_this, 'end_epoch', _descriptor9, _this), _initDefineProp(_this, 'margin', _descriptor10, _this), _initDefineProp(_this, 'scroll_to_left_epoch', _descriptor11, _this), _initDefineProp(_this, 'scroll_to_left_epoch_offset', _descriptor12, _this), _initDefineProp(_this, 'chart_id', _descriptor13, _this), _initDefineProp(_this, 'replay_id', _descriptor14, _this), _initDefineProp(_this, 'is_chart_loading', _descriptor15, _this), _initDefineProp(_this, 'is_chart_ready', _descriptor16, _this), _initDefineProp(_this, 'should_import_layout', _descriptor17, _this), _initDefineProp(_this, 'should_export_layout', _descriptor18, _this), _initDefineProp(_this, 'should_clear_chart', _descriptor19, _this), _initDefineProp(_this, 'trade_chart_layout', _descriptor20, _this), _this.trade_chart_symbol = null, _initDefineProp(_this, 'onMount', _descriptor21, _this), _initDefineProp(_this, 'onUnmount', _descriptor22, _this), _initDefineProp(_this, 'createBarriers', _descriptor23, _this), _this.wsSubscribe = function (request_object, callback) {
             if (request_object.subscribe !== 1) return;
             _Services.WS.subscribeTicksHistory(_extends({}, request_object), callback); // use a copy of the request_object to prevent updating the source
         }, _this.wsForget = function (match_values, callback) {
@@ -31134,6 +31136,11 @@ var SmartChartStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _d
         key: 'updateGranularity',
         value: function updateGranularity(granularity) {
             this.granularity = granularity;
+        }
+    }, {
+        key: 'updateMargin',
+        value: function updateMargin(duration) {
+            this.margin = Math.floor(!this.granularity ? Math.max(300, 30 * duration / (60 * 60) || 0) : 3 * this.granularity);
         }
     }, {
         key: 'updateEpochScrollToValue',
@@ -31360,57 +31367,60 @@ var SmartChartStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _d
 }), _descriptor9 = _applyDecoratedDescriptor(_class.prototype, 'end_epoch', [_mobx.observable], {
     enumerable: true,
     initializer: null
-}), _descriptor10 = _applyDecoratedDescriptor(_class.prototype, 'scroll_to_left_epoch', [_mobx.observable], {
+}), _descriptor10 = _applyDecoratedDescriptor(_class.prototype, 'margin', [_mobx.observable], {
+    enumerable: true,
+    initializer: null
+}), _descriptor11 = _applyDecoratedDescriptor(_class.prototype, 'scroll_to_left_epoch', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return null;
     }
-}), _descriptor11 = _applyDecoratedDescriptor(_class.prototype, 'scroll_to_left_epoch_offset', [_mobx.observable], {
+}), _descriptor12 = _applyDecoratedDescriptor(_class.prototype, 'scroll_to_left_epoch_offset', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return 0;
     }
-}), _descriptor12 = _applyDecoratedDescriptor(_class.prototype, 'chart_id', [_mobx.observable], {
+}), _descriptor13 = _applyDecoratedDescriptor(_class.prototype, 'chart_id', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return 'trade';
     }
-}), _descriptor13 = _applyDecoratedDescriptor(_class.prototype, 'replay_id', [_mobx.observable], {
+}), _descriptor14 = _applyDecoratedDescriptor(_class.prototype, 'replay_id', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return 'contract-replay';
     }
-}), _descriptor14 = _applyDecoratedDescriptor(_class.prototype, 'is_chart_loading', [_mobx.observable], {
+}), _descriptor15 = _applyDecoratedDescriptor(_class.prototype, 'is_chart_loading', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return false;
     }
-}), _descriptor15 = _applyDecoratedDescriptor(_class.prototype, 'is_chart_ready', [_mobx.observable], {
+}), _descriptor16 = _applyDecoratedDescriptor(_class.prototype, 'is_chart_ready', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return false;
     }
-}), _descriptor16 = _applyDecoratedDescriptor(_class.prototype, 'should_import_layout', [_mobx.observable], {
+}), _descriptor17 = _applyDecoratedDescriptor(_class.prototype, 'should_import_layout', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return false;
     }
-}), _descriptor17 = _applyDecoratedDescriptor(_class.prototype, 'should_export_layout', [_mobx.observable], {
+}), _descriptor18 = _applyDecoratedDescriptor(_class.prototype, 'should_export_layout', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return false;
     }
-}), _descriptor18 = _applyDecoratedDescriptor(_class.prototype, 'should_clear_chart', [_mobx.observable], {
+}), _descriptor19 = _applyDecoratedDescriptor(_class.prototype, 'should_clear_chart', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return false;
     }
-}), _descriptor19 = _applyDecoratedDescriptor(_class.prototype, 'trade_chart_layout', [_mobx.observable], {
+}), _descriptor20 = _applyDecoratedDescriptor(_class.prototype, 'trade_chart_layout', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return null;
     }
-}), _applyDecoratedDescriptor(_class.prototype, 'getChartStatus', [_dec], Object.getOwnPropertyDescriptor(_class.prototype, 'getChartStatus'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateChartType', [_dec2], Object.getOwnPropertyDescriptor(_class.prototype, 'updateChartType'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateGranularity', [_dec3], Object.getOwnPropertyDescriptor(_class.prototype, 'updateGranularity'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateEpochScrollToValue', [_dec4], Object.getOwnPropertyDescriptor(_class.prototype, 'updateEpochScrollToValue'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateEpochScrollToOffset', [_dec5], Object.getOwnPropertyDescriptor(_class.prototype, 'updateEpochScrollToOffset'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'cleanupContractChartView', [_dec6], Object.getOwnPropertyDescriptor(_class.prototype, 'cleanupContractChartView'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'resetScrollToLeft', [_dec7], Object.getOwnPropertyDescriptor(_class.prototype, 'resetScrollToLeft'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setContractMode', [_dec8], Object.getOwnPropertyDescriptor(_class.prototype, 'setContractMode'), _class.prototype), _descriptor20 = _applyDecoratedDescriptor(_class.prototype, 'onMount', [_dec9], {
+}), _applyDecoratedDescriptor(_class.prototype, 'getChartStatus', [_dec], Object.getOwnPropertyDescriptor(_class.prototype, 'getChartStatus'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateChartType', [_dec2], Object.getOwnPropertyDescriptor(_class.prototype, 'updateChartType'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateGranularity', [_dec3], Object.getOwnPropertyDescriptor(_class.prototype, 'updateGranularity'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateMargin', [_dec4], Object.getOwnPropertyDescriptor(_class.prototype, 'updateMargin'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateEpochScrollToValue', [_dec5], Object.getOwnPropertyDescriptor(_class.prototype, 'updateEpochScrollToValue'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateEpochScrollToOffset', [_dec6], Object.getOwnPropertyDescriptor(_class.prototype, 'updateEpochScrollToOffset'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'cleanupContractChartView', [_dec7], Object.getOwnPropertyDescriptor(_class.prototype, 'cleanupContractChartView'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'resetScrollToLeft', [_dec8], Object.getOwnPropertyDescriptor(_class.prototype, 'resetScrollToLeft'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setContractMode', [_dec9], Object.getOwnPropertyDescriptor(_class.prototype, 'setContractMode'), _class.prototype), _descriptor21 = _applyDecoratedDescriptor(_class.prototype, 'onMount', [_dec10], {
     enumerable: true,
     initializer: function initializer() {
         var _this4 = this;
@@ -31422,7 +31432,7 @@ var SmartChartStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _d
             }
         };
     }
-}), _descriptor21 = _applyDecoratedDescriptor(_class.prototype, 'onUnmount', [_dec10], {
+}), _descriptor22 = _applyDecoratedDescriptor(_class.prototype, 'onUnmount', [_dec11], {
     enumerable: true,
     initializer: function initializer() {
         var _this5 = this;
@@ -31431,7 +31441,7 @@ var SmartChartStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _d
             _this5.symbol = null;
         };
     }
-}), _applyDecoratedDescriptor(_class.prototype, 'setChartView', [_dec11], Object.getOwnPropertyDescriptor(_class.prototype, 'setChartView'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setContractStart', [_dec12], Object.getOwnPropertyDescriptor(_class.prototype, 'setContractStart'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setContractEnd', [_dec13], Object.getOwnPropertyDescriptor(_class.prototype, 'setContractEnd'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setIsChartLoading', [_dec14], Object.getOwnPropertyDescriptor(_class.prototype, 'setIsChartLoading'), _class.prototype), _descriptor22 = _applyDecoratedDescriptor(_class.prototype, 'createBarriers', [_dec15], {
+}), _applyDecoratedDescriptor(_class.prototype, 'setChartView', [_dec12], Object.getOwnPropertyDescriptor(_class.prototype, 'setChartView'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setContractStart', [_dec13], Object.getOwnPropertyDescriptor(_class.prototype, 'setContractStart'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setContractEnd', [_dec14], Object.getOwnPropertyDescriptor(_class.prototype, 'setContractEnd'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setIsChartLoading', [_dec15], Object.getOwnPropertyDescriptor(_class.prototype, 'setIsChartLoading'), _class.prototype), _descriptor23 = _applyDecoratedDescriptor(_class.prototype, 'createBarriers', [_dec16], {
     enumerable: true,
     initializer: function initializer() {
         var _this6 = this;
@@ -31449,7 +31459,7 @@ var SmartChartStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _d
             }
         };
     }
-}), _applyDecoratedDescriptor(_class.prototype, 'updateBarriers', [_dec16], Object.getOwnPropertyDescriptor(_class.prototype, 'updateBarriers'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateBarrierShade', [_dec17], Object.getOwnPropertyDescriptor(_class.prototype, 'updateBarrierShade'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateBarrierColor', [_dec18], Object.getOwnPropertyDescriptor(_class.prototype, 'updateBarrierColor'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'removeBarriers', [_dec19], Object.getOwnPropertyDescriptor(_class.prototype, 'removeBarriers'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'saveAndClearTradeChartLayout', [_dec20], Object.getOwnPropertyDescriptor(_class.prototype, 'saveAndClearTradeChartLayout'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'applySavedTradeChartLayout', [_dec21], Object.getOwnPropertyDescriptor(_class.prototype, 'applySavedTradeChartLayout'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'exportLayout', [_dec22], Object.getOwnPropertyDescriptor(_class.prototype, 'exportLayout'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setStaticChart', [_dec23], Object.getOwnPropertyDescriptor(_class.prototype, 'setStaticChart'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'barriers_array', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'barriers_array'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'createMarker', [_dec24], Object.getOwnPropertyDescriptor(_class.prototype, 'createMarker'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'removeMarkers', [_dec25], Object.getOwnPropertyDescriptor(_class.prototype, 'removeMarkers'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'markers_array', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'markers_array'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'settings', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'settings'), _class.prototype)), _class));
+}), _applyDecoratedDescriptor(_class.prototype, 'updateBarriers', [_dec17], Object.getOwnPropertyDescriptor(_class.prototype, 'updateBarriers'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateBarrierShade', [_dec18], Object.getOwnPropertyDescriptor(_class.prototype, 'updateBarrierShade'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateBarrierColor', [_dec19], Object.getOwnPropertyDescriptor(_class.prototype, 'updateBarrierColor'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'removeBarriers', [_dec20], Object.getOwnPropertyDescriptor(_class.prototype, 'removeBarriers'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'saveAndClearTradeChartLayout', [_dec21], Object.getOwnPropertyDescriptor(_class.prototype, 'saveAndClearTradeChartLayout'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'applySavedTradeChartLayout', [_dec22], Object.getOwnPropertyDescriptor(_class.prototype, 'applySavedTradeChartLayout'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'exportLayout', [_dec23], Object.getOwnPropertyDescriptor(_class.prototype, 'exportLayout'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setStaticChart', [_dec24], Object.getOwnPropertyDescriptor(_class.prototype, 'setStaticChart'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'barriers_array', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'barriers_array'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'createMarker', [_dec25], Object.getOwnPropertyDescriptor(_class.prototype, 'createMarker'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'removeMarkers', [_dec26], Object.getOwnPropertyDescriptor(_class.prototype, 'removeMarkers'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'markers_array', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'markers_array'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'settings', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'settings'), _class.prototype)), _class));
 exports.default = SmartChartStore;
 
 /***/ }),
