@@ -29351,6 +29351,8 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
             (0, _chartMarkers.createChartMarkers)(this.smart_chart, this.replay_info);
             this.handleDigits(this.replay_info);
 
+            this.smart_chart.updateMargin(((0, _logic.getEndTime)(this.replay_info) || this.replay_info.date_expiry) - this.replay_info.date_start);
+
             this.waitForChartListener(this.smart_chart);
         }
     }, {
