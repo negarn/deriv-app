@@ -35508,14 +35508,16 @@ var ClientStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 
             var _this3 = this;
 
             account_list.forEach(function (account) {
-                _this3.accounts[account.loginid].excluded_until = account.excluded_until || '';
-                Object.keys(account).forEach(function (param) {
-                    var param_to_set = param === 'country' ? 'residence' : param;
-                    var value_to_set = typeof account[param] === 'undefined' ? '' : account[param];
-                    if (param_to_set !== 'loginid') {
-                        _this3.accounts[account.loginid][param_to_set] = value_to_set;
-                    }
-                });
+                if (_this3.accounts[account.loginid]) {
+                    _this3.accounts[account.loginid].excluded_until = account.excluded_until || '';
+                    Object.keys(account).forEach(function (param) {
+                        var param_to_set = param === 'country' ? 'residence' : param;
+                        var value_to_set = typeof account[param] === 'undefined' ? '' : account[param];
+                        if (param_to_set !== 'loginid') {
+                            _this3.accounts[account.loginid][param_to_set] = value_to_set;
+                        }
+                    });
+                }
             });
         }
 
