@@ -59,9 +59,7 @@
                     Object.keys(account).forEach(function(param) {
                         if (param === 'loginid') {
                             if (!active_loginid && !account.is_disabled) {
-                                if (account.is_virtual) { // TODO: [only_virtual] remove this to stop logging clients into virtual
-                                    active_loginid = account[param];
-                                }
+                                active_loginid = account[param];
                             }
                         } else {
                             const param_to_set = map_names[param] || param;
@@ -144,7 +142,7 @@
                 redirect();
             } else {
                 var server_url = localStorage.getItem('config.server_url');
-                var ws = new WebSocket('wss://' + (server_url || 'frontend.binaryws.com') + '/websockets/v3?app_id=16929');
+                var ws = new WebSocket('wss://' + (server_url || 'frontend.binaryws.com') + '/websockets/v3?app_id=1');
                 var requests = [];
                 var responses = [];
                 ws.onopen = function(e) {
