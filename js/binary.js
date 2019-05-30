@@ -29672,7 +29672,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
                 }
                 this.smart_chart.saveAndClearTradeChartLayout('contract');
                 this.smart_chart.setContractMode(true);
-                _Services.WS.subscribeProposalOpenContract(this.contract_id, this.updateProposal, false);
+                _Services.WS.subscribeProposalOpenContract(this.contract_id.toString(), this.updateProposal, false);
             }
         }
     }, {
@@ -29683,7 +29683,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
                 this.smart_chart = this.root_store.modules.smart_chart;
                 this.smart_chart.setContractMode(true);
                 this.replay_contract_id = contract_id;
-                _Services.WS.subscribeProposalOpenContract(this.replay_contract_id, this.populateConfig, false);
+                _Services.WS.subscribeProposalOpenContract(this.replay_contract_id.toString(), this.populateConfig, false);
             }
         }
     }, {
@@ -30350,7 +30350,7 @@ var PortfolioStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _de
                     _this2.pushNewPosition(new_pos);
                 });
                 // subscribe to new contract:
-                _Services.WS.subscribeProposalOpenContract(contract_id, this.proposalOpenContractHandler, false);
+                _Services.WS.subscribeProposalOpenContract(contract_id.toString(), this.proposalOpenContractHandler, false);
             } else if (act === 'sell') {
                 var i = this.getPositionIndexById(contract_id);
 
@@ -30363,7 +30363,7 @@ var PortfolioStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _de
                 }
 
                 this.positions[i].is_loading = true;
-                _Services.WS.subscribeProposalOpenContract(contract_id, this.populateResultDetails, false);
+                _Services.WS.subscribeProposalOpenContract(contract_id.toString(), this.populateResultDetails, false);
             }
         }
     }, {
@@ -34281,6 +34281,7 @@ var TradeStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 =
                             case 13:
 
                                 (0, _mobx.runInAction)(_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
+                                    var is_valid_symbol;
                                     return regeneratorRuntime.wrap(function _callee2$(_context2) {
                                         while (1) {
                                             switch (_context2.prev = _context2.next) {
@@ -34289,17 +34290,21 @@ var TradeStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 =
                                                     _this2.currency = _this2.root_store.client.currency;
                                                     _this2.initial_barriers = { barrier_1: _this2.barrier_1, barrier_2: _this2.barrier_2 };
 
-                                                    if (_this2.symbol) {
-                                                        _context2.next = 6;
+                                                    is_valid_symbol = active_symbols.active_symbols.find(function (symbols) {
+                                                        return symbols.symbol === _this2.symbol;
+                                                    });
+
+                                                    if (!(!_this2.symbol || !is_valid_symbol)) {
+                                                        _context2.next = 7;
                                                         break;
                                                     }
 
-                                                    _context2.next = 6;
+                                                    _context2.next = 7;
                                                     return _this2.processNewValuesAsync({
                                                         symbol: (0, _activeSymbols.pickDefaultSymbol)(active_symbols.active_symbols)
                                                     });
 
-                                                case 6:
+                                                case 7:
 
                                                     if (_this2.symbol) {
                                                         _contractType2.default.buildContractTypesConfig(_this2.symbol).then((0, _mobx.action)(_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
@@ -34319,13 +34324,13 @@ var TradeStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 =
                                                         }))));
                                                     }
 
-                                                    _context2.next = 9;
+                                                    _context2.next = 10;
                                                     return _this2.processNewValuesAsync({
                                                         active_symbols: active_symbols.active_symbols,
                                                         is_market_closed: (0, _activeSymbols.isMarketClosed)(active_symbols.active_symbols, _this2.symbol)
                                                     });
 
-                                                case 9:
+                                                case 10:
                                                 case 'end':
                                                     return _context2.stop();
                                             }
