@@ -63,7 +63,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","open_positions~portfolio~profit_table~statement":"open_positions~portfolio~profit_table~statement","open_positions~profit_table~statement":"open_positions~profit_table~statement","open_positions":"open_positions","profit_table":"profit_table","statement":"statement","portfolio":"portfolio","personal_details":"personal_details","reports":"reports","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"404":"fdd90647aa54964fb1ed","account_password":"e80bbb197cad5fe3d04b","api_token":"455796411755cc9d240f","authorized_application":"87b6b5bc246c480c716e","cashier_password":"40a473d15da490ee7be5","contract":"096129f91c3362b96f2f","financial_assessment":"f2b2875bd22a7717c1ad","limits":"b108abb5bcd4b46ba7b5","login_history":"dcb5548da21ab243acf1","open_positions~portfolio~profit_table~statement":"1976ff7d31c98be81a38","open_positions~profit_table~statement":"9700b8c94df8d16b8fa8","open_positions":"8ef0fd58ff8a5d359639","profit_table":"ca85ffb65cd2fa8da613","statement":"c232e010d53868b370b1","portfolio":"28117780a46b8812a563","personal_details":"3f27d12d238da8ef9393","reports":"0914d401b27e7a7397a7","self_exclusion":"7b24d88cd6b9f04ae3d0","settings":"ee411577a3c3a94f2f4e","vendors~smart_chart":"1f8f9d39e73c7b3bdb01","smart_chart":"d17c6f4b371d99b2407d"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","open_positions~portfolio~profit_table~statement":"open_positions~portfolio~profit_table~statement","open_positions~profit_table~statement":"open_positions~profit_table~statement","open_positions":"open_positions","profit_table":"profit_table","statement":"statement","portfolio":"portfolio","personal_details":"personal_details","reports":"reports","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"404":"fdd90647aa54964fb1ed","account_password":"e80bbb197cad5fe3d04b","api_token":"455796411755cc9d240f","authorized_application":"87b6b5bc246c480c716e","cashier_password":"40a473d15da490ee7be5","contract":"096129f91c3362b96f2f","financial_assessment":"f2b2875bd22a7717c1ad","limits":"b108abb5bcd4b46ba7b5","login_history":"dcb5548da21ab243acf1","open_positions~portfolio~profit_table~statement":"1976ff7d31c98be81a38","open_positions~profit_table~statement":"7e213fe7be1152b69b4e","open_positions":"8ef0fd58ff8a5d359639","profit_table":"ca85ffb65cd2fa8da613","statement":"c232e010d53868b370b1","portfolio":"28117780a46b8812a563","personal_details":"3f27d12d238da8ef9393","reports":"0914d401b27e7a7397a7","self_exclusion":"7b24d88cd6b9f04ae3d0","settings":"ee411577a3c3a94f2f4e","vendors~smart_chart":"08d0b17b8f1536257b79","smart_chart":"d17c6f4b371d99b2407d"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -6233,7 +6233,9 @@ var PositionsDrawerCard = function (_React$PureComponent) {
                 _react2.default.createElement(_resultOverlay2.default, {
                     contract_id: id,
                     onClickRemove: onClickRemove,
-                    onClick: openContract,
+                    onClick: is_unsupported ? function () {
+                        return toggleUnsupportedContractModal(true);
+                    } : openContract,
                     result: result,
                     is_shade_visible: this.state.is_shade_on
                 }),
@@ -6349,7 +6351,11 @@ var PositionsDrawerCard = function (_React$PureComponent) {
                                 { className: 'positions-drawer-card__payout-label' },
                                 (0, _localize.localize)('Potential payout')
                             ),
-                            _react2.default.createElement(_money2.default, { amount: contract_info.payout, currency: currency })
+                            contract_info.payout ? _react2.default.createElement(_money2.default, { amount: contract_info.payout, currency: currency }) : _react2.default.createElement(
+                                'strong',
+                                null,
+                                '-'
+                            )
                         )
                     )
                 ) : _react2.default.createElement(
@@ -6462,7 +6468,11 @@ var PositionsDrawerCard = function (_React$PureComponent) {
                                 { className: 'positions-drawer-card__payout-label' },
                                 (0, _localize.localize)('Potential payout')
                             ),
-                            _react2.default.createElement(_money2.default, { amount: contract_info.payout, currency: currency })
+                            contract_info.payout ? _react2.default.createElement(_money2.default, { amount: contract_info.payout, currency: currency }) : _react2.default.createElement(
+                                'strong',
+                                null,
+                                '-'
+                            )
                         )
                     )
                 ),
@@ -34762,10 +34772,8 @@ var TradeStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 =
                                     _this9.is_trade_component_mounted = true;
                                 });
                                 this.onSwitchAccount(this.accountSwitcherListener);
-                                // clear url query string
-                                window.history.pushState(null, null, window.location.pathname);
 
-                            case 7:
+                            case 6:
                             case 'end':
                                 return _context7.stop();
                         }
@@ -34813,6 +34821,8 @@ var TradeStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 =
             this.disposeSwitchAccount();
             _Services.WS.forgetAll('proposal');
             this.is_trade_component_mounted = false;
+            // clear url query string
+            window.history.pushState(null, null, window.location.pathname);
         }
     }]);
 
