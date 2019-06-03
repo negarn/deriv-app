@@ -22693,7 +22693,7 @@ LastDigitPrediction.propTypes = {
 exports.default = (0, _connect.connect)(function (_ref2) {
     var modules = _ref2.modules;
     return {
-        symbol: modules.contract.contract_info.underlying
+        symbol: modules.trade.symbol
     };
 })(LastDigitPrediction);
 
