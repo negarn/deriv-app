@@ -29016,7 +29016,7 @@ var createMarkerStartTime = exports.createMarkerStartTime = function createMarke
 };
 
 // -------------------- Spots --------------------
-var createMarkerSpotEntry = exports.createMarkerSpotEntry = function createMarkerSpotEntry(contract_info) {
+var createMarkerSpotEntry = exports.createMarkerSpotEntry = function createMarkerSpotEntry(contract_info, entry_tick) {
     if (!contract_info.entry_tick_time) return false;
 
     var marker_type = _markers.MARKER_TYPES_CONFIG.SPOT_ENTRY.type;
@@ -29027,13 +29027,13 @@ var createMarkerSpotEntry = exports.createMarkerSpotEntry = function createMarke
         marker_type = _markers.MARKER_TYPES_CONFIG.SPOT_MIDDLE.type;
 
         component_props = {
-            spot_value: '' + contract_info.entry_tick,
+            spot_value: '' + entry_tick,
             spot_epoch: '' + contract_info.entry_tick_time,
             spot_count: 1
         };
     }
 
-    return createMarkerConfig(marker_type, contract_info.entry_tick_time, contract_info.entry_tick, component_props);
+    return createMarkerConfig(marker_type, contract_info.entry_tick_time, entry_tick, component_props);
 };
 
 var createMarkerSpotExit = exports.createMarkerSpotExit = function createMarkerSpotExit(contract_info, tick, idx) {
@@ -29089,6 +29089,8 @@ exports.createChartMarkers = undefined;
 
 var _marker_spots, _marker_lines;
 
+var _activeSymbols = __webpack_require__(/*! ../../Trading/Helpers/active-symbols */ "./src/javascript/app/Stores/Modules/Trading/Helpers/active-symbols.js");
+
 var _chartMarkerHelpers = __webpack_require__(/*! ./chart-marker-helpers */ "./src/javascript/app/Stores/Modules/Contract/Helpers/chart-marker-helpers.js");
 
 var _logic = __webpack_require__(/*! ./logic */ "./src/javascript/app/Stores/Modules/Contract/Helpers/logic.js");
@@ -29096,6 +29098,8 @@ var _logic = __webpack_require__(/*! ./logic */ "./src/javascript/app/Stores/Mod
 var _utility = __webpack_require__(/*! ../../../../../_common/utility */ "./src/javascript/_common/utility.js");
 
 var _markers = __webpack_require__(/*! ../../SmartChart/Constants/markers */ "./src/javascript/app/Stores/Modules/SmartChart/Constants/markers.js");
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -29141,29 +29145,53 @@ var addLabelAlignment = function addLabelAlignment(tick, idx, arr) {
     return tick;
 };
 
-var addTickMarker = function addTickMarker(SmartChartStore, contract_info) {
-    var tick_stream = (0, _utility.unique)(contract_info.tick_stream, 'epoch').map(addLabelAlignment);
+var addTickMarker = function () {
+    var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(SmartChartStore, contract_info) {
+        var tick_stream, decimal_places;
+        return regeneratorRuntime.wrap(function _callee$(_context) {
+            while (1) {
+                switch (_context.prev = _context.next) {
+                    case 0:
+                        tick_stream = (0, _utility.unique)(contract_info.tick_stream, 'epoch').map(addLabelAlignment);
+                        _context.next = 3;
+                        return (0, _activeSymbols.getUnderlyingPipSize)(contract_info.underlying);
 
-    tick_stream.forEach(function (tick, idx) {
-        var is_entry_spot = idx === 0 && +tick.epoch !== contract_info.exit_tick_time;
-        var is_middle_spot = idx > 0 && +tick.epoch !== +contract_info.exit_tick_time;
-        var is_exit_spot = +tick.epoch === +contract_info.exit_tick_time || (0, _chartMarkerHelpers.getSpotCount)(contract_info, idx) === contract_info.tick_count;
+                    case 3:
+                        decimal_places = _context.sent;
 
-        var marker_config = void 0;
-        if (is_entry_spot) marker_config = (0, _chartMarkerHelpers.createMarkerSpotEntry)(contract_info);
-        if (is_middle_spot) marker_config = (0, _chartMarkerHelpers.createMarkerSpotMiddle)(contract_info, tick, idx);
-        if (is_exit_spot) {
-            tick.align_label = 'top'; // force exit spot label to be 'top' to avoid overlapping
-            marker_config = (0, _chartMarkerHelpers.createMarkerSpotExit)(contract_info, tick, idx);
-        }
 
-        if (marker_config) {
-            if (marker_config.type in SmartChartStore.markers) return;
+                        tick_stream.forEach(function (tick, idx) {
+                            var is_entry_spot = idx === 0 && +tick.epoch !== contract_info.exit_tick_time;
+                            var is_middle_spot = idx > 0 && +tick.epoch !== +contract_info.exit_tick_time;
+                            var is_exit_spot = +tick.epoch === +contract_info.exit_tick_time || (0, _chartMarkerHelpers.getSpotCount)(contract_info, idx) === contract_info.tick_count;
 
-            SmartChartStore.createMarker(marker_config);
-        }
-    });
-};
+                            var marker_config = void 0;
+                            if (is_entry_spot) marker_config = (0, _chartMarkerHelpers.createMarkerSpotEntry)(contract_info, tick.toFixed(decimal_places));
+                            if (is_middle_spot) marker_config = (0, _chartMarkerHelpers.createMarkerSpotMiddle)(contract_info, tick.toFixed(decimal_places), idx);
+                            if (is_exit_spot) {
+                                tick.align_label = 'top'; // force exit spot label to be 'top' to avoid overlapping
+                                marker_config = (0, _chartMarkerHelpers.createMarkerSpotExit)(contract_info, tick.toFixed(decimal_places), idx);
+                            }
+
+                            if (marker_config) {
+                                if (marker_config.type in SmartChartStore.markers) return;
+
+                                SmartChartStore.createMarker(marker_config);
+                            }
+                        });
+
+                    case 5:
+                    case 'end':
+                        return _context.stop();
+                }
+            }
+        }, _callee, undefined);
+    }));
+
+    return function addTickMarker(_x, _x2) {
+        return _ref.apply(this, arguments);
+    };
+}();
 
 /***/ }),
 
