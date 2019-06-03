@@ -22272,7 +22272,7 @@ var DigitSpot = function DigitSpot(_ref) {
                     'digits__digit-spot-last--loss': is_lost
                 })
             },
-            current_spot.slice(-1)
+            current_spot.toString().slice(-1)
         )
     );
 };
