@@ -29537,6 +29537,8 @@ var _baseStore2 = _interopRequireDefault(_baseStore);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
 function _initDefineProp(target, property, descriptor, context) {
     if (!descriptor) return;
     Object.defineProperty(target, property, {
@@ -29863,11 +29865,40 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
         }
     }, {
         key: 'handleDigits',
-        value: function handleDigits(contract_info) {
-            if (this.is_digit_contract) {
-                (0, _mobx.extendObservable)(this.digits_info, (0, _digits.getDigitInfo)(this.digits_info, contract_info));
+        value: function () {
+            var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(contract_info) {
+                var digit_info;
+                return regeneratorRuntime.wrap(function _callee$(_context) {
+                    while (1) {
+                        switch (_context.prev = _context.next) {
+                            case 0:
+                                if (!this.is_digit_contract) {
+                                    _context.next = 5;
+                                    break;
+                                }
+
+                                _context.next = 3;
+                                return (0, _digits.getDigitInfo)(this.digits_info, contract_info);
+
+                            case 3:
+                                digit_info = _context.sent;
+
+                                (0, _mobx.extendObservable)(this.digits_info, digit_info);
+
+                            case 5:
+                            case 'end':
+                                return _context.stop();
+                        }
+                    }
+                }, _callee, this);
+            }));
+
+            function handleDigits(_x) {
+                return _ref2.apply(this, arguments);
             }
-        }
+
+            return handleDigits;
+        }()
     }, {
         key: 'onClickSell',
         value: function onClickSell(contract_id) {
