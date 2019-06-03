@@ -22615,7 +22615,7 @@ var LastDigitPrediction = function (_React$Component) {
         value: function componentDidMount() {
             var _this2 = this;
 
-            var decimal_places = (0, _activeSymbols.getUnderlyingPipSize)(this.props.symbol).then(function () {
+            (0, _activeSymbols.getUnderlyingPipSize)(this.props.symbol).then(function (decimal_places) {
                 _this2.setState({ decimal_places: decimal_places });
             });
             this.node.querySelectorAll('.digits__digit').forEach(function (el, idx) {
