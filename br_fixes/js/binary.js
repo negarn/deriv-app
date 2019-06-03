@@ -22280,7 +22280,7 @@ var DigitSpot = function DigitSpot(_ref) {
         _react2.default.createElement(
             'span',
             { className: 'digits__digit-spot-value' },
-            current_spot.toString().slice(0, -1)
+            current_spot.slice(0, -1)
         ),
         _react2.default.createElement(
             'span',
@@ -22290,13 +22290,13 @@ var DigitSpot = function DigitSpot(_ref) {
                     'digits__digit-spot-last--loss': is_lost
                 })
             },
-            current_spot.toString().slice(-1)
+            current_spot.slice(-1)
         )
     );
 };
 
 DigitSpot.propTypes = {
-    current_spot: _propTypes2.default.number,
+    current_spot: _propTypes2.default.string,
     is_lost: _propTypes2.default.bool,
     is_won: _propTypes2.default.bool
 };
@@ -22529,8 +22529,6 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _mobxReact = __webpack_require__(/*! mobx-react */ "./node_modules/mobx-react/index.module.js");
-
 var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
@@ -22538,6 +22536,10 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
+
+var _connect = __webpack_require__(/*! ../../../../Stores/connect */ "./src/javascript/app/Stores/connect.js");
+
+var _activeSymbols = __webpack_require__(/*! ../../../../Stores/Modules/Trading/Helpers/active-symbols */ "./src/javascript/app/Stores/Modules/Trading/Helpers/active-symbols.js");
 
 var _digitDisplay = __webpack_require__(/*! ./digit-display.jsx */ "./src/javascript/app/Modules/Contract/Components/LastDigitPrediction/digit-display.jsx");
 
@@ -22630,7 +22632,7 @@ var LastDigitPrediction = function (_React$Component) {
                 status = _props.status;
 
             var digits_array = Object.keys(digits_info).sort().map(function (spot_time) {
-                return digits_info[spot_time];
+                return digits_info[spot_time].toFixed((0, _activeSymbols.getUnderlyingPipSize)(_this3.props.symbol));
             });
             var latest_digit = digits_array.slice(-1)[0] || {};
 
@@ -22684,10 +22686,16 @@ LastDigitPrediction.propTypes = {
     contract_type: _propTypes2.default.string,
     digits_info: _propTypes2.default.object,
     is_ended: _propTypes2.default.bool,
-    status: _propTypes2.default.string
+    status: _propTypes2.default.string,
+    symbol: _propTypes2.default.string
 };
 
-exports.default = (0, _mobxReact.observer)(LastDigitPrediction);
+exports.default = (0, _connect.connect)(function (_ref2) {
+    var modules = _ref2.modules;
+    return {
+        symbol: modules.contract.contract_info.underlying
+    };
+})(LastDigitPrediction);
 
 /***/ }),
 
@@ -32759,7 +32767,7 @@ exports.default = getValidationRules;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.isMarketClosed = exports.showUnavailableLocationError = exports.pickDefaultSymbol = undefined;
+exports.getUnderlyingPipSize = exports.isMarketClosed = exports.showUnavailableLocationError = exports.pickDefaultSymbol = undefined;
 
 var _mobx = __webpack_require__(/*! mobx */ "./node_modules/mobx/lib/mobx.module.js");
 
@@ -32774,6 +32782,8 @@ var _socket_base = __webpack_require__(/*! ../../../../../_common/base/socket_ba
 var _socket_base2 = _interopRequireDefault(_socket_base);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
 var pickDefaultSymbol = exports.pickDefaultSymbol = function pickDefaultSymbol() {
     var active_symbols = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
@@ -32828,6 +32838,46 @@ var isMarketClosed = exports.isMarketClosed = function isMarketClosed() {
         return symbol_info.symbol === symbol;
     })[0].exchange_is_open : false;
 };
+
+var countDecimalPlaces = function countDecimalPlaces(num) {
+    if (!isNaN(num)) {
+        var str = num.toString();
+        if (str.indexOf('.') !== -1) {
+            return str.split('.')[1].length;
+        }
+    }
+    return 0;
+};
+
+var getUnderlyingPipSize = exports.getUnderlyingPipSize = function () {
+    var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(underlying) {
+        var active_symbols, obj_symbols;
+        return regeneratorRuntime.wrap(function _callee2$(_context2) {
+            while (1) {
+                switch (_context2.prev = _context2.next) {
+                    case 0:
+                        _context2.next = 2;
+                        return _socket_base2.default.send({ active_symbols: 'brief' });
+
+                    case 2:
+                        active_symbols = _context2.sent;
+                        obj_symbols = active_symbols.active_symbols.find(function (symbols) {
+                            return symbols.symbol === underlying;
+                        }) || {};
+                        return _context2.abrupt('return', countDecimalPlaces(obj_symbols.pip || 0.001));
+
+                    case 5:
+                    case 'end':
+                        return _context2.stop();
+                }
+            }
+        }, _callee2, undefined);
+    }));
+
+    return function getUnderlyingPipSize(_x3) {
+        return _ref.apply(this, arguments);
+    };
+}();
 
 /***/ }),
 
