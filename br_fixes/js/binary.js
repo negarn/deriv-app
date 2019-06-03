@@ -22529,6 +22529,8 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _mobxReact = __webpack_require__(/*! mobx-react */ "./node_modules/mobx-react/index.module.js");
+
 var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
@@ -22536,10 +22538,6 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
-
-var _connect = __webpack_require__(/*! ../../../../Stores/connect */ "./src/javascript/app/Stores/connect.js");
-
-var _activeSymbols = __webpack_require__(/*! ../../../../Stores/Modules/Trading/Helpers/active-symbols */ "./src/javascript/app/Stores/Modules/Trading/Helpers/active-symbols.js");
 
 var _digitDisplay = __webpack_require__(/*! ./digit-display.jsx */ "./src/javascript/app/Modules/Contract/Components/LastDigitPrediction/digit-display.jsx");
 
@@ -22615,9 +22613,6 @@ var LastDigitPrediction = function (_React$Component) {
         value: function componentDidMount() {
             var _this2 = this;
 
-            (0, _activeSymbols.getUnderlyingPipSize)(this.props.symbol).then(function (decimal_places) {
-                _this2.setState({ decimal_places: decimal_places });
-            });
             this.node.querySelectorAll('.digits__digit').forEach(function (el, idx) {
                 // get offsetLeft of each Digits
                 _this2.setState(_defineProperty({}, idx, el.offsetLeft));
@@ -22635,7 +22630,7 @@ var LastDigitPrediction = function (_React$Component) {
                 status = _props.status;
 
             var digits_array = Object.keys(digits_info).sort().map(function (spot_time) {
-                return digits_info[spot_time].toFixed(_this3.state.decimal_places);
+                return digits_info[spot_time];
             });
             var latest_digit = digits_array.slice(-1)[0] || {};
 
@@ -22689,16 +22684,10 @@ LastDigitPrediction.propTypes = {
     contract_type: _propTypes2.default.string,
     digits_info: _propTypes2.default.object,
     is_ended: _propTypes2.default.bool,
-    status: _propTypes2.default.string,
-    symbol: _propTypes2.default.string
+    status: _propTypes2.default.string
 };
 
-exports.default = (0, _connect.connect)(function (_ref2) {
-    var modules = _ref2.modules;
-    return {
-        symbol: modules.trade.symbol
-    };
-})(LastDigitPrediction);
+exports.default = (0, _mobxReact.observer)(LastDigitPrediction);
 
 /***/ }),
 
@@ -29306,29 +29295,60 @@ exports.getDigitInfo = exports.isDigitContract = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
+var _activeSymbols = __webpack_require__(/*! ../../Trading/Helpers/active-symbols */ "./src/javascript/app/Stores/Modules/Trading/Helpers/active-symbols.js");
+
 var _logic = __webpack_require__(/*! ./logic */ "./src/javascript/app/Stores/Modules/Contract/Helpers/logic.js");
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
 var isDigitContract = exports.isDigitContract = function isDigitContract(contract_type) {
     return (/digit/i.test(contract_type)
     );
 };
 
-var getDigitInfo = exports.getDigitInfo = function getDigitInfo(digits_info, contract_info) {
-    var tick_stream = contract_info.tick_stream;
+var getDigitInfo = exports.getDigitInfo = function () {
+    var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(digits_info, contract_info) {
+        var tick_stream, _getLastTickFromTickS, tick, epoch, decimal_places, spot, current;
 
-    var _getLastTickFromTickS = (0, _logic.getLastTickFromTickStream)(tick_stream),
-        tick = _getLastTickFromTickS.tick,
-        epoch = _getLastTickFromTickS.epoch;
+        return regeneratorRuntime.wrap(function _callee$(_context) {
+            while (1) {
+                switch (_context.prev = _context.next) {
+                    case 0:
+                        tick_stream = contract_info.tick_stream;
+                        _getLastTickFromTickS = (0, _logic.getLastTickFromTickStream)(tick_stream), tick = _getLastTickFromTickS.tick, epoch = _getLastTickFromTickS.epoch;
 
-    if (!tick || !epoch) return {}; // filter out empty responses
+                        if (!(!tick || !epoch)) {
+                            _context.next = 4;
+                            break;
+                        }
 
-    var current = epoch in digits_info ? {} : // filter out duplicated responses
-    createDigitInfo(tick, epoch);
+                        return _context.abrupt('return', {});
 
-    return _extends({}, current);
-};
+                    case 4:
+                        _context.next = 6;
+                        return (0, _activeSymbols.getUnderlyingPipSize)(contract_info.underlying);
+
+                    case 6:
+                        decimal_places = _context.sent;
+                        spot = tick.toFixed(decimal_places);
+                        current = epoch in digits_info ? {} : // filter out duplicated responses
+                        createDigitInfo(spot, epoch);
+                        return _context.abrupt('return', _extends({}, current));
+
+                    case 10:
+                    case 'end':
+                        return _context.stop();
+                }
+            }
+        }, _callee, undefined);
+    }));
+
+    return function getDigitInfo(_x, _x2) {
+        return _ref.apply(this, arguments);
+    };
+}();
 
 var createDigitInfo = function createDigitInfo(spot, spot_time) {
     var digit = +('' + spot).slice(-1);
