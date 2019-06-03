@@ -63,7 +63,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","open_positions~portfolio~profit_table~statement":"open_positions~portfolio~profit_table~statement","open_positions~profit_table~statement":"open_positions~profit_table~statement","open_positions":"open_positions","profit_table":"profit_table","statement":"statement","portfolio":"portfolio","personal_details":"personal_details","reports":"reports","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"404":"fdd90647aa54964fb1ed","account_password":"e80bbb197cad5fe3d04b","api_token":"455796411755cc9d240f","authorized_application":"87b6b5bc246c480c716e","cashier_password":"40a473d15da490ee7be5","contract":"096129f91c3362b96f2f","financial_assessment":"f2b2875bd22a7717c1ad","limits":"b108abb5bcd4b46ba7b5","login_history":"dcb5548da21ab243acf1","open_positions~portfolio~profit_table~statement":"1976ff7d31c98be81a38","open_positions~profit_table~statement":"7e213fe7be1152b69b4e","open_positions":"8ef0fd58ff8a5d359639","profit_table":"ca85ffb65cd2fa8da613","statement":"c232e010d53868b370b1","portfolio":"28117780a46b8812a563","personal_details":"3f27d12d238da8ef9393","reports":"0914d401b27e7a7397a7","self_exclusion":"7b24d88cd6b9f04ae3d0","settings":"ee411577a3c3a94f2f4e","vendors~smart_chart":"2c6dc911ad7fbe794da0","smart_chart":"d17c6f4b371d99b2407d"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","open_positions~portfolio~profit_table~statement":"open_positions~portfolio~profit_table~statement","open_positions~profit_table~statement":"open_positions~profit_table~statement","open_positions":"open_positions","profit_table":"profit_table","statement":"statement","portfolio":"portfolio","personal_details":"personal_details","reports":"reports","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"404":"fdd90647aa54964fb1ed","account_password":"e80bbb197cad5fe3d04b","api_token":"455796411755cc9d240f","authorized_application":"87b6b5bc246c480c716e","cashier_password":"40a473d15da490ee7be5","contract":"62a080052cb4cc6e612e","financial_assessment":"f2b2875bd22a7717c1ad","limits":"b108abb5bcd4b46ba7b5","login_history":"dcb5548da21ab243acf1","open_positions~portfolio~profit_table~statement":"1976ff7d31c98be81a38","open_positions~profit_table~statement":"7e213fe7be1152b69b4e","open_positions":"8ef0fd58ff8a5d359639","profit_table":"ca85ffb65cd2fa8da613","statement":"c232e010d53868b370b1","portfolio":"28117780a46b8812a563","personal_details":"3f27d12d238da8ef9393","reports":"0914d401b27e7a7397a7","self_exclusion":"7b24d88cd6b9f04ae3d0","settings":"ee411577a3c3a94f2f4e","vendors~smart_chart":"2c6dc911ad7fbe794da0","smart_chart":"d17c6f4b371d99b2407d"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -6749,7 +6749,7 @@ var PositionsDrawer = function (_React$Component) {
 }(_react2.default.Component);
 
 PositionsDrawer.propTypes = {
-    active_contract_id: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string]),
+    active_contract_id: _propTypes2.default.number,
     all_positions: _mobxReact.PropTypes.arrayOrObservableArray,
     children: _propTypes2.default.any,
     currency: _propTypes2.default.string,
@@ -22948,7 +22948,7 @@ var ContractLink = function ContractLink(_ref) {
 ContractLink.propTypes = {
     children: _propTypes2.default.node,
     className: _propTypes2.default.string,
-    contract_id: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string]),
+    contract_id: _propTypes2.default.number,
     onMount: _propTypes2.default.func
 };
 
@@ -29665,7 +29665,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
             this.onSwitchAccount(this.accountSwitcherListener.bind(null));
             this.has_error = false;
             this.error_message = '';
-            this.contract_id = contract_id;
+            this.contract_id = +contract_id;
             this.smart_chart = this.root_store.modules.smart_chart;
             this.is_from_positions = is_from_positions;
 
@@ -29686,7 +29686,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
                 this.contract_info = {};
                 this.smart_chart = this.root_store.modules.smart_chart;
                 this.smart_chart.setContractMode(true);
-                this.replay_contract_id = contract_id;
+                this.replay_contract_id = +contract_id;
                 _Services.WS.subscribeProposalOpenContract(this.replay_contract_id, this.populateConfig, false);
             }
         }
@@ -34499,7 +34499,7 @@ var TradeStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 =
                             buy_price: response.buy.buy_price
                         });
                         // toggle smartcharts to contract mode
-                        var contract_id = (0, _utility.getPropertyValue)(response, ['buy', 'contract_id']);
+                        var contract_id = +(0, _utility.getPropertyValue)(response, ['buy', 'contract_id']);
                         if (contract_id) {
                             _this5.root_store.modules.contract.onMount(contract_id);
                             _this5.root_store.ui.openPositionsDrawer();
