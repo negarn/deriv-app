@@ -29166,9 +29166,11 @@ var addTickMarker = function () {
                             var is_exit_spot = +tick.epoch === +contract_info.exit_tick_time || (0, _chartMarkerHelpers.getSpotCount)(contract_info, idx) === contract_info.tick_count;
 
                             var marker_config = void 0;
-                            if (is_entry_spot) marker_config = (0, _chartMarkerHelpers.createMarkerSpotEntry)(contract_info, tick.toFixed(decimal_places));
-                            if (is_middle_spot) marker_config = (0, _chartMarkerHelpers.createMarkerSpotMiddle)(contract_info, tick.toFixed(decimal_places), idx);
-                            if (is_exit_spot) {
+                            if (is_entry_spot) {
+                                marker_config = (0, _chartMarkerHelpers.createMarkerSpotEntry)(contract_info, contract_info.entry_spot.toFixed(decimal_places));
+                            } else if (is_middle_spot) {
+                                marker_config = (0, _chartMarkerHelpers.createMarkerSpotMiddle)(contract_info, tick.toFixed(decimal_places), idx);
+                            } else if (is_exit_spot) {
                                 tick.align_label = 'top'; // force exit spot label to be 'top' to avoid overlapping
                                 marker_config = (0, _chartMarkerHelpers.createMarkerSpotExit)(contract_info, tick.toFixed(decimal_places), idx);
                             }
