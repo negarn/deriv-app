@@ -63,7 +63,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","open_positions~portfolio~profit_table~statement":"open_positions~portfolio~profit_table~statement","open_positions~profit_table~statement":"open_positions~profit_table~statement","open_positions":"open_positions","profit_table":"profit_table","statement":"statement","portfolio":"portfolio","personal_details":"personal_details","reports":"reports","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"404":"fdd90647aa54964fb1ed","account_password":"e80bbb197cad5fe3d04b","api_token":"455796411755cc9d240f","authorized_application":"87b6b5bc246c480c716e","cashier_password":"40a473d15da490ee7be5","contract":"62a080052cb4cc6e612e","financial_assessment":"f2b2875bd22a7717c1ad","limits":"b108abb5bcd4b46ba7b5","login_history":"dcb5548da21ab243acf1","open_positions~portfolio~profit_table~statement":"1976ff7d31c98be81a38","open_positions~profit_table~statement":"7e213fe7be1152b69b4e","open_positions":"8ef0fd58ff8a5d359639","profit_table":"ca85ffb65cd2fa8da613","statement":"c232e010d53868b370b1","portfolio":"28117780a46b8812a563","personal_details":"3f27d12d238da8ef9393","reports":"0914d401b27e7a7397a7","self_exclusion":"7b24d88cd6b9f04ae3d0","settings":"ee411577a3c3a94f2f4e","vendors~smart_chart":"2c6dc911ad7fbe794da0","smart_chart":"d17c6f4b371d99b2407d"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","open_positions~portfolio~profit_table~statement":"open_positions~portfolio~profit_table~statement","open_positions~profit_table~statement":"open_positions~profit_table~statement","open_positions":"open_positions","profit_table":"profit_table","statement":"statement","portfolio":"portfolio","personal_details":"personal_details","reports":"reports","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"404":"fdd90647aa54964fb1ed","account_password":"e80bbb197cad5fe3d04b","api_token":"455796411755cc9d240f","authorized_application":"87b6b5bc246c480c716e","cashier_password":"40a473d15da490ee7be5","contract":"a233048c2112daf00dbb","financial_assessment":"f2b2875bd22a7717c1ad","limits":"b108abb5bcd4b46ba7b5","login_history":"dcb5548da21ab243acf1","open_positions~portfolio~profit_table~statement":"1976ff7d31c98be81a38","open_positions~profit_table~statement":"7e213fe7be1152b69b4e","open_positions":"8ef0fd58ff8a5d359639","profit_table":"ca85ffb65cd2fa8da613","statement":"c232e010d53868b370b1","portfolio":"28117780a46b8812a563","personal_details":"3f27d12d238da8ef9393","reports":"0914d401b27e7a7397a7","self_exclusion":"7b24d88cd6b9f04ae3d0","settings":"ee411577a3c3a94f2f4e","vendors~smart_chart":"2c6dc911ad7fbe794da0","smart_chart":"d17c6f4b371d99b2407d"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -29660,7 +29660,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
     }, {
         key: 'onMount',
         value: function onMount(contract_id, is_from_positions) {
-            if (contract_id === +this.contract_id) return;
+            if (contract_id === this.contract_id) return;
             if (this.root_store.modules.smart_chart.is_contract_mode) this.onCloseContract();
             this.onSwitchAccount(this.accountSwitcherListener.bind(null));
             this.has_error = false;
@@ -29759,7 +29759,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
                 this.smart_chart.setIsChartLoading(false);
                 return;
             }
-            if (+response.proposal_open_contract.contract_id !== +this.replay_contract_id) return;
+            if (+response.proposal_open_contract.contract_id !== this.replay_contract_id) return;
 
             this.forget_id = response.proposal_open_contract.id;
             this.replay_info = response.proposal_open_contract;
@@ -29817,7 +29817,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
                 this.smart_chart.setIsChartLoading(false);
                 return;
             }
-            if (+response.proposal_open_contract.contract_id !== +this.contract_id) return;
+            if (+response.proposal_open_contract.contract_id !== this.contract_id) return;
 
             this.contract_info = response.proposal_open_contract;
 
