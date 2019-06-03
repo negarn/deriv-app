@@ -22615,6 +22615,9 @@ var LastDigitPrediction = function (_React$Component) {
         value: function componentDidMount() {
             var _this2 = this;
 
+            var decimal_places = (0, _activeSymbols.getUnderlyingPipSize)(this.props.symbol).then(function () {
+                _this2.setState({ decimal_places: decimal_places });
+            });
             this.node.querySelectorAll('.digits__digit').forEach(function (el, idx) {
                 // get offsetLeft of each Digits
                 _this2.setState(_defineProperty({}, idx, el.offsetLeft));
@@ -22632,7 +22635,7 @@ var LastDigitPrediction = function (_React$Component) {
                 status = _props.status;
 
             var digits_array = Object.keys(digits_info).sort().map(function (spot_time) {
-                return digits_info[spot_time].toFixed((0, _activeSymbols.getUnderlyingPipSize)(_this3.props.symbol));
+                return digits_info[spot_time].toFixed(_this3.state.decimal_places);
             });
             var latest_digit = digits_array.slice(-1)[0] || {};
 
