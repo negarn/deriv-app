@@ -29665,7 +29665,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
             this.onSwitchAccount(this.accountSwitcherListener.bind(null));
             this.has_error = false;
             this.error_message = '';
-            this.contract_id = +contract_id;
+            this.contract_id = contract_id;
             this.smart_chart = this.root_store.modules.smart_chart;
             this.is_from_positions = is_from_positions;
 
@@ -29686,7 +29686,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
                 this.contract_info = {};
                 this.smart_chart = this.root_store.modules.smart_chart;
                 this.smart_chart.setContractMode(true);
-                this.replay_contract_id = +contract_id;
+                this.replay_contract_id = contract_id;
                 _Services.WS.subscribeProposalOpenContract(this.replay_contract_id, this.populateConfig, false);
             }
         }
