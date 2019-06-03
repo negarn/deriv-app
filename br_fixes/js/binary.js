@@ -22262,7 +22262,7 @@ var DigitSpot = function DigitSpot(_ref) {
         _react2.default.createElement(
             'span',
             { className: 'digits__digit-spot-value' },
-            current_spot.slice(0, -1)
+            current_spot.toString().slice(0, -1)
         ),
         _react2.default.createElement(
             'span',
