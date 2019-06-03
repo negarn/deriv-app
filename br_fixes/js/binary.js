@@ -29016,11 +29016,13 @@ var createMarkerStartTime = exports.createMarkerStartTime = function createMarke
 };
 
 // -------------------- Spots --------------------
-var createMarkerSpotEntry = exports.createMarkerSpotEntry = function createMarkerSpotEntry(contract_info, entry_tick) {
+var createMarkerSpotEntry = exports.createMarkerSpotEntry = function createMarkerSpotEntry(contract_info, decimal_places) {
     if (!contract_info.entry_tick_time) return false;
 
     var marker_type = _markers.MARKER_TYPES_CONFIG.SPOT_ENTRY.type;
     var component_props = {};
+
+    var entry_tick = contract_info.entry_tick.toFixed(decimal_places);
 
     var spot_has_label = (0, _digits.isDigitContract)(contract_info.contract_type);
     if (spot_has_label) {
@@ -29036,7 +29038,7 @@ var createMarkerSpotEntry = exports.createMarkerSpotEntry = function createMarke
     return createMarkerConfig(marker_type, contract_info.entry_tick_time, entry_tick, component_props);
 };
 
-var createMarkerSpotExit = exports.createMarkerSpotExit = function createMarkerSpotExit(contract_info, tick, idx) {
+var createMarkerSpotExit = exports.createMarkerSpotExit = function createMarkerSpotExit(contract_info, tick, decimal_places, idx) {
     if (!contract_info.exit_tick_time) return false;
     var is_user_sold = (0, _logic.isUserSold)(contract_info);
 
@@ -29047,8 +29049,10 @@ var createMarkerSpotExit = exports.createMarkerSpotExit = function createMarkerS
         align_label = tick.align_label;
     }
 
-    return createMarkerConfig(!is_user_sold ? _markers.MARKER_TYPES_CONFIG.SPOT_EXIT.type : _markers.MARKER_TYPES_CONFIG.SPOT_SELL.type, +contract_info.exit_tick_time, +contract_info.exit_tick, !is_user_sold ? {
-        spot_value: '' + contract_info.exit_tick,
+    var exit_tick = contract_info.exit_tick.toFixed(decimal_places);
+
+    return createMarkerConfig(!is_user_sold ? _markers.MARKER_TYPES_CONFIG.SPOT_EXIT.type : _markers.MARKER_TYPES_CONFIG.SPOT_SELL.type, +contract_info.exit_tick_time, +exit_tick, !is_user_sold ? {
+        spot_value: '' + exit_tick,
         spot_epoch: '' + contract_info.exit_tick_time,
         status: '' + (+contract_info.profit > 0 ? 'won' : 'lost'),
         align_label: align_label,
@@ -29056,11 +29060,12 @@ var createMarkerSpotExit = exports.createMarkerSpotExit = function createMarkerS
     } : {});
 };
 
-var createMarkerSpotMiddle = exports.createMarkerSpotMiddle = function createMarkerSpotMiddle(contract_info, tick, idx) {
+var createMarkerSpotMiddle = exports.createMarkerSpotMiddle = function createMarkerSpotMiddle(contract_info, tick, decimal_places, idx) {
     var spot_count = getSpotCount(contract_info, idx);
+    var spot = tick.tick.toFixed(decimal_places);
 
-    var marker_config = createMarkerConfig(_markers.MARKER_TYPES_CONFIG.SPOT_MIDDLE.type, +tick.epoch, +tick.tick, {
-        spot_value: '' + tick.tick,
+    var marker_config = createMarkerConfig(_markers.MARKER_TYPES_CONFIG.SPOT_MIDDLE.type, +tick.epoch, +spot, {
+        spot_value: '' + spot,
         spot_epoch: '' + tick.epoch,
         align_label: tick.align_label,
         spot_count: spot_count
@@ -29167,12 +29172,12 @@ var addTickMarker = function () {
 
                             var marker_config = void 0;
                             if (is_entry_spot) {
-                                marker_config = (0, _chartMarkerHelpers.createMarkerSpotEntry)(contract_info, contract_info.entry_spot.toFixed(decimal_places));
+                                marker_config = (0, _chartMarkerHelpers.createMarkerSpotEntry)(contract_info, decimal_places);
                             } else if (is_middle_spot) {
-                                marker_config = (0, _chartMarkerHelpers.createMarkerSpotMiddle)(contract_info, tick.toFixed(decimal_places), idx);
+                                marker_config = (0, _chartMarkerHelpers.createMarkerSpotMiddle)(contract_info, tick, decimal_places, idx);
                             } else if (is_exit_spot) {
                                 tick.align_label = 'top'; // force exit spot label to be 'top' to avoid overlapping
-                                marker_config = (0, _chartMarkerHelpers.createMarkerSpotExit)(contract_info, tick.toFixed(decimal_places), idx);
+                                marker_config = (0, _chartMarkerHelpers.createMarkerSpotExit)(contract_info, tick, decimal_places, idx);
                             }
 
                             if (marker_config) {
