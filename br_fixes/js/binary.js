@@ -63,7 +63,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","open_positions~portfolio~profit_table~statement":"open_positions~portfolio~profit_table~statement","open_positions~profit_table~statement":"open_positions~profit_table~statement","open_positions":"open_positions","profit_table":"profit_table","statement":"statement","portfolio":"portfolio","personal_details":"personal_details","reports":"reports","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"0":"75deb21bc2df737b5b03","1":"53327fe1871d5dd9f662","2":"4f07ac2b019fc6055e81","3":"6eead60ce6e484a89f84","4":"3a37d1cdb165ae888d6b","5":"7619865d7ced1814edb6","6":"f66928ac15d3161cf71d","7":"bdfef2d9e35fe5c66cd3","8":"78cbff0e88d19e34e614","9":"a9afc1fa00b8884662a0","10":"11dd32ed22c87c595b49","11":"b3ed2091f296ad5fa3f1","12":"6aea09661391b64cee32","13":"fe4896d6c27d657dc48d","14":"bcfeacaf8ad8f2fed3dc","15":"5b36f9150ca0ff20185e","16":"8cecc671ba9ceb479f56","17":"b8e853ea7f29cda5563e","18":"615aac2a2dbc30087d1a","19":"3aeda260f5e295403d37","20":"40d0b7240db50fd297cd","21":"ddf108a79d421ea833ee","22":"b687efde92cfab074bda","23":"a3179a5b4d415e8905c9","24":"f1eabf358e0a02277251","25":"69de805a9e60ee9532d3","26":"693322b1e24d31951755","27":"7e434eb0e7af3112eb64","28":"d99feb68a05e46fe7e24","29":"21932a2fa2f78d36563b","30":"a0636655749c049c7737","31":"8ebc9babcd75d87dd849","32":"d46e0f8c0a9296348392","33":"09be7eed53eeb610016c","34":"d6c665a26c948152ce30","35":"36bc0bb640bd162dade6","36":"55042fca3041b5eb7a91","37":"23b1dcdbd30dbbb85587","38":"4db811925dfb587a5ae8","39":"0823ea78d3bf7ae54174","40":"eccb523d7bfee4efa6a3","41":"9ecc6c81d71f6db22510","42":"f0e9133f486f3cf46c1b","43":"18447a24460691389120","44":"33aca49d050fad068398","45":"b75183565dbd0229a3ff","46":"47199c93f75a88cd8603","47":"96aef5b97505ac20167d","48":"3a31871d7702a8488c94","49":"a21240bbe0999f39284f","50":"0ad389ca36ebd6d5e772","51":"dd5cccddb4b452cdddfb","52":"3c3afa5ca6ba528a2c1e","53":"1fdcb83682fb2fb790e8","54":"548b74749d7ad514eb59","55":"e68891121fede4f3e35b","56":"6ef1da24910a4554b9de","57":"d418406cadcb67c7cb42","58":"b7c4786b23142f4d6635","59":"7316507ad42533655036","60":"70d541ff15fb8d23d5ea","61":"39950f11c0abcc955142","62":"61c43c18a3cc91c59cfb","63":"3362ac94a66b2c68154c","64":"1c364bb355fd42393af9","65":"106fc48844c80ee4fc51","404":"fdd90647aa54964fb1ed","account_password":"e80bbb197cad5fe3d04b","api_token":"455796411755cc9d240f","authorized_application":"87b6b5bc246c480c716e","cashier_password":"40a473d15da490ee7be5","contract":"22860ba28ce847042516","financial_assessment":"f2b2875bd22a7717c1ad","limits":"b108abb5bcd4b46ba7b5","login_history":"dcb5548da21ab243acf1","open_positions~portfolio~profit_table~statement":"1976ff7d31c98be81a38","open_positions~profit_table~statement":"57eeaeb8ac78d2b0a05d","open_positions":"69200ab30147a993acbd","profit_table":"5d00d040b72a6a0a4976","statement":"74154da86d5e996eddb8","portfolio":"2ba844396df077541ab1","personal_details":"3f27d12d238da8ef9393","reports":"bca776944d698dee67a7","self_exclusion":"7b24d88cd6b9f04ae3d0","settings":"ee411577a3c3a94f2f4e","vendors~smart_chart":"2c6dc911ad7fbe794da0","smart_chart":"d17c6f4b371d99b2407d"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","open_positions~portfolio~profit_table~statement":"open_positions~portfolio~profit_table~statement","open_positions~profit_table~statement":"open_positions~profit_table~statement","open_positions":"open_positions","profit_table":"profit_table","statement":"statement","portfolio":"portfolio","personal_details":"personal_details","reports":"reports","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"0":"75deb21bc2df737b5b03","1":"53327fe1871d5dd9f662","2":"4f07ac2b019fc6055e81","3":"6eead60ce6e484a89f84","4":"3a37d1cdb165ae888d6b","5":"7619865d7ced1814edb6","6":"f66928ac15d3161cf71d","7":"bdfef2d9e35fe5c66cd3","8":"78cbff0e88d19e34e614","9":"a9afc1fa00b8884662a0","10":"11dd32ed22c87c595b49","11":"b3ed2091f296ad5fa3f1","12":"6aea09661391b64cee32","13":"fe4896d6c27d657dc48d","14":"bcfeacaf8ad8f2fed3dc","15":"5b36f9150ca0ff20185e","16":"8cecc671ba9ceb479f56","17":"b8e853ea7f29cda5563e","18":"615aac2a2dbc30087d1a","19":"3aeda260f5e295403d37","20":"40d0b7240db50fd297cd","21":"ddf108a79d421ea833ee","22":"b687efde92cfab074bda","23":"a3179a5b4d415e8905c9","24":"f1eabf358e0a02277251","25":"69de805a9e60ee9532d3","26":"693322b1e24d31951755","27":"7e434eb0e7af3112eb64","28":"d99feb68a05e46fe7e24","29":"21932a2fa2f78d36563b","30":"a0636655749c049c7737","31":"8ebc9babcd75d87dd849","32":"d46e0f8c0a9296348392","33":"09be7eed53eeb610016c","34":"d6c665a26c948152ce30","35":"36bc0bb640bd162dade6","36":"55042fca3041b5eb7a91","37":"23b1dcdbd30dbbb85587","38":"4db811925dfb587a5ae8","39":"0823ea78d3bf7ae54174","40":"eccb523d7bfee4efa6a3","41":"9ecc6c81d71f6db22510","42":"f0e9133f486f3cf46c1b","43":"18447a24460691389120","44":"33aca49d050fad068398","45":"b75183565dbd0229a3ff","46":"47199c93f75a88cd8603","47":"96aef5b97505ac20167d","48":"3a31871d7702a8488c94","49":"a21240bbe0999f39284f","50":"0ad389ca36ebd6d5e772","51":"dd5cccddb4b452cdddfb","52":"3c3afa5ca6ba528a2c1e","53":"1fdcb83682fb2fb790e8","54":"548b74749d7ad514eb59","55":"e68891121fede4f3e35b","56":"6ef1da24910a4554b9de","57":"d418406cadcb67c7cb42","58":"b7c4786b23142f4d6635","59":"7316507ad42533655036","60":"70d541ff15fb8d23d5ea","61":"39950f11c0abcc955142","62":"61c43c18a3cc91c59cfb","63":"3362ac94a66b2c68154c","64":"1c364bb355fd42393af9","65":"106fc48844c80ee4fc51","404":"fdd90647aa54964fb1ed","account_password":"e80bbb197cad5fe3d04b","api_token":"455796411755cc9d240f","authorized_application":"87b6b5bc246c480c716e","cashier_password":"40a473d15da490ee7be5","contract":"e601200aced7e7cea4be","financial_assessment":"f2b2875bd22a7717c1ad","limits":"b108abb5bcd4b46ba7b5","login_history":"dcb5548da21ab243acf1","open_positions~portfolio~profit_table~statement":"3454cbb6366d3d770d6c","open_positions~profit_table~statement":"57eeaeb8ac78d2b0a05d","open_positions":"69200ab30147a993acbd","profit_table":"5d00d040b72a6a0a4976","statement":"74154da86d5e996eddb8","portfolio":"2ba844396df077541ab1","personal_details":"3f27d12d238da8ef9393","reports":"bca776944d698dee67a7","self_exclusion":"7b24d88cd6b9f04ae3d0","settings":"ee411577a3c3a94f2f4e","vendors~smart_chart":"2c6dc911ad7fbe794da0","smart_chart":"0184880cc643e8398e97"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -253,6 +253,127 @@ webpackContext.keys = function webpackContextKeys() {
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
 webpackContext.id = "./node_modules/moment/locale sync recursive ja";
+
+/***/ }),
+
+/***/ "./src/images/app/portfolio/ic-check.svg":
+/*!***********************************************!*\
+  !*** ./src/images/app/portfolio/ic-check.svg ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }return target;
+  };return _extends.apply(this, arguments);
+}
+
+exports.default = function (_ref) {
+  var _ref$styles = _ref.styles,
+      styles = _ref$styles === undefined ? {} : _ref$styles,
+      props = _objectWithoutProperties(_ref, ["styles"]);
+
+  return _react2.default.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "16",
+    height: "16"
+  }, props), _react2.default.createElement("g", {
+    fill: "none",
+    fillRule: "evenodd"
+  }, _react2.default.createElement("circle", {
+    cx: "8",
+    cy: "8",
+    r: "8",
+    fill: "#4BBFAB"
+  }), _react2.default.createElement("path", {
+    fill: "#FFF",
+    fillRule: "nonzero",
+    d: "M6.5 10.8l5.65-5.65a.5.5 0 0 1 .7.7l-6 6a.5.5 0 0 1-.7 0l-3-3a.5.5 0 1 1 .7-.7l2.65 2.64z"
+  })));
+};
+
+/***/ }),
+
+/***/ "./src/images/app/portfolio/ic-cross.svg":
+/*!***********************************************!*\
+  !*** ./src/images/app/portfolio/ic-cross.svg ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }return target;
+  };return _extends.apply(this, arguments);
+}
+
+exports.default = function (_ref) {
+  var _ref$styles = _ref.styles,
+      styles = _ref$styles === undefined ? {} : _ref$styles,
+      props = _objectWithoutProperties(_ref, ["styles"]);
+
+  return _react2.default.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "16",
+    height: "16"
+  }, props), _react2.default.createElement("g", {
+    fill: "none",
+    fillRule: "evenodd"
+  }, _react2.default.createElement("circle", {
+    cx: "8",
+    cy: "8",
+    r: "8",
+    fill: "#E31C4B",
+    fillRule: "nonzero"
+  }), _react2.default.createElement("path", {
+    stroke: "#FFF",
+    strokeLinecap: "round",
+    d: "M10.5 5.5l-5 5m5 0l-5-5"
+  })));
+};
 
 /***/ }),
 
@@ -2039,11 +2160,7 @@ var getDays = function getDays(_ref) {
                 icon: 'dot',
                 message: message
             }),
-            _react2.default.createElement(
-                'span',
-                { className: 'calendar__cell-date' },
-                moment_date.date()
-            )
+            moment_date.date()
         ));
     });
 
@@ -4946,7 +5063,7 @@ Object.keys(_positionsHelper).forEach(function (key) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.getBarrierValue = exports.getBarrierLabel = exports.getTimePercentage = exports.addCommaToNumber = undefined;
+exports.isDigitType = exports.getBarrierValue = exports.getBarrierLabel = exports.getTimePercentage = exports.addCommaToNumber = undefined;
 
 var _moment = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 
@@ -4995,6 +5112,11 @@ var getBarrierValue = exports.getBarrierValue = function getBarrierValue(contrac
     return addCommaToNumber(contract_info.barrier);
 };
 
+var isDigitType = exports.isDigitType = function isDigitType(contract_type) {
+    return (/digit/.test(contract_type.toLowerCase())
+    );
+};
+
 var digitTypeMap = function digitTypeMap(contract_info) {
     return {
         DIGITDIFF: (0, _localize.localize)('Not [_1]', contract_info.barrier),
@@ -5004,11 +5126,6 @@ var digitTypeMap = function digitTypeMap(contract_info) {
         DIGITOVER: (0, _localize.localize)('Over [_1]', contract_info.barrier),
         DIGITUNDER: (0, _localize.localize)('Under [_1]', contract_info.barrier)
     };
-};
-
-var isDigitType = function isDigitType(contract_type) {
-    return (/digit/.test(contract_type.toLowerCase())
-    );
 };
 
 /***/ }),
@@ -5052,8 +5169,6 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _classnames = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -5076,6 +5191,8 @@ var _contractLink = __webpack_require__(/*! ../../../../Modules/Contract/Contain
 
 var _contractLink2 = _interopRequireDefault(_contractLink);
 
+var _currency_base = __webpack_require__(/*! ../../../../../_common/base/currency_base */ "./src/javascript/_common/base/currency_base.js");
+
 var _localize = __webpack_require__(/*! ../../../../../_common/localize */ "./src/javascript/_common/localize.js");
 
 var _icon = __webpack_require__(/*! ../../../../Assets/icon.jsx */ "./src/javascript/app/Assets/icon.jsx");
@@ -5096,10 +5213,6 @@ var _ProgressSlider = __webpack_require__(/*! ./ProgressSlider */ "./src/javascr
 
 var _ProgressSlider2 = _interopRequireDefault(_ProgressSlider);
 
-var _resultDetails = __webpack_require__(/*! ./result-details.jsx */ "./src/javascript/app/App/Components/Elements/PositionsDrawer/result-details.jsx");
-
-var _resultDetails2 = _interopRequireDefault(_resultDetails);
-
 var _resultOverlay = __webpack_require__(/*! ./result-overlay.jsx */ "./src/javascript/app/App/Components/Elements/PositionsDrawer/result-overlay.jsx");
 
 var _resultOverlay2 = _interopRequireDefault(_resultOverlay);
@@ -5108,362 +5221,223 @@ var _helpers = __webpack_require__(/*! ./helpers */ "./src/javascript/app/App/Co
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var PositionsDrawerCard = function PositionsDrawerCard(_ref) {
+    var active_position = _ref.active_position,
+        className = _ref.className,
+        contract_info = _ref.contract_info,
+        currency = _ref.currency,
+        current_tick = _ref.current_tick,
+        indicative = _ref.indicative,
+        id = _ref.id,
+        is_loading = _ref.is_loading,
+        is_sell_requested = _ref.is_sell_requested,
+        is_unsupported = _ref.is_unsupported,
+        is_valid_to_sell = _ref.is_valid_to_sell,
+        profit_loss = _ref.profit_loss,
+        onClickSell = _ref.onClickSell,
+        onClickRemove = _ref.onClickRemove,
+        result = _ref.result,
+        sell_price = _ref.sell_price,
+        server_time = _ref.server_time,
+        status = _ref.status,
+        toggleUnsupportedContractModal = _ref.toggleUnsupportedContractModal,
+        type = _ref.type;
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var PositionsDrawerCard = function (_React$PureComponent) {
-    _inherits(PositionsDrawerCard, _React$PureComponent);
-
-    function PositionsDrawerCard() {
-        var _ref;
-
-        var _temp, _this, _ret;
-
-        _classCallCheck(this, PositionsDrawerCard);
-
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            args[_key] = arguments[_key];
-        }
-
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = PositionsDrawerCard.__proto__ || Object.getPrototypeOf(PositionsDrawerCard)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-            is_shade_on: false
-        }, _this.handleShade = function (shade) {
-            _this.setState({ is_shade_on: shade });
-        }, _temp), _possibleConstructorReturn(_this, _ret);
-    }
-
-    _createClass(PositionsDrawerCard, [{
-        key: 'render',
-        value: function render() {
-            var _props = this.props,
-                active_position = _props.active_position,
-                className = _props.className,
-                contract_info = _props.contract_info,
-                currency = _props.currency,
-                current_tick = _props.current_tick,
-                duration = _props.duration,
-                duration_unit = _props.duration_unit,
-                exit_spot = _props.exit_spot,
-                indicative = _props.indicative,
-                id = _props.id,
-                is_loading = _props.is_loading,
-                is_sell_requested = _props.is_sell_requested,
-                is_unsupported = _props.is_unsupported,
-                is_valid_to_sell = _props.is_valid_to_sell,
-                profit_loss = _props.profit_loss,
-                onClickSell = _props.onClickSell,
-                onClickRemove = _props.onClickRemove,
-                openContract = _props.openContract,
-                result = _props.result,
-                sell_price = _props.sell_price,
-                sell_time = _props.sell_time,
-                server_time = _props.server_time,
-                status = _props.status,
-                toggleUnsupportedContractModal = _props.toggleUnsupportedContractModal,
-                type = _props.type;
-
-            var percentage = (0, _helpers.getTimePercentage)(server_time, contract_info.purchase_time, contract_info.date_expiry);
-            return _react2.default.createElement(
+    var percentage = (0, _helpers.getTimePercentage)(server_time, contract_info.purchase_time, contract_info.date_expiry);
+    var contract_el = _react2.default.createElement(
+        _react2.default.Fragment,
+        null,
+        _react2.default.createElement(
+            'div',
+            { className: (0, _classnames2.default)('positions-drawer-card__grid', 'positions-drawer-card__grid-underlying-trade')
+            },
+            _react2.default.createElement(
                 'div',
-                { className: (0, _classnames2.default)('positions-drawer-card__wrapper', {
-                        'positions-drawer-card__wrapper--active': parseInt(active_position) === id
-                    }, className)
+                { className: 'positions-drawer-card__underlying-name' },
+                _react2.default.createElement(_underlyingIcon.UnderlyingIcon, { market: contract_info.underlying }),
+                _react2.default.createElement(
+                    'span',
+                    { className: 'positions-drawer-card__symbol' },
+                    contract_info.display_name
+                )
+            ),
+            _react2.default.createElement(
+                'div',
+                { className: 'positions-drawer-card__type' },
+                _react2.default.createElement(_contractTypeCell2.default, { type: type })
+            )
+        ),
+        _react2.default.createElement(_ProgressSlider2.default, {
+            is_loading: is_loading,
+            remaining_time: contract_info.date_expiry,
+            percentage: percentage,
+            current_tick: current_tick,
+            ticks_count: contract_info.tick_count,
+            has_result: !!result
+        }),
+        _react2.default.createElement(
+            'div',
+            { className: (0, _classnames2.default)('positions-drawer-card__grid', 'positions-drawer-card__grid-profit-payout')
+            },
+            _react2.default.createElement(
+                'div',
+                { className: (0, _classnames2.default)('positions-drawer-card__profit-loss', 'positions-drawer-card__profit-loss-label')
                 },
-                _react2.default.createElement(_resultOverlay2.default, {
-                    contract_id: id,
-                    onClickRemove: onClickRemove,
-                    onClick: is_unsupported ? function () {
-                        return toggleUnsupportedContractModal(true);
-                    } : openContract,
-                    result: result,
-                    is_shade_visible: this.state.is_shade_on
-                }),
-                is_unsupported ? _react2.default.createElement(
+                result ? (0, _localize.localize)('Profit/Loss:') : (0, _localize.localize)('Potential profit/loss:')
+            ),
+            _react2.default.createElement(
+                'div',
+                { className: (0, _classnames2.default)('positions-drawer-card__indicative', 'positions-drawer-card__indicative-label')
+                },
+                !result ? (0, _localize.localize)('Indicative price:') : (0, _localize.localize)('Payout:')
+            ),
+            _react2.default.createElement(
+                'div',
+                { className: (0, _classnames2.default)('positions-drawer-card__profit-loss', {
+                        'positions-drawer-card__profit-loss--is-crypto': (0, _currency_base.isCryptocurrency)(currency),
+                        'positions-drawer-card__profit-loss--negative': profit_loss < 0,
+                        'positions-drawer-card__profit-loss--positive': profit_loss > 0
+                    })
+                },
+                _react2.default.createElement(_money2.default, { amount: Math.abs(profit_loss), currency: currency }),
+                _react2.default.createElement(
                     'div',
-                    {
-                        className: (0, _classnames2.default)('positions-drawer-card', {
-                            'positions-drawer-card--active': parseInt(active_position) === id,
-                            'positions-drawer-card--green': profit_loss > 0 && !result,
-                            'positions-drawer-card--red': profit_loss < 0 && !result
-                        }),
-                        onClick: function onClick() {
-                            return toggleUnsupportedContractModal(true);
-                        }
+                    { className: (0, _classnames2.default)('positions-drawer-card__indicative--movement', {
+                            'positions-drawer-card__indicative--movement-complete': !!result
+                        })
                     },
-                    _react2.default.createElement(
-                        _react2.default.Fragment,
-                        null,
-                        _react2.default.createElement(
-                            'div',
-                            { className: (0, _classnames2.default)('positions-drawer-card__grid', 'positions-drawer-card__grid-underlying-trade')
-                            },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'positions-drawer-card__underlying-name' },
-                                _react2.default.createElement(_underlyingIcon.UnderlyingIcon, { market: contract_info.underlying }),
-                                _react2.default.createElement(
-                                    'span',
-                                    { className: 'positions-drawer-card__symbol' },
-                                    contract_info.display_name
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'positions-drawer-card__type' },
-                                _react2.default.createElement(_contractTypeCell2.default, { type: type })
-                            )
-                        ),
-                        _react2.default.createElement(_ProgressSlider2.default, {
-                            is_loading: is_loading,
-                            remaining_time: contract_info.date_expiry,
-                            percentage: percentage,
-                            current_tick: current_tick,
-                            ticks_count: contract_info.tick_count,
-                            has_result: !!result
-                        }),
-                        _react2.default.createElement(
-                            'div',
-                            { className: (0, _classnames2.default)('positions-drawer-card__grid', 'positions-drawer-card__grid-profit-payout')
-                            },
-                            _react2.default.createElement(
-                                'div',
-                                { className: (0, _classnames2.default)('positions-drawer-card__profit-loss', 'positions-drawer-card__profit-loss-label')
-                                },
-                                result ? (0, _localize.localize)('Profit/Loss:') : (0, _localize.localize)('Potential Profit/Loss:')
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: (0, _classnames2.default)('positions-drawer-card__indicative', 'positions-drawer-card__indicative-label')
-                                },
-                                !result ? (0, _localize.localize)('Indicative Price:') : (0, _localize.localize)('Payout:')
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: (0, _classnames2.default)('positions-drawer-card__profit-loss', {
-                                        'positions-drawer-card__profit-loss--negative': profit_loss < 0,
-                                        'positions-drawer-card__profit-loss--positive': profit_loss > 0
-                                    })
-                                },
-                                _react2.default.createElement(_money2.default, { amount: Math.abs(profit_loss), currency: currency }),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: (0, _classnames2.default)('positions-drawer-card__indicative--movement', {
-                                            'positions-drawer-card__indicative--movement-complete': !!result
-                                        })
-                                    },
-                                    _react2.default.createElement(_icon2.default, {
-                                        icon: 'IconPriceMove',
-                                        type: status !== 'complete' ? status : null
-                                    })
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'positions-drawer-card__indicative' },
-                                _react2.default.createElement(_money2.default, { amount: sell_price || indicative, currency: currency }),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: (0, _classnames2.default)('positions-drawer-card__indicative--movement', {
-                                            'positions-drawer-card__indicative--movement-complete': !!result
-                                        })
-                                    },
-                                    _react2.default.createElement(_icon2.default, {
-                                        icon: 'IconPriceMove',
-                                        type: status !== 'complete' ? status : null
-                                    })
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'positions-drawer-card__purchase-price' },
-                            _react2.default.createElement(
-                                'span',
-                                { className: 'positions-drawer-card__purchase-label' },
-                                (0, _localize.localize)('Purchase price')
-                            ),
-                            _react2.default.createElement(_money2.default, { amount: contract_info.buy_price, currency: currency })
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'positions-drawer-card__payout-price' },
-                            _react2.default.createElement(
-                                'span',
-                                { className: 'positions-drawer-card__payout-label' },
-                                (0, _localize.localize)('Potential payout')
-                            ),
-                            contract_info.payout ? _react2.default.createElement(_money2.default, { amount: contract_info.payout, currency: currency }) : _react2.default.createElement(
-                                'strong',
-                                null,
-                                '-'
-                            )
-                        )
-                    )
-                ) : _react2.default.createElement(
-                    _contractLink2.default,
-                    {
-                        className: (0, _classnames2.default)('positions-drawer-card', {
-                            'positions-drawer-card--active': parseInt(active_position) === id,
-                            'positions-drawer-card--green': profit_loss > 0 && !result,
-                            'positions-drawer-card--red': profit_loss < 0 && !result
-                        }),
-                        contract_id: id
+                    _react2.default.createElement(_icon2.default, {
+                        icon: 'IconPriceMove',
+                        type: status !== 'complete' ? status : null
+                    })
+                )
+            ),
+            _react2.default.createElement(
+                'div',
+                { className: 'positions-drawer-card__indicative' },
+                _react2.default.createElement(_money2.default, { amount: sell_price || indicative, currency: currency }),
+                _react2.default.createElement(
+                    'div',
+                    { className: (0, _classnames2.default)('positions-drawer-card__indicative--movement', {
+                            'positions-drawer-card__indicative--movement-complete': !!result
+                        })
                     },
-                    _react2.default.createElement(
-                        _react2.default.Fragment,
-                        null,
-                        _react2.default.createElement(
-                            'div',
-                            { className: (0, _classnames2.default)('positions-drawer-card__grid', 'positions-drawer-card__grid-underlying-trade')
-                            },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'positions-drawer-card__underlying-name' },
-                                _react2.default.createElement(_underlyingIcon.UnderlyingIcon, { market: contract_info.underlying }),
-                                _react2.default.createElement(
-                                    'span',
-                                    { className: 'positions-drawer-card__symbol' },
-                                    contract_info.display_name
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'positions-drawer-card__type' },
-                                _react2.default.createElement(_contractTypeCell2.default, { type: type })
-                            )
-                        ),
-                        _react2.default.createElement(_ProgressSlider2.default, {
-                            is_loading: is_loading,
-                            remaining_time: contract_info.date_expiry,
-                            percentage: percentage,
-                            current_tick: current_tick,
-                            ticks_count: contract_info.tick_count,
-                            has_result: !!result
-                        }),
-                        _react2.default.createElement(
-                            'div',
-                            { className: (0, _classnames2.default)('positions-drawer-card__grid', 'positions-drawer-card__grid-profit-payout')
-                            },
-                            _react2.default.createElement(
-                                'div',
-                                { className: (0, _classnames2.default)('positions-drawer-card__profit-loss', 'positions-drawer-card__profit-loss-label')
-                                },
-                                result ? (0, _localize.localize)('Profit/Loss:') : (0, _localize.localize)('Potential Profit/Loss:')
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: (0, _classnames2.default)('positions-drawer-card__indicative', 'positions-drawer-card__indicative-label')
-                                },
-                                !result ? (0, _localize.localize)('Indicative Price:') : (0, _localize.localize)('Payout:')
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: (0, _classnames2.default)('positions-drawer-card__profit-loss', {
-                                        'positions-drawer-card__profit-loss--negative': profit_loss < 0,
-                                        'positions-drawer-card__profit-loss--positive': profit_loss > 0
-                                    })
-                                },
-                                _react2.default.createElement(_money2.default, { amount: Math.abs(profit_loss), currency: currency }),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: (0, _classnames2.default)('positions-drawer-card__indicative--movement', {
-                                            'positions-drawer-card__indicative--movement-complete': !!result
-                                        })
-                                    },
-                                    _react2.default.createElement(_icon2.default, {
-                                        icon: 'IconPriceMove',
-                                        type: status !== 'complete' ? status : null
-                                    })
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'positions-drawer-card__indicative' },
-                                _react2.default.createElement(_money2.default, { amount: sell_price || indicative, currency: currency }),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: (0, _classnames2.default)('positions-drawer-card__indicative--movement', {
-                                            'positions-drawer-card__indicative--movement-complete': !!result
-                                        })
-                                    },
-                                    _react2.default.createElement(_icon2.default, {
-                                        icon: 'IconPriceMove',
-                                        type: status !== 'complete' ? status : null
-                                    })
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'positions-drawer-card__purchase-price' },
-                            _react2.default.createElement(
-                                'span',
-                                { className: 'positions-drawer-card__purchase-label' },
-                                (0, _localize.localize)('Purchase price')
-                            ),
-                            _react2.default.createElement(_money2.default, { amount: contract_info.buy_price, currency: currency })
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'positions-drawer-card__payout-price' },
-                            _react2.default.createElement(
-                                'span',
-                                { className: 'positions-drawer-card__payout-label' },
-                                (0, _localize.localize)('Potential payout')
-                            ),
-                            contract_info.payout ? _react2.default.createElement(_money2.default, { amount: contract_info.payout, currency: currency }) : _react2.default.createElement(
-                                'strong',
-                                null,
-                                '-'
-                            )
-                        )
-                    )
+                    _react2.default.createElement(_icon2.default, {
+                        icon: 'IconPriceMove',
+                        type: status !== 'complete' ? status : null
+                    })
+                )
+            )
+        ),
+        _react2.default.createElement(
+            'div',
+            { className: (0, _classnames2.default)('positions-drawer-card__grid', 'positions-drawer-card__grid-price-payout')
+            },
+            _react2.default.createElement(
+                'div',
+                { className: 'positions-drawer-card__purchase-price' },
+                _react2.default.createElement(
+                    'span',
+                    { className: 'positions-drawer-card__purchase-label' },
+                    (0, _localize.localize)('Purchase price:')
                 ),
                 _react2.default.createElement(
-                    _reactTransitionGroup.CSSTransition,
-                    {
-                        'in': !!is_valid_to_sell,
-                        timeout: 250,
-                        classNames: {
-                            enter: 'positions-drawer-card__sell-button--enter',
-                            enterDone: 'positions-drawer-card__sell-button--enter-done',
-                            exit: 'positions-drawer-card__sell-button--exit'
-                        },
-                        unmountOnExit: true
-                    },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'positions-drawer-card__sell-button' },
-                        _react2.default.createElement(_button2.default, {
-                            className: (0, _classnames2.default)('btn--primary', 'btn--primary--green', 'btn--sell', {
-                                'btn--loading': is_sell_requested
-                            }),
-                            is_disabled: !is_valid_to_sell || is_sell_requested,
-                            text: (0, _localize.localize)('Sell contract'),
-                            onClick: function onClick() {
-                                return onClickSell(id);
-                            }
-                        })
-                    )
+                    'span',
+                    { className: 'positions-drawer-card__purchase-value' },
+                    _react2.default.createElement(_money2.default, { amount: contract_info.buy_price, currency: currency })
+                )
+            ),
+            _react2.default.createElement(
+                'div',
+                { className: 'positions-drawer-card__payout-price' },
+                _react2.default.createElement(
+                    'span',
+                    { className: 'positions-drawer-card__payout-label' },
+                    (0, _localize.localize)('Potential payout:')
                 ),
-                _react2.default.createElement(_resultDetails2.default, {
-                    contract_info: contract_info,
-                    contract_end_time: sell_time,
-                    is_shade_visible: this.handleShade,
-                    duration: duration,
-                    duration_unit: duration_unit,
-                    exit_spot: exit_spot,
-                    has_result: !!result
-                })
-            );
-        }
-    }]);
+                _react2.default.createElement(
+                    'span',
+                    { className: 'positions-drawer-card__payout-value' },
+                    contract_info.payout ? _react2.default.createElement(_money2.default, { amount: contract_info.payout, currency: currency }) : _react2.default.createElement(
+                        'strong',
+                        null,
+                        '-'
+                    )
+                )
+            )
+        )
+    );
 
-    return PositionsDrawerCard;
-}(_react2.default.PureComponent);
+    return _react2.default.createElement(
+        'div',
+        { className: (0, _classnames2.default)('positions-drawer-card__wrapper', {
+                'positions-drawer-card__wrapper--active': parseInt(active_position) === id
+            }, className)
+        },
+        _react2.default.createElement(_resultOverlay2.default, {
+            contract_id: id,
+            is_unsupported: is_unsupported,
+            has_same_contract_mounted: id === parseInt(active_position),
+            onClickRemove: onClickRemove,
+            onClick: function onClick() {
+                return toggleUnsupportedContractModal(true);
+            },
+            result: result
+        }),
+        is_unsupported ? _react2.default.createElement(
+            'div',
+            {
+                className: (0, _classnames2.default)('positions-drawer-card', {
+                    'positions-drawer-card--active': parseInt(active_position) === id,
+                    'positions-drawer-card--green': profit_loss > 0 && !result,
+                    'positions-drawer-card--red': profit_loss < 0 && !result
+                }),
+                onClick: function onClick() {
+                    return toggleUnsupportedContractModal(true);
+                }
+            },
+            contract_el
+        ) : _react2.default.createElement(
+            _contractLink2.default,
+            {
+                className: (0, _classnames2.default)('positions-drawer-card', {
+                    'positions-drawer-card--active': parseInt(active_position) === id,
+                    'positions-drawer-card--green': profit_loss > 0 && !result,
+                    'positions-drawer-card--red': profit_loss < 0 && !result
+                }),
+                contract_id: id
+            },
+            contract_el
+        ),
+        _react2.default.createElement(
+            _reactTransitionGroup.CSSTransition,
+            {
+                'in': !!is_valid_to_sell,
+                timeout: 250,
+                classNames: {
+                    enter: 'positions-drawer-card__sell-button--enter',
+                    enterDone: 'positions-drawer-card__sell-button--enter-done',
+                    exit: 'positions-drawer-card__sell-button--exit'
+                },
+                unmountOnExit: true
+            },
+            _react2.default.createElement(
+                'div',
+                { className: 'positions-drawer-card__sell-button' },
+                _react2.default.createElement(_button2.default, {
+                    className: (0, _classnames2.default)('btn--primary', 'btn--primary--green', 'btn--sell', {
+                        'btn--loading': is_sell_requested
+                    }),
+                    is_disabled: !is_valid_to_sell || is_sell_requested,
+                    text: (0, _localize.localize)('Sell contract'),
+                    onClick: function onClick() {
+                        return onClickSell(id);
+                    }
+                })
+            )
+        )
+    );
+};
 
 PositionsDrawerCard.propTypes = {
     active_position: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string]),
@@ -5482,7 +5456,6 @@ PositionsDrawerCard.propTypes = {
     is_valid_to_sell: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.bool]),
     onClickRemove: _propTypes2.default.func,
     onClickSell: _propTypes2.default.func,
-    openContract: _propTypes2.default.func,
     profit_loss: _propTypes2.default.number,
     result: _propTypes2.default.string,
     sell_time: _propTypes2.default.number,
@@ -5742,61 +5715,9 @@ exports.default = (0, _connect.connect)(function (_ref) {
 
 /***/ }),
 
-/***/ "./src/javascript/app/App/Components/Elements/PositionsDrawer/result-details-item.jsx":
-/*!********************************************************************************************!*\
-  !*** ./src/javascript/app/App/Components/Elements/PositionsDrawer/result-details-item.jsx ***!
-  \********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var ResultDetailsItem = function ResultDetailsItem(_ref) {
-    var label = _ref.label,
-        value = _ref.value;
-    return _react2.default.createElement(
-        'div',
-        { className: 'result-details__item' },
-        _react2.default.createElement(
-            'span',
-            { className: 'result-details__label' },
-            label
-        ),
-        _react2.default.createElement(
-            'span',
-            { className: 'result-details__value' },
-            value
-        )
-    );
-};
-
-ResultDetailsItem.propTypes = {
-    label: _propTypes2.default.string,
-    value: _propTypes2.default.PropTypes.oneOfType([_propTypes2.default.number, _propTypes2.default.string])
-};
-
-exports.default = ResultDetailsItem;
-
-/***/ }),
-
-/***/ "./src/javascript/app/App/Components/Elements/PositionsDrawer/result-details.jsx":
+/***/ "./src/javascript/app/App/Components/Elements/PositionsDrawer/result-overlay.jsx":
 /*!***************************************************************************************!*\
-  !*** ./src/javascript/app/App/Components/Elements/PositionsDrawer/result-details.jsx ***!
+  !*** ./src/javascript/app/App/Components/Elements/PositionsDrawer/result-overlay.jsx ***!
   \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -5822,25 +5743,23 @@ var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactTransitionGroup = __webpack_require__(/*! react-transition-group */ "./node_modules/react-transition-group/index.js");
+
+var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+var _helpers = __webpack_require__(/*! ../../Routes/helpers */ "./src/javascript/app/App/Components/Routes/helpers.js");
+
+var _icCheck = __webpack_require__(/*! ../../../../../../images/app/portfolio/ic-check.svg */ "./src/images/app/portfolio/ic-check.svg");
+
+var _icCheck2 = _interopRequireDefault(_icCheck);
+
+var _icCross = __webpack_require__(/*! ../../../../../../images/app/portfolio/ic-cross.svg */ "./src/images/app/portfolio/ic-cross.svg");
+
+var _icCross2 = _interopRequireDefault(_icCross);
+
 var _localize = __webpack_require__(/*! ../../../../../_common/localize */ "./src/javascript/_common/localize.js");
 
-var _icon = __webpack_require__(/*! ../../../../Assets/icon.jsx */ "./src/javascript/app/Assets/icon.jsx");
-
-var _icon2 = _interopRequireDefault(_icon);
-
-var _activeSymbols = __webpack_require__(/*! ../../../../Stores/Modules/Trading/Helpers/active-symbols */ "./src/javascript/app/Stores/Modules/Trading/Helpers/active-symbols.js");
-
-var _Date = __webpack_require__(/*! ../../../../Utils/Date */ "./src/javascript/app/Utils/Date/index.js");
-
-var _helpers = __webpack_require__(/*! ./helpers */ "./src/javascript/app/App/Components/Elements/PositionsDrawer/helpers/index.js");
-
-var _resultDetailsItem = __webpack_require__(/*! ./result-details-item.jsx */ "./src/javascript/app/App/Components/Elements/PositionsDrawer/result-details-item.jsx");
-
-var _resultDetailsItem2 = _interopRequireDefault(_resultDetailsItem);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -5848,253 +5767,106 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ResultDetails = function (_React$PureComponent) {
-    _inherits(ResultDetails, _React$PureComponent);
+var ResultOverlay = function (_React$PureComponent) {
+    _inherits(ResultOverlay, _React$PureComponent);
 
-    function ResultDetails() {
-        var _ref,
-            _this2 = this;
+    function ResultOverlay() {
+        var _ref;
 
         var _temp, _this, _ret;
 
-        _classCallCheck(this, ResultDetails);
+        _classCallCheck(this, ResultOverlay);
 
         for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ResultDetails.__proto__ || Object.getPrototypeOf(ResultDetails)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-            is_open: _this.props.is_open || false
-        }, _this.toggleDetails = function () {
-            _this.setState({ is_open: !_this.state.is_open }, _this.handleShade);
-        }, _this.handleShade = function () {
-            _this.props.is_shade_visible(_this.state.is_open);
-        }, _this.componentDidMount = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-            var decimal_places;
-            return regeneratorRuntime.wrap(function _callee$(_context) {
-                while (1) {
-                    switch (_context.prev = _context.next) {
-                        case 0:
-                            _context.next = 2;
-                            return (0, _activeSymbols.getUnderlyingPipSize)(_this.props.contract_info.underlying);
-
-                        case 2:
-                            decimal_places = _context.sent;
-
-                            _this.setState({ decimal_places: decimal_places });
-
-                        case 4:
-                        case 'end':
-                            return _context.stop();
-                    }
-                }
-            }, _callee, _this2);
-        })), _temp), _possibleConstructorReturn(_this, _ret);
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ResultOverlay.__proto__ || Object.getPrototypeOf(ResultOverlay)).call.apply(_ref, [this].concat(args))), _this), _this.handleClick = function (e) {
+            if (_this.props.is_unsupported) {
+                e.preventDefault();
+                _this.props.onClick();
+            }
+        }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
-    _createClass(ResultDetails, [{
+    _createClass(ResultOverlay, [{
         key: 'render',
         value: function render() {
             var _props = this.props,
-                contract_end_time = _props.contract_end_time,
-                contract_info = _props.contract_info,
-                duration = _props.duration,
-                duration_unit = _props.duration_unit,
-                exit_spot = _props.exit_spot,
-                has_result = _props.has_result;
+                contract_id = _props.contract_id,
+                onClickRemove = _props.onClickRemove,
+                result = _props.result;
 
-            if (!has_result) return null;
+            var is_contract_won = result === 'won';
             return _react2.default.createElement(
                 _react2.default.Fragment,
                 null,
                 _react2.default.createElement(
-                    'div',
-                    { className: (0, _classnames2.default)('result-details__wrapper', {
-                            'result-details__wrapper--is-open': this.state.is_open
-                        })
-                    },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'result-details__grid' },
-                        _react2.default.createElement(_resultDetailsItem2.default, {
-                            label: (0, _localize.localize)('Ref. ID (Buy)'),
-                            value: contract_info.transaction_ids.buy
-                        }),
-                        _react2.default.createElement(_resultDetailsItem2.default, {
-                            label: (0, _localize.localize)('Ref. ID (Sell)'),
-                            value: contract_info.transaction_ids.sell
-                        })
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'result-details__grid' },
-                        _react2.default.createElement(_resultDetailsItem2.default, {
-                            label: (0, _localize.localize)('Duration'),
-                            value: contract_info.tick_count > 0 ? contract_info.tick_count + ' ' + (contract_info.tick_count < 2 ? (0, _localize.localize)('tick') : (0, _localize.localize)('ticks')) : duration + ' ' + duration_unit
-                        }),
-                        _react2.default.createElement(_resultDetailsItem2.default, {
-                            label: (0, _helpers.getBarrierLabel)(contract_info),
-                            value: (0, _helpers.getBarrierValue)(contract_info) || ' - '
-                        })
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'result-details__grid' },
-                        _react2.default.createElement(_resultDetailsItem2.default, {
-                            label: (0, _localize.localize)('Entry spot'),
-                            value: (0, _helpers.addCommaToNumber)(contract_info.entry_spot, this.state.decimal_places) || ' - '
-                        }),
-                        _react2.default.createElement(_resultDetailsItem2.default, {
-                            label: (0, _localize.localize)('Exit spot'),
-                            value: (0, _helpers.addCommaToNumber)(exit_spot, this.state.decimal_places) || ' - '
-                        })
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'result-details__grid' },
-                        _react2.default.createElement(_resultDetailsItem2.default, {
-                            label: (0, _localize.localize)('Start time'),
-                            value: (0, _Date.toGMTFormat)((0, _Date.epochToMoment)(contract_info.purchase_time)) || ' - '
-                        }),
-                        _react2.default.createElement(_resultDetailsItem2.default, {
-                            label: (0, _localize.localize)('End time'),
-                            value: (0, _Date.toGMTFormat)((0, _Date.epochToMoment)(contract_end_time)) || ' - '
-                        })
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
+                    _reactTransitionGroup.CSSTransition,
                     {
-                        className: (0, _classnames2.default)('result-details__toggle', {
-                            'result-details__toggle--is-open': this.state.is_open
-                        }),
-                        onClick: this.toggleDetails
+                        'in': !!result,
+                        timeout: 250,
+                        classNames: {
+                            enter: 'positions-drawer-card__result--enter',
+                            enterDone: 'positions-drawer-card__result--enter-done',
+                            exit: 'positions-drawer-card__result--exit'
+                        },
+                        unmountOnExit: true
                     },
-                    _react2.default.createElement(_icon2.default, { icon: 'IconArrow', className: 'result-details__select-arrow' })
+                    _react2.default.createElement(
+                        'div',
+                        { className: (0, _classnames2.default)('positions-drawer-card__result', {
+                                'positions-drawer-card__result--won': is_contract_won,
+                                'positions-drawer-card__result--lost': !is_contract_won
+                            })
+                        },
+                        _react2.default.createElement('span', {
+                            className: 'result__close-btn',
+                            onClick: function onClick() {
+                                return onClickRemove(contract_id);
+                            }
+                        }),
+                        _react2.default.createElement(
+                            _reactRouterDom.NavLink,
+                            {
+                                className: 'result__caption-wrapper',
+                                to: (0, _helpers.getContractPath)(contract_id),
+                                onClick: this.handleClick
+                            },
+                            _react2.default.createElement(
+                                'span',
+                                {
+                                    className: (0, _classnames2.default)('result__caption', {
+                                        'result__caption--won': is_contract_won,
+                                        'result__caption--lost': !is_contract_won
+                                    })
+                                },
+                                is_contract_won ? _react2.default.createElement(
+                                    _react2.default.Fragment,
+                                    null,
+                                    (0, _localize.localize)('won'),
+                                    _react2.default.createElement(_icCheck2.default, { className: 'result__icon' })
+                                ) : _react2.default.createElement(
+                                    _react2.default.Fragment,
+                                    null,
+                                    (0, _localize.localize)('lost'),
+                                    _react2.default.createElement(_icCross2.default, { className: 'result__icon' })
+                                )
+                            )
+                        )
+                    )
                 )
             );
         }
     }]);
 
-    return ResultDetails;
+    return ResultOverlay;
 }(_react2.default.PureComponent);
-
-ResultDetails.propTypes = {
-    contract_end_time: _propTypes2.default.PropTypes.oneOfType([_propTypes2.default.number, _propTypes2.default.string]),
-    contract_info: _propTypes2.default.object,
-    duration: _propTypes2.default.number,
-    duration_unit: _propTypes2.default.string,
-    exit_spot: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string]),
-    has_result: _propTypes2.default.bool,
-    is_open: _propTypes2.default.bool
-};
-
-exports.default = ResultDetails;
-
-/***/ }),
-
-/***/ "./src/javascript/app/App/Components/Elements/PositionsDrawer/result-overlay.jsx":
-/*!***************************************************************************************!*\
-  !*** ./src/javascript/app/App/Components/Elements/PositionsDrawer/result-overlay.jsx ***!
-  \***************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _classnames = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-
-var _classnames2 = _interopRequireDefault(_classnames);
-
-var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactTransitionGroup = __webpack_require__(/*! react-transition-group */ "./node_modules/react-transition-group/index.js");
-
-var _icon = __webpack_require__(/*! ../../../../Assets/icon.jsx */ "./src/javascript/app/Assets/icon.jsx");
-
-var _icon2 = _interopRequireDefault(_icon);
-
-var _localize = __webpack_require__(/*! ../../../../../_common/localize */ "./src/javascript/_common/localize.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var ResultOverlay = function ResultOverlay(_ref) {
-    var contract_id = _ref.contract_id,
-        _onClick = _ref.onClick,
-        onClickRemove = _ref.onClickRemove,
-        result = _ref.result,
-        is_shade_visible = _ref.is_shade_visible;
-    return _react2.default.createElement(
-        _react2.default.Fragment,
-        null,
-        _react2.default.createElement(
-            _reactTransitionGroup.CSSTransition,
-            {
-                'in': !!result,
-                timeout: 250,
-                classNames: {
-                    enter: 'positions-drawer-card__result--enter',
-                    enterDone: 'positions-drawer-card__result--enter-done',
-                    exit: 'positions-drawer-card__result--exit'
-                },
-                unmountOnExit: true
-            },
-            _react2.default.createElement(
-                'div',
-                { className: (0, _classnames2.default)('positions-drawer-card__result', {
-                        'positions-drawer-card__result--won': result === 'won',
-                        'positions-drawer-card__result--lost': result === 'lost',
-                        'positions-drawer-card__result--shade-hidden': is_shade_visible === true
-                    })
-                },
-                _react2.default.createElement('span', {
-                    className: 'result__close-btn',
-                    onClick: function onClick() {
-                        return onClickRemove(contract_id);
-                    }
-                }),
-                _react2.default.createElement(
-                    'span',
-                    {
-                        className: (0, _classnames2.default)('result__caption', {
-                            'result__caption--won': result === 'won',
-                            'result__caption--lost': result === 'lost'
-                        }),
-                        onClick: function onClick() {
-                            return _onClick(contract_id, true);
-                        }
-                    },
-                    result === 'won' ? _react2.default.createElement(
-                        _react2.default.Fragment,
-                        null,
-                        (0, _localize.localize)('won'),
-                        _react2.default.createElement(_icon2.default, { icon: 'IconCheck', className: 'result__icon' })
-                    ) : _react2.default.createElement(
-                        _react2.default.Fragment,
-                        null,
-                        (0, _localize.localize)('lost'),
-                        _react2.default.createElement(_icon2.default, { icon: 'IconCross', className: 'result__icon' })
-                    )
-                )
-            )
-        )
-    );
-};
 
 ResultOverlay.propTypes = {
     contract_id: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string]),
-    is_shade_visible: _propTypes2.default.bool,
+    has_same_contract_mounted: _propTypes2.default.bool,
+    is_unsupported: _propTypes2.default.bool,
     onClick: _propTypes2.default.func,
     onClickRemove: _propTypes2.default.func,
     result: _propTypes2.default.string
@@ -7172,7 +6944,7 @@ var Money = function Money(_ref) {
     return _react2.default.createElement(
         _react2.default.Fragment,
         null,
-        sign,
+        has_sign && sign,
         _react2.default.createElement('span', { className: (0, _classnames2.default)(className, 'symbols', 'symbols--' + currency.toLowerCase()) }),
         final_amount
     );
@@ -8093,6 +7865,7 @@ var DatePicker = function (_React$Component) {
                 'data-value': _this.state.value,
                 error_messages: error_messages,
                 is_autocomplete_disabled: true,
+                is_hj_whitelisted: true,
                 label: label,
                 is_read_only: is_read_only,
                 name: name,
@@ -9199,6 +8972,8 @@ var InputField = function (_React$Component) {
                 is_autocomplete_disabled = _props.is_autocomplete_disabled,
                 is_disabled = _props.is_disabled,
                 is_float = _props.is_float,
+                _props$is_hj_whitelis = _props.is_hj_whitelisted,
+                is_hj_whitelisted = _props$is_hj_whitelis === undefined ? false : _props$is_hj_whitelis,
                 is_incrementable = _props.is_incrementable,
                 is_negative_disabled = _props.is_negative_disabled,
                 _props$is_read_only = _props.is_read_only,
@@ -9336,6 +9111,7 @@ var InputField = function (_React$Component) {
                 inline_prefix: inline_prefix,
                 is_autocomplete_disabled: is_autocomplete_disabled,
                 is_disabled: is_disabled,
+                is_hj_whitelisted: is_hj_whitelisted,
                 is_incrementable: is_increment_input,
                 is_read_only: is_read_only,
                 max_length: max_length,
@@ -9422,6 +9198,7 @@ InputField.propTypes = {
     is_autocomplete_disabled: _propTypes2.default.bool,
     is_disabled: _propTypes2.default.string,
     is_float: _propTypes2.default.bool,
+    is_hj_whitelisted: _propTypes2.default.bool,
     is_incrementable: _propTypes2.default.bool,
     is_negative_disabled: _propTypes2.default.bool,
     is_read_only: _propTypes2.default.bool,
@@ -9485,6 +9262,7 @@ var Input = function Input(_ref) {
         inline_prefix = _ref.inline_prefix,
         is_autocomplete_disabled = _ref.is_autocomplete_disabled,
         is_disabled = _ref.is_disabled,
+        is_hj_whitelisted = _ref.is_hj_whitelisted,
         is_incrementable = _ref.is_incrementable,
         is_read_only = _ref.is_read_only,
         max_length = _ref.max_length,
@@ -9525,6 +9303,7 @@ var Input = function Input(_ref) {
             checked: checked,
             className: (0, _classnames2.default)(className),
             'data-for': 'error_tooltip_' + name,
+            'data-hj-whitelist': is_hj_whitelisted,
             'data-tip': data_tip,
             'data-value': data_value,
             disabled: is_disabled,
@@ -9556,6 +9335,7 @@ Input.propTypes = {
     inline_prefix: _propTypes2.default.string,
     is_autocomplete_disabled: _propTypes2.default.bool,
     is_disabled: _propTypes2.default.string,
+    is_hj_whitelisted: _propTypes2.default.bool,
     is_incrementable: _propTypes2.default.bool,
     is_read_only: _propTypes2.default.bool,
     max_length: _propTypes2.default.number,
@@ -10374,6 +10154,7 @@ var TimePicker = function (_React$Component) {
                     _react2.default.createElement(_InputField2.default, {
                         error_messages: validation_errors,
                         type: 'text',
+                        is_hj_whitelisted: true,
                         is_read_only: true,
                         id: prefix_class + '-input',
                         className: (0, _classnames2.default)(prefix_class + '-input'),
@@ -12394,6 +12175,12 @@ var AccountSwitcher = function (_React$Component) {
                                 return this.props.switchAccount(loginid);
 
                             case 5:
+
+                                if (this.props.has_error) {
+                                    this.props.clearError();
+                                }
+
+                            case 6:
                             case 'end':
                                 return _context.stop();
                         }
@@ -12534,6 +12321,8 @@ AccountSwitcher.propTypes = {
     account_list: _propTypes2.default.array,
     account_loginid: _propTypes2.default.string,
     cleanUp: _propTypes2.default.func,
+    clearError: _propTypes2.default.func,
+    has_error: _propTypes2.default.bool,
     is_logged_in: _propTypes2.default.bool,
     is_positions_drawer_on: _propTypes2.default.bool,
     is_upgrade_enabled: _propTypes2.default.bool,
@@ -12548,7 +12337,8 @@ AccountSwitcher.propTypes = {
 
 var account_switcher = (0, _connect.connect)(function (_ref4) {
     var client = _ref4.client,
-        ui = _ref4.ui;
+        ui = _ref4.ui,
+        modules = _ref4.modules;
     return {
         account_list: client.account_list,
         account_loginid: client.loginid,
@@ -12558,6 +12348,8 @@ var account_switcher = (0, _connect.connect)(function (_ref4) {
         upgrade_info: client.upgrade_info,
         cleanUp: client.cleanUp,
         virtual_loginid: client.virtual_account_loginid,
+        clearError: modules.contract.clearError,
+        has_error: modules.contract.has_error,
         is_positions_drawer_on: ui.is_positions_drawer_on,
         togglePositionsDrawer: ui.togglePositionsDrawer
 
@@ -19489,9 +19281,10 @@ var Duration = function Duration(_ref) {
 
     var props = {
         shared_input: {
+            is_hj_whitelisted: true,
+            onChange: changeDurationValue,
             max_value: max_value,
-            min_value: min_value,
-            onChange: changeDurationValue
+            min_value: min_value
         },
         number_input: {
             type: 'number',
@@ -19926,6 +19719,7 @@ var Amount = function Amount(_ref) {
         inline_prefix: is_single_currency ? currency : null,
         is_autocomplete_disabled: true,
         is_float: true,
+        is_hj_whitelisted: true,
         is_incrementable: true,
         is_nativepicker: is_nativepicker,
         is_negative_disabled: true,
@@ -20836,7 +20630,7 @@ var Purchase = function Purchase(_ref) {
     var components = [];
     Object.keys(trade_types).map(function (type, index) {
         var info = proposal_info[type] || {};
-        var is_disabled = !is_purchase_enabled || !is_trade_enabled || !info.id || !is_client_allowed_to_visit;
+        var is_disabled = is_contract_mode || !is_purchase_enabled || !is_trade_enabled || !info.id || !is_client_allowed_to_visit;
         var is_proposal_error = info.has_error && !info.has_error_details;
 
         var purchase_fieldset = _react2.default.createElement(_purchaseFieldset2.default, {
@@ -23136,7 +22930,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11;
+var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11;
 
 var _mobx = __webpack_require__(/*! mobx */ "./node_modules/mobx/lib/mobx.module.js");
 
@@ -23219,7 +23013,7 @@ function _initializerWarningHelper(descriptor, context) {
     throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');
 }
 
-var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 = _mobx.action.bound, _dec4 = _mobx.action.bound, _dec5 = _mobx.action.bound, _dec6 = _mobx.action.bound, _dec7 = _mobx.action.bound, _dec8 = _mobx.action.bound, _dec9 = _mobx.action.bound, _dec10 = _mobx.action.bound, _dec11 = _mobx.action.bound, _dec12 = _mobx.action.bound, _dec13 = _mobx.action.bound, _dec14 = _mobx.action.bound, (_class = function (_BaseStore) {
+var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 = _mobx.action.bound, _dec4 = _mobx.action.bound, _dec5 = _mobx.action.bound, _dec6 = _mobx.action.bound, _dec7 = _mobx.action.bound, _dec8 = _mobx.action.bound, _dec9 = _mobx.action.bound, _dec10 = _mobx.action.bound, _dec11 = _mobx.action.bound, _dec12 = _mobx.action.bound, _dec13 = _mobx.action.bound, _dec14 = _mobx.action.bound, _dec15 = _mobx.action.bound, (_class = function (_BaseStore) {
     _inherits(ContractStore, _BaseStore);
 
     function ContractStore() {
@@ -23233,22 +23027,17 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ContractStore.__proto__ || Object.getPrototypeOf(ContractStore)).call.apply(_ref, [this].concat(args))), _this), _initDefineProp(_this, 'contract_id', _descriptor, _this), _initDefineProp(_this, 'contract_info', _descriptor2, _this), _initDefineProp(_this, 'digits_info', _descriptor3, _this), _initDefineProp(_this, 'sell_info', _descriptor4, _this), _initDefineProp(_this, 'has_error', _descriptor5, _this), _initDefineProp(_this, 'error_message', _descriptor6, _this), _initDefineProp(_this, 'is_sell_requested', _descriptor7, _this), _initDefineProp(_this, 'replay_contract_id', _descriptor8, _this), _initDefineProp(_this, 'replay_indicative_status', _descriptor9, _this), _initDefineProp(_this, 'replay_info', _descriptor10, _this), _initDefineProp(_this, 'is_replay_static_chart', _descriptor11, _this), _this.chart_type = 'mountain', _this.is_from_positions = false, _this.is_ongoing_contract = false, _this.replay_prev_indicative = 0, _this.replay_indicative = 0, _this.waitForChartListener = function (SmartChartStore) {
-            // TODO: Refactor, timeout interval is required for completed contracts.
-            // There is an issue when we receive the proposal_open_contract response
-            // for a completed contract and chartListener returns false for that single instance / single response.
-            // Hence, we need to set an interval to keep checking the chartListener until it returns true
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ContractStore.__proto__ || Object.getPrototypeOf(ContractStore)).call.apply(_ref, [this].concat(args))), _this), _initDefineProp(_this, 'contract_id', _descriptor, _this), _initDefineProp(_this, 'contract_info', _descriptor2, _this), _initDefineProp(_this, 'digits_info', _descriptor3, _this), _initDefineProp(_this, 'sell_info', _descriptor4, _this), _initDefineProp(_this, 'has_error', _descriptor5, _this), _initDefineProp(_this, 'error_message', _descriptor6, _this), _initDefineProp(_this, 'is_sell_requested', _descriptor7, _this), _initDefineProp(_this, 'replay_contract_id', _descriptor8, _this), _initDefineProp(_this, 'replay_indicative_status', _descriptor9, _this), _initDefineProp(_this, 'replay_info', _descriptor10, _this), _initDefineProp(_this, 'is_replay_static_chart', _descriptor11, _this), _this.chart_type = 'mountain', _this.is_from_positions = false, _this.is_ongoing_contract = false, _this.replay_prev_indicative = 0, _this.replay_indicative = 0, _this.should_forget_first = false, _this.handleSubscribeProposalOpenContract = function (contract_id, cb) {
+            // TODO: remove .toString() when API is ready
+            var proposal_open_contract_request = [contract_id.toString(), cb, false];
 
-            var timer = void 0;
-            if (!SmartChartStore.is_chart_ready) {
-                // console.log('waiting for listener');
-                timer = setTimeout(function () {
-                    return _this.waitForChartListener(SmartChartStore);
-                }, 500);
+            if (_this.should_forget_first) {
+                _Services.WS.forgetAll('proposal_open_contract').then(function () {
+                    _this.should_forget_first = false;
+                    _Services.WS.subscribeProposalOpenContract.apply(_Services.WS, proposal_open_contract_request);
+                });
             } else {
-                // console.log('cleared listener');
-                SmartChartStore.setIsChartLoading(false);
-                clearTimeout(timer);
+                _Services.WS.subscribeProposalOpenContract.apply(_Services.WS, proposal_open_contract_request);
             }
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
@@ -23260,6 +23049,9 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
 
 
     // Replay Contract Indicative Movement
+
+
+    // Forget old proposal_open_contract stream on account switch from ErrorComponent
 
 
     _createClass(ContractStore, [{
@@ -23295,7 +23087,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
                 }
                 // Clear chart loading status once ChartListener returns ready for completed contract
                 if (!this.is_ongoing_contract) {
-                    this.waitForChartListener(SmartChartStore);
+                    SmartChartStore.setIsChartLoading(false);
                 }
 
                 // setters for ongoing contracts, will only init once onMount after left_epoch is set
@@ -23342,7 +23134,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
                 this.smart_chart.saveAndClearTradeChartLayout('contract');
                 this.smart_chart.setContractMode(true);
                 _socket_base2.default.wait('authorize').then(function () {
-                    _Services.WS.subscribeProposalOpenContract(_this2.contract_id, _this2.updateProposal, false);
+                    _this2.handleSubscribeProposalOpenContract(_this2.contract_id, _this2.updateProposal);
                 });
             }
         }
@@ -23357,7 +23149,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
                 this.smart_chart.setContractMode(true);
                 this.replay_contract_id = contract_id;
                 _socket_base2.default.wait('authorize').then(function () {
-                    _Services.WS.subscribeProposalOpenContract(_this3.replay_contract_id, _this3.populateConfig, false);
+                    _this3.handleSubscribeProposalOpenContract(_this3.replay_contract_id, _this3.populateConfig);
                 });
             }
         }
@@ -23423,6 +23215,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
             if ((0, _utility.isEmptyObject)(response.proposal_open_contract)) {
                 this.has_error = true;
                 this.error_message = (0, _localize.localize)('Sorry, you can\'t view this contract because it doesn\'t belong to this account.');
+                this.should_forget_first = true;
                 this.contract_config = {};
                 this.smart_chart.setContractMode(false);
                 this.smart_chart.setIsChartLoading(false);
@@ -23464,7 +23257,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
             (0, _chartMarkers.createChartMarkers)(this.smart_chart, this.replay_info);
             this.handleDigits(this.replay_info);
 
-            this.waitForChartListener(this.smart_chart);
+            this.smart_chart.setIsChartLoading(false);
         }
     }, {
         key: 'updateProposal',
@@ -23479,6 +23272,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
             if ((0, _utility.isEmptyObject)(response.proposal_open_contract)) {
                 this.has_error = true;
                 this.error_message = (0, _localize.localize)('Sorry, you can\'t view this contract because it doesn\'t belong to this account.');
+                this.should_forget_first = true;
                 this.contract_info = {};
                 this.contract_id = null;
                 this.smart_chart.setContractMode(false);
@@ -23583,6 +23377,12 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
         key: 'removeErrorMessage',
         value: function removeErrorMessage() {
             delete this.error_message;
+        }
+    }, {
+        key: 'clearError',
+        value: function clearError() {
+            this.error_message = null;
+            this.has_error = false;
         }
     }, {
         key: 'setIsDigitContract',
@@ -23720,7 +23520,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
     initializer: function initializer() {
         return false;
     }
-}), _applyDecoratedDescriptor(_class.prototype, 'drawChart', [_dec], Object.getOwnPropertyDescriptor(_class.prototype, 'drawChart'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onMount', [_dec2], Object.getOwnPropertyDescriptor(_class.prototype, 'onMount'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onMountReplay', [_dec3], Object.getOwnPropertyDescriptor(_class.prototype, 'onMountReplay'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onUnmountReplay', [_dec4], Object.getOwnPropertyDescriptor(_class.prototype, 'onUnmountReplay'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'accountSwitcherListener', [_dec5], Object.getOwnPropertyDescriptor(_class.prototype, 'accountSwitcherListener'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onCloseContract', [_dec6], Object.getOwnPropertyDescriptor(_class.prototype, 'onCloseContract'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onUnmount', [_dec7], Object.getOwnPropertyDescriptor(_class.prototype, 'onUnmount'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'populateConfig', [_dec8], Object.getOwnPropertyDescriptor(_class.prototype, 'populateConfig'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateProposal', [_dec9], Object.getOwnPropertyDescriptor(_class.prototype, 'updateProposal'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'handleDigits', [_dec10], Object.getOwnPropertyDescriptor(_class.prototype, 'handleDigits'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onClickSell', [_dec11], Object.getOwnPropertyDescriptor(_class.prototype, 'onClickSell'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'handleSell', [_dec12], Object.getOwnPropertyDescriptor(_class.prototype, 'handleSell'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'removeErrorMessage', [_dec13], Object.getOwnPropertyDescriptor(_class.prototype, 'removeErrorMessage'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setIsDigitContract', [_dec14], Object.getOwnPropertyDescriptor(_class.prototype, 'setIsDigitContract'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'replay_config', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'replay_config'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'details_expiry', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'details_expiry'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'details_info', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'details_info'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'display_status', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'display_status'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'end_spot', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'end_spot'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'end_spot_time', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'end_spot_time'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'final_price', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'final_price'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'indicative_price', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'indicative_price'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_ended', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_ended'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_sold_before_start', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_sold_before_start'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_started', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_started'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_user_sold', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_user_sold'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_valid_to_sell', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_valid_to_sell'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_digit_contract', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_digit_contract'), _class.prototype)), _class));
+}), _applyDecoratedDescriptor(_class.prototype, 'drawChart', [_dec], Object.getOwnPropertyDescriptor(_class.prototype, 'drawChart'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onMount', [_dec2], Object.getOwnPropertyDescriptor(_class.prototype, 'onMount'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onMountReplay', [_dec3], Object.getOwnPropertyDescriptor(_class.prototype, 'onMountReplay'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onUnmountReplay', [_dec4], Object.getOwnPropertyDescriptor(_class.prototype, 'onUnmountReplay'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'accountSwitcherListener', [_dec5], Object.getOwnPropertyDescriptor(_class.prototype, 'accountSwitcherListener'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onCloseContract', [_dec6], Object.getOwnPropertyDescriptor(_class.prototype, 'onCloseContract'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onUnmount', [_dec7], Object.getOwnPropertyDescriptor(_class.prototype, 'onUnmount'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'populateConfig', [_dec8], Object.getOwnPropertyDescriptor(_class.prototype, 'populateConfig'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateProposal', [_dec9], Object.getOwnPropertyDescriptor(_class.prototype, 'updateProposal'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'handleDigits', [_dec10], Object.getOwnPropertyDescriptor(_class.prototype, 'handleDigits'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onClickSell', [_dec11], Object.getOwnPropertyDescriptor(_class.prototype, 'onClickSell'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'handleSell', [_dec12], Object.getOwnPropertyDescriptor(_class.prototype, 'handleSell'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'removeErrorMessage', [_dec13], Object.getOwnPropertyDescriptor(_class.prototype, 'removeErrorMessage'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'clearError', [_dec14], Object.getOwnPropertyDescriptor(_class.prototype, 'clearError'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setIsDigitContract', [_dec15], Object.getOwnPropertyDescriptor(_class.prototype, 'setIsDigitContract'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'replay_config', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'replay_config'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'details_expiry', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'details_expiry'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'details_info', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'details_info'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'display_status', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'display_status'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'end_spot', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'end_spot'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'end_spot_time', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'end_spot_time'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'final_price', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'final_price'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'indicative_price', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'indicative_price'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_ended', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_ended'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_sold_before_start', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_sold_before_start'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_started', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_started'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_user_sold', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_user_sold'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_valid_to_sell', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_valid_to_sell'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_digit_contract', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_digit_contract'), _class.prototype)), _class));
 exports.default = ContractStore;
 
 /***/ }),
@@ -26452,33 +26252,25 @@ exports.default = getValidationRules;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.getUnderlyingPipSize = exports.isMarketClosed = exports.showUnavailableLocationError = exports.pickDefaultSymbol = undefined;
+exports.getUnderlyingPipSize = exports.pickDefaultSymbol = exports.isMarketClosed = exports.showUnavailableLocationError = undefined;
 
 var _mobx = __webpack_require__(/*! mobx */ "./node_modules/mobx/lib/mobx.module.js");
-
-var _Services = __webpack_require__(/*! ../../../../Services */ "./src/javascript/app/Services/index.js");
-
-var _localize = __webpack_require__(/*! ../../../../../_common/localize */ "./src/javascript/_common/localize.js");
-
-var _login = __webpack_require__(/*! ../../../../../_common/base/login */ "./src/javascript/_common/base/login.js");
 
 var _socket_base = __webpack_require__(/*! ../../../../../_common/base/socket_base */ "./src/javascript/_common/base/socket_base.js");
 
 var _socket_base2 = _interopRequireDefault(_socket_base);
 
+var _localize = __webpack_require__(/*! ../../../../../_common/localize */ "./src/javascript/_common/localize.js");
+
+var _storage = __webpack_require__(/*! ../../../../../_common/storage */ "./src/javascript/_common/storage.js");
+
+var _login = __webpack_require__(/*! ../../../../../_common/base/login */ "./src/javascript/_common/base/login.js");
+
+var _Services = __webpack_require__(/*! ../../../../Services */ "./src/javascript/app/Services/index.js");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
-
-var pickDefaultSymbol = exports.pickDefaultSymbol = function pickDefaultSymbol() {
-    var active_symbols = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-
-    if (!active_symbols.length) return '';
-    return active_symbols.filter(function (symbol_info) {
-        return (/major_pairs|random_index/.test(symbol_info.submarket)
-        );
-    })[0].symbol;
-};
 
 var showUnavailableLocationError = exports.showUnavailableLocationError = (0, _mobx.flow)( /*#__PURE__*/regeneratorRuntime.mark(function _callee(showError) {
     var website_status, residence_list, clients_country_code, clients_country_text;
@@ -26522,6 +26314,47 @@ var isMarketClosed = exports.isMarketClosed = function isMarketClosed() {
     })[0] ? !active_symbols.filter(function (symbol_info) {
         return symbol_info.symbol === symbol;
     })[0].exchange_is_open : false;
+};
+
+var pickDefaultSymbol = exports.pickDefaultSymbol = function pickDefaultSymbol() {
+    var active_symbols = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+
+    if (!active_symbols.length) return '';
+    return getFavoriteOpenSymbol(active_symbols) || getFirstOpenSymbol(active_symbols);
+};
+
+var getFavoriteOpenSymbol = function getFavoriteOpenSymbol(active_symbols) {
+    var chart_favorites = _storage.LocalStore.get('cq-favorites');
+    if (!chart_favorites) return undefined;
+    var client_favorite_markets = JSON.parse(chart_favorites)['chartTitle&Comparison'];
+
+    var client_favorite_list = client_favorite_markets.map(function (client_fav_symbol) {
+        return active_symbols.find(function (symbol_info) {
+            return symbol_info.symbol === client_fav_symbol;
+        });
+    });
+    if (client_favorite_list) {
+        var client_first_open_symbol = client_favorite_list.filter(function (symbol) {
+            return symbol;
+        }).find(isSymbolOpen);
+        if (client_first_open_symbol) return client_first_open_symbol.symbol;
+    }
+    return undefined;
+};
+
+var getFirstOpenSymbol = function getFirstOpenSymbol(active_symbols) {
+    var first_open_symbol = active_symbols.filter(function (symbol_info) {
+        return (/major_pairs|random_index/.test(symbol_info.submarket)
+        );
+    }).find(isSymbolOpen);
+    if (first_open_symbol) return first_open_symbol.symbol;
+    return active_symbols.find(function (symbol_info) {
+        return symbol_info.submarket === 'major_pairs';
+    }).symbol;
+};
+
+var isSymbolOpen = function isSymbolOpen(symbol) {
+    return symbol.exchange_is_open === 1;
 };
 
 var countDecimalPlaces = function countDecimalPlaces(num) {
@@ -27769,7 +27602,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23, _descriptor24, _descriptor25, _descriptor26, _descriptor27, _descriptor28, _descriptor29, _descriptor30, _descriptor31, _descriptor32, _descriptor33, _descriptor34, _descriptor35, _descriptor36, _descriptor37, _descriptor38, _descriptor39;
+var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23, _descriptor24, _descriptor25, _descriptor26, _descriptor27, _descriptor28, _descriptor29, _descriptor30, _descriptor31, _descriptor32, _descriptor33, _descriptor34, _descriptor35, _descriptor36, _descriptor37, _descriptor38, _descriptor39, _descriptor40;
 
 var _lodash = __webpack_require__(/*! lodash.debounce */ "./node_modules/lodash.debounce/index.js");
 
@@ -27878,7 +27711,7 @@ function _initializerWarningHelper(descriptor, context) {
 
 var store_name = 'trade_store';
 
-var TradeStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 = _mobx.action.bound, _dec4 = _mobx.action.bound, _dec5 = _mobx.action.bound, _dec6 = _mobx.action.bound, _dec7 = _mobx.action.bound, _dec8 = _mobx.action.bound, _dec9 = _mobx.action.bound, _dec10 = _mobx.action.bound, _dec11 = _mobx.action.bound, _dec12 = _mobx.action.bound, _dec13 = _mobx.action.bound, _dec14 = _mobx.action.bound, _dec15 = _mobx.action.bound, _dec16 = _mobx.action.bound, _dec17 = _mobx.action.bound, _dec18 = _mobx.action.bound, _dec19 = _mobx.action.bound, _dec20 = _mobx.action.bound, _dec21 = _mobx.action.bound, (_class = function (_BaseStore) {
+var TradeStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 = _mobx.action.bound, _dec4 = _mobx.action.bound, _dec5 = _mobx.action.bound, _dec6 = _mobx.action.bound, _dec7 = _mobx.action.bound, _dec8 = _mobx.action.bound, _dec9 = _mobx.action.bound, _dec10 = _mobx.action.bound, _dec11 = _mobx.action.bound, _dec12 = _mobx.action.bound, _dec13 = _mobx.action.bound, _dec14 = _mobx.action.bound, _dec15 = _mobx.action.bound, _dec16 = _mobx.action.bound, _dec17 = _mobx.action.bound, _dec18 = _mobx.action.bound, _dec19 = _mobx.action.bound, _dec20 = _mobx.action.bound, _dec21 = _mobx.action.bound, _dec22 = _mobx.action.bound, (_class = function (_BaseStore) {
     _inherits(TradeStore, _BaseStore);
 
     // Last Digit
@@ -27994,6 +27827,8 @@ var TradeStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 =
 
         _initDefineProp(_this, 'refresh', _descriptor39, _this);
 
+        _initDefineProp(_this, 'shouldSetDefaultSymbol', _descriptor40, _this);
+
         (0, _mobx.reaction)(function () {
             return [_this.contract_expiry_type, _this.duration_min_max, _this.duration_unit, _this.expiry_type];
         }, function () {
@@ -28070,20 +27905,16 @@ var TradeStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 =
                             case 13:
 
                                 (0, _mobx.runInAction)(_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
-                                    var is_valid_symbol;
                                     return regeneratorRuntime.wrap(function _callee2$(_context2) {
                                         while (1) {
                                             switch (_context2.prev = _context2.next) {
                                                 case 0:
+                                                    _this2.active_symbols = active_symbols;
                                                     _this2.smart_chart = _this2.root_store.modules.smart_chart;
                                                     _this2.currency = _this2.root_store.client.currency;
                                                     _this2.initial_barriers = { barrier_1: _this2.barrier_1, barrier_2: _this2.barrier_2 };
 
-                                                    is_valid_symbol = active_symbols.active_symbols.find(function (symbols) {
-                                                        return symbols.symbol === _this2.symbol;
-                                                    });
-
-                                                    if (!(!_this2.symbol || !is_valid_symbol)) {
+                                                    if (!_this2.shouldSetDefaultSymbol()) {
                                                         _context2.next = 7;
                                                         break;
                                                     }
@@ -28832,7 +28663,19 @@ var TradeStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 =
             _Services.WS.forgetAll('proposal');
         };
     }
-}), _applyDecoratedDescriptor(_class.prototype, 'prepareTradeStore', [_dec3], Object.getOwnPropertyDescriptor(_class.prototype, 'prepareTradeStore'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onChangeMultiple', [_dec4], Object.getOwnPropertyDescriptor(_class.prototype, 'onChangeMultiple'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onChange', [_dec5], Object.getOwnPropertyDescriptor(_class.prototype, 'onChange'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setPreviousSymbol', [_dec6], Object.getOwnPropertyDescriptor(_class.prototype, 'setPreviousSymbol'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'resetPreviousSymbol', [_dec7], Object.getOwnPropertyDescriptor(_class.prototype, 'resetPreviousSymbol'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onHoverPurchase', [_dec8], Object.getOwnPropertyDescriptor(_class.prototype, 'onHoverPurchase'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onPurchase', [_dec9], Object.getOwnPropertyDescriptor(_class.prototype, 'onPurchase'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onClickNewTrade', [_dec10], Object.getOwnPropertyDescriptor(_class.prototype, 'onClickNewTrade'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateStore', [_dec11], Object.getOwnPropertyDescriptor(_class.prototype, 'updateStore'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'requestProposal', [_dec12], Object.getOwnPropertyDescriptor(_class.prototype, 'requestProposal'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setMarketStatus', [_dec13], Object.getOwnPropertyDescriptor(_class.prototype, 'setMarketStatus'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onProposalResponse', [_dec14], Object.getOwnPropertyDescriptor(_class.prototype, 'onProposalResponse'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onChartBarrierChange', [_dec15], Object.getOwnPropertyDescriptor(_class.prototype, 'onChartBarrierChange'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onAllowEqualsChange', [_dec16], Object.getOwnPropertyDescriptor(_class.prototype, 'onAllowEqualsChange'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateSymbol', [_dec17], Object.getOwnPropertyDescriptor(_class.prototype, 'updateSymbol'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'changeDurationValidationRules', [_dec18], Object.getOwnPropertyDescriptor(_class.prototype, 'changeDurationValidationRules'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'accountSwitcherListener', [_dec19], Object.getOwnPropertyDescriptor(_class.prototype, 'accountSwitcherListener'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onMount', [_dec20], Object.getOwnPropertyDescriptor(_class.prototype, 'onMount'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onUnmount', [_dec21], Object.getOwnPropertyDescriptor(_class.prototype, 'onUnmount'), _class.prototype)), _class));
+}), _descriptor40 = _applyDecoratedDescriptor(_class.prototype, 'shouldSetDefaultSymbol', [_dec3], {
+    enumerable: true,
+    initializer: function initializer() {
+        var _this12 = this;
+
+        return function () {
+            if (!_this12.symbol) return true;
+            return !_this12.active_symbols.active_symbols.some(function (symbol_info) {
+                return symbol_info.symbol === _this12.symbol && symbol_info.exchange_is_open === 1;
+            });
+        };
+    }
+}), _applyDecoratedDescriptor(_class.prototype, 'prepareTradeStore', [_dec4], Object.getOwnPropertyDescriptor(_class.prototype, 'prepareTradeStore'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onChangeMultiple', [_dec5], Object.getOwnPropertyDescriptor(_class.prototype, 'onChangeMultiple'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onChange', [_dec6], Object.getOwnPropertyDescriptor(_class.prototype, 'onChange'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setPreviousSymbol', [_dec7], Object.getOwnPropertyDescriptor(_class.prototype, 'setPreviousSymbol'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'resetPreviousSymbol', [_dec8], Object.getOwnPropertyDescriptor(_class.prototype, 'resetPreviousSymbol'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onHoverPurchase', [_dec9], Object.getOwnPropertyDescriptor(_class.prototype, 'onHoverPurchase'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onPurchase', [_dec10], Object.getOwnPropertyDescriptor(_class.prototype, 'onPurchase'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onClickNewTrade', [_dec11], Object.getOwnPropertyDescriptor(_class.prototype, 'onClickNewTrade'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateStore', [_dec12], Object.getOwnPropertyDescriptor(_class.prototype, 'updateStore'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'requestProposal', [_dec13], Object.getOwnPropertyDescriptor(_class.prototype, 'requestProposal'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setMarketStatus', [_dec14], Object.getOwnPropertyDescriptor(_class.prototype, 'setMarketStatus'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onProposalResponse', [_dec15], Object.getOwnPropertyDescriptor(_class.prototype, 'onProposalResponse'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onChartBarrierChange', [_dec16], Object.getOwnPropertyDescriptor(_class.prototype, 'onChartBarrierChange'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onAllowEqualsChange', [_dec17], Object.getOwnPropertyDescriptor(_class.prototype, 'onAllowEqualsChange'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateSymbol', [_dec18], Object.getOwnPropertyDescriptor(_class.prototype, 'updateSymbol'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'changeDurationValidationRules', [_dec19], Object.getOwnPropertyDescriptor(_class.prototype, 'changeDurationValidationRules'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'accountSwitcherListener', [_dec20], Object.getOwnPropertyDescriptor(_class.prototype, 'accountSwitcherListener'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onMount', [_dec21], Object.getOwnPropertyDescriptor(_class.prototype, 'onMount'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onUnmount', [_dec22], Object.getOwnPropertyDescriptor(_class.prototype, 'onUnmount'), _class.prototype)), _class));
 exports.default = TradeStore;
 
 /***/ }),
@@ -29565,6 +29408,7 @@ var ClientStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 
             this.accounts[this.loginid].landing_company_shortcode = response.authorize.landing_company_name;
             this.updateAccountList(response.authorize.account_list);
             this.upgrade_info = this.getBasicUpgradeInfo();
+            this.user_id = response.authorize.user_id;
         }
     }, {
         key: 'updateAccountList',
@@ -29745,7 +29589,7 @@ var ClientStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 
                         switch (_context2.prev = _context2.next) {
                             case 0:
                                 if (!(!this.switched || !this.switched.length || !this.getAccount(this.switched).token)) {
-                                    _context2.next = 10;
+                                    _context2.next = 11;
                                     break;
                                 }
 
@@ -29766,6 +29610,7 @@ var ClientStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 
 
                             case 5:
 
+                                this.root_store.modules.portfolio.clearTable();
                                 // Send a toast message to let the user know we can't switch his account.
                                 this.root_store.ui.addNotification({
                                     message: (0, _localize.localize)('Switching to default account.'),
@@ -29774,29 +29619,29 @@ var ClientStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 
 
                                 // switch to default account.
                                 this.switchAccount(this.all_loginids[0]);
-                                _context2.next = 9;
+                                _context2.next = 10;
                                 return this.switchAccountHandler();
 
-                            case 9:
+                            case 10:
                                 return _context2.abrupt('return');
 
-                            case 10:
+                            case 11:
                                 sessionStorage.setItem('active_tab', '1');
                                 // set local storage
                                 this.root_store.gtm.setLoginFlag();
                                 this.resetLocalStorageValues(this.switched);
                                 SocketCache.clear();
-                                _context2.next = 16;
+                                _context2.next = 17;
                                 return _socket_base2.default.send({ 'authorize': this.getToken() }, { forced: true });
 
-                            case 16:
-                                _context2.next = 18;
+                            case 17:
+                                _context2.next = 19;
                                 return this.init();
 
-                            case 18:
+                            case 19:
                                 this.broadcastAccountChange();
 
-                            case 19:
+                            case 20:
                             case 'end':
                                 return _context2.stop();
                         }
@@ -30369,13 +30214,17 @@ var _dec, _dec2, _dec3, _dec4, _desc, _value, _class, _descriptor;
 
 var _mobx = __webpack_require__(/*! mobx */ "./node_modules/mobx/lib/mobx.module.js");
 
-var _baseStore = __webpack_require__(/*! ./base-store */ "./src/javascript/app/Stores/base-store.js");
+var _socket_base = __webpack_require__(/*! ../../_common/base/socket_base */ "./src/javascript/_common/base/socket_base.js");
 
-var _baseStore2 = _interopRequireDefault(_baseStore);
+var _socket_base2 = _interopRequireDefault(_socket_base);
 
 var _login = __webpack_require__(/*! ../../_common/base/login */ "./src/javascript/_common/base/login.js");
 
 var _language = __webpack_require__(/*! ../../_common/language */ "./src/javascript/_common/language.js");
+
+var _baseStore = __webpack_require__(/*! ./base-store */ "./src/javascript/app/Stores/base-store.js");
+
+var _baseStore2 = _interopRequireDefault(_baseStore);
 
 var _config = __webpack_require__(/*! ../../config */ "./src/javascript/config.js");
 
@@ -30481,11 +30330,34 @@ var GTMStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 = _
 
     }, {
         key: 'pushDataLayer',
-        value: function pushDataLayer(data) {
-            if (this.is_gtm_applicable && !(0, _login.isLoginPages)()) {
-                dataLayer.push(_extends({}, this.common_variables, data));
+        value: function () {
+            var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(data) {
+                var _this3 = this;
+
+                return regeneratorRuntime.wrap(function _callee2$(_context2) {
+                    while (1) {
+                        switch (_context2.prev = _context2.next) {
+                            case 0:
+                                if (this.is_gtm_applicable && !(0, _login.isLoginPages)()) {
+                                    _socket_base2.default.wait('authorize').then(function () {
+                                        dataLayer.push(_extends({}, _this3.common_variables, data));
+                                    });
+                                }
+
+                            case 1:
+                            case 'end':
+                                return _context2.stop();
+                        }
+                    }
+                }, _callee2, this);
+            }));
+
+            function pushDataLayer(_x2) {
+                return _ref2.apply(this, arguments);
             }
-        }
+
+            return pushDataLayer;
+        }()
     }, {
         key: 'pushPurchaseData',
         value: function pushPurchaseData(contract_data) {
@@ -30552,7 +30424,8 @@ var GTMStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 = _
                 language: (0, _language.get)()
             }, this.root_store.client.is_logged_in && {
                 visitorId: this.visitorId,
-                currency: this.currency
+                currency: this.currency,
+                userId: this.root_store.client.user_id
             }, this.root_store.ui.is_dark_mode_on && {
                 theme: this.root_store.ui.is_dark_mode_on ? 'dark' : 'light'
             });
