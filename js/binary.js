@@ -23957,7 +23957,7 @@ var PortfolioStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _de
             }
 
             if ((0, _logic.isEnded)(proposal)) {
-                _Services.WS.forget('proposal_open_contract', this.proposalOpenContractHandler, proposal.contract_id);
+                _Services.WS.forget('proposal_open_contract', this.proposalOpenContractHandler, { contract_id: proposal.contract_id });
             }
         }
     }, {
@@ -24036,12 +24036,11 @@ var PortfolioStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _de
         key: 'onUnmount',
         value: function onUnmount() {
             this.disposeSwitchAccount();
-            _Services.WS.forgetAll('proposal_open_contract');
 
             // keep data and connections for portfolio drawer on desktop
             if (this.root_store.ui.is_mobile) {
                 this.clearTable();
-                _Services.WS.forgetAll('transaction');
+                _Services.WS.forgetAll('proposal_open_contract', 'transaction');
             }
         }
     }, {
@@ -24173,7 +24172,7 @@ var PortfolioStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _de
             _this4.positions[i].is_loading = false;
 
             if ((0, _logic.isEnded)(contract_response)) {
-                _Services.WS.forget('proposal_open_contract', _this4.populateResultDetails, contract_response.contract_id);
+                _Services.WS.forget('proposal_open_contract', _this4.populateResultDetails, { contract_id: contract_response.contract_id });
             }
         };
     }
