@@ -23955,6 +23955,10 @@ var PortfolioStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _de
             } else {
                 portfolio_position.status = null;
             }
+
+            if ((0, _logic.isEnded)(proposal)) {
+                _Services.WS.forget('proposal_open_contract', this.proposalOpenContractHandler, proposal.contract_id);
+            }
         }
     }, {
         key: 'onClickSell',
@@ -24032,10 +24036,12 @@ var PortfolioStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _de
         key: 'onUnmount',
         value: function onUnmount() {
             this.disposeSwitchAccount();
+            _Services.WS.forgetAll('proposal_open_contract');
+
             // keep data and connections for portfolio drawer on desktop
             if (this.root_store.ui.is_mobile) {
                 this.clearTable();
-                _Services.WS.forgetAll('proposal_open_contract', 'transaction');
+                _Services.WS.forgetAll('transaction');
             }
         }
     }, {
@@ -24165,6 +24171,10 @@ var PortfolioStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _de
             if ((0, _logic.isUserSold)(contract_response)) _this4.positions[i].exit_spot = '-';
 
             _this4.positions[i].is_loading = false;
+
+            if ((0, _logic.isEnded)(contract_response)) {
+                _Services.WS.forget('proposal_open_contract', _this4.populateResultDetails, contract_response.contract_id);
+            }
         };
     }
 }), _applyDecoratedDescriptor(_class.prototype, 'pushNewPosition', [_dec9], Object.getOwnPropertyDescriptor(_class.prototype, 'pushNewPosition'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'removePositionById', [_dec10], Object.getOwnPropertyDescriptor(_class.prototype, 'removePositionById'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'accountSwitcherListener', [_dec11], Object.getOwnPropertyDescriptor(_class.prototype, 'accountSwitcherListener'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onMount', [_dec12], Object.getOwnPropertyDescriptor(_class.prototype, 'onMount'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onUnmount', [_dec13], Object.getOwnPropertyDescriptor(_class.prototype, 'onUnmount'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'totals', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'totals'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'active_positions_totals', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'active_positions_totals'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'active_positions', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'active_positions'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'all_positions', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'all_positions'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_active_empty', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_active_empty'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_empty', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_empty'), _class.prototype)), _class));
@@ -31140,8 +31150,11 @@ var toMoment = exports.toMoment = function toMoment(value) {
   if (value instanceof _moment2.default && value.isValid() && value.isUTC()) return value; // returns if already a moment object
   if (typeof value === 'number') return epochToMoment(value); // returns epochToMoment() if not a date
 
-  return (/invalid/i.test((0, _moment2.default)(value)) ? _moment2.default.utc(value, 'DD MMM YYYY') : _moment2.default.utc(value)
-  );
+  if (/invalid/i.test((0, _moment2.default)(value))) {
+    var today_moment = (0, _moment2.default)();
+    return value > today_moment.utc().daysInMonth() ? _moment2.default.utc(today_moment.add(value, 'd'), 'DD MMM YYYY') : _moment2.default.utc(value, 'DD MMM YYYY'); // returns target date
+  }
+  return _moment2.default.utc(value);
 };
 
 /**
