@@ -3946,12 +3946,12 @@ var FullPageModal = function (_React$Component) {
 
         return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = FullPageModal.__proto__ || Object.getPrototypeOf(FullPageModal)).call.apply(_ref, [this].concat(args))), _this), _this.handleCancel = function () {
             if (_this.props.is_closed_on_cancel) {
-                _this.props.hideAppBlur();
+                _this.props.hideFullBlur();
             }
             _this.props.onCancel();
         }, _this.handleConfirm = function () {
             if (_this.props.is_closed_on_confirm) {
-                _this.props.hideAppBlur();
+                _this.props.hideFullBlur();
             }
             _this.props.onConfirm();
         }, _temp), _possibleConstructorReturn(_this, _ret);
@@ -3961,14 +3961,14 @@ var FullPageModal = function (_React$Component) {
         key: 'componentDidMount',
         value: function componentDidMount() {
             if (this.props.is_visible) {
-                this.props.showAppBlur();
+                this.props.showFullBlur();
             }
         }
     }, {
         key: 'componentDidUpdate',
         value: function componentDidUpdate() {
             if (this.props.is_visible) {
-                this.props.showAppBlur();
+                this.props.showFullBlur();
             }
         }
     }, {
@@ -4041,23 +4041,23 @@ FullPageModal.defaultProps = {
 FullPageModal.propTypes = {
     cancel_button_text: _propTypes2.default.string,
     confirm_button_text: _propTypes2.default.string,
-    hideAppBlur: _propTypes2.default.func,
+    hideFullBlur: _propTypes2.default.func,
     is_closed_on_cancel: _propTypes2.default.bool,
     is_closed_on_confirm: _propTypes2.default.bool,
     is_loading: _propTypes2.default.bool,
     is_visible: _propTypes2.default.bool,
     onCancel: _propTypes2.default.func,
     onConfirm: _propTypes2.default.func,
-    showAppBlur: _propTypes2.default.func,
+    showFullBlur: _propTypes2.default.func,
     title: _propTypes2.default.string
 };
 
 var full_page_modal = (0, _connect.connect)(function (_ref2) {
     var ui = _ref2.ui;
     return {
-        hideAppBlur: ui.hideAppBlur,
+        hideFullBlur: ui.hideFullBlur,
         is_loading: ui.is_loading,
-        showAppBlur: ui.showAppBlur
+        showFullBlur: ui.showFullBlur
     };
 })(FullPageModal);
 exports.default = full_page_modal;
@@ -24312,7 +24312,8 @@ var PortfolioStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _de
                 portfolio_position.status = null;
             }
 
-            if ((0, _logic.isEnded)(proposal)) {
+            if ((0, _logic.isEnded)(proposal) && !(0, _logic.isUserSold)(proposal)) {
+                // if sold, forget will happen after handling sell
                 _Services.WS.forget('proposal_open_contract', this.proposalOpenContractHandler, { contract_id: proposal.contract_id });
             }
         }
@@ -24527,7 +24528,10 @@ var PortfolioStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _de
             _this4.positions[i].is_loading = false;
 
             if ((0, _logic.isEnded)(contract_response)) {
-                _Services.WS.forget('proposal_open_contract', _this4.populateResultDetails, { contract_id: contract_response.contract_id });
+                // also forget for buy
+                [_this4.populateResultDetails, _this4.proposalOpenContractHandler].forEach(function (cb) {
+                    _Services.WS.forget('proposal_open_contract', cb, { contract_id: contract_response.contract_id });
+                });
             }
         };
     }
