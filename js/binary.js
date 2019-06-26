@@ -63,7 +63,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","open_positions~portfolio~profit_table~statement":"open_positions~portfolio~profit_table~statement","open_positions~profit_table~statement":"open_positions~profit_table~statement","open_positions":"open_positions","profit_table":"profit_table","statement":"statement","portfolio":"portfolio","personal_details":"personal_details","reports":"reports","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"0":"75deb21bc2df737b5b03","1":"53327fe1871d5dd9f662","2":"4f07ac2b019fc6055e81","3":"6eead60ce6e484a89f84","4":"3a37d1cdb165ae888d6b","5":"7619865d7ced1814edb6","6":"f66928ac15d3161cf71d","7":"bdfef2d9e35fe5c66cd3","8":"78cbff0e88d19e34e614","9":"a9afc1fa00b8884662a0","10":"11dd32ed22c87c595b49","11":"b3ed2091f296ad5fa3f1","12":"6aea09661391b64cee32","13":"fe4896d6c27d657dc48d","14":"bcfeacaf8ad8f2fed3dc","15":"5b36f9150ca0ff20185e","16":"8cecc671ba9ceb479f56","17":"b8e853ea7f29cda5563e","18":"615aac2a2dbc30087d1a","19":"3aeda260f5e295403d37","20":"40d0b7240db50fd297cd","21":"ddf108a79d421ea833ee","22":"b687efde92cfab074bda","23":"a3179a5b4d415e8905c9","24":"f1eabf358e0a02277251","25":"69de805a9e60ee9532d3","26":"693322b1e24d31951755","27":"7e434eb0e7af3112eb64","28":"d99feb68a05e46fe7e24","29":"21932a2fa2f78d36563b","30":"a0636655749c049c7737","31":"8ebc9babcd75d87dd849","32":"d46e0f8c0a9296348392","33":"09be7eed53eeb610016c","34":"d6c665a26c948152ce30","35":"36bc0bb640bd162dade6","36":"55042fca3041b5eb7a91","37":"23b1dcdbd30dbbb85587","38":"4db811925dfb587a5ae8","39":"0823ea78d3bf7ae54174","40":"eccb523d7bfee4efa6a3","41":"9ecc6c81d71f6db22510","42":"f0e9133f486f3cf46c1b","43":"18447a24460691389120","44":"33aca49d050fad068398","45":"b75183565dbd0229a3ff","46":"47199c93f75a88cd8603","47":"96aef5b97505ac20167d","48":"3a31871d7702a8488c94","49":"a21240bbe0999f39284f","50":"0ad389ca36ebd6d5e772","51":"dd5cccddb4b452cdddfb","52":"3c3afa5ca6ba528a2c1e","53":"1fdcb83682fb2fb790e8","54":"548b74749d7ad514eb59","55":"e68891121fede4f3e35b","56":"6ef1da24910a4554b9de","57":"d418406cadcb67c7cb42","58":"b7c4786b23142f4d6635","59":"7316507ad42533655036","60":"70d541ff15fb8d23d5ea","61":"39950f11c0abcc955142","62":"61c43c18a3cc91c59cfb","63":"3362ac94a66b2c68154c","64":"1c364bb355fd42393af9","65":"106fc48844c80ee4fc51","404":"fdd90647aa54964fb1ed","account_password":"e80bbb197cad5fe3d04b","api_token":"455796411755cc9d240f","authorized_application":"87b6b5bc246c480c716e","cashier_password":"40a473d15da490ee7be5","contract":"fbe3388a4fbd03519e7b","financial_assessment":"f2b2875bd22a7717c1ad","limits":"b108abb5bcd4b46ba7b5","login_history":"dcb5548da21ab243acf1","open_positions~portfolio~profit_table~statement":"3454cbb6366d3d770d6c","open_positions~profit_table~statement":"8347a470e3af09a8a74f","open_positions":"69200ab30147a993acbd","profit_table":"5d00d040b72a6a0a4976","statement":"74154da86d5e996eddb8","portfolio":"2ba844396df077541ab1","personal_details":"3f27d12d238da8ef9393","reports":"75d3b56dd3bfcfdfbdff","self_exclusion":"7b24d88cd6b9f04ae3d0","settings":"ee411577a3c3a94f2f4e","vendors~smart_chart":"36579b723fce638aaabb","smart_chart":"984f4dd56c53c88f3e8c"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","open_positions~portfolio~profit_table~statement":"open_positions~portfolio~profit_table~statement","open_positions~profit_table~statement":"open_positions~profit_table~statement","open_positions":"open_positions","profit_table":"profit_table","statement":"statement","portfolio":"portfolio","personal_details":"personal_details","reports":"reports","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"0":"75deb21bc2df737b5b03","1":"53327fe1871d5dd9f662","2":"4f07ac2b019fc6055e81","3":"6eead60ce6e484a89f84","4":"3a37d1cdb165ae888d6b","5":"7619865d7ced1814edb6","6":"f66928ac15d3161cf71d","7":"bdfef2d9e35fe5c66cd3","8":"78cbff0e88d19e34e614","9":"a9afc1fa00b8884662a0","10":"11dd32ed22c87c595b49","11":"b3ed2091f296ad5fa3f1","12":"6aea09661391b64cee32","13":"fe4896d6c27d657dc48d","14":"bcfeacaf8ad8f2fed3dc","15":"5b36f9150ca0ff20185e","16":"8cecc671ba9ceb479f56","17":"b8e853ea7f29cda5563e","18":"615aac2a2dbc30087d1a","19":"3aeda260f5e295403d37","20":"40d0b7240db50fd297cd","21":"ddf108a79d421ea833ee","22":"b687efde92cfab074bda","23":"a3179a5b4d415e8905c9","24":"f1eabf358e0a02277251","25":"69de805a9e60ee9532d3","26":"693322b1e24d31951755","27":"7e434eb0e7af3112eb64","28":"d99feb68a05e46fe7e24","29":"21932a2fa2f78d36563b","30":"a0636655749c049c7737","31":"8ebc9babcd75d87dd849","32":"d46e0f8c0a9296348392","33":"09be7eed53eeb610016c","34":"d6c665a26c948152ce30","35":"36bc0bb640bd162dade6","36":"55042fca3041b5eb7a91","37":"23b1dcdbd30dbbb85587","38":"4db811925dfb587a5ae8","39":"0823ea78d3bf7ae54174","40":"eccb523d7bfee4efa6a3","41":"9ecc6c81d71f6db22510","42":"f0e9133f486f3cf46c1b","43":"18447a24460691389120","44":"33aca49d050fad068398","45":"b75183565dbd0229a3ff","46":"47199c93f75a88cd8603","47":"96aef5b97505ac20167d","48":"3a31871d7702a8488c94","49":"a21240bbe0999f39284f","50":"0ad389ca36ebd6d5e772","51":"dd5cccddb4b452cdddfb","52":"3c3afa5ca6ba528a2c1e","53":"1fdcb83682fb2fb790e8","54":"548b74749d7ad514eb59","55":"e68891121fede4f3e35b","56":"6ef1da24910a4554b9de","57":"d418406cadcb67c7cb42","58":"b7c4786b23142f4d6635","59":"7316507ad42533655036","60":"70d541ff15fb8d23d5ea","61":"39950f11c0abcc955142","62":"61c43c18a3cc91c59cfb","63":"3362ac94a66b2c68154c","64":"1c364bb355fd42393af9","65":"106fc48844c80ee4fc51","404":"fdd90647aa54964fb1ed","account_password":"e80bbb197cad5fe3d04b","api_token":"455796411755cc9d240f","authorized_application":"87b6b5bc246c480c716e","cashier_password":"40a473d15da490ee7be5","contract":"af226726d6528895af2f","financial_assessment":"f2b2875bd22a7717c1ad","limits":"b108abb5bcd4b46ba7b5","login_history":"dcb5548da21ab243acf1","open_positions~portfolio~profit_table~statement":"3454cbb6366d3d770d6c","open_positions~profit_table~statement":"8347a470e3af09a8a74f","open_positions":"69200ab30147a993acbd","profit_table":"5d00d040b72a6a0a4976","statement":"74154da86d5e996eddb8","portfolio":"2ba844396df077541ab1","personal_details":"3f27d12d238da8ef9393","reports":"75d3b56dd3bfcfdfbdff","self_exclusion":"7b24d88cd6b9f04ae3d0","settings":"ee411577a3c3a94f2f4e","vendors~smart_chart":"36579b723fce638aaabb","smart_chart":"984f4dd56c53c88f3e8c"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -23554,6 +23554,7 @@ var ContractStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec
             this.is_ongoing_contract = false;
             this.sell_info = {};
 
+            if (!this.smart_chart) this.smart_chart = this.root_store.modules.smart_chart;
             this.smart_chart.cleanupContractChartView();
             this.smart_chart.applySavedTradeChartLayout();
             _Services.WS.forgetAll('proposal').then(this.root_store.modules.trade.requestProposal());
@@ -24310,11 +24311,6 @@ var PortfolioStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _de
                 portfolio_position.status = 'loss';
             } else {
                 portfolio_position.status = null;
-            }
-
-            if ((0, _logic.isEnded)(proposal) && !(0, _logic.isUserSold)(proposal)) {
-                // if sold, forget will happen after handling sell
-                _Services.WS.forget('proposal_open_contract', this.proposalOpenContractHandler, { contract_id: proposal.contract_id });
             }
         }
     }, {
@@ -25399,7 +25395,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _dec25, _dec26, _dec27, _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23;
+var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _dec25, _dec26, _dec27, _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22;
 
 var _extend2 = __webpack_require__(/*! extend */ "./node_modules/extend/index.js");
 
@@ -25492,7 +25488,7 @@ var SmartChartStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _d
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SmartChartStore.__proto__ || Object.getPrototypeOf(SmartChartStore)).call.apply(_ref, [this].concat(args))), _this), _initDefineProp(_this, 'chart_type', _descriptor, _this), _initDefineProp(_this, 'granularity', _descriptor2, _this), _initDefineProp(_this, 'barriers', _descriptor3, _this), _initDefineProp(_this, 'markers', _descriptor4, _this), _this.barriers_empty_array = [], _this.markers_empty_array = [], _initDefineProp(_this, 'is_contract_mode', _descriptor5, _this), _initDefineProp(_this, 'is_static_chart', _descriptor6, _this), _initDefineProp(_this, 'is_title_enabled', _descriptor7, _this), _initDefineProp(_this, 'start_epoch', _descriptor8, _this), _initDefineProp(_this, 'end_epoch', _descriptor9, _this), _initDefineProp(_this, 'margin', _descriptor10, _this), _initDefineProp(_this, 'scroll_to_left_epoch', _descriptor11, _this), _initDefineProp(_this, 'scroll_to_left_epoch_offset', _descriptor12, _this), _initDefineProp(_this, 'chart_id', _descriptor13, _this), _initDefineProp(_this, 'replay_id', _descriptor14, _this), _initDefineProp(_this, 'is_chart_loading', _descriptor15, _this), _initDefineProp(_this, 'is_chart_ready', _descriptor16, _this), _initDefineProp(_this, 'should_import_layout', _descriptor17, _this), _initDefineProp(_this, 'should_export_layout', _descriptor18, _this), _initDefineProp(_this, 'should_clear_chart', _descriptor19, _this), _initDefineProp(_this, 'trade_chart_layout', _descriptor20, _this), _this.trade_chart_symbol = null, _initDefineProp(_this, 'onMount', _descriptor21, _this), _initDefineProp(_this, 'onUnmount', _descriptor22, _this), _initDefineProp(_this, 'createBarriers', _descriptor23, _this), _this.wsSubscribe = function (request_object, callback) {
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SmartChartStore.__proto__ || Object.getPrototypeOf(SmartChartStore)).call.apply(_ref, [this].concat(args))), _this), _initDefineProp(_this, 'chart_type', _descriptor, _this), _initDefineProp(_this, 'granularity', _descriptor2, _this), _initDefineProp(_this, 'barriers', _descriptor3, _this), _initDefineProp(_this, 'markers', _descriptor4, _this), _this.barriers_empty_array = [], _this.markers_empty_array = [], _initDefineProp(_this, 'is_contract_mode', _descriptor5, _this), _initDefineProp(_this, 'is_static_chart', _descriptor6, _this), _initDefineProp(_this, 'is_title_enabled', _descriptor7, _this), _initDefineProp(_this, 'start_epoch', _descriptor8, _this), _initDefineProp(_this, 'end_epoch', _descriptor9, _this), _initDefineProp(_this, 'margin', _descriptor10, _this), _initDefineProp(_this, 'scroll_to_left_epoch', _descriptor11, _this), _initDefineProp(_this, 'scroll_to_left_epoch_offset', _descriptor12, _this), _initDefineProp(_this, 'chart_id', _descriptor13, _this), _initDefineProp(_this, 'is_chart_loading', _descriptor14, _this), _initDefineProp(_this, 'is_chart_ready', _descriptor15, _this), _initDefineProp(_this, 'should_import_layout', _descriptor16, _this), _initDefineProp(_this, 'should_export_layout', _descriptor17, _this), _initDefineProp(_this, 'should_clear_chart', _descriptor18, _this), _initDefineProp(_this, 'trade_chart_layout', _descriptor19, _this), _this.trade_chart_symbol = null, _initDefineProp(_this, 'onMount', _descriptor20, _this), _initDefineProp(_this, 'onUnmount', _descriptor21, _this), _initDefineProp(_this, 'createBarriers', _descriptor22, _this), _this.wsSubscribe = function (request_object, callback) {
             if (request_object.subscribe !== 1) return;
             _Services.WS.subscribeTicksHistory(_extends({}, request_object), callback); // use a copy of the request_object to prevent updating the source
         }, _this.wsForget = function (match_values, callback) {
@@ -25834,42 +25830,37 @@ var SmartChartStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _d
     initializer: function initializer() {
         return 'trade';
     }
-}), _descriptor14 = _applyDecoratedDescriptor(_class.prototype, 'replay_id', [_mobx.observable], {
-    enumerable: true,
-    initializer: function initializer() {
-        return 'contract-replay';
-    }
-}), _descriptor15 = _applyDecoratedDescriptor(_class.prototype, 'is_chart_loading', [_mobx.observable], {
+}), _descriptor14 = _applyDecoratedDescriptor(_class.prototype, 'is_chart_loading', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return false;
     }
-}), _descriptor16 = _applyDecoratedDescriptor(_class.prototype, 'is_chart_ready', [_mobx.observable], {
+}), _descriptor15 = _applyDecoratedDescriptor(_class.prototype, 'is_chart_ready', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return false;
     }
-}), _descriptor17 = _applyDecoratedDescriptor(_class.prototype, 'should_import_layout', [_mobx.observable], {
+}), _descriptor16 = _applyDecoratedDescriptor(_class.prototype, 'should_import_layout', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return false;
     }
-}), _descriptor18 = _applyDecoratedDescriptor(_class.prototype, 'should_export_layout', [_mobx.observable], {
+}), _descriptor17 = _applyDecoratedDescriptor(_class.prototype, 'should_export_layout', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return false;
     }
-}), _descriptor19 = _applyDecoratedDescriptor(_class.prototype, 'should_clear_chart', [_mobx.observable], {
+}), _descriptor18 = _applyDecoratedDescriptor(_class.prototype, 'should_clear_chart', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return false;
     }
-}), _descriptor20 = _applyDecoratedDescriptor(_class.prototype, 'trade_chart_layout', [_mobx.observable], {
+}), _descriptor19 = _applyDecoratedDescriptor(_class.prototype, 'trade_chart_layout', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return null;
     }
-}), _applyDecoratedDescriptor(_class.prototype, 'switchToContractMode', [_dec], Object.getOwnPropertyDescriptor(_class.prototype, 'switchToContractMode'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'getChartStatus', [_dec2], Object.getOwnPropertyDescriptor(_class.prototype, 'getChartStatus'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateChartType', [_dec3], Object.getOwnPropertyDescriptor(_class.prototype, 'updateChartType'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateGranularity', [_dec4], Object.getOwnPropertyDescriptor(_class.prototype, 'updateGranularity'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateMargin', [_dec5], Object.getOwnPropertyDescriptor(_class.prototype, 'updateMargin'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateEpochScrollToValue', [_dec6], Object.getOwnPropertyDescriptor(_class.prototype, 'updateEpochScrollToValue'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateEpochScrollToOffset', [_dec7], Object.getOwnPropertyDescriptor(_class.prototype, 'updateEpochScrollToOffset'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'cleanupContractChartView', [_dec8], Object.getOwnPropertyDescriptor(_class.prototype, 'cleanupContractChartView'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'resetScrollToLeft', [_dec9], Object.getOwnPropertyDescriptor(_class.prototype, 'resetScrollToLeft'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setContractMode', [_dec10], Object.getOwnPropertyDescriptor(_class.prototype, 'setContractMode'), _class.prototype), _descriptor21 = _applyDecoratedDescriptor(_class.prototype, 'onMount', [_dec11], {
+}), _applyDecoratedDescriptor(_class.prototype, 'switchToContractMode', [_dec], Object.getOwnPropertyDescriptor(_class.prototype, 'switchToContractMode'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'getChartStatus', [_dec2], Object.getOwnPropertyDescriptor(_class.prototype, 'getChartStatus'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateChartType', [_dec3], Object.getOwnPropertyDescriptor(_class.prototype, 'updateChartType'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateGranularity', [_dec4], Object.getOwnPropertyDescriptor(_class.prototype, 'updateGranularity'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateMargin', [_dec5], Object.getOwnPropertyDescriptor(_class.prototype, 'updateMargin'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateEpochScrollToValue', [_dec6], Object.getOwnPropertyDescriptor(_class.prototype, 'updateEpochScrollToValue'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'updateEpochScrollToOffset', [_dec7], Object.getOwnPropertyDescriptor(_class.prototype, 'updateEpochScrollToOffset'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'cleanupContractChartView', [_dec8], Object.getOwnPropertyDescriptor(_class.prototype, 'cleanupContractChartView'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'resetScrollToLeft', [_dec9], Object.getOwnPropertyDescriptor(_class.prototype, 'resetScrollToLeft'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setContractMode', [_dec10], Object.getOwnPropertyDescriptor(_class.prototype, 'setContractMode'), _class.prototype), _descriptor20 = _applyDecoratedDescriptor(_class.prototype, 'onMount', [_dec11], {
     enumerable: true,
     initializer: function initializer() {
         var _this4 = this;
@@ -25881,7 +25872,7 @@ var SmartChartStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _d
             }
         };
     }
-}), _descriptor22 = _applyDecoratedDescriptor(_class.prototype, 'onUnmount', [_dec12], {
+}), _descriptor21 = _applyDecoratedDescriptor(_class.prototype, 'onUnmount', [_dec12], {
     enumerable: true,
     initializer: function initializer() {
         var _this5 = this;
@@ -25894,7 +25885,7 @@ var SmartChartStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _d
             _this5.cleanupContractChartView();
         };
     }
-}), _applyDecoratedDescriptor(_class.prototype, 'setChartView', [_dec13], Object.getOwnPropertyDescriptor(_class.prototype, 'setChartView'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setContractStart', [_dec14], Object.getOwnPropertyDescriptor(_class.prototype, 'setContractStart'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setContractEnd', [_dec15], Object.getOwnPropertyDescriptor(_class.prototype, 'setContractEnd'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setIsChartLoading', [_dec16], Object.getOwnPropertyDescriptor(_class.prototype, 'setIsChartLoading'), _class.prototype), _descriptor23 = _applyDecoratedDescriptor(_class.prototype, 'createBarriers', [_dec17], {
+}), _applyDecoratedDescriptor(_class.prototype, 'setChartView', [_dec13], Object.getOwnPropertyDescriptor(_class.prototype, 'setChartView'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setContractStart', [_dec14], Object.getOwnPropertyDescriptor(_class.prototype, 'setContractStart'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setContractEnd', [_dec15], Object.getOwnPropertyDescriptor(_class.prototype, 'setContractEnd'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setIsChartLoading', [_dec16], Object.getOwnPropertyDescriptor(_class.prototype, 'setIsChartLoading'), _class.prototype), _descriptor22 = _applyDecoratedDescriptor(_class.prototype, 'createBarriers', [_dec17], {
     enumerable: true,
     initializer: function initializer() {
         var _this6 = this;
