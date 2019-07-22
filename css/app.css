@@ -6733,10 +6733,18 @@ html {
 .cashier__error {
   font-size: 1.6rem;
   align-self: center; }
+  .theme--light .cashier__error {
+    color: rgba(0, 0, 0, 0.8); }
+  .theme--dark .cashier__error {
+    color: #7f8397; }
 
 /** @define withdraw */
 .withdraw__text {
   font-size: 1.6rem; }
+  .theme--light .withdraw__text {
+    color: rgba(0, 0, 0, 0.8); }
+  .theme--dark .withdraw__text {
+    color: #7f8397; }
 
 .withdraw__verify-container {
   position: fixed;
@@ -6764,14 +6772,25 @@ html {
   margin-left: 2.3rem; }
 
 .withdraw__email-sent {
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.96); }
+  height: 100%; }
+  .theme--light .withdraw__email-sent {
+    background-color: rgba(255, 255, 255, 0.96); }
+  .theme--dark .withdraw__email-sent {
+    background-color: rgba(25, 28, 49, 0.96); }
   .withdraw__email-sent-title {
     font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 1.2rem; }
+    .theme--light .withdraw__email-sent-title {
+      color: rgba(0, 0, 0, 0.8); }
+    .theme--dark .withdraw__email-sent-title {
+      color: #7f8397; }
   .withdraw__email-sent-text {
     font-size: 1.4rem; }
+    .theme--light .withdraw__email-sent-text {
+      color: rgba(0, 0, 0, 0.8); }
+    .theme--dark .withdraw__email-sent-text {
+      color: #7f8397; }
 
 .contract-container {
   font-size: 1.4em;
