@@ -6142,6 +6142,8 @@ html {
     background-color: #101320; }
   .vertical-tab--full-screen {
     min-height: calc(100vh - 83px - 32px); }
+    .vertical-tab--full-screen .vertical-tab__tab {
+      min-width: 15%; }
   .vertical-tab:not(.vertical-tab--full-screen) {
     height: 600px; }
     .vertical-tab:not(.vertical-tab--full-screen) .vertical-tab__content {
