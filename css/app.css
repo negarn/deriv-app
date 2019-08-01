@@ -6383,7 +6383,8 @@ html {
     display: inline-block; }
   .btn-purchase[disabled]:hover {
     cursor: auto;
-    cursor: initial; }
+    cursor: initial;
+    transform: none; }
   .btn-purchase:hover:not(.btn-purchase--disabled):not([disabled]) {
     transform: translate3d(0, -4px, 0); }
   .btn-purchase__type-wrapper {
@@ -6407,7 +6408,7 @@ html {
       opacity: 0; }
     .btn-purchase__shadow-wrapper--disabled:hover {
       transform: none; }
-  .btn-purchase:active, .btn-purchase:focus {
+  .btn-purchase:active:not(.btn-purchase--disabled):not([disabled]), .btn-purchase:focus:not(.btn-purchase--disabled):not([disabled]) {
     transform: translate3d(0, -4px, 0); }
   .btn-purchase--swoosh {
     transform: translate3d(0, -4px, 0); }
