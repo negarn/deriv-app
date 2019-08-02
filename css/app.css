@@ -4696,6 +4696,12 @@ html {
       .theme--dark .list__item--selected .list__item-text, .theme--dark .list__item--selected .list__item-symbol, .theme--dark .list__item--selected .list__item-tooltip {
         color: #ffffff;
         background: #2a3052; }
+    .theme--light .list__item--highlighted:not(.list__item--disabled) {
+      background-color: rgba(0, 0, 0, 0.04);
+      color: rgba(0, 0, 0, 0.8); }
+    .theme--dark .list__item--highlighted:not(.list__item--disabled) {
+      background-color: #202641;
+      color: #ffffff; }
     .theme--light .list__item--disabled {
       color: rgba(0, 0, 0, 0.4); }
     .theme--dark .list__item--disabled {
