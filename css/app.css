@@ -2638,7 +2638,7 @@ html {
     .chart-container__loader + .smartcharts {
       visibility: hidden;
       pointer-events: none; }
-      .chart-container__loader + .smartcharts .cq-chart-controls, .chart-container__loader + .smartcharts .cq-symbols-display, .chart-container__loader + .smartcharts .cq-bottom-ui-widgets {
+      .chart-container__loader + .smartcharts .chart-marker-line__wrapper, .chart-container__loader + .smartcharts .cq-chart-controls, .chart-container__loader + .smartcharts .cq-symbols-display, .chart-container__loader + .smartcharts .cq-bottom-ui-widgets, .chart-container__loader + .smartcharts .cq-inchart-subholder {
         display: none; }
     .theme--light .chart-container__loader {
       background-color: #ffffff; }
