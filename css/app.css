@@ -1,60 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic&display=fallback);
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic&display=fallback);
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic&display=fallback);
-/*------------------------------------*
- *  # Reset SCSS
- *  - to make browsers render all elements more consistently
- *  - Reference:  https://github.com/AdamMarsden/simple-typography/blob/master/_reset.scss
- *------------------------------------*/
-/* stylelint-disable */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup, input,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-html {
-  height: 100%; }
-
-body {
-  line-height: 1;
-  height: 100%; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/* stylelint-enable */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic);
 /*------------------------------------*
  *  # Constants
  *------------------------------------*/
@@ -140,10 +84,6 @@ table {
  * Usage example:
    @include tooltipColor($COLOR_RED);
  */
-/*------------------------------------*
- *  # Typography
- *  - Indrek Pass also has a fantastic mixin here: http://sassmeister.com/gist/7f22e44ace49b5124eec
- *------------------------------------*/
 /*
     Constants
 */
@@ -155,9 +95,6 @@ table {
     See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
     Variables name example: --title-center-semibold-red
  */
-/*
-    Typography
-*/
 /* postcss-bem-linter: ignore */
 html {
   font-size: 62.5%;
@@ -217,7 +154,6 @@ html {
   /* Firefox 18- */
   color: rgba(0, 0, 0, 0.16); }
 
-/* Multiple properties with same values */
 /** @define theme */
 .theme--light {
   background: #f4f4f6; }
@@ -497,40 +433,104 @@ html {
     margin: 0;
     padding: 0; }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, input, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-html {
-  height: 100%; }
-
-body {
-  line-height: 1;
-  height: 100%; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
+/*------------------------------------*
+ *  # Constants
+ *------------------------------------*/
+/* stylelint-disable color-no-hex */
+/* stylelint-enable color-no-hex */
+/*------------------------------------*
+ *  # SASS Mixins and Functions
+ *------------------------------------*/
+/*
+ * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
+ * Generate typefaces key-value pair of variable name and config
+ * Example:
+   --paragraph-center-bold-black: (14px, center, bold, black)
+ */
+/*
+ * Sets font-size, font-weight, color, text-transform, text-align and line-height
+ * Usage example:
+   @include setTypeface(16px, bold, black, uppercase);
+ */
+/*
+ * Set typefaces by passing a typeface variable name
+ * @param $var   - typeface variable
+ * @param $tt    - text-transform property
+ * @param $align - text-align property
+ * Usage example:
+   @include typeface(--paragraph-bold-black, uppercase, center);
+ */
+/*
+ * Range Slider Thumb styling is set here
+ */
+/*
+ * SVG icons colors
+ */
+/*
+ * Bar Spinner Animation
+ * @param $count    - number of bars
+ * @param $duration - duration of animation
+ * @param $phase    - each bar phase change delay
+ * Usage example:
+   @include createBarspinnerAnimation(5, 1.2s, 0,1);
+ */
+/*
+ * Implementation of themes
+ * generate sets of themes keys object property (dark / light)
+ * @param $themes - themes property
+ * Usage example:
+   @include themify($themes) { color: themed('background_color') }
+ */
+/*
+ * Generate typefaces key-value pair of themefy object
+ * Should be inside themify mixins
+ * Example:
+   @include themify($themes) { border-color: 1px solid themed('background_color') }
+ */
+/*
+ * Tooltip colors
+ * @param $color - color property
+ * Usage example:
+   @include tooltipColor($COLOR_RED);
+ */
+/*
+ * Themified Tooltip colors
+ * @param $color - color property
+ * Usage example:
+   @include tooltipColor($COLOR_RED);
+ */
+/*
+    Constants
+*/
+/*
+    Variables
+*/
+/*
+    List of all typefaces variables in the format: --$FONT_SIZES-$TEXT_ALIGN-$FONT_WEIGHTS-COLORS.
+    See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
+    Variables name example: --title-center-semibold-red
+ */
 .btn {
-  font-size: 1em;
+  font-size: 1rem;
   display: inline-block;
   touch-action: manipulation;
   cursor: pointer;
@@ -710,60 +710,6 @@ table {
 /*# sourceMappingURL=button.css.map*/
 
 /*------------------------------------*
- *  # Reset SCSS
- *  - to make browsers render all elements more consistently
- *  - Reference:  https://github.com/AdamMarsden/simple-typography/blob/master/_reset.scss
- *------------------------------------*/
-/* stylelint-disable */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup, input,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-html {
-  height: 100%; }
-
-body {
-  line-height: 1;
-  height: 100%; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/* stylelint-enable */
-/*------------------------------------*
  *  # Constants
  *------------------------------------*/
 /* stylelint-disable color-no-hex */
@@ -848,10 +794,6 @@ table {
  * Usage example:
    @include tooltipColor($COLOR_RED);
  */
-/*------------------------------------*
- *  # Typography
- *  - Indrek Pass also has a fantastic mixin here: http://sassmeister.com/gist/7f22e44ace49b5124eec
- *------------------------------------*/
 /*
     Constants
 */
@@ -863,9 +805,6 @@ table {
     See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
     Variables name example: --title-center-semibold-red
  */
-/*
-    Typography
-*/
 /* postcss-bem-linter: ignore */
 html {
   font-size: 62.5%;
@@ -925,7 +864,6 @@ html {
   /* Firefox 18- */
   color: rgba(0, 0, 0, 0.16); }
 
-/* Multiple properties with same values */
 /** @define theme */
 .theme--light {
   background: #f4f4f6; }
@@ -1439,60 +1377,6 @@ html {
     margin-left: 8px; }
 
 /*------------------------------------*
- *  # Reset SCSS
- *  - to make browsers render all elements more consistently
- *  - Reference:  https://github.com/AdamMarsden/simple-typography/blob/master/_reset.scss
- *------------------------------------*/
-/* stylelint-disable */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup, input,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-html {
-  height: 100%; }
-
-body {
-  line-height: 1;
-  height: 100%; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/* stylelint-enable */
-/*------------------------------------*
  *  # Constants
  *------------------------------------*/
 /* stylelint-disable color-no-hex */
@@ -1577,10 +1461,6 @@ table {
  * Usage example:
    @include tooltipColor($COLOR_RED);
  */
-/*------------------------------------*
- *  # Typography
- *  - Indrek Pass also has a fantastic mixin here: http://sassmeister.com/gist/7f22e44ace49b5124eec
- *------------------------------------*/
 /*
     Constants
 */
@@ -1592,9 +1472,6 @@ table {
     See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
     Variables name example: --title-center-semibold-red
  */
-/*
-    Typography
-*/
 /* postcss-bem-linter: ignore */
 html {
   font-size: 62.5%;
@@ -1654,7 +1531,6 @@ html {
   /* Firefox 18- */
   color: rgba(0, 0, 0, 0.16); }
 
-/* Multiple properties with same values */
 /** @define theme */
 .theme--light {
   background: #f4f4f6; }
@@ -1721,6 +1597,46 @@ html {
   height: 100%;
   overflow: hidden; }
 
+/*------------------------------------*
+ *  # Reset SCSS
+ *  - to make browsers render all elements more consistently
+ *  - Reference:  https://github.com/AdamMarsden/simple-typography/blob/master/_reset.scss
+ *------------------------------------*/
+/* stylelint-disable */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, input, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html {
+  height: 100%; }
+
+body {
+  line-height: 1;
+  height: 100%; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* stylelint-enable */
 @font-face {
   font-family: 'BinarySymbols';
   font-style: normal;
@@ -5444,64 +5360,6 @@ html {
         .theme--dark .contract-type-item__icon-wrapper .category-wrapper .stroke-active {
           stroke: #ffffff; }
 
-.label {
-  font-size: 14px;
-  font-weight: bold;
-  height: 24px;
-  line-height: 20px;
-  border-radius: 12px;
-  padding: 2px 8px;
-  margin: 0 2px; }
-  .theme--light .label--default {
-    color: #f4f4f6;
-    background-color: #999cac; }
-  .theme--dark .label--default {
-    color: #f4f4f6;
-    background-color: #999cac; }
-  .theme--light .label--danger {
-    color: #e31c4b;
-    background-color: rgba(227, 28, 75, 0.16); }
-  .theme--dark .label--danger {
-    color: #e31c4b;
-    background-color: rgba(227, 28, 75, 0.16); }
-  .theme--light .label--warn {
-    color: #ff9933;
-    background-color: rgba(255, 153, 51, 0.16); }
-  .theme--dark .label--warn {
-    color: #ff9933;
-    background-color: rgba(255, 153, 51, 0.16); }
-  .theme--light .label--success {
-    color: #39b19d;
-    background-color: rgba(57, 177, 157, 0.16); }
-  .theme--dark .label--success {
-    color: #39b19d;
-    background-color: rgba(57, 177, 157, 0.16); }
-  .theme--light .label--success-invert {
-    color: #f4f4f6;
-    background-color: #39b19d; }
-  .theme--dark .label--success-invert {
-    color: #f4f4f6;
-    background-color: #39b19d; }
-  .theme--light .label--warn-invert {
-    color: #f4f4f6;
-    background-color: #ff9933; }
-  .theme--dark .label--warn-invert {
-    color: #f4f4f6;
-    background-color: #ff9933; }
-  .theme--light .label--info {
-    color: #2196f3;
-    background-color: rgba(33, 150, 243, 0.16); }
-  .theme--dark .label--info {
-    color: #2196f3;
-    background-color: rgba(33, 150, 243, 0.16); }
-  .label--large {
-    height: 28px;
-    line-height: 24px;
-    border-radius: 20px;
-    padding: 4px 8px 4px 4px;
-    margin: 0 2px;
-    font-size: 16px; }
-
 /** @define trade-type-info-dialog; */
 .trade-type-info-dialog {
   right: 0.4em;
@@ -7007,8 +6865,8 @@ html {
       font-size: 1.6rem; }
   .account-wallet .current-loginid, .account-wallet .symbols {
     margin-left: 4px; }
-  .account-wallet .label {
-    margin-left: 16px; }
+  .account-wallet__label {
+    margin-left: 16px !important; }
   .account-wallet .inline-icon {
     width: 24px;
     height: 24px;
@@ -7322,12 +7180,24 @@ html {
     height: 4rem; }
 
 /** @define withdraw */
+.withdraw__header {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 1.6rem;
+  line-height: 1.5; }
+
+.theme--light .withdraw__header, .theme--light .withdraw__text {
+  color: rgba(0, 0, 0, 0.8); }
+
+.theme--dark .withdraw__header, .theme--dark .withdraw__text {
+  color: #7f8397; }
+
 .withdraw__text {
-  font-size: 1.6rem; }
-  .theme--light .withdraw__text {
-    color: rgba(0, 0, 0, 0.8); }
-  .theme--dark .withdraw__text {
-    color: #7f8397; }
+  font-size: 1.4rem;
+  line-height: 1.43;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto; }
 
 .withdraw__verify-button {
   margin-top: 3.2rem;
@@ -7368,6 +7238,63 @@ html {
     color: #ff9933;
     font-weight: bold;
     text-decoration: none; }
+
+/** @define payment-agent */
+.payment-agent__wrapper {
+  font-size: 1.4rem;
+  line-height: 1.43;
+  height: 100%;
+  width: 100%;
+  text-align: left; }
+
+.payment-agent__header {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: bold;
+  margin-bottom: 16px; }
+
+.payment-agent__instructions {
+  margin-top: 24px;
+  display: flex; }
+  .payment-agent__instructions-section {
+    flex: 1; }
+    .payment-agent__instructions-section .payment-agent__header {
+      margin-bottom: 8px; }
+    .payment-agent__instructions-section:not(:first-child) {
+      margin-left: 24px; }
+
+.payment-agent__button {
+  margin: 0;
+  height: 40px; }
+
+.payment-agent__available-header {
+  margin-top: 32px; }
+
+.payment-agent__available-selector {
+  margin-bottom: 16px; }
+
+.payment-agent__loader {
+  font-size: 1rem; }
+
+.payment-agent__accordion-content {
+  color: var(--color-red); }
+  .payment-agent__accordion-content-line {
+    margin-bottom: 8px; }
+  .payment-agent__accordion-content-icon {
+    vertical-align: middle;
+    margin-right: 12px; }
+
+.payment-agent__disclaimer {
+  margin-top: 24px;
+  padding: 8px 16px;
+  font-size: 1.2rem;
+  line-height: 1.42; }
+  .theme--light .payment-agent__disclaimer {
+    background-color: #f4f4f6; }
+  .theme--dark .payment-agent__disclaimer {
+    background-color: #0b0e18; }
+  .payment-agent__disclaimer--bold {
+    font-weight: bold; }
 
 .contract-container {
   font-size: 1.4em;
