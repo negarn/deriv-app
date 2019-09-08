@@ -1541,7 +1541,7 @@ table {
   text-rendering: optimizeLegibility;
   position: absolute;
   pointer-events: none;
-  top: calc(50% - 6px);
+  top: calc(50% - 7px);
   right: 12px;
   transition: transform 0.2s ease;
   transform: rotate(0deg);
@@ -8807,17 +8807,19 @@ table {
 .payment-agent__drop-down {
   display: inline-block;
   min-width: 20rem;
-  height: 4rem;
+  min-height: 4rem;
   margin: 0 0 16px;
   line-height: 1.43; }
   .payment-agent__drop-down-display {
     justify-content: left;
-    height: 3.8rem; }
+    min-height: 3.8rem;
+    height: auto; }
     .payment-agent__drop-down-display-span {
       font-size: 1.4rem;
       text-align: left;
-      padding: 10px 12px;
-      text-transform: none; }
+      padding: 9px 12px;
+      text-transform: none;
+      line-height: 1.43; }
   .payment-agent__drop-down-items {
     text-transform: none !important;
     text-align: left !important;

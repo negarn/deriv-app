@@ -504,14 +504,16 @@ table {
 
 .dc-input__leading-icon {
   margin-left: 1rem;
-  top: 0.8rem;
+  top: 0.7rem;
   position: absolute;
   left: 0;
   pointer-events: none;
-  cursor: text; }
+  cursor: text;
+  font-size: 1.6rem;
+  font-size: var(--text-size-s); }
 
 .dc-input__leading-icon + .dc-input__field {
-  padding-left: calc(1rem + 10px); }
+  padding-left: calc(1rem + 11px); }
 
 .dc-input__trailing-icon {
   margin: 0 1.2rem 0 0 !important; }
