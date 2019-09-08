@@ -144,108 +144,6 @@ table {
             @extend %inline-icon.active;
         }
 */
-/*------------------------------------*
- *  # Constants
- *------------------------------------*/
-/* stylelint-disable color-no-hex */
-/* stylelint-enable color-no-hex */
-/*------------------------------------*
- *  # SASS Mixins and Functions
- *------------------------------------*/
-/*
- * SASS interpolation
- */
-/*
- * PX to EM
- * @param $px - px value to be converted
- * @param $base - base font size (in `em`)
- * Note: 'em' values are calculate based on the element font-size
- *       to properly converts 'px' to 'em', please pass in the element font-size with it
- * Usage example:
-    padding: em(16px, 1.6em); // font-size in 'em'
- */
-/*
- * Set property by passing a property name, and values.
- * @param $property name - padding, margin etc.
- * @param $values        - values in `px` (space separated for multiple values)
- * @param $font-size     - base font-size in `em`
- * Usage example:
-   @include toEm(padding, 8px 16px 8px, 1.6em);
- */
-/*
- * Generate typefaces key-value pair of variable name and config
- * Example:
-   --paragraph-center-bold-black: (14px, center, bold, black)
- */
-/*
- * Sets font-size, font-weight, color, text-transform, text-align and line-height
- * Usage example:
-   @include setTypeface(16px, bold, black, uppercase);
- */
-/*
- * Set typefaces by passing a typeface variable name
- * @param $var   - typeface variable
- * @param $tt    - text-transform property
- * @param $align - text-align property
- * Usage example:
-   @include typeface(--paragraph-bold-black, uppercase, center);
- */
-/*
- * Range Slider Thumb styling is set here
- */
-/*
- * SVG icons colors
- */
-/*
- * Bar Spinner Animation
- * @param $count    - number of bars
- * @param $duration - duration of animation
- * @param $phase    - each bar phase change delay
- * Usage example:
-   @include createBarspinnerAnimation(5, 1.2s, 0,1);
- */
-/*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
- * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
-    Constants
-*/
-/*
-    Variables
-*/
-/*
-    List of all typefaces variables in the format: --$FONT_SIZES-$TEXT_ALIGN-$FONT_WEIGHTS-COLORS.
-    See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
-    Variables name example: --title-center-semibold-red
- */
-/*------------------------------------*
- *  # Reset SCSS
- *  - to make browsers render all elements more consistently
- *  - Reference:  https://github.com/AdamMarsden/simple-typography/blob/master/_reset.scss
- *------------------------------------*/
-/* stylelint-disable */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, input, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -254,7 +152,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline; }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
@@ -279,22 +176,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* stylelint-enable */
-/*
-    to use styles without modifier class on .inline-icon
-    use @extend
-
-    e.g. style icon on parent hover:
-        a:hover .inline-icon {
-            @extend %inline-icon.active;
-        }
-*/
-.theme--light .dc-popover__target__icon--disabled .info, .dc-popover__target__icon--disabled .theme--light .info {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
-
 .theme--light .dc-popover__target__icon--disabled .info .color1-fill, .dc-popover__target__icon--disabled .theme--light .info .color1-fill {
   fill: rgba(0, 0, 0, 0.16); }
 
@@ -307,31 +188,17 @@ table {
 .theme--light .dc-popover__target__icon--disabled .info .color2-stroke, .dc-popover__target__icon--disabled .theme--light .info .color2-stroke {
   stroke: none; }
 
-.theme--light .dc-popover__target__icon .info:hover, .dc-popover__target__icon .theme--light .info:hover {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
-
 .theme--light .dc-popover__target__icon .info:hover .color1-fill, .dc-popover__target__icon .theme--light .info:hover .color1-fill {
   fill: rgba(0, 0, 0, 0.8); }
 
 .theme--light .dc-popover__target__icon .info:hover .color1-stroke, .dc-popover__target__icon .theme--light .info:hover .color1-stroke {
   stroke: rgba(0, 0, 0, 0.8); }
 
-.theme--light .dc-popover__target__icon .info, .dc-popover__target__icon .theme--light .info {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
-
 .theme--light .dc-popover__target__icon .info .color1-fill, .dc-popover__target__icon .theme--light .info .color1-fill {
   fill: rgba(0, 0, 0, 0.4); }
 
 .theme--light .dc-popover__target__icon .info .color1-stroke, .dc-popover__target__icon .theme--light .info .color1-stroke {
   stroke: rgba(0, 0, 0, 0.4); }
-
-.theme--dark .dc-popover__target__icon--disabled .info, .dc-popover__target__icon--disabled .theme--dark .info {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
 
 .theme--dark .dc-popover__target__icon--disabled .info .color1-fill, .dc-popover__target__icon--disabled .theme--dark .info .color1-fill {
   fill: rgba(127, 131, 151, 0.3); }
@@ -345,19 +212,11 @@ table {
 .theme--dark .dc-popover__target__icon--disabled .info .color2-stroke, .dc-popover__target__icon--disabled .theme--dark .info .color2-stroke {
   stroke: none; }
 
-.theme--dark .dc-popover__target__icon .info:hover, .dc-popover__target__icon .theme--dark .info:hover {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
-
 .theme--dark .dc-popover__target__icon .info:hover .color1-fill, .dc-popover__target__icon .theme--dark .info:hover .color1-fill {
-  fill: #ffffff; }
+  fill: #fff; }
 
 .theme--dark .dc-popover__target__icon .info:hover .color1-stroke, .dc-popover__target__icon .theme--dark .info:hover .color1-stroke {
-  stroke: #ffffff; }
-
-.theme--dark .dc-popover__target__icon .info, .dc-popover__target__icon .theme--dark .info {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
+  stroke: #fff; }
 
 .theme--dark .dc-popover__target__icon .info .color1-fill, .dc-popover__target__icon .theme--dark .info .color1-fill {
   fill: #7f8397; }
@@ -374,7 +233,7 @@ table {
   display: flex;
   flex-direction: row;
   font-size: 1.2em;
-  color: #ffffff;
+  color: #fff;
   font-weight: 400;
   text-transform: none;
   text-align: center;
@@ -382,11 +241,11 @@ table {
 
 .theme--light .dc-popover__bubble {
   background: rgba(0, 0, 0, 0.8);
-  color: #ffffff; }
+  color: #fff; }
 
 .theme--dark .dc-popover__bubble {
   background: #2a3052;
-  color: #ffffff; }
+  color: #fff; }
 
 .dc-popover__bubble__icon {
   flex-grow: 1;
@@ -1111,108 +970,6 @@ table {
             @extend %inline-icon.active;
         }
 */
-/*------------------------------------*
- *  # Constants
- *------------------------------------*/
-/* stylelint-disable color-no-hex */
-/* stylelint-enable color-no-hex */
-/*------------------------------------*
- *  # SASS Mixins and Functions
- *------------------------------------*/
-/*
- * SASS interpolation
- */
-/*
- * PX to EM
- * @param $px - px value to be converted
- * @param $base - base font size (in `em`)
- * Note: 'em' values are calculate based on the element font-size
- *       to properly converts 'px' to 'em', please pass in the element font-size with it
- * Usage example:
-    padding: em(16px, 1.6em); // font-size in 'em'
- */
-/*
- * Set property by passing a property name, and values.
- * @param $property name - padding, margin etc.
- * @param $values        - values in `px` (space separated for multiple values)
- * @param $font-size     - base font-size in `em`
- * Usage example:
-   @include toEm(padding, 8px 16px 8px, 1.6em);
- */
-/*
- * Generate typefaces key-value pair of variable name and config
- * Example:
-   --paragraph-center-bold-black: (14px, center, bold, black)
- */
-/*
- * Sets font-size, font-weight, color, text-transform, text-align and line-height
- * Usage example:
-   @include setTypeface(16px, bold, black, uppercase);
- */
-/*
- * Set typefaces by passing a typeface variable name
- * @param $var   - typeface variable
- * @param $tt    - text-transform property
- * @param $align - text-align property
- * Usage example:
-   @include typeface(--paragraph-bold-black, uppercase, center);
- */
-/*
- * Range Slider Thumb styling is set here
- */
-/*
- * SVG icons colors
- */
-/*
- * Bar Spinner Animation
- * @param $count    - number of bars
- * @param $duration - duration of animation
- * @param $phase    - each bar phase change delay
- * Usage example:
-   @include createBarspinnerAnimation(5, 1.2s, 0,1);
- */
-/*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
- * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
-    Constants
-*/
-/*
-    Variables
-*/
-/*
-    List of all typefaces variables in the format: --$FONT_SIZES-$TEXT_ALIGN-$FONT_WEIGHTS-COLORS.
-    See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
-    Variables name example: --title-center-semibold-red
- */
-/*------------------------------------*
- *  # Reset SCSS
- *  - to make browsers render all elements more consistently
- *  - Reference:  https://github.com/AdamMarsden/simple-typography/blob/master/_reset.scss
- *------------------------------------*/
-/* stylelint-disable */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, input, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -1221,7 +978,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline; }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
@@ -1246,17 +1002,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* stylelint-enable */
-/*
-    to use styles without modifier class on .inline-icon
-    use @extend
-
-    e.g. style icon on parent hover:
-        a:hover .inline-icon {
-            @extend %inline-icon.active;
-        }
-*/
-/** @define btn */
 .btn {
   font-size: 1rem;
   display: inline-block;
@@ -1272,8 +1017,7 @@ table {
   transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
   outline: 0;
   position: relative;
-  background: #39b19d;
-  /* postcss-bem-linter: ignore */ }
+  background: #39b19d; }
 
 .btn__text {
   font-size: 1.4em;
@@ -1295,24 +1039,22 @@ table {
   text-decoration: none; }
 
 .btn--primary .btn__text {
-  color: #ffffff; }
+  color: #fff; }
 
 .btn--primary--orange {
-  background: #ff9933;
-  /* postcss-bem-linter: ignore */ }
+  background: #f93; }
 
 .btn--primary--orange:hover:not([disabled]) {
   background: rgba(255, 153, 51, 0.84); }
 
 .btn--primary--orange:active:not([disabled]) {
-  background: #ff9933; }
+  background: #f93; }
 
 .btn--primary--orange.effect:focus:not(:active):after {
-  border: 0 solid #ff9933; }
+  border: 0 solid #f93; }
 
 .btn--primary--green {
-  background: #39b19d;
-  /* postcss-bem-linter: ignore */ }
+  background: #39b19d; }
 
 .btn--primary--green:hover:not([disabled]) {
   background: #2d9f93; }
@@ -1333,24 +1075,20 @@ table {
 .btn--secondary {
   background: transparent; }
 
-.btn--secondary--orange {
-  /* postcss-bem-linter: ignore */ }
-
 .btn--secondary--orange .btn__text {
-  color: #ff9933; }
+  color: #f93; }
 
 .btn--secondary--orange:hover:not([disabled]) {
   background: rgba(255, 153, 51, 0.16); }
 
 .btn--secondary--orange:active:not([disabled]) {
-  color: #ff9933; }
+  color: #f93; }
 
 .btn--secondary--orange.effect:focus:not(:active):after {
-  border: 0 solid #ff9933; }
+  border: 0 solid #f93; }
 
 .btn--secondary--green {
-  border: 1px solid #39b19d;
-  /* postcss-bem-linter: ignore */ }
+  border: 1px solid #39b19d; }
 
 .btn--secondary--green .btn__text {
   color: #39b19d; }
@@ -1374,29 +1112,23 @@ table {
   cursor: not-allowed !important; }
 
 .btn--flat {
-  background: #ffffff;
-  /* postcss-bem-linter: ignore */ }
+  background: #fff; }
 
 .btn--flat .btn__text {
-  color: #4c5794;
-  /* stylelint-disable-line color-no-hex */ }
+  color: #4c5794; }
 
 .btn--flat:hover:not([disabled]) {
-  background: #f2f3f8;
-  /* stylelint-disable-line color-no-hex */ }
+  background: #f2f3f8; }
 
 .btn--flat:active:not([disabled]) span {
-  color: #4c5794;
-  /* stylelint-disable-line color-no-hex */ }
+  color: #4c5794; }
 
 .btn--flat.effect:focus:not(:active):after {
-  border: 0 solid #4c5794;
-  /* stylelint-disable-line color-no-hex */ }
+  border: 0 solid #4c5794; }
 
 .btn--flat:disabled, .btn--flat[disabled] {
   background: transparent !important;
   border: 1px solid rgba(0, 0, 0, 0.04) !important;
-  /* stylelint-disable-line color-no-hex */
   cursor: not-allowed !important; }
 
 .btn--flat:disabled .btn__text, .btn--flat[disabled] .btn__text {
@@ -1593,108 +1325,6 @@ table {
             @extend %inline-icon.active;
         }
 */
-/*------------------------------------*
- *  # Constants
- *------------------------------------*/
-/* stylelint-disable color-no-hex */
-/* stylelint-enable color-no-hex */
-/*------------------------------------*
- *  # SASS Mixins and Functions
- *------------------------------------*/
-/*
- * SASS interpolation
- */
-/*
- * PX to EM
- * @param $px - px value to be converted
- * @param $base - base font size (in `em`)
- * Note: 'em' values are calculate based on the element font-size
- *       to properly converts 'px' to 'em', please pass in the element font-size with it
- * Usage example:
-    padding: em(16px, 1.6em); // font-size in 'em'
- */
-/*
- * Set property by passing a property name, and values.
- * @param $property name - padding, margin etc.
- * @param $values        - values in `px` (space separated for multiple values)
- * @param $font-size     - base font-size in `em`
- * Usage example:
-   @include toEm(padding, 8px 16px 8px, 1.6em);
- */
-/*
- * Generate typefaces key-value pair of variable name and config
- * Example:
-   --paragraph-center-bold-black: (14px, center, bold, black)
- */
-/*
- * Sets font-size, font-weight, color, text-transform, text-align and line-height
- * Usage example:
-   @include setTypeface(16px, bold, black, uppercase);
- */
-/*
- * Set typefaces by passing a typeface variable name
- * @param $var   - typeface variable
- * @param $tt    - text-transform property
- * @param $align - text-align property
- * Usage example:
-   @include typeface(--paragraph-bold-black, uppercase, center);
- */
-/*
- * Range Slider Thumb styling is set here
- */
-/*
- * SVG icons colors
- */
-/*
- * Bar Spinner Animation
- * @param $count    - number of bars
- * @param $duration - duration of animation
- * @param $phase    - each bar phase change delay
- * Usage example:
-   @include createBarspinnerAnimation(5, 1.2s, 0,1);
- */
-/*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
- * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
-    Constants
-*/
-/*
-    Variables
-*/
-/*
-    List of all typefaces variables in the format: --$FONT_SIZES-$TEXT_ALIGN-$FONT_WEIGHTS-COLORS.
-    See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
-    Variables name example: --title-center-semibold-red
- */
-/*------------------------------------*
- *  # Reset SCSS
- *  - to make browsers render all elements more consistently
- *  - Reference:  https://github.com/AdamMarsden/simple-typography/blob/master/_reset.scss
- *------------------------------------*/
-/* stylelint-disable */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, input, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -1703,7 +1333,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline; }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
@@ -1728,22 +1357,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* stylelint-enable */
-/*
-    to use styles without modifier class on .inline-icon
-    use @extend
-
-    e.g. style icon on parent hover:
-        a:hover .inline-icon {
-            @extend %inline-icon.active;
-        }
-*/
-.theme--light .dc-dropdown__select-arrow {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
-
 .theme--light .dc-dropdown__select-arrow .color1-fill {
   fill: rgba(0, 0, 0, 0.8); }
 
@@ -1756,21 +1369,11 @@ table {
 .theme--light .dc-dropdown__select-arrow .color2-stroke {
   stroke: none; }
 
-.theme--light .active.dc-dropdown__select-arrow {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
-
 .theme--light .active.dc-dropdown__select-arrow .color1-fill {
-  fill: #ffffff; }
+  fill: #fff; }
 
 .theme--light .active.dc-dropdown__select-arrow .color1-stroke {
-  stroke: #ffffff; }
+  stroke: #fff; }
 
 .theme--light .active.dc-dropdown__select-arrow .color2-fill {
   fill: rgba(0, 0, 0, 0.8); }
@@ -1790,12 +1393,6 @@ table {
 .theme--light .active.dc-dropdown__select-arrow .color4-stroke {
   stroke: none; }
 
-.theme--light .disabled.dc-dropdown__select-arrow {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
-
 .theme--light .disabled.dc-dropdown__select-arrow .color1-fill {
   fill: rgba(0, 0, 0, 0.16); }
 
@@ -1808,19 +1405,11 @@ table {
 .theme--light .disabled.dc-dropdown__select-arrow .color2-stroke {
   stroke: none; }
 
-.theme--light .white.dc-dropdown__select-arrow {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
-
 .theme--light .white.dc-dropdown__select-arrow .color1-fill {
   fill: rgba(0, 0, 0, 0.8); }
 
 .theme--light .white.dc-dropdown__select-arrow .color1-stroke {
   stroke: rgba(0, 0, 0, 0.8); }
-
-.theme--light .border_hover_color.dc-dropdown__select-arrow {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
 
 .theme--light .border_hover_color.dc-dropdown__select-arrow .color1-fill {
   fill: #999cac; }
@@ -1828,21 +1417,11 @@ table {
 .theme--light .border_hover_color.dc-dropdown__select-arrow .color1-stroke {
   stroke: #999cac; }
 
-.theme--light .secondary.dc-dropdown__select-arrow {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
-
 .theme--light .secondary.dc-dropdown__select-arrow .color1-fill {
   fill: rgba(0, 0, 0, 0.4); }
 
 .theme--light .secondary.dc-dropdown__select-arrow .color1-stroke {
   stroke: rgba(0, 0, 0, 0.4); }
-
-.theme--dark .dc-dropdown__select-arrow {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
 
 .theme--dark .dc-dropdown__select-arrow .color1-fill {
   fill: #7f8397; }
@@ -1856,16 +1435,6 @@ table {
 .theme--dark .dc-dropdown__select-arrow .color2-stroke {
   stroke: none; }
 
-.theme--dark .active.dc-dropdown__select-arrow {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
-
 .theme--dark .active.dc-dropdown__select-arrow .color1-fill {
   fill: #2a3052; }
 
@@ -1873,28 +1442,22 @@ table {
   stroke: #2a3052; }
 
 .theme--dark .active.dc-dropdown__select-arrow .color2-fill {
-  fill: #ffffff; }
+  fill: #fff; }
 
 .theme--dark .active.dc-dropdown__select-arrow .color2-stroke {
-  stroke: #ffffff; }
+  stroke: #fff; }
 
 .theme--dark .active.dc-dropdown__select-arrow .color3-fill {
-  fill: #ffffff; }
+  fill: #fff; }
 
 .theme--dark .active.dc-dropdown__select-arrow .color3-stroke {
-  stroke: #ffffff; }
+  stroke: #fff; }
 
 .theme--dark .active.dc-dropdown__select-arrow .color4-fill {
   fill: none; }
 
 .theme--dark .active.dc-dropdown__select-arrow .color4-stroke {
   stroke: none; }
-
-.theme--dark .disabled.dc-dropdown__select-arrow {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
 
 .theme--dark .disabled.dc-dropdown__select-arrow .color1-fill {
   fill: rgba(127, 131, 151, 0.3); }
@@ -1908,29 +1471,17 @@ table {
 .theme--dark .disabled.dc-dropdown__select-arrow .color2-stroke {
   stroke: none; }
 
-.theme--dark .white.dc-dropdown__select-arrow {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
-
 .theme--dark .white.dc-dropdown__select-arrow .color1-fill {
-  fill: #ffffff; }
+  fill: #fff; }
 
 .theme--dark .white.dc-dropdown__select-arrow .color1-stroke {
-  stroke: #ffffff; }
-
-.theme--dark .border_hover_color.dc-dropdown__select-arrow {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
+  stroke: #fff; }
 
 .theme--dark .border_hover_color.dc-dropdown__select-arrow .color1-fill {
   fill: #7f8397; }
 
 .theme--dark .border_hover_color.dc-dropdown__select-arrow .color1-stroke {
   stroke: #7f8397; }
-
-.theme--dark .secondary.dc-dropdown__select-arrow {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
 
 .theme--dark .secondary.dc-dropdown__select-arrow .color1-fill {
   fill: #7f8397; }
@@ -1947,8 +1498,8 @@ table {
   justify-content: center; }
 
 .theme--light .dc-dropdown__display {
-  background: #ffffff;
-  border: 1px solid #ffffff; }
+  background: #fff;
+  border: 1px solid #fff; }
 
 .theme--light .dc-dropdown__display:hover, .theme--light .dc-dropdown__display:active, .theme--light .dc-dropdown__display:focus {
   outline: 0;
@@ -1975,7 +1526,7 @@ table {
   color: rgba(0, 0, 0, 0.8); }
 
 .theme--dark .dc-dropdown__display-text {
-  color: #ffffff; }
+  color: #fff; }
 
 .dc-dropdown__display--has-symbol {
   justify-content: unset; }
@@ -2078,108 +1629,6 @@ table {
   position: relative;
   margin-top: 8px; }
 
-/*------------------------------------*
- *  # Constants
- *------------------------------------*/
-/* stylelint-disable color-no-hex */
-/* stylelint-enable color-no-hex */
-/*------------------------------------*
- *  # SASS Mixins and Functions
- *------------------------------------*/
-/*
- * SASS interpolation
- */
-/*
- * PX to EM
- * @param $px - px value to be converted
- * @param $base - base font size (in `em`)
- * Note: 'em' values are calculate based on the element font-size
- *       to properly converts 'px' to 'em', please pass in the element font-size with it
- * Usage example:
-    padding: em(16px, 1.6em); // font-size in 'em'
- */
-/*
- * Set property by passing a property name, and values.
- * @param $property name - padding, margin etc.
- * @param $values        - values in `px` (space separated for multiple values)
- * @param $font-size     - base font-size in `em`
- * Usage example:
-   @include toEm(padding, 8px 16px 8px, 1.6em);
- */
-/*
- * Generate typefaces key-value pair of variable name and config
- * Example:
-   --paragraph-center-bold-black: (14px, center, bold, black)
- */
-/*
- * Sets font-size, font-weight, color, text-transform, text-align and line-height
- * Usage example:
-   @include setTypeface(16px, bold, black, uppercase);
- */
-/*
- * Set typefaces by passing a typeface variable name
- * @param $var   - typeface variable
- * @param $tt    - text-transform property
- * @param $align - text-align property
- * Usage example:
-   @include typeface(--paragraph-bold-black, uppercase, center);
- */
-/*
- * Range Slider Thumb styling is set here
- */
-/*
- * SVG icons colors
- */
-/*
- * Bar Spinner Animation
- * @param $count    - number of bars
- * @param $duration - duration of animation
- * @param $phase    - each bar phase change delay
- * Usage example:
-   @include createBarspinnerAnimation(5, 1.2s, 0,1);
- */
-/*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
- * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
-    Constants
-*/
-/*
-    Variables
-*/
-/*
-    List of all typefaces variables in the format: --$FONT_SIZES-$TEXT_ALIGN-$FONT_WEIGHTS-COLORS.
-    See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
-    Variables name example: --title-center-semibold-red
- */
-/*------------------------------------*
- *  # Reset SCSS
- *  - to make browsers render all elements more consistently
- *  - Reference:  https://github.com/AdamMarsden/simple-typography/blob/master/_reset.scss
- *------------------------------------*/
-/* stylelint-disable */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, input, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -2188,7 +1637,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline; }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
@@ -2213,16 +1661,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* stylelint-enable */
-/*
-    to use styles without modifier class on .inline-icon
-    use @extend
-
-    e.g. style icon on parent hover:
-        a:hover .inline-icon {
-            @extend %inline-icon.active;
-        }
-*/
 .dc-list {
   position: absolute;
   width: 100%;
@@ -2234,7 +1672,7 @@ table {
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16); }
 
 .theme--light .dc-list {
-  background: #ffffff; }
+  background: #fff; }
 
 .theme--dark .dc-list {
   background: #191c31; }
@@ -2263,7 +1701,7 @@ table {
   color: rgba(0, 0, 0, 0.8); }
 
 .theme--dark .dc-list__label {
-  color: #ffffff; }
+  color: #fff; }
 
 .dc-list__item {
   width: 100%; }
@@ -2295,22 +1733,22 @@ table {
 
 .theme--dark .dc-list__item:hover:not(.dc-list__item--disabled) {
   background-color: #202641;
-  color: #ffffff; }
+  color: #fff; }
 
 .dc-list__item--selected .dc-list__item-text, .dc-list__item--selected .dc-list__item-symbol, .dc-list__item--selected .dc-list__item-tooltip {
   font-size: 1.4em;
-  color: #ffffff;
+  color: #fff;
   font-weight: 700;
   text-transform: capitalize;
   text-align: left;
   line-height: 1.5; }
 
 .theme--light .dc-list__item--selected .dc-list__item-text, .theme--light .dc-list__item--selected .dc-list__item-symbol, .theme--light .dc-list__item--selected .dc-list__item-tooltip {
-  color: #ffffff;
+  color: #fff;
   background: #999cac; }
 
 .theme--dark .dc-list__item--selected .dc-list__item-text, .theme--dark .dc-list__item--selected .dc-list__item-symbol, .theme--dark .dc-list__item--selected .dc-list__item-tooltip {
-  color: #ffffff;
+  color: #fff;
   background: #2a3052; }
 
 .theme--light .dc-list__item--highlighted:not(.dc-list__item--disabled) {
@@ -2319,7 +1757,7 @@ table {
 
 .theme--dark .dc-list__item--highlighted:not(.dc-list__item--disabled) {
   background-color: #202641;
-  color: #ffffff; }
+  color: #fff; }
 
 .theme--light .dc-list__item--disabled {
   color: rgba(0, 0, 0, 0.4); }
@@ -2349,120 +1787,14 @@ table {
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
-    .dc-list {
-      /* postcss-bem-linter: ignore */ }
     .dc-list > div:nth-child(1) > div:nth-child(1) {
       overflow-y: scroll !important;
-      overflow-x: hidden !important;
-      /* postcss-bem-linter: ignore */
-      /* postcss-bem-linter: ignore */ }
+      overflow-x: hidden !important; }
     .dc-list > div:nth-child(1) > div:nth-child(1)::-webkit-scrollbar {
       -webkit-appearance: none; }
     .dc-list > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
       padding-bottom: 11.5em !important; } } }
 
-/*------------------------------------*
- *  # Constants
- *------------------------------------*/
-/* stylelint-disable color-no-hex */
-/* stylelint-enable color-no-hex */
-/*------------------------------------*
- *  # SASS Mixins and Functions
- *------------------------------------*/
-/*
- * SASS interpolation
- */
-/*
- * PX to EM
- * @param $px - px value to be converted
- * @param $base - base font size (in `em`)
- * Note: 'em' values are calculate based on the element font-size
- *       to properly converts 'px' to 'em', please pass in the element font-size with it
- * Usage example:
-    padding: em(16px, 1.6em); // font-size in 'em'
- */
-/*
- * Set property by passing a property name, and values.
- * @param $property name - padding, margin etc.
- * @param $values        - values in `px` (space separated for multiple values)
- * @param $font-size     - base font-size in `em`
- * Usage example:
-   @include toEm(padding, 8px 16px 8px, 1.6em);
- */
-/*
- * Generate typefaces key-value pair of variable name and config
- * Example:
-   --paragraph-center-bold-black: (14px, center, bold, black)
- */
-/*
- * Sets font-size, font-weight, color, text-transform, text-align and line-height
- * Usage example:
-   @include setTypeface(16px, bold, black, uppercase);
- */
-/*
- * Set typefaces by passing a typeface variable name
- * @param $var   - typeface variable
- * @param $tt    - text-transform property
- * @param $align - text-align property
- * Usage example:
-   @include typeface(--paragraph-bold-black, uppercase, center);
- */
-/*
- * Range Slider Thumb styling is set here
- */
-/*
- * SVG icons colors
- */
-/*
- * Bar Spinner Animation
- * @param $count    - number of bars
- * @param $duration - duration of animation
- * @param $phase    - each bar phase change delay
- * Usage example:
-   @include createBarspinnerAnimation(5, 1.2s, 0,1);
- */
-/*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
- * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
-    Constants
-*/
-/*
-    Variables
-*/
-/*
-    List of all typefaces variables in the format: --$FONT_SIZES-$TEXT_ALIGN-$FONT_WEIGHTS-COLORS.
-    See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
-    Variables name example: --title-center-semibold-red
- */
-/*------------------------------------*
- *  # Reset SCSS
- *  - to make browsers render all elements more consistently
- *  - Reference:  https://github.com/AdamMarsden/simple-typography/blob/master/_reset.scss
- *------------------------------------*/
-/* stylelint-disable */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, input, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -2471,7 +1803,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline; }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
@@ -2496,22 +1827,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* stylelint-enable */
-/*
-    to use styles without modifier class on .inline-icon
-    use @extend
-
-    e.g. style icon on parent hover:
-        a:hover .inline-icon {
-            @extend %inline-icon.active;
-        }
-*/
-.theme--light .dc-popover__target__icon--disabled .info, .dc-popover__target__icon--disabled .theme--light .info {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
-
 .theme--light .dc-popover__target__icon--disabled .info .color1-fill, .dc-popover__target__icon--disabled .theme--light .info .color1-fill {
   fill: rgba(0, 0, 0, 0.16); }
 
@@ -2524,31 +1839,17 @@ table {
 .theme--light .dc-popover__target__icon--disabled .info .color2-stroke, .dc-popover__target__icon--disabled .theme--light .info .color2-stroke {
   stroke: none; }
 
-.theme--light .dc-popover__target__icon .info:hover, .dc-popover__target__icon .theme--light .info:hover {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
-
 .theme--light .dc-popover__target__icon .info:hover .color1-fill, .dc-popover__target__icon .theme--light .info:hover .color1-fill {
   fill: rgba(0, 0, 0, 0.8); }
 
 .theme--light .dc-popover__target__icon .info:hover .color1-stroke, .dc-popover__target__icon .theme--light .info:hover .color1-stroke {
   stroke: rgba(0, 0, 0, 0.8); }
 
-.theme--light .dc-popover__target__icon .info, .dc-popover__target__icon .theme--light .info {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
-
 .theme--light .dc-popover__target__icon .info .color1-fill, .dc-popover__target__icon .theme--light .info .color1-fill {
   fill: rgba(0, 0, 0, 0.4); }
 
 .theme--light .dc-popover__target__icon .info .color1-stroke, .dc-popover__target__icon .theme--light .info .color1-stroke {
   stroke: rgba(0, 0, 0, 0.4); }
-
-.theme--dark .dc-popover__target__icon--disabled .info, .dc-popover__target__icon--disabled .theme--dark .info {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
 
 .theme--dark .dc-popover__target__icon--disabled .info .color1-fill, .dc-popover__target__icon--disabled .theme--dark .info .color1-fill {
   fill: rgba(127, 131, 151, 0.3); }
@@ -2562,19 +1863,11 @@ table {
 .theme--dark .dc-popover__target__icon--disabled .info .color2-stroke, .dc-popover__target__icon--disabled .theme--dark .info .color2-stroke {
   stroke: none; }
 
-.theme--dark .dc-popover__target__icon .info:hover, .dc-popover__target__icon .theme--dark .info:hover {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
-
 .theme--dark .dc-popover__target__icon .info:hover .color1-fill, .dc-popover__target__icon .theme--dark .info:hover .color1-fill {
-  fill: #ffffff; }
+  fill: #fff; }
 
 .theme--dark .dc-popover__target__icon .info:hover .color1-stroke, .dc-popover__target__icon .theme--dark .info:hover .color1-stroke {
-  stroke: #ffffff; }
-
-.theme--dark .dc-popover__target__icon .info, .dc-popover__target__icon .theme--dark .info {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
+  stroke: #fff; }
 
 .theme--dark .dc-popover__target__icon .info .color1-fill, .dc-popover__target__icon .theme--dark .info .color1-fill {
   fill: #7f8397; }
@@ -2591,7 +1884,7 @@ table {
   display: flex;
   flex-direction: row;
   font-size: 1.2em;
-  color: #ffffff;
+  color: #fff;
   font-weight: 400;
   text-transform: none;
   text-align: center;
@@ -2599,11 +1892,11 @@ table {
 
 .theme--light .dc-popover__bubble {
   background: rgba(0, 0, 0, 0.8);
-  color: #ffffff; }
+  color: #fff; }
 
 .theme--dark .dc-popover__bubble {
   background: #2a3052;
-  color: #ffffff; }
+  color: #fff; }
 
 .dc-popover__bubble__icon {
   flex-grow: 1;
@@ -2845,108 +2138,6 @@ table {
             @extend %inline-icon.active;
         }
 */
-/*------------------------------------*
- *  # Constants
- *------------------------------------*/
-/* stylelint-disable color-no-hex */
-/* stylelint-enable color-no-hex */
-/*------------------------------------*
- *  # SASS Mixins and Functions
- *------------------------------------*/
-/*
- * SASS interpolation
- */
-/*
- * PX to EM
- * @param $px - px value to be converted
- * @param $base - base font size (in `em`)
- * Note: 'em' values are calculate based on the element font-size
- *       to properly converts 'px' to 'em', please pass in the element font-size with it
- * Usage example:
-    padding: em(16px, 1.6em); // font-size in 'em'
- */
-/*
- * Set property by passing a property name, and values.
- * @param $property name - padding, margin etc.
- * @param $values        - values in `px` (space separated for multiple values)
- * @param $font-size     - base font-size in `em`
- * Usage example:
-   @include toEm(padding, 8px 16px 8px, 1.6em);
- */
-/*
- * Generate typefaces key-value pair of variable name and config
- * Example:
-   --paragraph-center-bold-black: (14px, center, bold, black)
- */
-/*
- * Sets font-size, font-weight, color, text-transform, text-align and line-height
- * Usage example:
-   @include setTypeface(16px, bold, black, uppercase);
- */
-/*
- * Set typefaces by passing a typeface variable name
- * @param $var   - typeface variable
- * @param $tt    - text-transform property
- * @param $align - text-align property
- * Usage example:
-   @include typeface(--paragraph-bold-black, uppercase, center);
- */
-/*
- * Range Slider Thumb styling is set here
- */
-/*
- * SVG icons colors
- */
-/*
- * Bar Spinner Animation
- * @param $count    - number of bars
- * @param $duration - duration of animation
- * @param $phase    - each bar phase change delay
- * Usage example:
-   @include createBarspinnerAnimation(5, 1.2s, 0,1);
- */
-/*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
- * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
-    Constants
-*/
-/*
-    Variables
-*/
-/*
-    List of all typefaces variables in the format: --$FONT_SIZES-$TEXT_ALIGN-$FONT_WEIGHTS-COLORS.
-    See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
-    Variables name example: --title-center-semibold-red
- */
-/*------------------------------------*
- *  # Reset SCSS
- *  - to make browsers render all elements more consistently
- *  - Reference:  https://github.com/AdamMarsden/simple-typography/blob/master/_reset.scss
- *------------------------------------*/
-/* stylelint-disable */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, input, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -2955,7 +2146,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline; }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
@@ -2980,16 +2170,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* stylelint-enable */
-/*
-    to use styles without modifier class on .inline-icon
-    use @extend
-
-    e.g. style icon on parent hover:
-        a:hover .inline-icon {
-            @extend %inline-icon.active;
-        }
-*/
 .dc-checkbox {
   display: flex;
   justify-content: flex-start;
@@ -3008,7 +2188,7 @@ table {
 
 .dc-checkbox__box--active {
   border: none;
-  background-color: #ff9933; }
+  background-color: #f93; }
 
 /*------------------------------------*
  *  # Constants
