@@ -9581,7 +9581,8 @@ table {
   .withdraw__email-resend-text {
     color: #ff9933;
     font-weight: bold;
-    text-decoration: none; }
+    text-decoration: none;
+    cursor: pointer; }
 
 /** @define payment-agent */
 .payment-agent__wrapper {
@@ -9625,7 +9626,7 @@ table {
 
 .payment-agent__drop-down {
   display: inline-block;
-  width: 20rem;
+  min-width: 20rem;
   height: 4rem;
   margin: 0 0 16px;
   line-height: 1.43; }
