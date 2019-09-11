@@ -11,7 +11,6 @@ import {
     Form }                  from 'formik';
 import { getDecimalPlaces } from '_common/base/currency_base';
 import Localize             from 'App/Components/Elements/localize.jsx';
-// import RadioGroup           from 'App/Components/Form/Radio';
 import { localize }         from 'App/i18n';
 import Icon                 from 'Assets/icon.jsx';
 import { connect }          from 'Stores/connect';
@@ -40,6 +39,68 @@ const validateWithdrawal = (values, { balance, currency, payment_agent }) => {
 
     return errors;
 };
+
+const RadioDropDown = ({ payment_agent_list, selected_payment_agent, onChangePaymentAgent, field, form, id }) => (
+    <React.Fragment>
+        <input
+            id={id}
+            type='radio'
+            value='list'
+            { ...field }
+        />
+        <label htmlFor={id}>
+            <Localize i18n_default_text='By name' />
+            <Dropdown
+                id='payment_agents'
+                className='payment-agent__drop-down'
+                classNameDisplay='payment-agent__drop-down-display'
+                classNameDisplaySpan='payment-agent__drop-down-display-span'
+                classNameItems='payment-agent__drop-down-items'
+                list={payment_agent_list}
+                name='payment_agents'
+                value={selected_payment_agent.value}
+                onChange={(e) => {
+                    onChangePaymentAgent(e);
+                    form.setFieldValue('payment_method', 'list');
+                }}
+            />
+        </label>
+    </React.Fragment>
+);
+
+const RadioInput = ({ touched, errors, field, id }) => (
+    <React.Fragment>
+        <input
+            id={id}
+            type='radio'
+            value='name'
+            { ...field }
+        />
+        <label htmlFor={id}>
+            <Localize i18n_default_text='By payment agent ID' />
+            <Field name='payment_agent'>
+                {/* eslint-disable-next-line no-shadow */}
+                {({ field, form }) => (
+                    <Input
+                        { ...field }
+                        className='payment-agent__input'
+                        type='text'
+                        placeholder='CR'
+                        error_message={
+                            // eslint-disable-next-line max-len
+                            touched.payment_agent && errors.payment_agent
+                        }
+                        autoComplete='off'
+                        maxLength='20'
+                        onFocus={() => {
+                            form.setFieldValue('payment_method', 'name');
+                        }}
+                    />
+                )}
+            </Field>
+        </label>
+    </React.Fragment>
+);
 
 class PaymentAgentWithdraw extends React.Component {
     componentDidMount() {
@@ -86,8 +147,9 @@ class PaymentAgentWithdraw extends React.Component {
                                         <Formik
                                             initialValues={{
                                                 amount        : '',
+                                                payment_agent : '',
                                                 payment_agents: this.props.selected_payment_agent.value,
-                                                payment_method: 'payment_agents',
+                                                payment_method: this.props.is_name_selected ? 'name' : 'list',
                                             }}
                                             validate={this.validateWithdrawalPassthrough}
                                             onSubmit={this.onWithdrawalPassthrough}
@@ -95,65 +157,26 @@ class PaymentAgentWithdraw extends React.Component {
                                             {
                                                 ({ errors, isSubmitting, isValid, touched, values }) => (
                                                     <Form>
-                                                        <Dropdown
-                                                            id='payment_agents'
-                                                            className='payment-agent__drop-down'
-                                                            classNameDisplay='payment-agent__drop-down-display'
-                                                            classNameDisplaySpan='payment-agent__drop-down-display-span'
-                                                            classNameItems='payment-agent__drop-down-items'
-                                                            list={this.props.payment_agent_list}
-                                                            name='payment_agents'
-                                                            value={this.props.selected_payment_agent.value}
-                                                            onChange={this.props.onChangePaymentAgent}
-                                                        />
-                                                        {/* TODO: uncomment these when radio group can be in form */}
-                                                        {/* eslint-disable max-len */}
-                                                        {/* <RadioGroup */}
-                                                        {/*    className='payment-agent__radio-group' */}
-                                                        {/*    items={[ */}
-                                                        {/*        { */}
-                                                        {/*            className: 'payment-agent__radio', */}
-                                                        {/*            label    : ( */}
-                                                        {/*                <React.Fragment> */}
-                                                        {/*                    <Localize i18n_default_text='By name' /> */}
-                                                        {/*                    <Dropdown */}
-                                                        {/*                        id='payment_agents' */}
-                                                        {/*                        className='payment-agent__drop-down' */}
-                                                        {/*                        classNameDisplay='payment-agent__drop-down-display' */}
-                                                        {/*                        classNameDisplaySpan='payment-agent__drop-down-display-span' */}
-                                                        {/*                        classNameItems='payment-agent__drop-down-items' */}
-                                                        {/*                        list={this.props.payment_agent_list} */}
-                                                        {/*                        name='payment_agents' */}
-                                                        {/*                        value={this.props.selected_payment_agent.value} */}
-                                                        {/*                        onChange={this.props.onChangePaymentAgent} */}
-                                                        {/*                    /> */}
-                                                        {/*                </React.Fragment> */}
-                                                        {/*            ), */}
-                                                        {/*            value: true, */}
-                                                        {/*        }, */}
-                                                        {/*        { */}
-                                                        {/*            className: 'payment-agent__radio', */}
-                                                        {/*            label    : ( */}
-                                                        {/*                <React.Fragment> */}
-                                                        {/*                    <Localize i18n_default_text='By payment agent ID' /> */}
-                                                        {/*                    <Input */}
-                                                        {/*                        autoComplete='off' */}
-                                                        {/*                        maxLength='20' */}
-                                                        {/*                        className='payment-agent__input' */}
-                                                        {/*                        type='text' */}
-                                                        {/*                        name='payment_agent' */}
-                                                        {/*                        placeholder='CR' */}
-                                                        {/*                    /> */}
-                                                        {/*                </React.Fragment> */}
-                                                        {/*            ), */}
-                                                        {/*            value: false, */}
-                                                        {/*        }, */}
-                                                        {/*    ]} */}
-                                                        {/*    name='payment_method' */}
-                                                        {/*    selected={this.props.is_name_selected} */}
-                                                        {/*    onToggle={this.props.setIsNameSelected} */}
-                                                        {/* /> */}
-                                                        {/* eslint-enable max-len */}
+                                                        <div className='payment-agent__radio-group'>
+                                                            <Field
+                                                                id='payment_agents'
+                                                                component={RadioDropDown}
+                                                                payment_agent_list={this.props.payment_agent_list}
+                                                                // eslint-disable-next-line max-len
+                                                                selected_payment_agent={this.props.selected_payment_agent}
+                                                                onChangePaymentAgent={this.props.onChangePaymentAgent}
+                                                                className='payment-agent__radio'
+                                                                name='payment_method'
+                                                            />
+                                                            <Field
+                                                                id='payment_agent'
+                                                                component={RadioInput}
+                                                                touched={touched}
+                                                                errors={errors}
+                                                                className='payment-agent__radio'
+                                                                name='payment_method'
+                                                            />
+                                                        </div>
                                                         <Field name='amount'>
                                                             {({ field }) => (
                                                                 <Input

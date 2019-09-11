@@ -421,7 +421,7 @@ export default class CashierStore extends BaseStore {
 
     @action.bound
     setIsNameSelected(is_name_selected = !this.config.payment_agent.is_name_selected) {
-        this.config.payment_agent.is_name_selected = is_name_selected;
+        this.config.payment_agent.is_name_selected = typeof is_name_selected === 'boolean' ? is_name_selected : !this.config.payment_agent.is_name_selected;
     }
 
     @action.bound
