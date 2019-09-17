@@ -370,9 +370,6 @@
 .dc-input {
   position: relative;
   width: 100%;
-  border-radius: 4px;
-  border: 1px solid #e8e8e8;
-  border: 1px solid var(--color-grey-2);
   display: flex;
   align-items: center;
   margin-bottom: 1.8rem; }
@@ -384,6 +381,11 @@
 .dc-input:focus-within {
   border-color: #85acb0;
   border-color: var(--color-green); }
+
+.dc-input__wrapper {
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  border: 1px solid var(--color-grey-2); }
 
 .dc-input__field {
   background: none;
@@ -477,7 +479,7 @@
 
 .dc-input__leading-icon {
   margin-left: 1rem;
-  top: 0.7rem;
+  top: 0.9rem;
   position: absolute;
   left: 0;
   pointer-events: none;
@@ -516,6 +518,18 @@
 
 .theme--dark .dc-input--no-placeholder label {
   background-color: #191c31; }
+
+.dc-input__hint {
+  font-size: 1.2rem;
+  margin-left: 1.2rem;
+  position: absolute;
+  top: 4rem; }
+
+.theme--light .dc-input__hint {
+  color: rgba(0, 0, 0, 0.4); }
+
+.theme--dark .dc-input__hint {
+  color: #7f8397; }
 
 /*------------------------------------*
  *  # Constants
@@ -1139,9 +1153,6 @@
 .dc-input {
   position: relative;
   width: 100%;
-  border-radius: 4px;
-  border: 1px solid #e8e8e8;
-  border: 1px solid var(--color-grey-2);
   display: flex;
   align-items: center;
   margin-bottom: 1.8rem; }
@@ -1153,6 +1164,11 @@
 .dc-input:focus-within {
   border-color: #85acb0;
   border-color: var(--color-green); }
+
+.dc-input__wrapper {
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  border: 1px solid var(--color-grey-2); }
 
 .dc-input__field {
   background: none;
@@ -1246,7 +1262,7 @@
 
 .dc-input__leading-icon {
   margin-left: 1rem;
-  top: 0.7rem;
+  top: 0.9rem;
   position: absolute;
   left: 0;
   pointer-events: none;
@@ -1285,6 +1301,18 @@
 
 .theme--dark .dc-input--no-placeholder label {
   background-color: #191c31; }
+
+.dc-input__hint {
+  font-size: 1.2rem;
+  margin-left: 1.2rem;
+  position: absolute;
+  top: 4rem; }
+
+.theme--light .dc-input__hint {
+  color: rgba(0, 0, 0, 0.4); }
+
+.theme--dark .dc-input__hint {
+  color: #7f8397; }
 
 /*------------------------------------*
  *  # Constants
