@@ -9573,7 +9573,8 @@ table {
     margin-bottom: 0.4rem; }
 
 .account-transfer__drop-down {
-  min-width: calc(calc(100% - calc(16px + 1.6rem)) / 2); }
+  min-width: calc(calc(100% - calc(16px + 1.6rem)) / 2);
+  margin-bottom: 3.4rem; }
 
 .account-transfer__currency {
   margin: 0 0.4rem; }
