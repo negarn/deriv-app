@@ -9571,7 +9571,7 @@ table {
     margin-bottom: 0.4rem; }
 
 .account-transfer__drop-down {
-  min-width: 28rem; }
+  min-width: calc(calc(100% - calc(16px + 1.2rem)) / 2); }
 
 .account-transfer__currency {
   margin: 0 0.4rem; }
@@ -9587,18 +9587,12 @@ table {
 
 .account-transfer__transfer-icon {
   vertical-align: baseline;
-  vertical-align: initial; }
+  vertical-align: initial;
+  margin: 0 0.6rem; }
 
 .account-transfer__transfer-details-from, .account-transfer__transfer-details-to {
-  width: calc(calc(100% - calc(16px + 3.2rem)) / 2);
   display: flex;
   align-items: center; }
-
-.account-transfer__transfer-details-from {
-  justify-content: flex-end; }
-
-.account-transfer__transfer-details-to {
-  justify-content: flex-start; }
 
 .account-transfer__button-done {
   margin-top: 3.2rem;
