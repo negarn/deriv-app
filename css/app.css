@@ -2143,11 +2143,11 @@ html {
 .theme--dark .dc-list__item-text, .theme--dark .dc-list__item-symbol {
   color: #7f8397; }
 
-.theme--light .dc-list__item:not(.dc-list__item--disabled):hover {
+.theme--light .dc-list__item:hover:not(.dc-list__item--disabled) {
   background-color: rgba(0, 0, 0, 0.04);
   color: rgba(0, 0, 0, 0.8); }
 
-.theme--dark .dc-list__item:not(.dc-list__item--disabled):hover {
+.theme--dark .dc-list__item:hover:not(.dc-list__item--disabled) {
   background-color: #202641;
   color: #fff; }
 
@@ -2174,10 +2174,6 @@ html {
 .theme--dark .dc-list__item--highlighted:not(.dc-list__item--disabled) {
   background-color: #202641;
   color: #fff; }
-
-.dc-list__item--disabled {
-  opacity: 0.3;
-  cursor: default; }
 
 .theme--light .dc-list__item--disabled {
   color: rgba(0, 0, 0, 0.4); }
