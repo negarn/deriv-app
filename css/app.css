@@ -1743,10 +1743,6 @@ html {
   border-color: #85acb0;
   border-color: var(--brand-secondary); }
 
-.dc-input__wrapper {
-  border-radius: 4px;
-  border: 1px solid var(--color-grey-2); }
-
 .dc-input__field {
   background: none;
   color: var(--text-prominent);
@@ -4645,10 +4641,6 @@ html {
 .dc-input:focus-within {
   border-color: #85acb0;
   border-color: var(--brand-secondary); }
-
-.dc-input__wrapper {
-  border-radius: 4px;
-  border: 1px solid var(--color-grey-2); }
 
 .dc-input__field {
   background: none;
