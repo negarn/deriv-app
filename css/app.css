@@ -3735,8 +3735,8 @@ html {
   left: 0.6em;
   right: unset; }
 
-.dc-dropdown--show {
-  border: 1px solid var(--border-active) !important; }
+.dc-dropdown--show .dc-dropdown__display {
+  border: 1px solid var(--border-active); }
 
 .dc-dropdown--show > .dc-dropdown__select-arrow {
   transform: rotate(-180deg); }
@@ -6793,6 +6793,7 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 0 0 0 1.6em;
   padding: 0 1.6em;
   cursor: pointer; }
   .acc-info__container {
@@ -6859,7 +6860,7 @@ html {
   .acc-info--show .acc-info__select-arrow {
     transform: rotate(180deg); }
   .acc-info__button {
-    margin: 0 1.4em 0 0; }
+    margin: 0 1.6em; }
     .acc-info__button:not(:last-child) {
       margin-right: 1em; }
 
@@ -11418,7 +11419,7 @@ table {
     text-transform: none;
     text-align: center;
     line-height: 1.5;
-    line-height: 2em;
+    line-height: 1.5;
     color: var(--text-general);
     padding: 10px 16px;
     cursor: pointer;
@@ -11708,7 +11709,11 @@ table {
     margin-bottom: 1.6rem; }
   .cashier__transferred-details {
     margin-left: 8px;
-    vertical-align: super; }
+    vertical-align: super;
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 1.43;
+    max-width: 18rem; }
     .cashier__transferred-details-wrapper {
       display: flex;
       justify-content: center;
@@ -11718,8 +11723,9 @@ table {
     vertical-align: middle;
     margin: 0 1.6rem; }
   .cashier__paragraph {
-    font-size: 1.4em;
-    align-self: center; }
+    font-size: 1.4rem;
+    align-self: center;
+    line-height: 1.43; }
   .cashier__text {
     font-size: 1.4rem;
     line-height: 1.43;
@@ -11863,7 +11869,8 @@ table {
   margin-bottom: 24px; }
 
 .payment-agent__buttons {
-  float: right; }
+  justify-content: flex-end;
+  display: flex; }
 
 .payment-agent__statement-button, .payment-agent__done-button {
   margin: 0; }
@@ -11881,6 +11888,9 @@ table {
     font-size: 1.4rem;
     padding: 10px 12px !important;
     height: 4rem; }
+
+.payment-agent__paragraph {
+  align-self: flex-start; }
 
 /** @define account-transfer */
 .account-transfer__notes {
