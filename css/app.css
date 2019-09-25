@@ -15177,6 +15177,8 @@ table {
     font-size: 1.4rem;
     padding: 10px 12px !important;
     height: 4rem; }
+  .payment-agent__input-error {
+    white-space: nowrap; }
 
 .payment-agent__paragraph {
   align-self: flex-start; }
