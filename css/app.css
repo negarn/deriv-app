@@ -3595,6 +3595,7 @@ html {
 
 .dc-dropdown__display-text {
   padding-left: 1em;
+  padding-right: 2.5em;
   font-size: 1.4em;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 400;
