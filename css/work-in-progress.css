@@ -380,9 +380,11 @@ html {
     height: 42px;
     cursor: pointer;
     background: var(--button-primary-default); }
+    .work-in-progress__btn:hover {
+      background: var(--button-primary-hover); }
     .work-in-progress__btn--span {
       font-weight: normal;
       font-size: 1.6em;
       text-transform: none;
-      color: var(--text-prominent); }
+      color: var(--text-colored-background); }
 

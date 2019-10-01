@@ -362,7 +362,8 @@ html {
   .account__tab_container {
     padding: 0 8px;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    overflow: hidden; }
   .account__scrollbars_container {
     height: 100%;
     padding-top: 24px;
@@ -544,6 +545,10 @@ html {
     align-items: center; }
   .account .account-limit-info * {
     padding-left: 8px; }
+  .account-address__details-section {
+    margin-top: 0.5em; }
+    .account-address__details-section .account-form__fieldset {
+      margin-bottom: 3em; }
 
 /** @define forgot-password; weak */
 .forgot-password {
