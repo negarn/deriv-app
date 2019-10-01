@@ -7730,7 +7730,7 @@ html {
     height: 100%;
     justify-content: center;
     position: relative;
-    margin-right: -0.8rem; }
+    margin-right: 0.8rem; }
   .acc-info__id-icon {
     vertical-align: middle;
     margin-right: 0.8rem; }
@@ -7763,7 +7763,7 @@ html {
   .acc-info--show .acc-info__select-arrow {
     transform: rotate(180deg); }
   .acc-info__button {
-    margin: 0 1.6em; }
+    margin: 0 1.6em 0 0 !important; }
     .acc-info__button:not(:last-child) {
       margin-right: 1em; }
 
