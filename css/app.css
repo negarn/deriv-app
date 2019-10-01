@@ -3363,6 +3363,15 @@ html {
           animation-fill-mode: forwards;
   display: block; }
 
+.btn .initial-loader--btn {
+  background-color: unset; }
+
+.btn .initial-loader--btn .initial-loader__barspinner--rect {
+  background-color: #fff; }
+
+.btn .initial-loader--btn .barspinner {
+  margin: 0 4px 0 -4px; }
+
 @-webkit-keyframes buttonEffect {
   to {
     opacity: 0;
@@ -3380,15 +3389,6 @@ html {
     bottom: -0.6em;
     right: -0.6em;
     border-width: 6px; } }
-
-.initial-loader--btn {
-  background-color: unset !important; }
-
-.initial-loader--btn .initial-loader__barspinner--rect {
-  background-color: #fff; }
-
-.initial-loader--btn .barspinner {
-  margin: 0 4px 0 -4px; }
 
 /*------------------------------------*
  *  # Constants
