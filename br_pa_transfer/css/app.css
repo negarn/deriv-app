@@ -16230,7 +16230,7 @@ table {
     .reset-password__password-field > label {
       background-color: var(--general-main-2); }
 
-/** @define cashier */
+/** @define cashier; weak */
 .cashier {
   /** @define cashier-error */ }
   .cashier__content {
@@ -16244,6 +16244,8 @@ table {
       line-height: 1.43; }
     .cashier__wrapper--align-left {
       text-align: left; }
+    .cashier__wrapper .inline-icon .color1-fill {
+      fill: var(--text-general); }
   .cashier__loader {
     font-size: 1rem; }
     .cashier__loader-wrapper {
