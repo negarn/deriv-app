@@ -1872,6 +1872,9 @@ html {
   border: none;
   resize: none; }
 
+.dc-input__field[type=textarea] ~ .dc-field-error {
+  top: 10rem; }
+
 .dc-input__leading-icon {
   margin-left: 1rem;
   top: 1rem;
@@ -5042,6 +5045,9 @@ html {
   height: 9.6rem;
   border: none;
   resize: none; }
+
+.dc-input__field[type=textarea] ~ .dc-field-error {
+  top: 10rem; }
 
 .dc-input__leading-icon {
   margin-left: 1rem;
