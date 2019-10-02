@@ -16597,6 +16597,9 @@ table {
   margin-top: 3.2rem; }
 
 /** @define payment-agent-transfer */
+.payment-agent-transfer__header {
+  margin-bottom: 2.8rem; }
+
 .payment-agent-transfer__input {
   width: 29.6rem;
   display: inline-flex; }
