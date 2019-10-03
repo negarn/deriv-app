@@ -94,7 +94,7 @@
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -317,7 +317,7 @@
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -344,9 +344,9 @@
   border-bottom-width: 1px; }
 
 .dc-accordion__item {
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--border-normal);
   border-bottom-width: 0;
-  color: var(--text-color-3);
+  color: var(--text-general);
   font-size: 1.4rem; }
 
 .dc-accordion__item--first {
@@ -354,7 +354,7 @@
   border-top-left-radius: 4px; }
 
 .dc-accordion__item--open .dc-accordion__item-header {
-  border-bottom: 1px solid #eaeaea; }
+  border-bottom: 1px solid var(--border-normal); }
 
 .dc-accordion__item--open .dc-accordion__item-content {
   display: block; }
@@ -373,6 +373,9 @@
 .dc-accordion__item-header-icon-wrapper {
   float: right;
   padding-left: 16px; }
+
+.dc-accordion__item-header-icon path, .dc-accordion__item-header-icon rect {
+  fill: var(--text-general); }
 
 .dc-accordion__item-content {
   padding: 16px; }

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese);
 /*------------------------------------*
  *  # Constants
  *------------------------------------*/
@@ -95,7 +95,7 @@
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -318,7 +318,7 @@
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -536,7 +536,7 @@
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -759,7 +759,7 @@
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -935,7 +935,7 @@
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -1080,7 +1080,7 @@ html {
 
 /* postcss-bem-linter: ignore */
 *, html, .body {
-  font-family: roboto, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1102,23 +1102,23 @@ html {
   font-family: inherit;
   font-style: inherit;
   padding: 2px 3px;
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 /** @define theme */
 .theme--light {
@@ -1219,9 +1219,11 @@ html {
       height: 178px;
       cursor: pointer;
       border-radius: 4px;
-      border: 1px solid var(--text-general); }
-    .theme-select-settings__option__icon--active, .theme-select-settings__option__icon:hover {
-      box-shadow: 0 0 0 2px var(--shadow-menu); }
+      border: 1px solid var(--border-normal); }
+      .theme-select-settings__option__icon:hover:not(.theme-select-settings__option__icon--active) {
+        border-color: var(--border-hover); }
+      .theme-select-settings__option__icon--active {
+        border-color: var(--border-active); }
 
 /** @define settings-language */
 .settings-language__language-header {
@@ -1244,11 +1246,10 @@ html {
   align-items: center;
   border-radius: 4px;
   padding: 16px;
-  text-decoration: none; }
+  text-decoration: none;
+  background-color: var(--state-normal); }
   .settings-language__language-link--active {
     border: 1px solid var(--border-active);
-    box-shadow: 0 0 0 2px var(--shadow-menu);
-    background-color: var(--state-active);
     color: var(--text-prominent); }
 
 .settings-language__language-flag {
@@ -1375,7 +1376,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -1598,7 +1599,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -1723,7 +1724,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -1771,6 +1772,10 @@ html {
 .dc-input:focus-within:hover {
   border-color: #85acb0;
   border-color: var(--brand-secondary); }
+
+.dc-input__disabled {
+  border-color: var(--general-disabled);
+  color: var(--text-disabled); }
 
 .dc-input__field {
   background: none;
@@ -1826,7 +1831,7 @@ html {
   outline: none; }
 
 .dc-input__field:focus ~ label, .dc-input__field:disabled ~ label, .dc-input__field:not(:focus):valid ~ label {
-  transform: translate(0, -1.6rem) scale(0.75);
+  transform: translate(0, -1.8rem) scale(0.75);
   padding: 0 4px; }
 
 .dc-input__field:disabled {
@@ -1867,6 +1872,14 @@ html {
   -webkit-appearance: none;
   margin: 0; }
 
+.dc-input__field[type=textarea] {
+  height: 9.6rem;
+  border: none;
+  resize: none; }
+
+.dc-input__field[type=textarea] ~ .dc-field-error {
+  top: 10rem; }
+
 .dc-input__leading-icon {
   margin-left: 1rem;
   top: 1rem;
@@ -1891,7 +1904,7 @@ html {
   position: absolute;
   pointer-events: none;
   left: 1rem;
-  top: 1rem;
+  top: 1.3rem;
   transition: 0.25s ease all;
   transform-origin: top left; }
 
@@ -2017,7 +2030,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -2063,13 +2076,8 @@ html {
   display: flex;
   align-items: center;
   padding: 1rem 1.6rem;
-  font-size: 1.4rem; }
-
-.theme--light .dc-dropdown-list__item {
-  color: rgba(0, 0, 0, 0.8); }
-
-.theme--dark .dc-dropdown-list__item {
-  color: #fff; }
+  font-size: 1.4rem;
+  color: var(--text-general); }
 
 .dc-dropdown-list__item:hover {
   background-color: var(--state-hover); }
@@ -2167,7 +2175,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -2299,7 +2307,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -2522,7 +2530,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -2674,7 +2682,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -2897,7 +2905,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -3092,7 +3100,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -3160,7 +3168,8 @@ html {
   text-decoration: none; }
 
 .btn--primary--default {
-  background: var(--button-primary-default); }
+  background: var(--button-primary-default);
+  color: var(--text-colored-background); }
 
 .btn--primary--default:hover:not([disabled]) {
   background: var(--button-primary-hover); }
@@ -3173,7 +3182,7 @@ html {
   cursor: not-allowed !important; }
 
 .btn--primary--default .btn__text {
-  color: #fff; }
+  color: var(--text-colored-background); }
 
 .btn--primary .btn__text {
   color: #fff; }
@@ -3355,7 +3364,8 @@ html {
   bottom: -0.1em;
   right: -0.1em;
   border-radius: inherit;
-  border: 0 solid #2a3052;
+  border: 0 solid #85acb0;
+  border: 0 solid var(--brand-secondary);
   opacity: 0.4;
   -webkit-animation: buttonEffect 0.4s;
           animation: buttonEffect 0.4s;
@@ -3367,10 +3377,13 @@ html {
   background-color: unset; }
 
 .btn .initial-loader--btn .initial-loader__barspinner--rect {
-  background-color: #fff; }
+  background-color: var(--text-colored-background); }
 
 .btn .initial-loader--btn .barspinner {
-  margin: 0 4px 0 -4px; }
+  margin: 0.6rem 4px 0 -4px; }
+
+.btn .initial-loader--btn .barspinner__rect {
+  height: 35%; }
 
 @-webkit-keyframes buttonEffect {
   to {
@@ -3486,7 +3499,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -3709,7 +3722,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -3850,6 +3863,9 @@ html {
 
 .dc-dropdown__display--has-symbol {
   justify-content: unset; }
+
+.dc-dropdown__display--no-symbol .dc-dropdown__display-text {
+  padding: unset; }
 
 .dc-dropdown__display--no-border {
   border-color: var(--fill-normal); }
@@ -4100,7 +4116,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -4128,8 +4144,8 @@ html {
   overflow-y: auto;
   z-index: 2;
   border-radius: 4px;
-  box-shadow: 0 2px 8px 0 var(--shadow-menu);
-  background: var(--state-normal); }
+  box-shadow: 0 8px 16px 0 var(--shadow-menu);
+  background: var(--general-main-2); }
 
 .dc-list--left {
   width: unset; }
@@ -4323,7 +4339,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -4541,7 +4557,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -4764,7 +4780,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -4889,7 +4905,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -4937,6 +4953,10 @@ html {
 .dc-input:focus-within:hover {
   border-color: #85acb0;
   border-color: var(--brand-secondary); }
+
+.dc-input__disabled {
+  border-color: var(--general-disabled);
+  color: var(--text-disabled); }
 
 .dc-input__field {
   background: none;
@@ -4992,7 +5012,7 @@ html {
   outline: none; }
 
 .dc-input__field:focus ~ label, .dc-input__field:disabled ~ label, .dc-input__field:not(:focus):valid ~ label {
-  transform: translate(0, -1.6rem) scale(0.75);
+  transform: translate(0, -1.8rem) scale(0.75);
   padding: 0 4px; }
 
 .dc-input__field:disabled {
@@ -5033,6 +5053,14 @@ html {
   -webkit-appearance: none;
   margin: 0; }
 
+.dc-input__field[type=textarea] {
+  height: 9.6rem;
+  border: none;
+  resize: none; }
+
+.dc-input__field[type=textarea] ~ .dc-field-error {
+  top: 10rem; }
+
 .dc-input__leading-icon {
   margin-left: 1rem;
   top: 1rem;
@@ -5057,7 +5085,7 @@ html {
   position: absolute;
   pointer-events: none;
   left: 1rem;
-  top: 1rem;
+  top: 1.3rem;
   transition: 0.25s ease all;
   transform-origin: top left; }
 
@@ -5186,7 +5214,373 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
+    --state-normal: #0e0e0e;
+    --state-hover: #242828;
+    --state-active: #323738;
+    --state-disabled: #1d1f20;
+    --border-normal: #323738;
+    --border-hover: #6e6e6e;
+    --border-active: var(--brand-secondary);
+    --border-disabled: #1d1f20;
+    --fill-normal: #0e0e0e;
+    --fill-hover: #6e6e6e;
+    --fill-active: var(--brand-secondary);
+    --fill-disabled: #1d1f20;
+    --status-default: #eaeced;
+    --status-danger: #cc2e3d;
+    --status-warning: #ffad3a;
+    --status-success: #00a79e;
+    --status-info: #377cfc;
+    --status-colored-background: #ffffff;
+    --transparent-success: transparentize(#00a79e, 0.92); }
+
+/* Preserve legacy variables */
+/* Primary */
+/* stylelint-enable color-no-hex */
+/*------------------------------------*
+ *  # SASS Mixins and Functions
+ *------------------------------------*/
+/*
+ * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
+ * Generate typefaces key-value pair of variable name and config
+ * Example:
+   --paragraph-center-bold-black: (14px, center, bold, black)
+ */
+/*
+ * Sets font-size, font-weight, color, text-transform, text-align and line-height
+ * Usage example:
+   @include setTypeface(16px, bold, black, uppercase);
+ */
+/*
+ * Set typefaces by passing a typeface variable name
+ * @param $var   - typeface variable
+ * @param $tt    - text-transform property
+ * @param $align - text-align property
+ * Usage example:
+   @include typeface(--paragraph-bold-black, uppercase, center);
+ */
+/*
+ * Range Slider Thumb styling is set here
+ */
+/*
+ * SVG icons colors
+ */
+/*
+ * Bar Spinner Animation
+ * @param $count    - number of bars
+ * @param $duration - duration of animation
+ * @param $phase    - each bar phase change delay
+ * Usage example:
+   @include createBarspinnerAnimation(5, 1.2s, 0,1);
+ */
+/*
+ * Implementation of themes
+ * generate sets of themes keys object property (dark / light)
+ * @param $themes - themes property
+ * Usage example:
+   @include themify($themes) { color: themed('background_color') }
+ */
+/*
+ * Generate typefaces key-value pair of themefy object
+ * Should be inside themify mixins
+ * Example:
+   @include themify($themes) { border-color: 1px solid themed('background_color') }
+ */
+/*
+ * Tooltip colors
+ * @param $color - color property
+ * Usage example:
+   @include tooltipColor($COLOR_RED);
+ */
+/*
+ * Themified Tooltip colors
+ * @param $color - color property
+ * Usage example:
+   @include tooltipColor($COLOR_RED);
+ */
+/*
+ * Convert Tooltip colors
+ * @param $color - css color property
+ * Usage example:
+   @include convertTooltipColor(var(--status-default));
+ */
+/*
+    Constants
+*/
+/*
+    Variables
+*/
+/*
+    List of all typefaces variables in the format: --$FONT_SIZES-$TEXT_ALIGN-$FONT_WEIGHTS-COLORS.
+    See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
+    Variables name example: --title-center-semibold-red
+ */
+/*
+    to use styles without modifier class on .inline-icon
+    use @extend
+
+    e.g. style icon on parent hover:
+        a:hover .inline-icon {
+            @extend %inline-icon.active;
+        }
+*/
+/* postcss-bem-linter: ignore */
+html {
+  font-size: 62.5%;
+  /** TODO: define breakpoints */ }
+
+/** @define body */
+.body {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+/* postcss-bem-linter: ignore */
+*, html, .body {
+  font-family: "IBM Plex Sans", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  box-sizing: border-box; }
+
+/** @define select */
+.select {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  padding: 2px 3px;
+  border: 1px solid var(--border-normal);
+  border-radius: 4px; }
+
+/** @define input */
+.input {
+  font-family: inherit;
+  font-style: inherit;
+  padding: 2px 3px;
+  color: var(--text-general); }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: var(--text-general); }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: var(--text-general); }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: var(--text-general); }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: var(--text-general); }
+
+/** @define theme */
+.theme--light {
+  background: #ffffff; }
+
+.theme--dark {
+  background: #0e0e0e; }
+
+/** @define container */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+/** @define hidden */
+.hidden {
+  visibility: hidden !important;
+  transition: none !important; }
+
+/** @define absolute-center-v */
+.absolute-center-v {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0; }
+
+/** @define link */
+.link {
+  color: #ff444f;
+  color: var(--brand-red-coral);
+  font-weight: bold;
+  text-decoration: none; }
+  .link:hover {
+    text-decoration: underline; }
+  .link--white {
+    color: #ffffff; }
+
+/** @define icon */
+.icon--centered {
+  top: 0.8em;
+  left: 5%; }
+
+/** @define center-text */
+.center-text {
+  text-align: center; }
+
+/** @define no-margin */
+.no-margin {
+  margin: 0; }
+
+/** @define hr */
+.hr {
+  border-top: var(--general-section-1);
+  display: block;
+  height: 1px;
+  border: 0;
+  margin: 0.5em 0;
+  padding: 0; }
+
+/** @define deriv-app */
+.deriv-app {
+  height: 100%;
+  overflow: hidden; }
+
+.personal-details-form {
+  flex-grow: 1;
+  margin-top: 3rem; }
+  .personal-details-form .datepicker {
+    max-width: none;
+    max-width: initial; }
+  .personal-details-form__elements {
+    flex-grow: 1;
+    margin: 0 auto;
+    width: 40%; }
+  .personal-details-form__description {
+    font-size: 1.4em;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 1.5;
+    text-transform: none;
+    margin-top: 3rem;
+    color: var(--text-general); }
+
+/*------------------------------------*
+ *  # Constants
+ *------------------------------------*/
+/* stylelint-disable color-no-hex */
+/* COLOR PALETTE */
+:root {
+  --text-size-xxs: 1.2rem;
+  --text-size-xs: 1.4rem;
+  --text-size-s: 1.6rem;
+  --text-size-sm: 2rem;
+  --text-size-m: 2.4rem;
+  --text-size-l: 3.2rem;
+  --text-size-xl: 4.8rem;
+  --text-size-xxl: 6.4rem;
+  --brand-dark-grey: #0e0e0e;
+  --brand-red-coral: #ff444f;
+  --brand-orange: #ff6444;
+  --brand-secondary: #85acb0; }
+  :root .theme--light {
+    --general-main-1: #ffffff;
+    --general-main-2: #ffffff;
+    --general-section-1: #f2f3f4;
+    --general-section-2: #f2f3f4;
+    --general-disabled: #eaeced;
+    --general-hover: #e6e9e9;
+    --general-active: #d6dadb;
+    --text-prominent: #333333;
+    --text-general: #333333;
+    --text-less-prominent: #999999;
+    --text-disabled: #d6d6d6;
+    --text-profit-success: #4bb4b3;
+    --text-loss-danger: #ec3f3f;
+    --text-colored-background: #ffffff;
+    --purchase-main-1: #4bb4b3;
+    --purchase-section-1: #3d9494;
+    --purchase-main-2: #ec3f3f;
+    --purchase-section-2: #d33636;
+    --purchase-disabled-main: #eaeced;
+    --purchase-disabled-section: #e6e9e9;
+    --button-primary-default: var(--brand-red-coral);
+    --button-secondary-default: #999999;
+    --button-tertiary-default: transparent;
+    --button-primary-hover: #eb3e48;
+    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-tertiary-hover: rgba(255,68,79,0.07843);
+    --overlay-outside-dialog: rgba(0,0,0,0.72157);
+    --overlay-inside-dialog: rgba(255,255,255,0.96078);
+    --shadow-menu: rgba(0,0,0,0.16078);
+    --state-normal: #ffffff;
+    --state-hover: #e6e9e9;
+    --state-active: #d6dadb;
+    --state-disabled: #eaeced;
+    --border-normal: #d6dadb;
+    --border-hover: #999999;
+    --border-active: var(--brand-secondary);
+    --border-disabled: #eaeced;
+    --fill-normal: #ffffff;
+    --fill-hover: #999999;
+    --fill-active: var(--brand-secondary);
+    --fill-disabled: #eaeced;
+    --status-default: #eaeced;
+    --status-danger: #ec3f3f;
+    --status-success: #4bb4b3;
+    --status-warning: #ffad3a;
+    --status-info: #377cfc;
+    --status-colored-background: #ffffff;
+    --transparent-success: transparentize(#4bb4b3, 0.92); }
+  :root .theme--dark {
+    --general-main-1: #0e0e0e;
+    --general-main-2: #151717;
+    --general-section-1: #151717;
+    --general-section-2: #0e0e0e;
+    --general-disabled: #1d1f20;
+    --general-hover: #242828;
+    --general-active: #323738;
+    --text-prominent: #ffffff;
+    --text-general: #c2c2c2;
+    --text-less-prominent: #6e6e6e;
+    --text-disabled: #3e3e3e;
+    --text-profit-success: #00a79e;
+    --text-loss-danger: #cc2e3d;
+    --text-colored-background: #ffffff;
+    --purchase-main-1: #00a79e;
+    --purchase-section-1: #008079;
+    --purchase-main-2: #cc2e3d;
+    --purchase-section-2: #a32430;
+    --purchase-disabled-main: #1d1f20;
+    --purchase-disabled-section: #0e0e0e;
+    --button-primary-default: var(--brand-red-coral);
+    --button-secondary-default: #6e6e6e;
+    --button-tertiary-default: transparent;
+    --button-primary-hover: #eb3e48;
+    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-tertiary-hover: rgba(255,68,79,0.07843);
+    --overlay-outside-dialog: rgba(0,0,0,0.72157);
+    --overlay-inside-dialog: rgba(14,14,14,0.96078);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -5409,7 +5803,429 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
+  --state-normal: #0e0e0e;
+  --state-hover: #242828;
+  --state-active: #323738;
+  --state-disabled: #1d1f20;
+  --border-normal: #323738;
+  --border-hover: #6e6e6e;
+  --border-active: var(--brand-secondary);
+  --border-disabled: #1d1f20;
+  --fill-normal: #0e0e0e;
+  --fill-hover: #6e6e6e;
+  --fill-active: var(--brand-secondary);
+  --fill-disabled: #1d1f20;
+  --status-default: #eaeced;
+  --status-danger: #cc2e3d;
+  --status-warning: #ffad3a;
+  --status-success: #00a79e;
+  --status-info: #377cfc;
+  --status-colored-background: #fff;
+  --transparent-success: transparentize(#00a79e, 0.92); }
+
+.dc-file-dropzone {
+  width: 100%;
+  height: 100%;
+  border: 1px dashed var(--border-normal);
+  border-radius: 4px;
+  color: var(--text-prominent);
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 2em;
+  cursor: pointer;
+  position: relative; }
+
+.dc-file-dropzone__content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.dc-file-dropzone__message {
+  position: absolute;
+  display: block;
+  font-size: 12px;
+  color: var(--text-general);
+  font-weight: 400;
+  opacity: 1;
+  max-width: 168px;
+  line-height: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.25s ease, opacity 0.15s linear; }
+
+.dc-file-dropzone__message--enter-done {
+  opacity: 1;
+  transform: translate3d(0, 0, 0); }
+
+.dc-file-dropzone__message--enter {
+  opacity: 0;
+  transform: translate3d(0, -16px, 0); }
+
+.dc-file-dropzone__message--enter-active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0); }
+
+.dc-file-dropzone__message--exit {
+  opacity: 1;
+  transform: translate3d(0, 0, 0); }
+
+.dc-file-dropzone__message--exit-active {
+  opacity: 0;
+  transform: translate3d(0, -16px, 0); }
+
+.dc-file-dropzone__message--error {
+  color: var(--status-danger); }
+
+.dc-file-dropzone__filename {
+  font-size: 12px;
+  width: 100%;
+  max-width: 240px;
+  color: var(--text-general);
+  font-weight: bold; }
+
+.dc-file-dropzone--has-file {
+  border-style: solid;
+  border-color: var(--status-success); }
+
+.dc-file-dropzone--has-error {
+  border-style: solid;
+  border-color: var(--status-danger); }
+
+.dc-file-dropzone--has-error .dc-file-dropzone__filename {
+  margin-top: -3em; }
+
+.dc-file-dropzone:hover, .dc-file-dropzone:focus {
+  outline: 0; }
+
+.dc-file-dropzone:hover {
+  background-color: rgba(0, 0, 0, 0.025); }
+
+/*------------------------------------*
+ *  # Constants
+ *------------------------------------*/
+/* stylelint-disable color-no-hex */
+/* COLOR PALETTE */
+:root {
+  --text-size-xxs: 1.2rem;
+  --text-size-xs: 1.4rem;
+  --text-size-s: 1.6rem;
+  --text-size-sm: 2rem;
+  --text-size-m: 2.4rem;
+  --text-size-l: 3.2rem;
+  --text-size-xl: 4.8rem;
+  --text-size-xxl: 6.4rem;
+  --brand-dark-grey: #0e0e0e;
+  --brand-red-coral: #ff444f;
+  --brand-orange: #ff6444;
+  --brand-secondary: #85acb0; }
+  :root .theme--light {
+    --general-main-1: #ffffff;
+    --general-main-2: #ffffff;
+    --general-section-1: #f2f3f4;
+    --general-section-2: #f2f3f4;
+    --general-disabled: #eaeced;
+    --general-hover: #e6e9e9;
+    --general-active: #d6dadb;
+    --text-prominent: #333333;
+    --text-general: #333333;
+    --text-less-prominent: #999999;
+    --text-disabled: #d6d6d6;
+    --text-profit-success: #4bb4b3;
+    --text-loss-danger: #ec3f3f;
+    --text-colored-background: #ffffff;
+    --purchase-main-1: #4bb4b3;
+    --purchase-section-1: #3d9494;
+    --purchase-main-2: #ec3f3f;
+    --purchase-section-2: #d33636;
+    --purchase-disabled-main: #eaeced;
+    --purchase-disabled-section: #e6e9e9;
+    --button-primary-default: var(--brand-red-coral);
+    --button-secondary-default: #999999;
+    --button-tertiary-default: transparent;
+    --button-primary-hover: #eb3e48;
+    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-tertiary-hover: rgba(255,68,79,0.07843);
+    --overlay-outside-dialog: rgba(0,0,0,0.72157);
+    --overlay-inside-dialog: rgba(255,255,255,0.96078);
+    --shadow-menu: rgba(0,0,0,0.16078);
+    --state-normal: #ffffff;
+    --state-hover: #e6e9e9;
+    --state-active: #d6dadb;
+    --state-disabled: #eaeced;
+    --border-normal: #d6dadb;
+    --border-hover: #999999;
+    --border-active: var(--brand-secondary);
+    --border-disabled: #eaeced;
+    --fill-normal: #ffffff;
+    --fill-hover: #999999;
+    --fill-active: var(--brand-secondary);
+    --fill-disabled: #eaeced;
+    --status-default: #eaeced;
+    --status-danger: #ec3f3f;
+    --status-success: #4bb4b3;
+    --status-warning: #ffad3a;
+    --status-info: #377cfc;
+    --status-colored-background: #ffffff;
+    --transparent-success: transparentize(#4bb4b3, 0.92); }
+  :root .theme--dark {
+    --general-main-1: #0e0e0e;
+    --general-main-2: #151717;
+    --general-section-1: #151717;
+    --general-section-2: #0e0e0e;
+    --general-disabled: #1d1f20;
+    --general-hover: #242828;
+    --general-active: #323738;
+    --text-prominent: #ffffff;
+    --text-general: #c2c2c2;
+    --text-less-prominent: #6e6e6e;
+    --text-disabled: #3e3e3e;
+    --text-profit-success: #00a79e;
+    --text-loss-danger: #cc2e3d;
+    --text-colored-background: #ffffff;
+    --purchase-main-1: #00a79e;
+    --purchase-section-1: #008079;
+    --purchase-main-2: #cc2e3d;
+    --purchase-section-2: #a32430;
+    --purchase-disabled-main: #1d1f20;
+    --purchase-disabled-section: #0e0e0e;
+    --button-primary-default: var(--brand-red-coral);
+    --button-secondary-default: #6e6e6e;
+    --button-tertiary-default: transparent;
+    --button-primary-hover: #eb3e48;
+    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-tertiary-hover: rgba(255,68,79,0.07843);
+    --overlay-outside-dialog: rgba(0,0,0,0.72157);
+    --overlay-inside-dialog: rgba(14,14,14,0.96078);
+    --shadow-menu: rgba(0,0,0,0.83922);
+    --state-normal: #0e0e0e;
+    --state-hover: #242828;
+    --state-active: #323738;
+    --state-disabled: #1d1f20;
+    --border-normal: #323738;
+    --border-hover: #6e6e6e;
+    --border-active: var(--brand-secondary);
+    --border-disabled: #1d1f20;
+    --fill-normal: #0e0e0e;
+    --fill-hover: #6e6e6e;
+    --fill-active: var(--brand-secondary);
+    --fill-disabled: #1d1f20;
+    --status-default: #eaeced;
+    --status-danger: #cc2e3d;
+    --status-warning: #ffad3a;
+    --status-success: #00a79e;
+    --status-info: #377cfc;
+    --status-colored-background: #ffffff;
+    --transparent-success: transparentize(#00a79e, 0.92); }
+
+/* Preserve legacy variables */
+/* Primary */
+/* stylelint-enable color-no-hex */
+/*------------------------------------*
+ *  # SASS Mixins and Functions
+ *------------------------------------*/
+/*
+ * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
+ * Generate typefaces key-value pair of variable name and config
+ * Example:
+   --paragraph-center-bold-black: (14px, center, bold, black)
+ */
+/*
+ * Sets font-size, font-weight, color, text-transform, text-align and line-height
+ * Usage example:
+   @include setTypeface(16px, bold, black, uppercase);
+ */
+/*
+ * Set typefaces by passing a typeface variable name
+ * @param $var   - typeface variable
+ * @param $tt    - text-transform property
+ * @param $align - text-align property
+ * Usage example:
+   @include typeface(--paragraph-bold-black, uppercase, center);
+ */
+/*
+ * Range Slider Thumb styling is set here
+ */
+/*
+ * SVG icons colors
+ */
+/*
+ * Bar Spinner Animation
+ * @param $count    - number of bars
+ * @param $duration - duration of animation
+ * @param $phase    - each bar phase change delay
+ * Usage example:
+   @include createBarspinnerAnimation(5, 1.2s, 0,1);
+ */
+/*
+ * Implementation of themes
+ * generate sets of themes keys object property (dark / light)
+ * @param $themes - themes property
+ * Usage example:
+   @include themify($themes) { color: themed('background_color') }
+ */
+/*
+ * Generate typefaces key-value pair of themefy object
+ * Should be inside themify mixins
+ * Example:
+   @include themify($themes) { border-color: 1px solid themed('background_color') }
+ */
+/*
+ * Tooltip colors
+ * @param $color - color property
+ * Usage example:
+   @include tooltipColor($COLOR_RED);
+ */
+/*
+ * Themified Tooltip colors
+ * @param $color - color property
+ * Usage example:
+   @include tooltipColor($COLOR_RED);
+ */
+/*
+ * Convert Tooltip colors
+ * @param $color - css color property
+ * Usage example:
+   @include convertTooltipColor(var(--status-default));
+ */
+/*
+    Constants
+*/
+/*
+    Variables
+*/
+/*
+    List of all typefaces variables in the format: --$FONT_SIZES-$TEXT_ALIGN-$FONT_WEIGHTS-COLORS.
+    See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
+    Variables name example: --title-center-semibold-red
+ */
+/*
+    to use styles without modifier class on .inline-icon
+    use @extend
+
+    e.g. style icon on parent hover:
+        a:hover .inline-icon {
+            @extend %inline-icon.active;
+        }
+*/
+:root {
+  --text-size-xxs: 1.2rem;
+  --text-size-xs: 1.4rem;
+  --text-size-s: 1.6rem;
+  --text-size-sm: 2rem;
+  --text-size-m: 2.4rem;
+  --text-size-l: 3.2rem;
+  --text-size-xl: 4.8rem;
+  --text-size-xxl: 6.4rem;
+  --brand-dark-grey: #0e0e0e;
+  --brand-red-coral: #ff444f;
+  --brand-orange: #ff6444;
+  --brand-secondary: #85acb0; }
+
+:root .theme--light {
+  --general-main-1: #fff;
+  --general-main-2: #fff;
+  --general-section-1: #f2f3f4;
+  --general-section-2: #f2f3f4;
+  --general-disabled: #eaeced;
+  --general-hover: #e6e9e9;
+  --general-active: #d6dadb;
+  --text-prominent: #333;
+  --text-general: #333;
+  --text-less-prominent: #999;
+  --text-disabled: #d6d6d6;
+  --text-profit-success: #4bb4b3;
+  --text-loss-danger: #ec3f3f;
+  --text-colored-background: #fff;
+  --purchase-main-1: #4bb4b3;
+  --purchase-section-1: #3d9494;
+  --purchase-main-2: #ec3f3f;
+  --purchase-section-2: #d33636;
+  --purchase-disabled-main: #eaeced;
+  --purchase-disabled-section: #e6e9e9;
+  --button-primary-default: var(--brand-red-coral);
+  --button-secondary-default: #999;
+  --button-tertiary-default: transparent;
+  --button-primary-hover: #eb3e48;
+  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-tertiary-hover: rgba(255,68,79,0.0784314);
+  --overlay-outside-dialog: rgba(0,0,0,0.721569);
+  --overlay-inside-dialog: rgba(255,255,255,0.960784);
+  --shadow-menu: rgba(0,0,0,0.160784);
+  --state-normal: #fff;
+  --state-hover: #e6e9e9;
+  --state-active: #d6dadb;
+  --state-disabled: #eaeced;
+  --border-normal: #d6dadb;
+  --border-hover: #999;
+  --border-active: var(--brand-secondary);
+  --border-disabled: #eaeced;
+  --fill-normal: #fff;
+  --fill-hover: #999;
+  --fill-active: var(--brand-secondary);
+  --fill-disabled: #eaeced;
+  --status-default: #eaeced;
+  --status-danger: #ec3f3f;
+  --status-success: #4bb4b3;
+  --status-warning: #ffad3a;
+  --status-info: #377cfc;
+  --status-colored-background: #fff;
+  --transparent-success: transparentize(#4bb4b3, 0.92); }
+
+:root .theme--dark {
+  --general-main-1: #0e0e0e;
+  --general-main-2: #151717;
+  --general-section-1: #151717;
+  --general-section-2: #0e0e0e;
+  --general-disabled: #1d1f20;
+  --general-hover: #242828;
+  --general-active: #323738;
+  --text-prominent: #fff;
+  --text-general: #c2c2c2;
+  --text-less-prominent: #6e6e6e;
+  --text-disabled: #3e3e3e;
+  --text-profit-success: #00a79e;
+  --text-loss-danger: #cc2e3d;
+  --text-colored-background: #fff;
+  --purchase-main-1: #00a79e;
+  --purchase-section-1: #008079;
+  --purchase-main-2: #cc2e3d;
+  --purchase-section-2: #a32430;
+  --purchase-disabled-main: #1d1f20;
+  --purchase-disabled-section: #0e0e0e;
+  --button-primary-default: var(--brand-red-coral);
+  --button-secondary-default: #6e6e6e;
+  --button-tertiary-default: transparent;
+  --button-primary-hover: #eb3e48;
+  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-tertiary-hover: rgba(255,68,79,0.0784314);
+  --overlay-outside-dialog: rgba(0,0,0,0.721569);
+  --overlay-inside-dialog: rgba(14,14,14,0.960784);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -5534,7 +6350,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -5562,7 +6378,7 @@ html {
   height: 5px;
   border-radius: 0 0 4px 4px;
   transition: transform 0.25s linear;
-  background: #ec3f3f;
+  background: var(--status-danger);
   transform-origin: left top;
   width: 100%;
   z-index: 2; }
@@ -5575,7 +6391,7 @@ html {
   height: 5px;
   border-radius: 0 0 4px 4px;
   width: 100%;
-  background: #eaeced; }
+  background: var(--general-section-1); }
 
 .dc-password-meter__container {
   position: relative; }
@@ -5584,18 +6400,18 @@ html {
   border-radius: 4px 4px 0 0; }
 
 .dc-password-meter__error, .dc-password-meter__warning {
-  top: 5rem !important;
+  top: 5rem;
   z-index: 2; }
 
 .dc-password-meter__warning {
-  color: #999999 !important; }
+  color: var(--status-warning); }
 
 .dc-password-meter--weak {
-  background-color: #ec3f3f;
+  background-color: var(--status-danger);
   z-index: 2; }
 
 .dc-password-meter--strong {
-  background-color: #4bb4b3;
+  background-color: var(--status-success);
   z-index: 2; }
 
 /*------------------------------------*
@@ -5694,7 +6510,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -5917,7 +6733,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -6130,7 +6946,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -6353,7 +7169,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -6470,7 +7286,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -6693,7 +7509,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -6810,7 +7626,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -6955,7 +7771,7 @@ html {
 
 /* postcss-bem-linter: ignore */
 *, html, .body {
-  font-family: roboto, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -6977,23 +7793,23 @@ html {
   font-family: inherit;
   font-style: inherit;
   padding: 2px 3px;
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 /** @define theme */
 .theme--light {
@@ -7150,13 +7966,9 @@ html {
         -webkit-animation-iteration-count: 4;
                 animation-iteration-count: 4;
         -webkit-animation-timing-function: step-end;
-                animation-timing-function: step-end; }
-        .theme--light .digits__digit-value--blink {
-          -webkit-animation-name: blinking-white;
-                  animation-name: blinking-white; }
-        .theme--dark .digits__digit-value--blink {
-          -webkit-animation-name: blinking-dark-blue-2;
-                  animation-name: blinking-dark-blue-2; }
+                animation-timing-function: step-end;
+        -webkit-animation-name: blinking;
+                animation-name: blinking; }
       .digits__digit-value--loss {
         border: none !important;
         background-color: var(--text-loss-danger);
@@ -7286,23 +8098,15 @@ html {
   .digits__icon--loss .digits__icon-color {
     fill: var(--text-loss-danger); }
 
-@-webkit-keyframes blinking-white {
+@-webkit-keyframes blinking {
   50% {
-    background-color: #ffffff;
-    color: var(--color-black); } }
+    background-color: var(--general-main-1);
+    color: var(--text-general); } }
 
-@keyframes blinking-white {
+@keyframes blinking {
   50% {
-    background-color: #ffffff;
-    color: var(--color-black); } }
-
-@-webkit-keyframes blinking-dark-blue-2 {
-  50% {
-    background-color: var(--color-grey-3); } }
-
-@keyframes blinking-dark-blue-2 {
-  50% {
-    background-color: var(--color-grey-3); } }
+    background-color: var(--general-main-1);
+    color: var(--text-general); } }
 
 /*------------------------------------*
  *  # Constants
@@ -7400,7 +8204,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -7606,7 +8410,7 @@ html {
 
 /* postcss-bem-linter: ignore */
 *, html, .body {
-  font-family: roboto, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7628,23 +8432,23 @@ html {
   font-family: inherit;
   font-style: inherit;
   padding: 2px 3px;
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 /** @define theme */
 .theme--light {
@@ -7772,11 +8576,11 @@ html {
   border-radius: 4px;
   position: absolute;
   transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.25s linear;
-  box-shadow: 0 2px 8px 0 var(--shadow-menu);
+  box-shadow: 0 8px 16px 0 var(--shadow-menu);
   right: 0;
   top: calc(100% + 4px);
   width: 246px;
-  background: var(--general-main-2); }
+  background-color: var(--general-main-2); }
   .acc-switcher__wrapper--enter-done {
     opacity: 1;
     transform: translate3d(0, 0, 0); }
@@ -7823,7 +8627,7 @@ html {
   flex-flow: column nowrap;
   height: 100%;
   padding: 1.6em 0.8em;
-  background: var(--general-main-1); }
+  background: var(--general-main-2); }
   .acc-switcher__list-title {
     font-size: 1.4em;
     color: rgba(0, 0, 0, 0.8);
@@ -8029,7 +8833,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -8174,7 +8978,7 @@ html {
 
 /* postcss-bem-linter: ignore */
 *, html, .body {
-  font-family: roboto, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8196,23 +9000,23 @@ html {
   font-family: inherit;
   font-style: inherit;
   padding: 2px 3px;
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 /** @define theme */
 .theme--light {
@@ -8441,7 +9245,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -8586,7 +9390,7 @@ html {
 
 /* postcss-bem-linter: ignore */
 *, html, .body {
-  font-family: roboto, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8608,389 +9412,23 @@ html {
   font-family: inherit;
   font-style: inherit;
   padding: 2px 3px;
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: var(--text-prominent); }
-
-/** @define theme */
-.theme--light {
-  background: #ffffff; }
-
-.theme--dark {
-  background: #0e0e0e; }
-
-/** @define container */
-.container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  box-sizing: border-box; }
-
-/** @define hidden */
-.hidden {
-  visibility: hidden !important;
-  transition: none !important; }
-
-/** @define absolute-center-v */
-.absolute-center-v {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0; }
-
-/** @define link */
-.link {
-  color: #ff444f;
-  color: var(--brand-red-coral);
-  font-weight: bold;
-  text-decoration: none; }
-  .link:hover {
-    text-decoration: underline; }
-  .link--white {
-    color: #ffffff; }
-
-/** @define icon */
-.icon--centered {
-  top: 0.8em;
-  left: 5%; }
-
-/** @define center-text */
-.center-text {
-  text-align: center; }
-
-/** @define no-margin */
-.no-margin {
-  margin: 0; }
-
-/** @define hr */
-.hr {
-  border-top: var(--general-section-1);
-  display: block;
-  height: 1px;
-  border: 0;
-  margin: 0.5em 0;
-  padding: 0; }
-
-/** @define deriv-app */
-.deriv-app {
-  height: 100%;
-  overflow: hidden; }
-
-.personal-details-form {
-  flex-grow: 1;
-  margin-top: 3rem; }
-  .personal-details-form .datepicker {
-    max-width: none;
-    max-width: initial; }
-  .personal-details-form__elements {
-    flex-grow: 1;
-    margin: 0 auto;
-    width: 40%; }
-  .personal-details-form__description {
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
-    font-weight: 400;
-    text-transform: capitalize;
-    text-align: center;
-    line-height: 1.5;
-    text-transform: none;
-    margin-top: 3rem;
-    color: var(--text-general); }
-
-/*------------------------------------*
- *  # Constants
- *------------------------------------*/
-/* stylelint-disable color-no-hex */
-/* COLOR PALETTE */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
-    --button-tertiary-hover: rgba(255,68,79,0.07843);
-    --overlay-outside-dialog: rgba(0,0,0,0.72157);
-    --overlay-inside-dialog: rgba(255,255,255,0.96078);
-    --shadow-menu: rgba(0,0,0,0.16078);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: transparentize(#4bb4b3, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
-    --button-tertiary-hover: rgba(255,68,79,0.07843);
-    --overlay-outside-dialog: rgba(0,0,0,0.72157);
-    --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: transparentize(#00a79e, 0.92); }
-
-/* Preserve legacy variables */
-/* Primary */
-/* stylelint-enable color-no-hex */
-/*------------------------------------*
- *  # SASS Mixins and Functions
- *------------------------------------*/
-/*
- * SASS interpolation
- */
-/*
- * PX to EM
- * @param $px - px value to be converted
- * @param $base - base font size (in `em`)
- * Note: 'em' values are calculate based on the element font-size
- *       to properly converts 'px' to 'em', please pass in the element font-size with it
- * Usage example:
-    padding: em(16px, 1.6em); // font-size in 'em'
- */
-/*
- * Set property by passing a property name, and values.
- * @param $property name - padding, margin etc.
- * @param $values        - values in `px` (space separated for multiple values)
- * @param $font-size     - base font-size in `em`
- * Usage example:
-   @include toEm(padding, 8px 16px 8px, 1.6em);
- */
-/*
- * Generate typefaces key-value pair of variable name and config
- * Example:
-   --paragraph-center-bold-black: (14px, center, bold, black)
- */
-/*
- * Sets font-size, font-weight, color, text-transform, text-align and line-height
- * Usage example:
-   @include setTypeface(16px, bold, black, uppercase);
- */
-/*
- * Set typefaces by passing a typeface variable name
- * @param $var   - typeface variable
- * @param $tt    - text-transform property
- * @param $align - text-align property
- * Usage example:
-   @include typeface(--paragraph-bold-black, uppercase, center);
- */
-/*
- * Range Slider Thumb styling is set here
- */
-/*
- * SVG icons colors
- */
-/*
- * Bar Spinner Animation
- * @param $count    - number of bars
- * @param $duration - duration of animation
- * @param $phase    - each bar phase change delay
- * Usage example:
-   @include createBarspinnerAnimation(5, 1.2s, 0,1);
- */
-/*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
- * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Convert Tooltip colors
- * @param $color - css color property
- * Usage example:
-   @include convertTooltipColor(var(--status-default));
- */
-/*
-    Constants
-*/
-/*
-    Variables
-*/
-/*
-    List of all typefaces variables in the format: --$FONT_SIZES-$TEXT_ALIGN-$FONT_WEIGHTS-COLORS.
-    See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
-    Variables name example: --title-center-semibold-red
- */
-/*
-    to use styles without modifier class on .inline-icon
-    use @extend
-
-    e.g. style icon on parent hover:
-        a:hover .inline-icon {
-            @extend %inline-icon.active;
-        }
-*/
-/* postcss-bem-linter: ignore */
-html {
-  font-size: 62.5%;
-  /** TODO: define breakpoints */ }
-
-/** @define body */
-.body {
-  position: relative;
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; }
-
-/* postcss-bem-linter: ignore */
-*, html, .body {
-  font-family: roboto, sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  box-sizing: border-box; }
-
-/** @define select */
-.select {
-  font-family: inherit;
-  font-size: inherit;
-  font-style: inherit;
-  padding: 2px 3px;
-  border: 1px solid var(--border-normal);
-  border-radius: 4px; }
-
-/** @define input */
-.input {
-  font-family: inherit;
-  font-style: inherit;
-  padding: 2px 3px;
-  color: var(--text-prominent); }
-
-::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: var(--text-prominent); }
-
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: var(--text-prominent); }
-
-:-ms-input-placeholder {
-  /* IE 10+ */
-  color: var(--text-prominent); }
-
-:-moz-placeholder {
-  /* Firefox 18- */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 /** @define theme */
 .theme--light {
@@ -9190,7 +9628,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -9335,7 +9773,7 @@ html {
 
 /* postcss-bem-linter: ignore */
 *, html, .body {
-  font-family: roboto, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9357,23 +9795,23 @@ html {
   font-family: inherit;
   font-style: inherit;
   padding: 2px 3px;
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 /** @define theme */
 .theme--light {
@@ -9519,14 +9957,8 @@ html {
       line-height: 1.75;
       font-size: 1.4rem;
       text-align: center;
-      background: #ff444f;
-      background: var(--brand-red-coral);
       color: var(--text-colored-background);
       margin: 0 2rem; }
-      .success-change__btn-area .btn--outline {
-        background: transparent;
-        border: 2px solid var(--button-secondary-default);
-        color: var(--text-general); }
 
 /*------------------------------------*
  *  # Constants
@@ -9624,7 +10056,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -9769,7 +10201,7 @@ html {
 
 /* postcss-bem-linter: ignore */
 *, html, .body {
-  font-family: roboto, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9791,23 +10223,23 @@ html {
   font-family: inherit;
   font-style: inherit;
   padding: 2px 3px;
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 /** @define theme */
 .theme--light {
@@ -9974,7 +10406,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -10272,7 +10704,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -10447,7 +10879,8 @@ html {
   .btn:not([disabled]):hover {
     text-decoration: none; }
   .btn--primary--default {
-    background: var(--button-primary-default); }
+    background: var(--button-primary-default);
+    color: var(--text-colored-background); }
     .btn--primary--default:hover:not([disabled]) {
       background: var(--button-primary-hover); }
     .btn--primary--default:active:not([disabled]) {
@@ -10456,7 +10889,7 @@ html {
       opacity: 0.32;
       cursor: not-allowed !important; }
     .btn--primary--default .btn__text {
-      color: #ffffff; }
+      color: var(--text-colored-background); }
   .btn--primary .btn__text {
     color: #ffffff; }
   .btn--primary--orange {
@@ -10599,7 +11032,8 @@ html {
     bottom: -0.1em;
     right: -0.1em;
     border-radius: inherit;
-    border: 0 solid #2a3052;
+    border: 0 solid #85acb0;
+    border: 0 solid var(--brand-secondary);
     opacity: 0.4;
     -webkit-animation: buttonEffect 0.4s;
             animation: buttonEffect 0.4s;
@@ -10611,9 +11045,12 @@ html {
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */ }
     .btn .initial-loader--btn .initial-loader__barspinner--rect {
-      background-color: #ffffff; }
+      background-color: var(--text-colored-background); }
     .btn .initial-loader--btn .barspinner {
-      margin: 0 4px 0 -4px; }
+      margin: 0.6rem 4px 0 -4px;
+      /* postcss-bem-linter: ignore */ }
+      .btn .initial-loader--btn .barspinner__rect {
+        height: 35%; }
 
 @-webkit-keyframes buttonEffect {
   to {
@@ -10729,7 +11166,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -10874,7 +11311,7 @@ html {
 
 /* postcss-bem-linter: ignore */
 *, html, .body {
-  font-family: roboto, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10896,23 +11333,23 @@ html {
   font-family: inherit;
   font-style: inherit;
   padding: 2px 3px;
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 /** @define theme */
 .theme--light {
@@ -11053,9 +11490,9 @@ html {
     border-radius: 4px;
     background-color: #ff444f;
     background-color: var(--brand-red-coral);
-    color: var(--text-colored-background);
-    /* stylelint-disable color-no-hex */
-    /* stylelint-enable color-no-hex */ }
+    color: var(--text-colored-background); }
+    .account-wizard__btn:hover:not(.account-wizard__btn--disabled) {
+      background-color: var(--button-primary-hover); }
     .account-wizard__btn--disabled {
       opacity: 0.32;
       cursor: auto;
@@ -11202,7 +11639,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -11347,7 +11784,7 @@ html {
 
 /* postcss-bem-linter: ignore */
 *, html, .body {
-  font-family: roboto, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11369,23 +11806,23 @@ html {
   font-family: inherit;
   font-style: inherit;
   padding: 2px 3px;
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 /** @define theme */
 .theme--light {
@@ -11644,7 +12081,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -11774,65 +12211,65 @@ html {
             @extend %inline-icon.active;
         }
 */
-.advanced-simple-toggle__icon, .footer__link:hover .footer__icon, .footer__icon, .contract-drawer svg, .positions-drawer__icon-close svg, .input-wrapper__icon, .time-picker__icon, .account-settings-toggle svg, .calendar__icon, .contract-type-widget__select-arrow, .trade-type-info-dialog__header svg, .trade-type-info-navigation__icon, .datepicker__icon, .side-menu__icon, .cashier__transferred-icon {
+.advanced-simple-toggle__icon, .footer__link:hover .footer__icon, .footer__icon, .contract-drawer svg, .positions-drawer__icon-close svg, .input-wrapper__icon, .time-picker__icon, .account-settings-toggle svg, .calendar__icon, .contract-type-widget__select-arrow, .trade-type-info-dialog__header svg, .trade-type-info-navigation__icon, .datepicker__icon, .side-menu__icon, .cashier__transferred-icon, .info-box-container .info-box-longcode-icon {
   /* postcss-bem-linter: ignore */
   /* postcss-bem-linter: ignore */
   /* postcss-bem-linter: ignore */
   /* postcss-bem-linter: ignore */ }
-  .advanced-simple-toggle__icon .color1-fill, .footer__link:hover .footer__icon .color1-fill, .footer__icon .color1-fill, .contract-drawer svg .color1-fill, .positions-drawer__icon-close svg .color1-fill, .input-wrapper__icon .color1-fill, .time-picker__icon .color1-fill, .account-settings-toggle svg .color1-fill, .calendar__icon .color1-fill, .contract-type-widget__select-arrow .color1-fill, .trade-type-info-dialog__header svg .color1-fill, .trade-type-info-navigation__icon .color1-fill, .datepicker__icon .color1-fill, .side-menu__icon .color1-fill, .cashier__transferred-icon .color1-fill {
+  .advanced-simple-toggle__icon .color1-fill, .footer__link:hover .footer__icon .color1-fill, .footer__icon .color1-fill, .contract-drawer svg .color1-fill, .positions-drawer__icon-close svg .color1-fill, .input-wrapper__icon .color1-fill, .time-picker__icon .color1-fill, .account-settings-toggle svg .color1-fill, .calendar__icon .color1-fill, .contract-type-widget__select-arrow .color1-fill, .trade-type-info-dialog__header svg .color1-fill, .trade-type-info-navigation__icon .color1-fill, .datepicker__icon .color1-fill, .side-menu__icon .color1-fill, .cashier__transferred-icon .color1-fill, .info-box-container .info-box-longcode-icon .color1-fill {
     fill: var(--text-general); }
-  .advanced-simple-toggle__icon .color1-stroke, .footer__link:hover .footer__icon .color1-stroke, .footer__icon .color1-stroke, .contract-drawer svg .color1-stroke, .positions-drawer__icon-close svg .color1-stroke, .input-wrapper__icon .color1-stroke, .time-picker__icon .color1-stroke, .account-settings-toggle svg .color1-stroke, .calendar__icon .color1-stroke, .contract-type-widget__select-arrow .color1-stroke, .trade-type-info-dialog__header svg .color1-stroke, .trade-type-info-navigation__icon .color1-stroke, .datepicker__icon .color1-stroke, .side-menu__icon .color1-stroke, .cashier__transferred-icon .color1-stroke {
+  .advanced-simple-toggle__icon .color1-stroke, .footer__link:hover .footer__icon .color1-stroke, .footer__icon .color1-stroke, .contract-drawer svg .color1-stroke, .positions-drawer__icon-close svg .color1-stroke, .input-wrapper__icon .color1-stroke, .time-picker__icon .color1-stroke, .account-settings-toggle svg .color1-stroke, .calendar__icon .color1-stroke, .contract-type-widget__select-arrow .color1-stroke, .trade-type-info-dialog__header svg .color1-stroke, .trade-type-info-navigation__icon .color1-stroke, .datepicker__icon .color1-stroke, .side-menu__icon .color1-stroke, .cashier__transferred-icon .color1-stroke, .info-box-container .info-box-longcode-icon .color1-stroke {
     stroke: var(--text-general); }
-  .advanced-simple-toggle__icon .color2-fill, .footer__link:hover .footer__icon .color2-fill, .footer__icon .color2-fill, .contract-drawer svg .color2-fill, .positions-drawer__icon-close svg .color2-fill, .input-wrapper__icon .color2-fill, .time-picker__icon .color2-fill, .account-settings-toggle svg .color2-fill, .calendar__icon .color2-fill, .contract-type-widget__select-arrow .color2-fill, .trade-type-info-dialog__header svg .color2-fill, .trade-type-info-navigation__icon .color2-fill, .datepicker__icon .color2-fill, .side-menu__icon .color2-fill, .cashier__transferred-icon .color2-fill {
+  .advanced-simple-toggle__icon .color2-fill, .footer__link:hover .footer__icon .color2-fill, .footer__icon .color2-fill, .contract-drawer svg .color2-fill, .positions-drawer__icon-close svg .color2-fill, .input-wrapper__icon .color2-fill, .time-picker__icon .color2-fill, .account-settings-toggle svg .color2-fill, .calendar__icon .color2-fill, .contract-type-widget__select-arrow .color2-fill, .trade-type-info-dialog__header svg .color2-fill, .trade-type-info-navigation__icon .color2-fill, .datepicker__icon .color2-fill, .side-menu__icon .color2-fill, .cashier__transferred-icon .color2-fill, .info-box-container .info-box-longcode-icon .color2-fill {
     fill: none; }
-  .advanced-simple-toggle__icon .color2-stroke, .footer__link:hover .footer__icon .color2-stroke, .footer__icon .color2-stroke, .contract-drawer svg .color2-stroke, .positions-drawer__icon-close svg .color2-stroke, .input-wrapper__icon .color2-stroke, .time-picker__icon .color2-stroke, .account-settings-toggle svg .color2-stroke, .calendar__icon .color2-stroke, .contract-type-widget__select-arrow .color2-stroke, .trade-type-info-dialog__header svg .color2-stroke, .trade-type-info-navigation__icon .color2-stroke, .datepicker__icon .color2-stroke, .side-menu__icon .color2-stroke, .cashier__transferred-icon .color2-stroke {
+  .advanced-simple-toggle__icon .color2-stroke, .footer__link:hover .footer__icon .color2-stroke, .footer__icon .color2-stroke, .contract-drawer svg .color2-stroke, .positions-drawer__icon-close svg .color2-stroke, .input-wrapper__icon .color2-stroke, .time-picker__icon .color2-stroke, .account-settings-toggle svg .color2-stroke, .calendar__icon .color2-stroke, .contract-type-widget__select-arrow .color2-stroke, .trade-type-info-dialog__header svg .color2-stroke, .trade-type-info-navigation__icon .color2-stroke, .datepicker__icon .color2-stroke, .side-menu__icon .color2-stroke, .cashier__transferred-icon .color2-stroke, .info-box-container .info-box-longcode-icon .color2-stroke {
     stroke: none; }
-  .active.advanced-simple-toggle__icon, .header__menu-link--active .header__icon, .footer__link:hover .active.footer__icon, .active.footer__icon, .ic-settings--active .ic-settings__icon, .contract-drawer svg.active, .positions-drawer__icon-close svg.active, .active.input-wrapper__icon, .active.time-picker__icon, .account-settings-toggle svg.active, .account-settings-toggle:hover svg, .active.calendar__icon, .active.contract-type-widget__select-arrow, .trade-type-info-dialog__header svg.active, .active.trade-type-info-navigation__icon, .active.datepicker__icon, .active.side-menu__icon, .active.cashier__transferred-icon {
+  .active.advanced-simple-toggle__icon, .header__menu-link--active .header__icon, .footer__link:hover .active.footer__icon, .active.footer__icon, .ic-settings--active .ic-settings__icon, .contract-drawer svg.active, .positions-drawer__icon-close svg.active, .active.input-wrapper__icon, .active.time-picker__icon, .account-settings-toggle svg.active, .account-settings-toggle:hover svg, .active.calendar__icon, .active.contract-type-widget__select-arrow, .trade-type-info-dialog__header svg.active, .active.trade-type-info-navigation__icon, .active.datepicker__icon, .active.side-menu__icon, .active.cashier__transferred-icon, .info-box-container .active.info-box-longcode-icon {
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */ }
-    .active.advanced-simple-toggle__icon .color1-fill, .header__menu-link--active .header__icon .color1-fill, .active.footer__icon .color1-fill, .ic-settings--active .ic-settings__icon .color1-fill, .contract-drawer svg.active .color1-fill, .positions-drawer__icon-close svg.active .color1-fill, .active.input-wrapper__icon .color1-fill, .active.time-picker__icon .color1-fill, .account-settings-toggle svg.active .color1-fill, .account-settings-toggle:hover svg .color1-fill, .active.calendar__icon .color1-fill, .active.contract-type-widget__select-arrow .color1-fill, .trade-type-info-dialog__header svg.active .color1-fill, .active.trade-type-info-navigation__icon .color1-fill, .active.datepicker__icon .color1-fill, .active.side-menu__icon .color1-fill, .active.cashier__transferred-icon .color1-fill {
+    .active.advanced-simple-toggle__icon .color1-fill, .header__menu-link--active .header__icon .color1-fill, .active.footer__icon .color1-fill, .ic-settings--active .ic-settings__icon .color1-fill, .contract-drawer svg.active .color1-fill, .positions-drawer__icon-close svg.active .color1-fill, .active.input-wrapper__icon .color1-fill, .active.time-picker__icon .color1-fill, .account-settings-toggle svg.active .color1-fill, .account-settings-toggle:hover svg .color1-fill, .active.calendar__icon .color1-fill, .active.contract-type-widget__select-arrow .color1-fill, .trade-type-info-dialog__header svg.active .color1-fill, .active.trade-type-info-navigation__icon .color1-fill, .active.datepicker__icon .color1-fill, .active.side-menu__icon .color1-fill, .active.cashier__transferred-icon .color1-fill, .info-box-container .active.info-box-longcode-icon .color1-fill {
       fill: var(--text-prominent); }
-    .active.advanced-simple-toggle__icon .color1-stroke, .header__menu-link--active .header__icon .color1-stroke, .active.footer__icon .color1-stroke, .ic-settings--active .ic-settings__icon .color1-stroke, .contract-drawer svg.active .color1-stroke, .positions-drawer__icon-close svg.active .color1-stroke, .active.input-wrapper__icon .color1-stroke, .active.time-picker__icon .color1-stroke, .account-settings-toggle svg.active .color1-stroke, .account-settings-toggle:hover svg .color1-stroke, .active.calendar__icon .color1-stroke, .active.contract-type-widget__select-arrow .color1-stroke, .trade-type-info-dialog__header svg.active .color1-stroke, .active.trade-type-info-navigation__icon .color1-stroke, .active.datepicker__icon .color1-stroke, .active.side-menu__icon .color1-stroke, .active.cashier__transferred-icon .color1-stroke {
+    .active.advanced-simple-toggle__icon .color1-stroke, .header__menu-link--active .header__icon .color1-stroke, .active.footer__icon .color1-stroke, .ic-settings--active .ic-settings__icon .color1-stroke, .contract-drawer svg.active .color1-stroke, .positions-drawer__icon-close svg.active .color1-stroke, .active.input-wrapper__icon .color1-stroke, .active.time-picker__icon .color1-stroke, .account-settings-toggle svg.active .color1-stroke, .account-settings-toggle:hover svg .color1-stroke, .active.calendar__icon .color1-stroke, .active.contract-type-widget__select-arrow .color1-stroke, .trade-type-info-dialog__header svg.active .color1-stroke, .active.trade-type-info-navigation__icon .color1-stroke, .active.datepicker__icon .color1-stroke, .active.side-menu__icon .color1-stroke, .active.cashier__transferred-icon .color1-stroke, .info-box-container .active.info-box-longcode-icon .color1-stroke {
       stroke: var(--text-prominent); }
-    .active.advanced-simple-toggle__icon .color2-fill, .header__menu-link--active .header__icon .color2-fill, .active.footer__icon .color2-fill, .ic-settings--active .ic-settings__icon .color2-fill, .contract-drawer svg.active .color2-fill, .positions-drawer__icon-close svg.active .color2-fill, .active.input-wrapper__icon .color2-fill, .active.time-picker__icon .color2-fill, .account-settings-toggle svg.active .color2-fill, .account-settings-toggle:hover svg .color2-fill, .active.calendar__icon .color2-fill, .active.contract-type-widget__select-arrow .color2-fill, .trade-type-info-dialog__header svg.active .color2-fill, .active.trade-type-info-navigation__icon .color2-fill, .active.datepicker__icon .color2-fill, .active.side-menu__icon .color2-fill, .active.cashier__transferred-icon .color2-fill {
+    .active.advanced-simple-toggle__icon .color2-fill, .header__menu-link--active .header__icon .color2-fill, .active.footer__icon .color2-fill, .ic-settings--active .ic-settings__icon .color2-fill, .contract-drawer svg.active .color2-fill, .positions-drawer__icon-close svg.active .color2-fill, .active.input-wrapper__icon .color2-fill, .active.time-picker__icon .color2-fill, .account-settings-toggle svg.active .color2-fill, .account-settings-toggle:hover svg .color2-fill, .active.calendar__icon .color2-fill, .active.contract-type-widget__select-arrow .color2-fill, .trade-type-info-dialog__header svg.active .color2-fill, .active.trade-type-info-navigation__icon .color2-fill, .active.datepicker__icon .color2-fill, .active.side-menu__icon .color2-fill, .active.cashier__transferred-icon .color2-fill, .info-box-container .active.info-box-longcode-icon .color2-fill {
       fill: none; }
-    .active.advanced-simple-toggle__icon .color2-stroke, .header__menu-link--active .header__icon .color2-stroke, .active.footer__icon .color2-stroke, .ic-settings--active .ic-settings__icon .color2-stroke, .contract-drawer svg.active .color2-stroke, .positions-drawer__icon-close svg.active .color2-stroke, .active.input-wrapper__icon .color2-stroke, .active.time-picker__icon .color2-stroke, .account-settings-toggle svg.active .color2-stroke, .account-settings-toggle:hover svg .color2-stroke, .active.calendar__icon .color2-stroke, .active.contract-type-widget__select-arrow .color2-stroke, .trade-type-info-dialog__header svg.active .color2-stroke, .active.trade-type-info-navigation__icon .color2-stroke, .active.datepicker__icon .color2-stroke, .active.side-menu__icon .color2-stroke, .active.cashier__transferred-icon .color2-stroke {
+    .active.advanced-simple-toggle__icon .color2-stroke, .header__menu-link--active .header__icon .color2-stroke, .active.footer__icon .color2-stroke, .ic-settings--active .ic-settings__icon .color2-stroke, .contract-drawer svg.active .color2-stroke, .positions-drawer__icon-close svg.active .color2-stroke, .active.input-wrapper__icon .color2-stroke, .active.time-picker__icon .color2-stroke, .account-settings-toggle svg.active .color2-stroke, .account-settings-toggle:hover svg .color2-stroke, .active.calendar__icon .color2-stroke, .active.contract-type-widget__select-arrow .color2-stroke, .trade-type-info-dialog__header svg.active .color2-stroke, .active.trade-type-info-navigation__icon .color2-stroke, .active.datepicker__icon .color2-stroke, .active.side-menu__icon .color2-stroke, .active.cashier__transferred-icon .color2-stroke, .info-box-container .active.info-box-longcode-icon .color2-stroke {
       stroke: none; }
-  .disabled.advanced-simple-toggle__icon, .footer__link:hover .disabled.footer__icon, .disabled.footer__icon, .contract-drawer svg.disabled, .positions-drawer__icon-close svg.disabled, .disabled.input-wrapper__icon, .disabled.time-picker__icon, .account-settings-toggle svg.disabled, .disabled.calendar__icon, .calendar__nav--disabled .calendar__icon, .disabled.contract-type-widget__select-arrow, .trade-type-info-dialog__header svg.disabled, .disabled.trade-type-info-navigation__icon, .disabled.datepicker__icon, .disabled.side-menu__icon, .disabled.cashier__transferred-icon, .portfolio-empty__icon {
+  .disabled.advanced-simple-toggle__icon, .footer__link:hover .disabled.footer__icon, .disabled.footer__icon, .contract-drawer svg.disabled, .positions-drawer__icon-close svg.disabled, .disabled.input-wrapper__icon, .disabled.time-picker__icon, .account-settings-toggle svg.disabled, .disabled.calendar__icon, .calendar__nav--disabled .calendar__icon, .disabled.contract-type-widget__select-arrow, .trade-type-info-dialog__header svg.disabled, .disabled.trade-type-info-navigation__icon, .disabled.datepicker__icon, .disabled.side-menu__icon, .disabled.cashier__transferred-icon, .info-box-container .disabled.info-box-longcode-icon, .portfolio-empty__icon {
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */ }
-    .disabled.advanced-simple-toggle__icon .color1-fill, .disabled.footer__icon .color1-fill, .contract-drawer svg.disabled .color1-fill, .positions-drawer__icon-close svg.disabled .color1-fill, .disabled.input-wrapper__icon .color1-fill, .disabled.time-picker__icon .color1-fill, .account-settings-toggle svg.disabled .color1-fill, .disabled.calendar__icon .color1-fill, .calendar__nav--disabled .calendar__icon .color1-fill, .disabled.contract-type-widget__select-arrow .color1-fill, .trade-type-info-dialog__header svg.disabled .color1-fill, .disabled.trade-type-info-navigation__icon .color1-fill, .disabled.datepicker__icon .color1-fill, .disabled.side-menu__icon .color1-fill, .disabled.cashier__transferred-icon .color1-fill, .portfolio-empty__icon .color1-fill {
+    .disabled.advanced-simple-toggle__icon .color1-fill, .disabled.footer__icon .color1-fill, .contract-drawer svg.disabled .color1-fill, .positions-drawer__icon-close svg.disabled .color1-fill, .disabled.input-wrapper__icon .color1-fill, .disabled.time-picker__icon .color1-fill, .account-settings-toggle svg.disabled .color1-fill, .disabled.calendar__icon .color1-fill, .calendar__nav--disabled .calendar__icon .color1-fill, .disabled.contract-type-widget__select-arrow .color1-fill, .trade-type-info-dialog__header svg.disabled .color1-fill, .disabled.trade-type-info-navigation__icon .color1-fill, .disabled.datepicker__icon .color1-fill, .disabled.side-menu__icon .color1-fill, .disabled.cashier__transferred-icon .color1-fill, .info-box-container .disabled.info-box-longcode-icon .color1-fill, .portfolio-empty__icon .color1-fill {
       fill: var(--text-disabled); }
-    .disabled.advanced-simple-toggle__icon .color1-stroke, .disabled.footer__icon .color1-stroke, .contract-drawer svg.disabled .color1-stroke, .positions-drawer__icon-close svg.disabled .color1-stroke, .disabled.input-wrapper__icon .color1-stroke, .disabled.time-picker__icon .color1-stroke, .account-settings-toggle svg.disabled .color1-stroke, .disabled.calendar__icon .color1-stroke, .calendar__nav--disabled .calendar__icon .color1-stroke, .disabled.contract-type-widget__select-arrow .color1-stroke, .trade-type-info-dialog__header svg.disabled .color1-stroke, .disabled.trade-type-info-navigation__icon .color1-stroke, .disabled.datepicker__icon .color1-stroke, .disabled.side-menu__icon .color1-stroke, .disabled.cashier__transferred-icon .color1-stroke, .portfolio-empty__icon .color1-stroke {
+    .disabled.advanced-simple-toggle__icon .color1-stroke, .disabled.footer__icon .color1-stroke, .contract-drawer svg.disabled .color1-stroke, .positions-drawer__icon-close svg.disabled .color1-stroke, .disabled.input-wrapper__icon .color1-stroke, .disabled.time-picker__icon .color1-stroke, .account-settings-toggle svg.disabled .color1-stroke, .disabled.calendar__icon .color1-stroke, .calendar__nav--disabled .calendar__icon .color1-stroke, .disabled.contract-type-widget__select-arrow .color1-stroke, .trade-type-info-dialog__header svg.disabled .color1-stroke, .disabled.trade-type-info-navigation__icon .color1-stroke, .disabled.datepicker__icon .color1-stroke, .disabled.side-menu__icon .color1-stroke, .disabled.cashier__transferred-icon .color1-stroke, .info-box-container .disabled.info-box-longcode-icon .color1-stroke, .portfolio-empty__icon .color1-stroke {
       stroke: var(--text-disabled); }
-    .disabled.advanced-simple-toggle__icon .color2-fill, .disabled.footer__icon .color2-fill, .contract-drawer svg.disabled .color2-fill, .positions-drawer__icon-close svg.disabled .color2-fill, .disabled.input-wrapper__icon .color2-fill, .disabled.time-picker__icon .color2-fill, .account-settings-toggle svg.disabled .color2-fill, .disabled.calendar__icon .color2-fill, .calendar__nav--disabled .calendar__icon .color2-fill, .disabled.contract-type-widget__select-arrow .color2-fill, .trade-type-info-dialog__header svg.disabled .color2-fill, .disabled.trade-type-info-navigation__icon .color2-fill, .disabled.datepicker__icon .color2-fill, .disabled.side-menu__icon .color2-fill, .disabled.cashier__transferred-icon .color2-fill, .portfolio-empty__icon .color2-fill {
+    .disabled.advanced-simple-toggle__icon .color2-fill, .disabled.footer__icon .color2-fill, .contract-drawer svg.disabled .color2-fill, .positions-drawer__icon-close svg.disabled .color2-fill, .disabled.input-wrapper__icon .color2-fill, .disabled.time-picker__icon .color2-fill, .account-settings-toggle svg.disabled .color2-fill, .disabled.calendar__icon .color2-fill, .calendar__nav--disabled .calendar__icon .color2-fill, .disabled.contract-type-widget__select-arrow .color2-fill, .trade-type-info-dialog__header svg.disabled .color2-fill, .disabled.trade-type-info-navigation__icon .color2-fill, .disabled.datepicker__icon .color2-fill, .disabled.side-menu__icon .color2-fill, .disabled.cashier__transferred-icon .color2-fill, .info-box-container .disabled.info-box-longcode-icon .color2-fill, .portfolio-empty__icon .color2-fill {
       fill: none; }
-    .disabled.advanced-simple-toggle__icon .color2-stroke, .disabled.footer__icon .color2-stroke, .contract-drawer svg.disabled .color2-stroke, .positions-drawer__icon-close svg.disabled .color2-stroke, .disabled.input-wrapper__icon .color2-stroke, .disabled.time-picker__icon .color2-stroke, .account-settings-toggle svg.disabled .color2-stroke, .disabled.calendar__icon .color2-stroke, .calendar__nav--disabled .calendar__icon .color2-stroke, .disabled.contract-type-widget__select-arrow .color2-stroke, .trade-type-info-dialog__header svg.disabled .color2-stroke, .disabled.trade-type-info-navigation__icon .color2-stroke, .disabled.datepicker__icon .color2-stroke, .disabled.side-menu__icon .color2-stroke, .disabled.cashier__transferred-icon .color2-stroke, .portfolio-empty__icon .color2-stroke {
+    .disabled.advanced-simple-toggle__icon .color2-stroke, .disabled.footer__icon .color2-stroke, .contract-drawer svg.disabled .color2-stroke, .positions-drawer__icon-close svg.disabled .color2-stroke, .disabled.input-wrapper__icon .color2-stroke, .disabled.time-picker__icon .color2-stroke, .account-settings-toggle svg.disabled .color2-stroke, .disabled.calendar__icon .color2-stroke, .calendar__nav--disabled .calendar__icon .color2-stroke, .disabled.contract-type-widget__select-arrow .color2-stroke, .trade-type-info-dialog__header svg.disabled .color2-stroke, .disabled.trade-type-info-navigation__icon .color2-stroke, .disabled.datepicker__icon .color2-stroke, .disabled.side-menu__icon .color2-stroke, .disabled.cashier__transferred-icon .color2-stroke, .info-box-container .disabled.info-box-longcode-icon .color2-stroke, .portfolio-empty__icon .color2-stroke {
       stroke: none; }
-  .white.advanced-simple-toggle__icon, .footer__link:hover .white.footer__icon, .white.footer__icon, .contract-drawer svg.white, .positions-drawer__icon-close svg.white, .white.input-wrapper__icon, .white.time-picker__icon, .account-settings-toggle svg.white, .white.calendar__icon, .white.contract-type-widget__select-arrow, .contract-type-item__icon:hover svg, .trade-type-info-dialog__header svg.white, .white.trade-type-info-navigation__icon, .white.datepicker__icon, .white.side-menu__icon, .btn-purchase__info--left .btn-purchase__icon_wrapper, .white.cashier__transferred-icon {
+  .white.advanced-simple-toggle__icon, .footer__link:hover .white.footer__icon, .white.footer__icon, .contract-drawer svg.white, .positions-drawer__icon-close svg.white, .white.input-wrapper__icon, .white.time-picker__icon, .account-settings-toggle svg.white, .white.calendar__icon, .white.contract-type-widget__select-arrow, .contract-type-item__icon:hover svg, .trade-type-info-dialog__header svg.white, .white.trade-type-info-navigation__icon, .white.datepicker__icon, .white.side-menu__icon, .btn-purchase__info--left .btn-purchase__icon_wrapper, .white.cashier__transferred-icon, .info-box-container .white.info-box-longcode-icon {
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */ }
-    .white.advanced-simple-toggle__icon .color1-fill, .white.footer__icon .color1-fill, .contract-drawer svg.white .color1-fill, .positions-drawer__icon-close svg.white .color1-fill, .white.input-wrapper__icon .color1-fill, .white.time-picker__icon .color1-fill, .account-settings-toggle svg.white .color1-fill, .white.calendar__icon .color1-fill, .white.contract-type-widget__select-arrow .color1-fill, .contract-type-item__icon:hover svg .color1-fill, .trade-type-info-dialog__header svg.white .color1-fill, .white.trade-type-info-navigation__icon .color1-fill, .white.datepicker__icon .color1-fill, .white.side-menu__icon .color1-fill, .btn-purchase__info--left .btn-purchase__icon_wrapper .color1-fill, .white.cashier__transferred-icon .color1-fill {
+    .white.advanced-simple-toggle__icon .color1-fill, .white.footer__icon .color1-fill, .contract-drawer svg.white .color1-fill, .positions-drawer__icon-close svg.white .color1-fill, .white.input-wrapper__icon .color1-fill, .white.time-picker__icon .color1-fill, .account-settings-toggle svg.white .color1-fill, .white.calendar__icon .color1-fill, .white.contract-type-widget__select-arrow .color1-fill, .contract-type-item__icon:hover svg .color1-fill, .trade-type-info-dialog__header svg.white .color1-fill, .white.trade-type-info-navigation__icon .color1-fill, .white.datepicker__icon .color1-fill, .white.side-menu__icon .color1-fill, .btn-purchase__info--left .btn-purchase__icon_wrapper .color1-fill, .white.cashier__transferred-icon .color1-fill, .info-box-container .white.info-box-longcode-icon .color1-fill {
       fill: var(--text-prominent); }
-    .white.advanced-simple-toggle__icon .color1-stroke, .white.footer__icon .color1-stroke, .contract-drawer svg.white .color1-stroke, .positions-drawer__icon-close svg.white .color1-stroke, .white.input-wrapper__icon .color1-stroke, .white.time-picker__icon .color1-stroke, .account-settings-toggle svg.white .color1-stroke, .white.calendar__icon .color1-stroke, .white.contract-type-widget__select-arrow .color1-stroke, .contract-type-item__icon:hover svg .color1-stroke, .trade-type-info-dialog__header svg.white .color1-stroke, .white.trade-type-info-navigation__icon .color1-stroke, .white.datepicker__icon .color1-stroke, .white.side-menu__icon .color1-stroke, .btn-purchase__info--left .btn-purchase__icon_wrapper .color1-stroke, .white.cashier__transferred-icon .color1-stroke {
+    .white.advanced-simple-toggle__icon .color1-stroke, .white.footer__icon .color1-stroke, .contract-drawer svg.white .color1-stroke, .positions-drawer__icon-close svg.white .color1-stroke, .white.input-wrapper__icon .color1-stroke, .white.time-picker__icon .color1-stroke, .account-settings-toggle svg.white .color1-stroke, .white.calendar__icon .color1-stroke, .white.contract-type-widget__select-arrow .color1-stroke, .contract-type-item__icon:hover svg .color1-stroke, .trade-type-info-dialog__header svg.white .color1-stroke, .white.trade-type-info-navigation__icon .color1-stroke, .white.datepicker__icon .color1-stroke, .white.side-menu__icon .color1-stroke, .btn-purchase__info--left .btn-purchase__icon_wrapper .color1-stroke, .white.cashier__transferred-icon .color1-stroke, .info-box-container .white.info-box-longcode-icon .color1-stroke {
       stroke: var(--text-prominent); }
-  .border_hover_color.advanced-simple-toggle__icon, .footer__link:hover .border_hover_color.footer__icon, .border_hover_color.footer__icon, .contract-drawer svg.border_hover_color, .positions-drawer__icon-close svg.border_hover_color, .border_hover_color.input-wrapper__icon, .border_hover_color.time-picker__icon, .account-settings-toggle svg.border_hover_color, .border_hover_color.calendar__icon, .border_hover_color.contract-type-widget__select-arrow, .trade-type-info-dialog__header svg.border_hover_color, .border_hover_color.trade-type-info-navigation__icon, .border_hover_color.datepicker__icon, .border_hover_color.side-menu__icon, .border_hover_color.cashier__transferred-icon {
+  .border_hover_color.advanced-simple-toggle__icon, .footer__link:hover .border_hover_color.footer__icon, .border_hover_color.footer__icon, .contract-drawer svg.border_hover_color, .positions-drawer__icon-close svg.border_hover_color, .border_hover_color.input-wrapper__icon, .border_hover_color.time-picker__icon, .account-settings-toggle svg.border_hover_color, .border_hover_color.calendar__icon, .border_hover_color.contract-type-widget__select-arrow, .trade-type-info-dialog__header svg.border_hover_color, .border_hover_color.trade-type-info-navigation__icon, .border_hover_color.datepicker__icon, .border_hover_color.side-menu__icon, .border_hover_color.cashier__transferred-icon, .info-box-container .border_hover_color.info-box-longcode-icon {
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */ }
-    .border_hover_color.advanced-simple-toggle__icon .color1-fill, .border_hover_color.footer__icon .color1-fill, .contract-drawer svg.border_hover_color .color1-fill, .positions-drawer__icon-close svg.border_hover_color .color1-fill, .border_hover_color.input-wrapper__icon .color1-fill, .border_hover_color.time-picker__icon .color1-fill, .account-settings-toggle svg.border_hover_color .color1-fill, .border_hover_color.calendar__icon .color1-fill, .border_hover_color.contract-type-widget__select-arrow .color1-fill, .trade-type-info-dialog__header svg.border_hover_color .color1-fill, .border_hover_color.trade-type-info-navigation__icon .color1-fill, .border_hover_color.datepicker__icon .color1-fill, .border_hover_color.side-menu__icon .color1-fill, .border_hover_color.cashier__transferred-icon .color1-fill {
+    .border_hover_color.advanced-simple-toggle__icon .color1-fill, .border_hover_color.footer__icon .color1-fill, .contract-drawer svg.border_hover_color .color1-fill, .positions-drawer__icon-close svg.border_hover_color .color1-fill, .border_hover_color.input-wrapper__icon .color1-fill, .border_hover_color.time-picker__icon .color1-fill, .account-settings-toggle svg.border_hover_color .color1-fill, .border_hover_color.calendar__icon .color1-fill, .border_hover_color.contract-type-widget__select-arrow .color1-fill, .trade-type-info-dialog__header svg.border_hover_color .color1-fill, .border_hover_color.trade-type-info-navigation__icon .color1-fill, .border_hover_color.datepicker__icon .color1-fill, .border_hover_color.side-menu__icon .color1-fill, .border_hover_color.cashier__transferred-icon .color1-fill, .info-box-container .border_hover_color.info-box-longcode-icon .color1-fill {
       fill: var(--text-prominent); }
-    .border_hover_color.advanced-simple-toggle__icon .color1-stroke, .border_hover_color.footer__icon .color1-stroke, .contract-drawer svg.border_hover_color .color1-stroke, .positions-drawer__icon-close svg.border_hover_color .color1-stroke, .border_hover_color.input-wrapper__icon .color1-stroke, .border_hover_color.time-picker__icon .color1-stroke, .account-settings-toggle svg.border_hover_color .color1-stroke, .border_hover_color.calendar__icon .color1-stroke, .border_hover_color.contract-type-widget__select-arrow .color1-stroke, .trade-type-info-dialog__header svg.border_hover_color .color1-stroke, .border_hover_color.trade-type-info-navigation__icon .color1-stroke, .border_hover_color.datepicker__icon .color1-stroke, .border_hover_color.side-menu__icon .color1-stroke, .border_hover_color.cashier__transferred-icon .color1-stroke {
+    .border_hover_color.advanced-simple-toggle__icon .color1-stroke, .border_hover_color.footer__icon .color1-stroke, .contract-drawer svg.border_hover_color .color1-stroke, .positions-drawer__icon-close svg.border_hover_color .color1-stroke, .border_hover_color.input-wrapper__icon .color1-stroke, .border_hover_color.time-picker__icon .color1-stroke, .account-settings-toggle svg.border_hover_color .color1-stroke, .border_hover_color.calendar__icon .color1-stroke, .border_hover_color.contract-type-widget__select-arrow .color1-stroke, .trade-type-info-dialog__header svg.border_hover_color .color1-stroke, .border_hover_color.trade-type-info-navigation__icon .color1-stroke, .border_hover_color.datepicker__icon .color1-stroke, .border_hover_color.side-menu__icon .color1-stroke, .border_hover_color.cashier__transferred-icon .color1-stroke, .info-box-container .border_hover_color.info-box-longcode-icon .color1-stroke {
       stroke: var(--text-prominent); }
-  .secondary.advanced-simple-toggle__icon, .footer__link:hover .secondary.footer__icon, .secondary.footer__icon, .contract-drawer svg.secondary, .positions-drawer__icon-close svg.secondary, .secondary.input-wrapper__icon, .secondary.time-picker__icon, .account-settings-toggle svg.secondary, .secondary.calendar__icon, .secondary.contract-type-widget__select-arrow, .contract-type-item__icon svg, .trade-type-info-dialog__header svg.secondary, .secondary.trade-type-info-navigation__icon, .secondary.datepicker__icon, .secondary.side-menu__icon, .secondary.cashier__transferred-icon {
+  .secondary.advanced-simple-toggle__icon, .footer__link:hover .secondary.footer__icon, .secondary.footer__icon, .contract-drawer svg.secondary, .positions-drawer__icon-close svg.secondary, .secondary.input-wrapper__icon, .secondary.time-picker__icon, .account-settings-toggle svg.secondary, .secondary.calendar__icon, .secondary.contract-type-widget__select-arrow, .contract-type-item__icon svg, .trade-type-info-dialog__header svg.secondary, .secondary.trade-type-info-navigation__icon, .secondary.datepicker__icon, .secondary.side-menu__icon, .secondary.cashier__transferred-icon, .info-box-container .secondary.info-box-longcode-icon {
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */ }
-    .secondary.advanced-simple-toggle__icon .color1-fill, .secondary.footer__icon .color1-fill, .contract-drawer svg.secondary .color1-fill, .positions-drawer__icon-close svg.secondary .color1-fill, .secondary.input-wrapper__icon .color1-fill, .secondary.time-picker__icon .color1-fill, .account-settings-toggle svg.secondary .color1-fill, .secondary.calendar__icon .color1-fill, .secondary.contract-type-widget__select-arrow .color1-fill, .contract-type-item__icon svg .color1-fill, .trade-type-info-dialog__header svg.secondary .color1-fill, .secondary.trade-type-info-navigation__icon .color1-fill, .secondary.datepicker__icon .color1-fill, .secondary.side-menu__icon .color1-fill, .secondary.cashier__transferred-icon .color1-fill {
+    .secondary.advanced-simple-toggle__icon .color1-fill, .secondary.footer__icon .color1-fill, .contract-drawer svg.secondary .color1-fill, .positions-drawer__icon-close svg.secondary .color1-fill, .secondary.input-wrapper__icon .color1-fill, .secondary.time-picker__icon .color1-fill, .account-settings-toggle svg.secondary .color1-fill, .secondary.calendar__icon .color1-fill, .secondary.contract-type-widget__select-arrow .color1-fill, .contract-type-item__icon svg .color1-fill, .trade-type-info-dialog__header svg.secondary .color1-fill, .secondary.trade-type-info-navigation__icon .color1-fill, .secondary.datepicker__icon .color1-fill, .secondary.side-menu__icon .color1-fill, .secondary.cashier__transferred-icon .color1-fill, .info-box-container .secondary.info-box-longcode-icon .color1-fill {
       fill: var(--text-less-prominent); }
-    .secondary.advanced-simple-toggle__icon .color1-stroke, .secondary.footer__icon .color1-stroke, .contract-drawer svg.secondary .color1-stroke, .positions-drawer__icon-close svg.secondary .color1-stroke, .secondary.input-wrapper__icon .color1-stroke, .secondary.time-picker__icon .color1-stroke, .account-settings-toggle svg.secondary .color1-stroke, .secondary.calendar__icon .color1-stroke, .secondary.contract-type-widget__select-arrow .color1-stroke, .contract-type-item__icon svg .color1-stroke, .trade-type-info-dialog__header svg.secondary .color1-stroke, .secondary.trade-type-info-navigation__icon .color1-stroke, .secondary.datepicker__icon .color1-stroke, .secondary.side-menu__icon .color1-stroke, .secondary.cashier__transferred-icon .color1-stroke {
+    .secondary.advanced-simple-toggle__icon .color1-stroke, .secondary.footer__icon .color1-stroke, .contract-drawer svg.secondary .color1-stroke, .positions-drawer__icon-close svg.secondary .color1-stroke, .secondary.input-wrapper__icon .color1-stroke, .secondary.time-picker__icon .color1-stroke, .account-settings-toggle svg.secondary .color1-stroke, .secondary.calendar__icon .color1-stroke, .secondary.contract-type-widget__select-arrow .color1-stroke, .contract-type-item__icon svg .color1-stroke, .trade-type-info-dialog__header svg.secondary .color1-stroke, .secondary.trade-type-info-navigation__icon .color1-stroke, .secondary.datepicker__icon .color1-stroke, .secondary.side-menu__icon .color1-stroke, .secondary.cashier__transferred-icon .color1-stroke, .info-box-container .secondary.info-box-longcode-icon .color1-stroke {
       stroke: var(--text-less-prominent); }
 
 /* postcss-bem-linter: ignore */
@@ -11850,7 +12287,7 @@ html {
 
 /* postcss-bem-linter: ignore */
 *, html, .body {
-  font-family: roboto, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11872,23 +12309,23 @@ html {
   font-family: inherit;
   font-style: inherit;
   padding: 2px 3px;
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 /** @define theme */
 .theme--light {
@@ -12906,7 +13343,7 @@ table {
       line-height: 1.75;
       padding: 0.5em 0;
       position: relative;
-      color: var(--text-prominent);
+      color: var(--text-general);
       /* postcss-bem-linter: ignore */
       /* postcss-bem-linter: ignore */
       /* postcss-bem-linter: ignore */
@@ -12914,17 +13351,17 @@ table {
       /* postcss-bem-linter: ignore */
       /* postcss-bem-linter: ignore */ }
       .header__menu-link-text .color1-fill {
-        fill: var(--text-prominent); }
+        fill: var(--text-general); }
       .header__menu-link-text .color1-stroke {
-        stroke: var(--text-prominent); }
+        stroke: var(--text-general); }
       .header__menu-link-text .color2-fill {
         fill: none; }
       .header__menu-link-text .color2-stroke {
         stroke: none; }
       .header__menu-link-text .color3-fill {
-        fill: var(--text-prominent); }
+        fill: var(--text-general); }
       .header__menu-link-text .color3-stroke {
-        stroke: var(--text-prominent); }
+        stroke: var(--text-general); }
       .header__menu-link-text:before {
         position: absolute;
         top: 1.4em;
@@ -13110,7 +13547,7 @@ table {
   text-transform: capitalize;
   text-align: left;
   line-height: 1.25;
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 /** @define ic-settings */
 .ic-settings--active {
@@ -13501,11 +13938,8 @@ table {
     font-size: 1rem;
     align-self: flex-start;
     text-transform: none;
-    margin-bottom: 4px; }
-    .theme--light .contract-card .purchase-price__label, .theme--light .contract-card .potential-payout__label {
-      color: rgba(0, 0, 0, 0.8); }
-    .theme--dark .contract-card .purchase-price__label, .theme--dark .contract-card .potential-payout__label {
-      color: #7f8397; }
+    margin-bottom: 4px;
+    color: var(--text-general); }
   .contract-card .purchase-price__value, .contract-card .potential-payout__value {
     font-size: 1em;
     font-weight: bold;
@@ -14005,7 +14439,7 @@ table {
         top: 0;
         height: 6px;
         width: 100%;
-        background-color: var(--text-less-prominent); }
+        background-color: var(--text-general); }
       .progress-slider__ticks-step--marked:before {
         transform: scale3d(1, 1, 1); }
       .progress-slider__ticks-step:first-child {
@@ -14132,7 +14566,8 @@ table {
     margin: 0;
     border-radius: 0px;
     width: 50%;
-    background-color: var(--state-normal); }
+    background-color: var(--state-normal);
+    /* postcss-bem-linter: ignore */ }
     .button-menu__button:hover:not(.button-menu__button--active) {
       background-color: var(--state-hover) !important; }
     .button-menu__button span {
@@ -14142,7 +14577,7 @@ table {
       text-transform: unset;
       text-align: left;
       line-height: 1.5;
-      color: var(--text-prominent); }
+      color: var(--text-general); }
     .button-menu__button--active {
       cursor: auto;
       cursor: initial;
@@ -14189,14 +14624,11 @@ table {
     text-transform: capitalize;
     text-align: left;
     line-height: 1.5;
+    color: var(--text-general);
     margin-bottom: 0.2em;
     display: inline-block;
     text-align: center;
     width: 100%; }
-    .theme--light .input-field__label {
-      color: rgba(0, 0, 0, 0.8); }
-    .theme--dark .input-field__label {
-      color: #ffffff; }
   .input-field .inline-icon {
     position: absolute;
     top: 8px;
@@ -14441,7 +14873,7 @@ table {
     text-align: left;
     line-height: 1.5;
     padding: 0 6.66667px;
-    color: var(--text-prominent);
+    color: var(--text-general);
     cursor: pointer; }
   .allow-equals__tooltip {
     margin-top: 1em; }
@@ -14689,7 +15121,7 @@ table {
   font-size: 1em;
   white-space: nowrap;
   max-width: 90px;
-  color: var(--text-prominent); }
+  color: var(--text-general); }
 
 .contract-audit__value-wrapper {
   display: flex;
@@ -14725,7 +15157,7 @@ table {
     grid-auto-columns: 1fr;
     z-index: 2;
     border-radius: 4px;
-    background: var(--general-section-1);
+    background: var(--general-main-2);
     box-shadow: 0 2px 8px 0 var(--shadow-menu); }
   .contracts-type-dialog--enter, .contracts-type-dialog--exit {
     transform: translate3d(20%, 0, 0);
@@ -14762,7 +15194,8 @@ table {
       text-transform: capitalize;
       text-align: left;
       line-height: 1.5;
-      color: var(--text-prominent);
+      color: var(--text-general);
+      font-weight: bold;
       vertical-align: middle;
       padding-left: 0.4em; }
     .contract-type-widget__display:hover, .contract-type-widget__display:focus {
@@ -14819,7 +15252,8 @@ table {
 
 /** @define contract-type-list; */
 .contract-type-list {
-  padding: 1.6em 1.6em 0em; }
+  padding: 1.6em 1.6em 0em;
+  border-bottom: 4px solid var(--general-section-2); }
   .contract-type-list__label {
     font-size: 1.4em;
     color: rgba(0, 0, 0, 0.8);
@@ -14830,19 +15264,9 @@ table {
     color: var(--text-prominent);
     margin-bottom: 0.6em; }
   .contract-type-list:last-child {
-    padding-bottom: 1.6em; }
-  .contract-type-list__contracts-wrapper:first-child {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
     border-bottom: none; }
-  .contract-type-list__contracts-wrapper:last-child {
-    border-top: none;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px; }
-  .contract-type-list__contracts-wrapper:only-child {
-    border-radius: 4px; }
-  .contract-type-list__contracts-wrapper:hover:not(.selected) {
-    background: var(--state-hover); }
+  .contract-type-list__contracts-wrapper {
+    margin-bottom: 1.4rem; }
 
 /** @define contract-type-item */
 .contract-type-item {
@@ -14856,7 +15280,8 @@ table {
   margin-bottom: 0.1em;
   transition: transform 0.3s opacity 0.3s;
   background-color: var(--state-normal);
-  color: var(--text-general); }
+  color: var(--text-general);
+  border-radius: 4px; }
   .contract-type-item:hover {
     background-color: var(--state-hover); }
     .contract-type-item:hover .contract-type-item__icon {
@@ -14964,7 +15389,7 @@ table {
     box-shadow: 0 2px 8px 0 var(--shadow-menu);
     display: flex;
     flex-direction: column;
-    background: var(--general-section-1); }
+    background: var(--general-main-2); }
   .trade-type-info-dialog__choose-button {
     margin: 1.6em 0;
     width: 100%;
@@ -15243,8 +15668,9 @@ table {
     border-left: 2px solid var(--general-main-1); }
   .side-menu__title {
     font-size: 1.6rem;
+    font-size: var(--text-size-s);
     font-weight: bold;
-    margin-right: 8px;
+    margin: 0 0.8rem;
     color: var(--text-prominent); }
   .side-menu__header--active {
     background-color: var(--general-main-1);
@@ -15253,6 +15679,9 @@ table {
       background-color: var(--general-main-1) !important; }
     .side-menu__header--active div {
       font-weight: bold; }
+  .side-menu__header--disabled {
+    opacity: 0.32;
+    pointer-events: none; }
   .side-menu__icon {
     transform: rotate(360deg);
     margin-left: auto; }
@@ -15325,7 +15754,7 @@ table {
       align-self: flex-start;
       white-space: nowrap;
       max-width: 90px;
-      color: var(--text-prominent); }
+      color: var(--text-general); }
     .pl-card__item__body {
       font-size: 1.2em;
       color: rgba(0, 0, 0, 0.8);
@@ -16180,20 +16609,23 @@ table {
     .reset-password__password-field > label {
       background-color: var(--general-main-2); }
 
-/** @define cashier */
+/** @define cashier; weak */
 .cashier {
   /** @define cashier-error */ }
   .cashier__content {
-    width: 100%; }
+    width: 100%;
+    background: var(--status-default); }
   .cashier__wrapper {
     text-align: center; }
     .cashier__wrapper, .cashier__wrapper--align-left {
-      color: var(--text-prominent);
+      color: var(--text-general);
       width: 100%;
       height: 100%;
       line-height: 1.43; }
     .cashier__wrapper--align-left {
       text-align: left; }
+    .cashier__wrapper .inline-icon .color1-fill {
+      fill: var(--text-general); }
   .cashier__loader {
     font-size: 1rem; }
     .cashier__loader-wrapper {
@@ -16203,7 +16635,8 @@ table {
     font-size: 1.6rem;
     line-height: 1.5;
     font-weight: bold;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    color: var(--text-prominent); }
   .cashier__form-submit {
     display: flex;
     justify-content: flex-end;
@@ -16270,7 +16703,7 @@ table {
     font-size: 1.4rem;
     text-align: left;
     line-height: 1.43;
-    max-width: 18rem; }
+    max-width: 20rem; }
     .cashier__transferred-details-wrapper {
       display: flex;
       justify-content: center;
@@ -16293,6 +16726,12 @@ table {
       font-weight: bold; }
   .cashier__modal-tab {
     min-width: 24rem; }
+  .cashier__success {
+    background-color: var(--general-section-1);
+    padding: 2.4rem 3.4rem;
+    margin: 0 4.9rem; }
+  .cashier__amount-symbol {
+    top: 0.9rem; }
   .cashier-error__icon {
     width: 6.4rem;
     height: 6.4rem;
@@ -16473,9 +16912,6 @@ table {
 .payment-agent__paragraph {
   align-self: flex-start; }
 
-.payment-agent__amount-symbol {
-  top: 0.9rem; }
-
 /** @define account-transfer */
 .account-transfer__notes {
   color: var(--text-less-prominent);
@@ -16535,8 +16971,22 @@ table {
   height: 4rem;
   margin-top: 3.2rem; }
 
-.account-transfer__amount-symbol {
-  top: 0.9rem; }
+/** @define payment-agent-transfer */
+.payment-agent-transfer__header {
+  margin-bottom: 2.8rem; }
+
+.payment-agent-transfer__input {
+  width: 29.6rem;
+  display: inline-flex; }
+  .payment-agent-transfer__input:not(:first-child) {
+    margin-left: 2.4rem; }
+
+.payment-agent-transfer__buttons {
+  margin-left: -10.7rem;
+  align-items: center; }
+
+.payment-agent-transfer__done-button {
+  margin-right: 2.4rem; }
 
 /** @define dc-modal; */
 .dc-modal__container_modal-cashier {
@@ -16553,79 +17003,6 @@ table {
     border-bottom: 1px solid var(--general-section-1);
     background-color: var(--general-section-1); }
 
-.contract-container {
-  font-size: 1.4em;
-  border-radius: 4px;
-  position: relative; }
-  .contract-container .contract-header {
-    max-height: 32px;
-    overflow: hidden;
-    border-radius: 4px 4px 0 0; }
-    .contract-container .contract-header .header-wrapper {
-      transition: transform 0.4s ease;
-      transform: translateY(-32px); }
-      .contract-container .contract-header .header-wrapper .header-result, .contract-container .contract-header .header-wrapper .header-purchased {
-        display: flex;
-        align-items: center;
-        padding: 5px;
-        color: #ffffff;
-        font-weight: bold;
-        line-height: 1.5; }
-        .contract-container .contract-header .header-wrapper .header-result svg, .contract-container .contract-header .header-wrapper .header-purchased svg {
-          display: inline-block;
-          margin-right: 0.7em; }
-    .contract-container .contract-header.purchased .header-wrapper .header-purchased {
-      color: #39b19d;
-      background-color: #f4f4f6;
-      opacity: 1;
-      transition: opacity 0.4s linear; }
-    .contract-container .contract-header.won .header-wrapper {
-      transform: none; }
-      .contract-container .contract-header.won .header-wrapper .header-result {
-        background-color: #39b19d; }
-      .contract-container .contract-header.won .header-wrapper .header-purchased {
-        opacity: 0; }
-    .contract-container .contract-header.lost .header-wrapper {
-      transform: none; }
-      .contract-container .contract-header.lost .header-wrapper .header-result {
-        background-color: #e31c4b; }
-      .contract-container .contract-header.lost .header-wrapper .header-purchased {
-        opacity: 0; }
-  .contract-container .btn {
-    margin: 0.8em; }
-    .contract-container .btn span {
-      font-size: 1em; }
-  .contract-container .contract-contents {
-    padding: 1em;
-    background: #f4f4f6;
-    font-size: 1em;
-    border-top-width: 0;
-    border-radius: 0 0 4px 4px; }
-    .contract-container .contract-contents .longcode {
-      font-weight: 300;
-      text-align: center;
-      line-height: 1.5; }
-    .contract-container .contract-contents .ref-number, .contract-container .contract-contents .info-header {
-      margin-top: 0.6em;
-      font-weight: 300;
-      text-align: center;
-      background-color: #f4f4f6;
-      line-height: 1.5;
-      padding: 4px; }
-    .contract-container .contract-contents .info-header {
-      font-weight: bold; }
-    .contract-container .contract-contents .info-item {
-      display: flex;
-      padding: 0.7em 0; }
-      .contract-container .contract-contents .info-item > div {
-        align-self: center; }
-        .contract-container .contract-contents .info-item > div:first-child {
-          font-weight: 300;
-          flex-grow: 1;
-          color: rgba(0, 0, 0, 0.8); }
-        .contract-container .contract-contents .info-item > div:last-child {
-          width: 50%; }
-
 .info-box-container {
   position: absolute;
   z-index: 10;
@@ -16636,14 +17013,14 @@ table {
   width: 100%; }
   .info-box-container-button:hover {
     cursor: pointer; }
-  .info-box-container-icon, .info-box-container .info-box-longcode-icon {
+  .info-box-container-icon {
     width: 32px;
     height: 32px; }
   .info-box-container .info-box {
     position: relative;
     border-radius: 4px;
     padding: 1.6em;
-    background: rgba(42, 48, 82, 0.04);
+    background: rgba(51, 51, 51, 0.1);
     font-weight: 300; }
     .info-box-container .info-box-longcode {
       display: flex; }
@@ -16657,11 +17034,12 @@ table {
         text-transform: unset;
         text-align: left;
         line-height: 1.5;
+        color: var(--text-general);
         max-width: 360px; }
       .info-box-container .info-box-longcode:before {
         position: absolute;
         content: '';
-        background: rgba(42, 48, 82, 0.02);
+        background: rgba(51, 51, 51, 0.06);
         -webkit-filter: blur(2px);
                 filter: blur(2px);
         z-index: 0;
@@ -16677,9 +17055,9 @@ table {
         height: 2.4em;
         margin-right: 1em; }
         .info-box-container .info-box .expired svg .color1-fill {
-          fill: #39b19d; }
+          fill: var(--status-success); }
       .info-box-container .info-box .expired .pl-value {
-        color: #39b19d;
+        color: var(--text-profit-success);
         font-weight: bold;
         font-size: 1.6em;
         line-height: 1.5em; }
@@ -16687,9 +17065,9 @@ table {
           display: inline-block;
           margin-left: 0.7em; }
       .info-box-container .info-box .expired.lost .pl-value {
-        color: #e31c4b; }
+        color: var(--text-loss-danger); }
       .info-box-container .info-box .expired.lost svg .color1-fill {
-        fill: #e31c4b; }
+        fill: var(--status-danger); }
       .info-box-container .info-box .expired .sell-info {
         margin-right: 2em;
         text-align: center;
@@ -16704,9 +17082,9 @@ table {
         text-align: right;
         font-weight: bold; }
         .info-box-container .info-box .general .values .profit {
-          color: #39b19d; }
+          color: var(--text-profit-success); }
         .info-box-container .info-box .general .values .loss {
-          color: #e31c4b; }
+          color: var(--text-loss-danger); }
       .info-box-container .info-box .general .sell {
         display: flex;
         flex-direction: column;
@@ -16725,10 +17103,11 @@ table {
             white-space: normal; }
   .info-box-container .message {
     margin-top: 0.5em;
-    border: 1px solid #e31c4b;
+    border: 1px solid #ff444f;
+    border: 1px solid var(--brand-red-coral);
     border-radius: 4px;
     padding: 1em;
-    background-color: rgba(244, 67, 54, 0.16);
+    background-color: rgba(14, 14, 14, 0.16);
     display: flex;
     align-items: center; }
     .info-box-container .message .message-icon {
@@ -16743,29 +17122,6 @@ table {
     z-index: 11;
     right: 0;
     top: 0; }
-
-.theme--dark .contract-container {
-  color: #7f8397; }
-  .theme--dark .contract-container .contract-header.purchased .header-wrapper .header-purchased {
-    background-color: #101320; }
-  .theme--dark .contract-container .contract-contents {
-    background: #191c31; }
-    .theme--dark .contract-container .contract-contents .ref-number, .theme--dark .contract-container .contract-contents .info-header {
-      background: #101320; }
-    .theme--dark .contract-container .contract-contents .info-item > div:first-child {
-      color: #7f8397; }
-    .theme--dark .contract-container .contract-contents .info-item > div:last-child {
-      color: #ffffff; }
-
-.theme--dark .info-box-container .info-box {
-  background: rgba(16, 19, 32, 0.6); }
-  .theme--dark .info-box-container .info-box-longcode:before {
-    background: rgba(16, 19, 32, 0.25); }
-  .theme--dark .info-box-container .info-box-longcode-text {
-    color: #ffffff; }
-  .theme--dark .info-box-container .info-box .general .sell .btn:disabled {
-    background: rgba(127, 131, 151, 0.3);
-    color: #7f8397 !important; }
 
 /** @define bottom-widgets */
 .bottom-widgets {
@@ -17143,7 +17499,7 @@ table {
     box-sizing: border-box;
     border-radius: 4px;
     background: var(--fill-normal);
-    color: var(--text-prominent);
+    color: var(--text-general);
     border: 1px solid var(--fill-normal); }
     .trade-container__input:hover {
       border-color: var(--border-hover); }
@@ -17181,7 +17537,7 @@ table {
     background: transparent;
     border-color: transparent;
     z-index: 2;
-    color: var(--text-prominent); }
+    color: var(--text-general); }
     .trade-container__currency--symbol {
       font-size: 1.4em;
       line-height: 1.5; }
