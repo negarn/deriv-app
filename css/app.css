@@ -1934,7 +1934,7 @@ html {
   top: 4rem; }
 
 .dc-input--no-placeholder label {
-  transform: translate(0, -1.6rem) scale(0.75);
+  transform: translate(0, -1.8rem) scale(0.75);
   color: var(--text-less-prominent);
   padding: 0 4px;
   background-color: var(--fill-normal); }
@@ -5126,7 +5126,7 @@ html {
   top: 4rem; }
 
 .dc-input--no-placeholder label {
-  transform: translate(0, -1.6rem) scale(0.75);
+  transform: translate(0, -1.8rem) scale(0.75);
   color: var(--text-less-prominent);
   padding: 0 4px;
   background-color: var(--fill-normal); }
