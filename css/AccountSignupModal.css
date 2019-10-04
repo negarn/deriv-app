@@ -374,7 +374,7 @@ html {
       background-color: var(--button-primary-hover); }
     .account-signup__btn--disabled {
       opacity: 0.32;
-      cursor: not-allowed !important; }
+      cursor: not-allowed; }
   .account-signup__residence-field {
     width: 30rem; }
   .account-signup__password-field {
