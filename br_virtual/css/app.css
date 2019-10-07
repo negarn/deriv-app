@@ -8669,6 +8669,8 @@ html {
     margin-left: 0.8rem;
     display: block;
     color: var(--text-prominent); }
+  .acc-switcher__list-group {
+    margin-bottom: 0.8rem; }
 
 .acc-switcher__accounts {
   border-radius: 4px;
