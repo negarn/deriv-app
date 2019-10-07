@@ -1934,7 +1934,7 @@ html {
   top: 4rem; }
 
 .dc-input--no-placeholder label {
-  transform: translate(0, -1.6rem) scale(0.75);
+  transform: translate(0, -1.8rem) scale(0.75);
   color: var(--text-less-prominent);
   padding: 0 4px;
   background-color: var(--fill-normal); }
@@ -5126,7 +5126,7 @@ html {
   top: 4rem; }
 
 .dc-input--no-placeholder label {
-  transform: translate(0, -1.6rem) scale(0.75);
+  transform: translate(0, -1.8rem) scale(0.75);
   color: var(--text-less-prominent);
   padding: 0 4px;
   background-color: var(--fill-normal); }
@@ -17844,14 +17844,18 @@ table {
     height: 6.4rem;
     margin-top: 8.7rem;
     margin-bottom: 1.6rem; }
-  .cashier-error__text {
+  .cashier-error__header {
     color: var(--text-loss-danger);
     font-weight: bold;
     font-size: 1.6rem;
-    line-height: 1.5; }
+    line-height: 1.5;
+    margin-bottom: 0.8rem; }
   .cashier-error__button {
     margin-top: 3.2rem;
-    height: 4rem; }
+    height: 4rem;
+    margin-bottom: 1.6rem; }
+  .cashier-error__footer {
+    font-size: 1.2rem; }
 
 /** @define withdraw */
 .withdraw__header {
