@@ -6875,7 +6875,6 @@ html {
 
 .dc-label--large {
   height: 28px;
-  line-height: 24px;
   border-radius: 20px;
   padding: 4px 8px 4px 4px;
   margin: 0 2px;
@@ -8670,6 +8669,8 @@ html {
     margin-left: 0.8rem;
     display: block;
     color: var(--text-prominent); }
+  .acc-switcher__list-group {
+    margin-bottom: 0.8rem; }
 
 .acc-switcher__accounts {
   border-radius: 4px;
@@ -17509,7 +17510,9 @@ table {
   text-align: left;
   line-height: 1.5;
   color: var(--text-prominent);
-  text-transform: initial; }
+  text-transform: initial;
+  display: flex;
+  align-items: center; }
   .account-wallet .description {
     font-weight: bold; }
     .account-wallet .description__currency {
@@ -17816,6 +17819,26 @@ table {
     margin: 0 4.9rem; }
   .cashier__amount-symbol {
     top: 0.9rem; }
+  .cashier__no-balance-icon {
+    margin: 10.7rem 0 1.6rem; }
+  .cashier__no-balance-button {
+    height: 4rem;
+    margin-top: 3.2rem; }
+  .cashier__account-switch-icon {
+    background-image: url(/public/images/app/cashier/account_switcher.jpg);
+    width: 400px;
+    height: 360px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 2.4rem auto; }
+  .cashier__virtual-header {
+    margin-top: 0;
+    margin-bottom: 0.8rem; }
+  .cashier__center-align-wrapper {
+    display: flex; }
+  .cashier__center-align-content {
+    align-self: center;
+    width: 100%; }
   .cashier-error__icon {
     width: 6.4rem;
     height: 6.4rem;
@@ -18051,13 +18074,6 @@ table {
   margin-top: 3.2rem;
   min-width: 6.5rem;
   height: 4rem; }
-
-.account-transfer__no-balance-icon {
-  margin: 10.7rem 0 1.6rem; }
-
-.account-transfer__no-balance-button {
-  height: 4rem;
-  margin-top: 3.2rem; }
 
 /** @define payment-agent-transfer */
 .payment-agent-transfer__header {
