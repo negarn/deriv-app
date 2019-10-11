@@ -3,6 +3,8 @@
  *------------------------------------*/
 /* stylelint-disable color-no-hex */
 /* COLOR PALETTE */
+/* colors */
+/* alpha colors */
 :root {
   --text-size-xxs: 1.2rem;
   --text-size-xs: 1.4rem;
@@ -41,11 +43,11 @@
     --button-secondary-default: #999999;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
-    --button-tertiary-hover: rgba(255,68,79,0.07843);
-    --overlay-outside-dialog: rgba(0,0,0,0.72157);
-    --overlay-inside-dialog: rgba(255,255,255,0.96078);
-    --shadow-menu: rgba(0,0,0,0.16078);
+    --button-secondary-hover: rgba(0, 0, 0, 0.08);
+    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
+    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
+    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
+    --shadow-menu: rgba(0, 0, 0, 0.16);
     --state-normal: #ffffff;
     --state-hover: #e6e9e9;
     --state-active: #d6dadb;
@@ -64,7 +66,7 @@
     --status-warning: #ffad3a;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: transparentize(#4bb4b3, 0.92); }
+    --transparent-success: rgba(75, 180, 179, 0.92); }
   :root .theme--dark {
     --general-main-1: #0e0e0e;
     --general-main-2: #151717;
@@ -90,11 +92,11 @@
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: transparentize(#ffffff, 0.92);
-    --button-tertiary-hover: rgba(255,68,79,0.07843);
-    --overlay-outside-dialog: rgba(0,0,0,0.72157);
-    --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.83922);
+    --button-secondary-hover: rgba(255, 255, 255, 0.08);
+    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
+    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
+    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
+    --shadow-menu: rgba(0, 0, 0, 0.84);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -113,7 +115,7 @@
     --status-success: #00a79e;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: transparentize(#00a79e, 0.92); }
+    --transparent-success: rgba(0, 167, 158, 0.92); }
 
 /* Preserve legacy variables */
 /* Primary */
@@ -357,6 +359,7 @@ html {
     text-transform: capitalize;
     text-align: center;
     line-height: 1.5;
+    color: var(--text-prominent);
     text-transform: none;
     margin-bottom: 3em; }
   .dc-modal__container_mt5-password-modal form {
@@ -412,7 +415,8 @@ html {
     text-transform: capitalize;
     text-align: center;
     line-height: 1.25;
-    text-transform: none; }
+    text-transform: none;
+    color: var(--text-general); }
   .dc-modal__container_top-up-virtual--h4 {
     font-size: 1.2em;
     color: rgba(0, 0, 0, 0.8);
@@ -420,7 +424,8 @@ html {
     text-transform: capitalize;
     text-align: center;
     line-height: 1.25;
-    text-transform: none; }
+    text-transform: none;
+    color: var(--text-prominent); }
   .dc-modal__container_top-up-virtual--balance {
     font-size: 1.4em;
     color: rgba(0, 0, 0, 0.8);
@@ -433,9 +438,10 @@ html {
     font-size: 1.2em;
     color: rgba(0, 0, 0, 0.8);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
-    line-height: 1.25; }
+    line-height: 1.25;
+    color: var(--text-general); }
   .dc-modal__container_top-up-virtual--button {
     height: 4rem;
     width: 27rem;
@@ -452,6 +458,9 @@ html {
       text-transform: none;
       text-align: center;
       line-height: 1.5;
+      background-color: #ff444f;
+      background-color: var(--brand-red-coral);
+      color: var(--text-colored-background);
       text-transform: none; }
       .dc-modal__container_top-up-virtual--button .btn--disabled {
         background-color: #ff444f;
@@ -474,6 +483,7 @@ html {
   text-transform: capitalize;
   text-align: center;
   line-height: 1.5;
+  color: var(--text-prominent);
   text-transform: none; }
 
 .mt5-success-topup__heading {
@@ -483,8 +493,10 @@ html {
   text-transform: capitalize;
   text-align: center;
   line-height: 1.25;
+  color: var(--text-prominent);
   text-transform: none;
-  margin-top: 2em; }
+  margin-top: 2em;
+  padding: 0 1.6em; }
 
 .mt5-success-topup__description p {
   font-size: 1.2em;
@@ -493,6 +505,7 @@ html {
   text-transform: capitalize;
   text-align: center;
   line-height: 1.25;
+  color: var(--text-general);
   text-transform: none; }
 
 .dc-tooltip {
@@ -536,6 +549,8 @@ html {
  *------------------------------------*/
 /* stylelint-disable color-no-hex */
 /* COLOR PALETTE */
+/* colors */
+/* alpha colors */
 :root {
   --text-size-xxs: 1.2rem;
   --text-size-xs: 1.4rem;
@@ -574,11 +589,11 @@ html {
     --button-secondary-default: #999999;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
-    --button-tertiary-hover: rgba(255,68,79,0.07843);
-    --overlay-outside-dialog: rgba(0,0,0,0.72157);
-    --overlay-inside-dialog: rgba(255,255,255,0.96078);
-    --shadow-menu: rgba(0,0,0,0.16078);
+    --button-secondary-hover: rgba(0, 0, 0, 0.08);
+    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
+    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
+    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
+    --shadow-menu: rgba(0, 0, 0, 0.16);
     --state-normal: #ffffff;
     --state-hover: #e6e9e9;
     --state-active: #d6dadb;
@@ -597,7 +612,7 @@ html {
     --status-warning: #ffad3a;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: transparentize(#4bb4b3, 0.92); }
+    --transparent-success: rgba(75, 180, 179, 0.92); }
   :root .theme--dark {
     --general-main-1: #0e0e0e;
     --general-main-2: #151717;
@@ -623,11 +638,11 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: transparentize(#ffffff, 0.92);
-    --button-tertiary-hover: rgba(255,68,79,0.07843);
-    --overlay-outside-dialog: rgba(0,0,0,0.72157);
-    --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.83922);
+    --button-secondary-hover: rgba(255, 255, 255, 0.08);
+    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
+    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
+    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
+    --shadow-menu: rgba(0, 0, 0, 0.84);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -646,7 +661,7 @@ html {
     --status-success: #00a79e;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: transparentize(#00a79e, 0.92); }
+    --transparent-success: rgba(0, 167, 158, 0.92); }
 
 /* Preserve legacy variables */
 /* Primary */
@@ -796,11 +811,11 @@ html {
   --button-secondary-default: #999;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
-  --button-tertiary-hover: rgba(255,68,79,0.0784314);
-  --overlay-outside-dialog: rgba(0,0,0,0.721569);
-  --overlay-inside-dialog: rgba(255,255,255,0.960784);
-  --shadow-menu: rgba(0,0,0,0.160784);
+  --button-secondary-hover: rgba(0,0,0,0.08);
+  --button-tertiary-hover: rgba(255,68,79,0.08);
+  --overlay-outside-dialog: rgba(0,0,0,0.72);
+  --overlay-inside-dialog: rgba(255,255,255,0.96);
+  --shadow-menu: rgba(0,0,0,0.16);
   --state-normal: #fff;
   --state-hover: #e6e9e9;
   --state-active: #d6dadb;
@@ -819,7 +834,7 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: transparentize(#4bb4b3, 0.92); }
+  --transparent-success: rgba(75,180,179,0.92); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -846,11 +861,11 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: transparentize(#fff, 0.92);
-  --button-tertiary-hover: rgba(255,68,79,0.0784314);
-  --overlay-outside-dialog: rgba(0,0,0,0.721569);
-  --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.839216);
+  --button-secondary-hover: rgba(255,255,255,0.08);
+  --button-tertiary-hover: rgba(255,68,79,0.08);
+  --overlay-outside-dialog: rgba(0,0,0,0.72);
+  --overlay-inside-dialog: rgba(14,14,14,0.96);
+  --shadow-menu: rgba(0,0,0,0.84);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -869,7 +884,7 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: transparentize(#00a79e, 0.92); }
+  --transparent-success: rgba(0,167,158,0.92); }
 
 .dc-tabs {
   position: relative; }
@@ -928,6 +943,8 @@ html {
  *------------------------------------*/
 /* stylelint-disable color-no-hex */
 /* COLOR PALETTE */
+/* colors */
+/* alpha colors */
 :root {
   --text-size-xxs: 1.2rem;
   --text-size-xs: 1.4rem;
@@ -966,11 +983,11 @@ html {
     --button-secondary-default: #999999;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
-    --button-tertiary-hover: rgba(255,68,79,0.07843);
-    --overlay-outside-dialog: rgba(0,0,0,0.72157);
-    --overlay-inside-dialog: rgba(255,255,255,0.96078);
-    --shadow-menu: rgba(0,0,0,0.16078);
+    --button-secondary-hover: rgba(0, 0, 0, 0.08);
+    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
+    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
+    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
+    --shadow-menu: rgba(0, 0, 0, 0.16);
     --state-normal: #ffffff;
     --state-hover: #e6e9e9;
     --state-active: #d6dadb;
@@ -989,7 +1006,7 @@ html {
     --status-warning: #ffad3a;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: transparentize(#4bb4b3, 0.92); }
+    --transparent-success: rgba(75, 180, 179, 0.92); }
   :root .theme--dark {
     --general-main-1: #0e0e0e;
     --general-main-2: #151717;
@@ -1015,11 +1032,11 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: transparentize(#ffffff, 0.92);
-    --button-tertiary-hover: rgba(255,68,79,0.07843);
-    --overlay-outside-dialog: rgba(0,0,0,0.72157);
-    --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.83922);
+    --button-secondary-hover: rgba(255, 255, 255, 0.08);
+    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
+    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
+    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
+    --shadow-menu: rgba(0, 0, 0, 0.84);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -1038,7 +1055,7 @@ html {
     --status-success: #00a79e;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: transparentize(#00a79e, 0.92); }
+    --transparent-success: rgba(0, 167, 158, 0.92); }
 
 /* Preserve legacy variables */
 /* Primary */
@@ -1378,7 +1395,7 @@ html {
     align-items: center;
     padding-left: 1.6rem;
     background-color: var(--general-section-1);
-    margin-bottom: 3.2em; }
+    margin: 2.4em 0; }
     .mt5-dashboard__missing-real--heading {
       font-size: 1.6em;
       color: rgba(0, 0, 0, 0.8);
@@ -1405,21 +1422,32 @@ html {
         flex-flow: column nowrap;
         align-items: center; }
       .mt5-dashboard__download-center-options--desktop {
-        margin-left: 7em; }
+        margin-left: 7em;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start; }
         .mt5-dashboard__download-center-options--desktop-devices {
-          width: 24em;
+          width: 200px;
           display: flex;
           justify-content: space-between;
           align-items: flex-end;
-          margin-bottom: 1.6em; }
+          margin-right: 1.6em;
+          flex-wrap: wrap; }
+          .mt5-dashboard__download-center-options--desktop-devices svg:first-child {
+            margin-right: 0.4em; }
+          .mt5-dashboard__download-center-options--desktop-devices svg:not(:last-child) {
+            margin-bottom: 1.6em; }
         .mt5-dashboard__download-center-options--desktop-links {
-          width: 43em;
+          height: 142px;
           display: flex;
+          flex-flow: column nowrap;
           justify-content: space-between; }
       .mt5-dashboard__download-center-options--mobile {
         margin-right: 7em; }
         .mt5-dashboard__download-center-options--mobile-devices {
           margin-bottom: 1.6em; }
+          .mt5-dashboard__download-center-options--mobile-devices svg:first-child {
+            margin-right: 0.8em; }
         .mt5-dashboard__download-center-options--mobile-links {
           width: 27.1em;
           display: flex;
@@ -1443,7 +1471,6 @@ html {
       text-align: left;
       line-height: unset;
       color: var(--text-less-prominent);
-      margin-top: 1.6em;
       margin-left: 7.05em; }
 
 .mt5-attribute-describer {

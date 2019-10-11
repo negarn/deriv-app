@@ -3,6 +3,8 @@
  *------------------------------------*/
 /* stylelint-disable color-no-hex */
 /* COLOR PALETTE */
+/* colors */
+/* alpha colors */
 :root {
   --text-size-xxs: 1.2rem;
   --text-size-xs: 1.4rem;
@@ -41,11 +43,11 @@
     --button-secondary-default: #999999;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
-    --button-tertiary-hover: rgba(255,68,79,0.07843);
-    --overlay-outside-dialog: rgba(0,0,0,0.72157);
-    --overlay-inside-dialog: rgba(255,255,255,0.96078);
-    --shadow-menu: rgba(0,0,0,0.16078);
+    --button-secondary-hover: rgba(0, 0, 0, 0.08);
+    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
+    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
+    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
+    --shadow-menu: rgba(0, 0, 0, 0.16);
     --state-normal: #ffffff;
     --state-hover: #e6e9e9;
     --state-active: #d6dadb;
@@ -64,7 +66,7 @@
     --status-warning: #ffad3a;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: transparentize(#4bb4b3, 0.92); }
+    --transparent-success: rgba(75, 180, 179, 0.92); }
   :root .theme--dark {
     --general-main-1: #0e0e0e;
     --general-main-2: #151717;
@@ -90,11 +92,11 @@
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: transparentize(#ffffff, 0.92);
-    --button-tertiary-hover: rgba(255,68,79,0.07843);
-    --overlay-outside-dialog: rgba(0,0,0,0.72157);
-    --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.83922);
+    --button-secondary-hover: rgba(255, 255, 255, 0.08);
+    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
+    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
+    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
+    --shadow-menu: rgba(0, 0, 0, 0.84);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -113,7 +115,7 @@
     --status-success: #00a79e;
     --status-info: #377cfc;
     --status-colored-background: #ffffff;
-    --transparent-success: transparentize(#00a79e, 0.92); }
+    --transparent-success: rgba(0, 167, 158, 0.92); }
 
 /* Preserve legacy variables */
 /* Primary */
@@ -263,11 +265,11 @@
   --button-secondary-default: #999;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
-  --button-tertiary-hover: rgba(255,68,79,0.0784314);
-  --overlay-outside-dialog: rgba(0,0,0,0.721569);
-  --overlay-inside-dialog: rgba(255,255,255,0.960784);
-  --shadow-menu: rgba(0,0,0,0.160784);
+  --button-secondary-hover: rgba(0,0,0,0.08);
+  --button-tertiary-hover: rgba(255,68,79,0.08);
+  --overlay-outside-dialog: rgba(0,0,0,0.72);
+  --overlay-inside-dialog: rgba(255,255,255,0.96);
+  --shadow-menu: rgba(0,0,0,0.16);
   --state-normal: #fff;
   --state-hover: #e6e9e9;
   --state-active: #d6dadb;
@@ -286,7 +288,7 @@
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: transparentize(#4bb4b3, 0.92); }
+  --transparent-success: rgba(75,180,179,0.92); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -313,11 +315,11 @@
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: transparentize(#fff, 0.92);
-  --button-tertiary-hover: rgba(255,68,79,0.0784314);
-  --overlay-outside-dialog: rgba(0,0,0,0.721569);
-  --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.839216);
+  --button-secondary-hover: rgba(255,255,255,0.08);
+  --button-tertiary-hover: rgba(255,68,79,0.08);
+  --overlay-outside-dialog: rgba(0,0,0,0.72);
+  --overlay-inside-dialog: rgba(14,14,14,0.96);
+  --shadow-menu: rgba(0,0,0,0.84);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -336,7 +338,7 @@
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: transparentize(#00a79e, 0.92); }
+  --transparent-success: rgba(0,167,158,0.92); }
 
 .dc-accordion__wrapper > div:last-child {
   border-bottom-right-radius: 4px;
