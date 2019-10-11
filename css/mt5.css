@@ -1311,7 +1311,7 @@ html {
     display: flex;
     flex-direction: column; }
     .table__body .table__row-link:hover {
-      background-color: var(--general-hover);
+      background-color: var(--state-hover);
       cursor: pointer; }
     .table__body .table__row:last-child {
       border-bottom: none; }

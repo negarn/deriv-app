@@ -460,7 +460,7 @@ html {
     display: flex;
     flex-direction: column; }
     .table__body .table__row-link:hover {
-      background-color: var(--general-hover);
+      background-color: var(--state-hover);
       cursor: pointer; }
     .table__body .table__row:last-child {
       border-bottom: none; }
@@ -530,10 +530,15 @@ html {
     /*                     icon   refId tr_time  transaction cred/debt  balance */
     grid-template-columns: 0.8fr  1.2fr 1fr      0.8fr         1fr        1fr; }
     .statement__row--detail {
+      overflow: hidden;
+      max-height: 63px;
       display: flex;
+      align-items: center;
+      padding: 0;
       justify-content: center;
-      padding: 1.12em;
       background-color: var(--general-section-1); }
+      .statement__row--detail-text {
+        padding: 1.12em; }
     .statement__row .date {
       text-align: left; }
   .statement .amount, .statement .balance {

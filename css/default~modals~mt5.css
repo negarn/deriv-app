@@ -579,6 +579,7 @@
   background-color: var(--general-main-2); }
 
 .dc-dialog__header {
+  align-self: flex-start;
   font-size: 1.6em;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 700;
@@ -589,6 +590,7 @@
   color: var(--text-prominent); }
 
 .dc-dialog__content {
+  align-self: flex-start;
   font-size: 1.4em;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 400;
