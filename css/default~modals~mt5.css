@@ -606,6 +606,9 @@
 .dc-dialog__content .dc-input__label {
   background-color: var(--general-main-2); }
 
+.dc-dialog__content--centered {
+  align-self: center; }
+
 .dc-dialog__footer {
   display: flex;
   justify-content: flex-end;
