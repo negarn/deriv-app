@@ -508,10 +508,20 @@ html {
       border-top: 1px solid var(--general-section-1);
       border-width: 1px;
       background-color: var(--general-main-1); }
+      .account-form__footer-note {
+        color: var(--text-prominent);
+        font-size: 1.2rem;
+        font-size: var(--text-size-xxs);
+        height: 4rem;
+        line-height: 1.5;
+        text-align: right;
+        width: 27.6rem; }
       .account-form__footer-btn {
+        height: 4em;
         margin-top: 0;
         margin-bottom: 0;
-        margin-right: 0; }
+        margin-right: 0;
+        min-width: 6.4em; }
   .account__intial-loader {
     height: calc(100vh - 240px); }
   .account__text {

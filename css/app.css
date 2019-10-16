@@ -9522,7 +9522,7 @@ html {
       align-items: center;
       transition: background-color 0.2s ease-out, transform 0.1s ease-out; }
       .digits__digit-value--selected {
-        background-color: var(--transparent-success); }
+        background-color: var(--general-main-2); }
       .digits__digit-value--win {
         background-color: var(--text-profit-success);
         color: var(--text-prominent); }
@@ -20320,6 +20320,10 @@ table {
   .trade-container__amount .trade-container__input {
     padding: 0 30px;
     border-radius: 0 4px 4px 0; }
+
+/** @define input-field; weak */
+.input-field .input-wrapper__icon {
+  top: 6px; }
 
 /** @define purchase-container */
 .purchase-container {
