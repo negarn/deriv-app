@@ -4948,9 +4948,7 @@ html {
       color: var(--text-prominent); }
   .acc-switcher__separator {
     height: 4px;
-    background-color: var(--general-section-2);
-    width: calc(100% + 1.6rem);
-    margin-left: -0.8rem; }
+    background-color: var(--general-section-2); }
   .acc-switcher__total {
     font-size: 1.4rem;
     height: 4rem;
