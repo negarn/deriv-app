@@ -268,8 +268,8 @@ html {
     border-bottom: none; }
   .composite-calendar__prepopulated-list {
     padding-top: 50px;
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: capitalize;
     text-align: center;
@@ -294,8 +294,8 @@ html {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  font-size: 1.4em;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.4rem;
+  color: var(--text-general);
   font-weight: 400;
   text-transform: default;
   text-align: center;
@@ -364,8 +364,8 @@ html {
     justify-content: space-between;
     padding: 0 24px 16px; }
     .reports__meta-description--heading {
-      font-size: 1.6em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.6rem;
+      color: var(--text-general);
       font-weight: 700;
       text-transform: none;
       text-align: left;
@@ -373,8 +373,8 @@ html {
       color: var(--text-prominent);
       line-height: 1.55; }
     .reports__meta-description--paragraph {
-      font-size: 1.4em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.4rem;
+      color: var(--text-general);
       font-weight: 400;
       text-transform: none;
       text-align: left;
@@ -599,6 +599,7 @@ html {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-content: center;
   margin: auto; }
   .empty-trade-history__icon {
     width: 96px;

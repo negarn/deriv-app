@@ -222,8 +222,8 @@ html {
   flex-direction: column;
   justify-content: flex-start; }
   .dc-modal__container_mt5-password-modal h2 {
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
@@ -239,8 +239,8 @@ html {
     justify-content: space-between;
     padding: 2em; }
   .dc-modal__container_mt5-password-modal__description {
-    font-size: 1.2em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.2rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: capitalize;
     text-align: center;
@@ -278,8 +278,8 @@ html {
     justify-content: space-around;
     align-items: center; }
   .dc-modal__container_top-up-virtual__description {
-    font-size: 1.2em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.2rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: capitalize;
     text-align: center;
@@ -287,8 +287,8 @@ html {
     text-transform: none;
     color: var(--text-general); }
   .dc-modal__container_top-up-virtual--h4 {
-    font-size: 1.2em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.2rem;
+    color: var(--text-general);
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
@@ -296,16 +296,16 @@ html {
     text-transform: none;
     color: var(--text-prominent); }
   .dc-modal__container_top-up-virtual--balance {
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
     line-height: 1.5;
     color: var(--text-profit-success); }
   .dc-modal__container_top-up-virtual--balance-descriptor {
-    font-size: 1.2em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.2rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: none;
     text-align: center;
@@ -321,8 +321,8 @@ html {
     padding: 0;
     margin: 1.6rem; }
     .dc-modal__container_top-up-virtual--button .btn {
-      font-size: 1.4em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.4rem;
+      color: var(--text-general);
       font-weight: 700;
       text-transform: none;
       text-align: center;
@@ -344,8 +344,8 @@ html {
       flex-grow: 1; }
 
 .dc-modal-header__section--top-up-virtual {
-  font-size: 1.4em;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.4rem;
+  color: var(--text-general);
   font-weight: 700;
   text-transform: capitalize;
   text-align: center;
@@ -354,8 +354,8 @@ html {
   text-transform: none; }
 
 .mt5-success-topup__heading {
-  font-size: 1.2em;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+  color: var(--text-general);
   font-weight: 700;
   text-transform: capitalize;
   text-align: center;
@@ -366,8 +366,8 @@ html {
   padding: 0 1.6em; }
 
 .mt5-success-topup__description p {
-  font-size: 1.2em;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+  color: var(--text-general);
   font-weight: 400;
   text-transform: capitalize;
   text-align: center;
@@ -381,8 +381,8 @@ html {
   .dc-tooltip:hover .dc-tooltiptext {
     visibility: visible; }
   .dc-tooltip .dc-tooltiptext {
-    font-size: 1em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: capitalize;
     text-align: left;
@@ -782,8 +782,8 @@ html {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  font-size: 1.4em;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.4rem;
+  color: var(--text-general);
   font-weight: 400;
   text-transform: default;
   text-align: center;
@@ -859,8 +859,8 @@ html {
       display: flex;
       justify-content: space-between; }
     .mt5-dashboard__welcome-message--heading {
-      font-size: 1.6em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.6rem;
+      color: var(--text-general);
       font-weight: 700;
       text-transform: none;
       text-align: left;
@@ -868,16 +868,16 @@ html {
       color: var(--text-prominent);
       line-height: 1.5em; }
     .mt5-dashboard__welcome-message--paragraph {
-      font-size: 1.4em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.4rem;
+      color: var(--text-general);
       font-weight: 400;
       text-transform: none;
       text-align: left;
       line-height: 1.5;
       color: var(--text-general); }
     .mt5-dashboard__welcome-message--hint {
-      font-size: 1em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1rem;
+      color: var(--text-general);
       font-weight: 400;
       text-transform: none;
       text-align: left;
@@ -897,8 +897,8 @@ html {
     background-color: var(--general-section-1);
     margin: 2.4em 0; }
     .mt5-dashboard__missing-real--heading {
-      font-size: 1.6em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.6rem;
+      color: var(--text-general);
       font-weight: 700;
       text-transform: none;
       text-align: left;
@@ -953,8 +953,8 @@ html {
           display: flex;
           justify-content: space-between; }
     .mt5-dashboard__download-center--heading {
-      font-size: 1.6em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.6rem;
+      color: var(--text-general);
       font-weight: 700;
       text-transform: none;
       text-align: left;
@@ -964,8 +964,8 @@ html {
       margin-left: 1.3em;
       margin-bottom: 1.5em; }
     .mt5-dashboard__download-center--hint {
-      font-size: 1em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1rem;
+      color: var(--text-general);
       font-weight: 400;
       text-transform: none;
       text-align: left;
@@ -974,8 +974,8 @@ html {
       margin-left: 7.05em; }
 
 .mt5-attribute-describer {
-  font-size: 1.4em;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.4rem;
+  color: var(--text-general);
   font-weight: 700;
   text-transform: none;
   text-align: left;
@@ -1025,8 +1025,8 @@ html {
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
     border: solid 1px var(--general-main-1); }
   .mt5-account-card--heading {
-    font-size: 1.6em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.6rem;
+    color: var(--text-general);
     font-weight: 700;
     text-transform: none;
     text-align: left;
@@ -1034,8 +1034,8 @@ html {
     color: var(--text-prominent);
     line-height: 1.5em; }
   .mt5-account-card--paragraph {
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: none;
     text-align: left;
@@ -1043,8 +1043,8 @@ html {
     color: var(--text-general);
     line-height: 1.45em; }
   .mt5-account-card--balance {
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 700;
     text-transform: capitalize;
     text-align: left;
@@ -1079,8 +1079,8 @@ html {
       .mt5-account-card__specs-table-attribute .mt5-account-card--paragraph {
         color: var(--text-general); }
     .mt5-account-card__specs-table-data .mt5-account-card--paragraph {
-      font-size: 1.4em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.4rem;
+      color: var(--text-general);
       font-weight: 700;
       text-transform: none;
       text-align: left;
@@ -1100,8 +1100,8 @@ html {
     text-decoration: none;
     padding: 0;
     margin: 1.6rem;
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 700;
     text-transform: none;
     text-align: center;
@@ -1116,8 +1116,8 @@ html {
       .mt5-account-card__account-selection--secondary:hover {
         background-color: var(--button-secondary-hover); }
   .mt5-account-card__login {
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: capitalize;
     text-align: center;
@@ -1137,8 +1137,8 @@ html {
     display: flex;
     justify-content: space-between; }
     .mt5-account-card__manage .btn {
-      font-size: 1.2em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.2rem;
+      color: var(--text-general);
       font-weight: 700;
       text-transform: none;
       text-align: center;
@@ -1152,16 +1152,16 @@ html {
   margin: 5.6rem auto 0;
   width: 400px; }
   .mt5-password-manager--paragraph {
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: none;
     text-align: left;
     line-height: 1.5;
     color: var(--text-general); }
   .mt5-password-manager--error-message {
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: none;
     text-align: left;
@@ -1183,11 +1183,8 @@ html {
     display: flex;
     flex-flow: column nowrap;
     align-items: center; }
-    .mt5-password-manager__actions .mt5-password-manager--button:last-child {
-      margin-top: 0; }
   .mt5-password-manager--button {
-    height: 4em;
-    color: var(--text-prominent); }
+    margin-top: 1.6rem; }
 
 .dc-modal__container_mt5-dashboard__compare-accounts {
   width: 904px; }

@@ -383,31 +383,30 @@ html {
         text-align: right;
         width: 27.6rem; }
       .account-form__footer-btn {
-        height: 4em;
+        height: 4rem;
         margin-top: 0;
         margin-bottom: 0;
-        margin-right: 0;
-        min-width: 6.4em; }
+        margin-left: 1.6rem; }
   .account__intial-loader {
     height: calc(100vh - 240px); }
   .account__text {
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: none;
     text-align: left;
     line-height: 1.5;
     color: var(--text-general); }
     .account__text--small {
-      font-size: 1.2em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.2rem;
+      color: var(--text-general);
       font-weight: 400;
       text-transform: none;
       text-align: left;
       line-height: 1.25; }
     .account__text--xsmall {
-      font-size: 1em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1rem;
+      color: var(--text-general);
       font-weight: 400;
       text-transform: none;
       text-align: left;
@@ -465,8 +464,8 @@ html {
       .account .account-management-table thead tr {
         padding-bottom: 8px; }
       .account .account-management-table thead th {
-        font-size: 1.4em;
-        color: rgba(0, 0, 0, 0.8);
+        font-size: 1.4rem;
+        color: var(--text-general);
         font-weight: 700;
         text-transform: none;
         text-align: left;

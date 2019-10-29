@@ -168,8 +168,8 @@
 .initial-loader__text {
   line-height: 44px;
   color: var(--text-prominent);
-  font-size: 1.4em;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.4rem;
+  color: var(--text-general);
   font-weight: 400;
   text-transform: none;
   text-align: center;
@@ -222,8 +222,8 @@
 
 .dc-dialog__header {
   align-self: flex-start;
-  font-size: 1.6em;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.6rem;
+  color: var(--text-general);
   font-weight: 700;
   text-transform: none;
   text-align: left;
@@ -233,8 +233,8 @@
 
 .dc-dialog__content {
   align-self: flex-start;
-  font-size: 1.4em;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.4rem;
+  color: var(--text-general);
   font-weight: 400;
   text-transform: unset;
   text-align: left;
