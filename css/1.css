@@ -102,7 +102,7 @@
   border-bottom-width: 1px; }
 
 .dc-accordion__item {
-  border: 1px solid var(--border-normal);
+  border: 1px solid var(--general-section-1);
   border-bottom-width: 0;
   color: var(--text-general);
   font-size: 1.4rem; }
@@ -112,7 +112,7 @@
   border-top-left-radius: 4px; }
 
 .dc-accordion__item--open .dc-accordion__item-header {
-  border-bottom: 1px solid var(--border-normal); }
+  border-bottom: 1px solid var(--general-section-1); }
 
 .dc-accordion__item--open .dc-accordion__item-content {
   display: block; }
