@@ -469,7 +469,7 @@
   font-size: 1.6rem;
   color: var(--text-general);
   font-weight: 700;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: left;
   line-height: 1.75;
   color: var(--text-prominent);
@@ -781,7 +781,7 @@ html {
   font-size: 1.4rem;
   color: var(--text-general);
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: left;
   line-height: 1.5;
   color: var(--text-prominent); }
@@ -2601,7 +2601,7 @@ html {
   font-size: 1.4rem;
   color: var(--text-general);
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: center;
   line-height: 1.5;
   color: var(--text-prominent);
@@ -2824,7 +2824,7 @@ html {
   font-size: 1.4rem;
   color: var(--text-general);
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: left;
   line-height: 1.5;
   line-height: 1.43;
@@ -2848,7 +2848,7 @@ html {
   font-size: 1.4rem;
   color: var(--text-colored-background);
   font-weight: 700;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: left;
   line-height: 1.5;
   line-height: 1.43;
@@ -2868,7 +2868,7 @@ html {
   font-size: 1.4rem;
   color: var(--text-general);
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: left;
   line-height: 1.5;
   width: 100%;
@@ -4230,7 +4230,7 @@ html {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: center;
       line-height: 1.5;
       width: 40px;
@@ -4278,7 +4278,7 @@ html {
         font-size: 1.4rem;
         color: var(--text-general);
         font-weight: 700;
-        text-transform: capitalize;
+        text-transform: none;
         text-align: center;
         line-height: 1.5;
         color: var(--text-general); }
@@ -4286,7 +4286,7 @@ html {
         font-size: 1.4rem;
         color: var(--text-general);
         font-weight: 700;
-        text-transform: capitalize;
+        text-transform: none;
         text-align: center;
         line-height: 1.5;
         padding: 0 4px;
@@ -5033,7 +5033,7 @@ html {
       font-size: 1.6rem;
       color: var(--text-general);
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.75;
       display: block;
@@ -5081,7 +5081,7 @@ html {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.5;
       align-items: center;
@@ -5098,7 +5098,7 @@ html {
         font-size: 1.4rem;
         color: var(--text-colored-background);
         font-weight: 700;
-        text-transform: capitalize;
+        text-transform: none;
         text-align: left;
         line-height: 1.5; }
         .acc-switcher__account--selected .acc-switcher__id--virtual:before {
@@ -5162,7 +5162,7 @@ html {
   font-size: 0.8rem;
   color: var(--text-general);
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: center;
   line-height: unset;
   text-transform: none;
@@ -5884,7 +5884,7 @@ html {
         font-size: 1.4rem;
         color: var(--text-general);
         font-weight: 700;
-        text-transform: capitalize;
+        text-transform: none;
         text-align: center;
         line-height: 1.5;
         color: var(--text-prominent); }
@@ -5902,7 +5902,7 @@ html {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: center;
       line-height: 1.5;
       color: var(--text-general); }
@@ -6147,7 +6147,7 @@ html {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.5;
     text-transform: none;
@@ -6158,7 +6158,7 @@ html {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.5;
     margin: 1rem 0;
@@ -6168,7 +6168,7 @@ html {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.5;
     text-transform: none;
@@ -6442,7 +6442,7 @@ html {
       font-size: 1.6rem;
       color: var(--text-general);
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: center;
       line-height: 1.75;
       margin-top: 2rem;
@@ -6451,7 +6451,7 @@ html {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.5;
       padding: 1rem;
@@ -7344,7 +7344,7 @@ html {
     font-size: 1.6rem;
     color: var(--text-general);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     line-height: 1.75;
     text-transform: none;
@@ -7354,7 +7354,7 @@ html {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     line-height: 1.5;
     text-transform: none;
@@ -7364,7 +7364,7 @@ html {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     line-height: 1.5;
     text-transform: none;
@@ -7389,7 +7389,7 @@ html {
     font-size: 1.6rem;
     color: var(--text-general);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     line-height: 1.75;
     color: var(--text-prominent);
@@ -7399,7 +7399,7 @@ html {
     font-size: 1.6rem;
     color: var(--text-general);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     line-height: 1.75;
     text-transform: none;
@@ -7409,7 +7409,7 @@ html {
     font-size: 1.2rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     line-height: 1.25;
     text-transform: none;
@@ -7431,7 +7431,7 @@ html {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     line-height: 1.5;
     text-transform: initial;
@@ -7440,7 +7440,7 @@ html {
     font-size: 1.6rem;
     color: var(--text-general);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     line-height: 1.75;
     color: var(--text-prominent); }
@@ -7470,7 +7470,7 @@ html {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.5;
       text-transform: none;
@@ -7487,7 +7487,7 @@ html {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.5;
       text-transform: none; }
@@ -7766,7 +7766,7 @@ html {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: center;
       line-height: 1.5;
       background-color: var(--text-less-prominent);
@@ -7776,7 +7776,7 @@ html {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: center;
       line-height: 1.5;
       background-color: var(--brand-red-coral) !important;
@@ -9173,7 +9173,7 @@ table {
       font-size: 1.6rem;
       color: var(--text-general);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.75;
       padding: 0.5em 0;
@@ -9379,7 +9379,7 @@ table {
   font-size: 1.2rem;
   color: var(--text-general);
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: left;
   line-height: 1.25;
   color: var(--text-general); }
@@ -9554,7 +9554,7 @@ table {
         font-size: 1.6rem;
         color: var(--text-general);
         font-weight: 400;
-        text-transform: capitalize;
+        text-transform: none;
         text-align: left;
         line-height: 1.75;
         padding: 0 10px;
@@ -9583,7 +9583,7 @@ table {
           font-size: 1.4rem;
           color: var(--text-general);
           font-weight: 400;
-          text-transform: capitalize;
+          text-transform: none;
           text-align: center;
           line-height: 1.5;
           padding: 0 10px;
@@ -9712,7 +9712,7 @@ table {
     font-size: 1.6rem;
     color: var(--text-general);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.75;
     color: var(--text-general); }
@@ -9829,7 +9829,7 @@ table {
       font-size: 1.2rem;
       color: var(--text-general);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: center;
       line-height: 1.25;
       color: var(--text-prominent);
@@ -10200,7 +10200,6 @@ table {
 
 /** @define result */
 .result__caption {
-  text-transform: capitalize;
   font-size: 1.6em;
   font-weight: bold;
   display: flex;
@@ -10466,7 +10465,7 @@ table {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.5;
     color: var(--text-general);
@@ -10484,7 +10483,7 @@ table {
     font-size: 1.2rem;
     color: var(--text-less-prominent);
     font-weight: 300;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.25; }
 
@@ -10525,7 +10524,7 @@ table {
   font-size: 1.4rem;
   color: var(--text-general);
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: center;
   line-height: 1.5;
   list-style: none;
@@ -10579,7 +10578,7 @@ table {
       font-size: 1.2rem;
       color: var(--text-colored-background);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.25;
       content: 'L';
@@ -10666,7 +10665,7 @@ table {
       font-size: 1.2rem;
       color: var(--text-general);
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: center;
       line-height: 1.25;
       color: var(--text-prominent); }
@@ -10674,7 +10673,7 @@ table {
       font-size: 1.2rem;
       color: var(--text-general);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.25;
       cursor: pointer;
@@ -10808,7 +10807,7 @@ table {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.5;
       color: var(--text-prominent); }
@@ -10826,7 +10825,7 @@ table {
     font-size: 1.2rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.25;
     align-self: center;
@@ -10849,7 +10848,7 @@ table {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.5;
       color: var(--text-prominent); }
@@ -11036,7 +11035,7 @@ table {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.5;
       color: var(--text-prominent);
@@ -11103,7 +11102,7 @@ table {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.5;
     color: var(--text-prominent);
@@ -11134,7 +11133,7 @@ table {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.5;
     color: var(--text-general);
@@ -11242,7 +11241,7 @@ table {
       font-size: 1.4rem;
       color: var(--text-colored-background);
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: center;
       line-height: 1.5; }
   .trade-type-info-dialog__content {
@@ -11282,7 +11281,7 @@ table {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.5;
       margin-left: 5.71429px;
@@ -11427,7 +11426,7 @@ table {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     line-height: 1.5;
     color: var(--text-prominent);
@@ -11454,7 +11453,7 @@ table {
     font-size: 1.4rem;
     color: var(--text-colored-background);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.5;
     color: var(--text-prominent); }
@@ -11467,7 +11466,7 @@ table {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.5;
     color: var(--text-prominent);
@@ -11487,7 +11486,7 @@ table {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.5;
     color: var(--text-prominent); }
@@ -11563,7 +11562,7 @@ table {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.5;
     background-color: var(--state-normal);
@@ -11574,7 +11573,7 @@ table {
       font-size: 1.4rem;
       color: var(--text-colored-background);
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.5;
       background-color: var(--state-active);
@@ -11611,7 +11610,7 @@ table {
       font-size: 1.2rem;
       color: var(--text-general);
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.25;
       display: flex;
@@ -11662,7 +11661,7 @@ table {
     font-size: 1.4rem;
     color: var(--text-colored-background);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.5; }
   .btn-purchase__info {
@@ -12272,7 +12271,7 @@ table {
   font-size: 1.4rem;
   color: var(--text-general);
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: left;
   line-height: 1.5;
   color: var(--text-prominent);
@@ -12685,22 +12684,22 @@ table {
   .payment-agent__instructions-button {
     margin: auto; }
 
-.payment-agent__available-header {
+.payment-agent__list-header {
   margin-top: 32px;
   font-size: 1.4rem;
   line-height: 1.43; }
 
-.payment-agent__available-selector {
+.payment-agent__list-selector {
   margin-bottom: 8px;
   display: flex;
   justify-content: flex-end;
   margin-right: 1px; }
 
-.payment-agent__available-line {
+.payment-agent__list-line {
   border-bottom: 1px solid var(--general-section-1);
   position: relative;
-  width: 68%;
-  margin-left: 32%;
+  width: 80%;
+  margin-left: 20%;
   top: -25px; }
 
 .payment-agent__drop-down {
@@ -13337,7 +13336,7 @@ table {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.5;
       color: var(--text-general); }
@@ -13399,7 +13398,7 @@ table {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: center;
       line-height: 1.5;
       color: inherit; }
@@ -13426,7 +13425,6 @@ table {
       .trade-container__price-info-value {
         font-size: 1.4em;
         font-weight: 700;
-        text-transform: capitalize;
         text-align: left;
         line-height: 1.25;
         margin-left: 0.1em;
@@ -13439,7 +13437,7 @@ table {
         font-size: 1.4rem;
         color: var(--text-general);
         font-weight: 400;
-        text-transform: capitalize;
+        text-transform: none;
         text-align: left;
         line-height: 1.5;
         color: var(--text-less-prominent); }

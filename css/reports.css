@@ -271,7 +271,7 @@ html {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     line-height: 1.5;
     color: var(--text-prominent);
