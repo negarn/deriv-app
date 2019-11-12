@@ -11534,14 +11534,7 @@ table {
 
 /* postcss-bem-linter: ignore */
 .vertical-tab__tab .vertical-tab__header {
-  /* postcss-bem-linter: ignore */
   /* postcss-bem-linter: ignore */ }
-  .vertical-tab__tab .vertical-tab__header .vertical-tab__header__link {
-    margin-left: 4px; }
-  .vertical-tab__tab .vertical-tab__header--active {
-    /* postcss-bem-linter: ignore */ }
-    .vertical-tab__tab .vertical-tab__header--active .vertical-tab__header__link {
-      margin-left: 0; }
   .vertical-tab__tab .vertical-tab__header--disabled {
     opacity: 0.32;
     pointer-events: none; }
@@ -12474,10 +12467,10 @@ table {
       width: 100%;
       height: 100%;
       line-height: 1.43; }
+      .cashier__wrapper .inline-icon .color1-fill, .cashier__wrapper--align-left .inline-icon .color1-fill {
+        fill: var(--text-general); }
     .cashier__wrapper--align-left {
       text-align: left; }
-    .cashier__wrapper .inline-icon .color1-fill {
-      fill: var(--text-general); }
   .cashier__loader {
     font-size: 1rem; }
     .cashier__loader-wrapper {
@@ -12735,7 +12728,10 @@ table {
     margin-bottom: 3.9rem; }
   .payment-agent__radio-wrapper {
     display: flex;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
   .payment-agent__radio-circle {
     border: 2px solid var(--text-general);
     border-radius: 50%;

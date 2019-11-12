@@ -283,6 +283,12 @@ html {
     max-width: calc(100vw - 32px); }
     .account .vertical-tab__tab {
       min-width: 240px; }
+    .account .vertical-tab__header .vertical-tab__header__link {
+      margin-left: 4px; }
+    .account .vertical-tab__header--active {
+      /* postcss-bem-linter: ignore */ }
+      .account .vertical-tab__header--active .vertical-tab__header__link {
+        margin-left: 0; }
   .account__inset_header {
     box-shadow: inset 0 -1px 0 0 var(--general-section-1); }
     .account__inset_header-subheading {
