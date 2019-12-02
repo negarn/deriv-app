@@ -10405,6 +10405,8 @@ table {
     background-repeat: no-repeat;
     background-size: 100%;
     margin: 2.4rem auto; }
+  .cashier__virtual-center {
+    margin: 12vh 0; }
   .cashier__virtual-header {
     margin-top: 0;
     margin-bottom: 0.8rem; }
