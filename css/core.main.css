@@ -325,6 +325,9 @@
           flex-grow: 2;
   text-align: left; }
 
+.dc-popover__bubble__text--error {
+  color: var(--text-colored-background); }
+
 .dc-popover__bubble--error {
   background-color: var(--status-danger); }
 
@@ -2103,6 +2106,9 @@ html {
       height: 46px;
       top: 0;
       background: var(--general-main-1); }
+    .acc-info__preloader--no-currency:before {
+      left: -140px;
+      width: 140px; }
   .acc-info__container {
     align-items: center;
     -webkit-box-align: center;
@@ -2121,9 +2127,11 @@ html {
             justify-content: center;
     position: relative;
     margin-right: 0.8rem; }
-  .acc-info__id-icon {
-    vertical-align: middle;
-    margin-right: 0.8rem; }
+  .acc-info__id {
+    pointer-events: none; }
+    .acc-info__id-icon {
+      vertical-align: middle;
+      margin-right: 0.8rem; }
   .acc-info__separator {
     border-right: 1px solid var(--general-section-1);
     width: 2rem;
@@ -2149,6 +2157,9 @@ html {
     transition: -webkit-transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
     transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
     transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), -webkit-transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); }
+    .acc-info__select-arrow--invert {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
   .acc-info:hover:not(.show) {
     background: var(--state-hover); }
     .acc-info:hover:not(.show) .symbols {
@@ -2158,6 +2169,9 @@ html {
   .acc-info--show .acc-info__select-arrow {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
+  .acc-info--show .acc-info__select-arrow--invert {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
   .acc-info__button {
     margin: 0 1.6em 0 0 !important; }
     .acc-info__button:not(:last-child) {
@@ -2206,7 +2220,8 @@ html {
       height: 4rem; }
   .acc-switcher__new-account {
     background-color: transparent;
-    border-radius: 4px; }
+    border-radius: 4px;
+    margin: 0 0 16px; }
     .acc-switcher__new-account-link {
       background-color: transparent;
       margin: 0 0 0.8em;
@@ -2260,7 +2275,7 @@ html {
       -webkit-box-flex: 1;
               flex: 1; }
     .acc-switcher__list-wrapper {
-      padding: 0.4em 0.8em 0.8em; }
+      padding: 0.4em 0.8em 0; }
   .acc-switcher__accounts {
     border-radius: 4px;
     background: var(--general-main-2);
@@ -2289,6 +2304,25 @@ html {
         cursor: default; }
       .acc-switcher__accounts .acc-switcher__account:only-child {
         border-radius: 4px; }
+      .acc-switcher__accounts .acc-switcher__account:last-child {
+        margin-bottom: 16px; }
+      .acc-switcher__accounts .acc-switcher__account-set-currency {
+        -webkit-box-pack: end;
+                justify-content: flex-end;
+        padding: 0.8rem 0.4rem; }
+        .acc-switcher__accounts .acc-switcher__account-set-currency-link {
+          font-size: 1.2rem;
+          color: var(--button-primary-default);
+          font-weight: bold; }
+          .acc-switcher__accounts .acc-switcher__account-set-currency-link:hover {
+            text-decoration: underline;
+            cursor: pointer; }
+        .acc-switcher__accounts .acc-switcher__account-set-currency:hover {
+          background: var(--general-main-2) !important;
+          cursor: auto;
+          cursor: initial; }
+    .acc-switcher__accounts--has-add-account:not(:empty) {
+      margin-bottom: -16px; }
   .acc-switcher__account {
     display: -webkit-box;
     display: flex;
@@ -2300,7 +2334,9 @@ html {
     padding: 0.8em;
     position: relative;
     background: var(--general-main-2);
-    text-decoration: none; }
+    text-decoration: none;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em; }
     .acc-switcher__account .acc-switcher__id {
       font-size: 1.4rem;
       color: var(--text-general);
@@ -2330,9 +2366,11 @@ html {
         .acc-switcher__account--selected .acc-switcher__id--virtual:before {
           color: var(--text-prominent);
           border: 1px solid var(--text-prominent); }
-    .acc-switcher__account--demo-text {
-      padding-top: 0.3em;
-      padding-bottom: 0.3em; }
+      .acc-switcher__account--selected .acc-switcher__loginid-text {
+        color: var(--text-prominent);
+        font-weight: normal; }
+      .acc-switcher__account--selected .no-currency {
+        color: var(--text-prominent); }
   .acc-switcher__logout {
     -webkit-box-align: center;
             align-items: center;
@@ -2356,27 +2394,32 @@ html {
       cursor: pointer; }
   .acc-switcher__balance {
     color: var(--status-success);
-    margin-left: auto; }
+    margin-left: auto;
+    font-weight: normal; }
     .acc-switcher__balance--virtual {
       color: var(--text-prominent); }
   .acc-switcher__separator {
     height: 4px;
     background-color: var(--general-section-2); }
+    .acc-switcher__separator--no-padding {
+      margin: 0 -8px; }
   .acc-switcher__total {
-    font-size: 1.4rem;
-    height: 4rem;
+    height: 2.6rem;
     margin: 0.4rem 1.6rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--text-prominent);
     -webkit-box-align: center;
             align-items: center;
-    font-weight: bold;
     display: -webkit-box;
-    display: flex;
-    color: var(--text-prominent); }
-    .acc-switcher__total-icon {
-      margin: 0 0.4rem; }
-      .acc-switcher__total-icon .color1-fill {
-        fill: var(--text-prominent) !important; }
-  .acc-switcher__demo-text {
+    display: flex; }
+    .acc-switcher__total-subtitle {
+      margin: 0 1.6rem 1.2rem;
+      font-size: 1rem;
+      line-height: 1.4rem;
+      font-weight: normal;
+      color: var(--text-less-prominent); }
+  .acc-switcher__loginid-text {
     font-size: 1rem;
     color: var(--text-less-prominent);
     line-height: 1.4; }
@@ -2385,11 +2428,13 @@ html {
     font-size: 0.8rem; }
 
 /** @define set-currency; weak */
-.set-currency .btn {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center; }
+.set-currency {
+  margin-right: 8px; }
+  .set-currency .btn {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center; }
 
 /** @define no-currency; weak */
 .no-currency {
@@ -6890,7 +6935,6 @@ html {
 
 /** @define link */
 .link {
-  color: #ff444f;
   color: var(--brand-red-coral);
   font-weight: bold;
   text-decoration: none; }
@@ -6967,7 +7011,7 @@ table {
   border-spacing: 0; }
 
 /* stylelint-enable */
-:root {
+:host, :root {
   --text-size-xxs: 1.2rem;
   --text-size-xs: 1.4rem;
   --text-size-s: 1.6rem;
@@ -6980,7 +7024,7 @@ table {
   --brand-red-coral: #ff444f;
   --brand-orange: #ff6444;
   --brand-secondary: #85acb0; }
-  :root .theme--light {
+  :host .theme--light, :root .theme--light {
     --general-main-1: #ffffff;
     --general-main-2: #ffffff;
     --general-section-1: #f2f3f4;
@@ -7032,7 +7076,7 @@ table {
     /* TODO: change to styleguide later */
     --gradient-success: linear-gradient(to top, #ffffff, rgba(75, 180, 179, 0.16));
     --gradient-danger: linear-gradient(to top, #ffffff, rgba(255, 68, 79, 0.16)); }
-  :root .theme--dark {
+  :host .theme--dark, :root .theme--dark {
     --general-main-1: #0e0e0e;
     --general-main-2: #151717;
     --general-section-1: #151717;
@@ -7338,7 +7382,6 @@ table {
       -webkit-animation-delay: -0.8s;
               animation-delay: -0.8s; }
   .barspinner--dark .barspinner__rect {
-    background-color: #85acb0;
     background-color: var(--brand-secondary); }
 
 @-webkit-keyframes sk-stretchdelay {
@@ -7377,7 +7420,6 @@ table {
   .initial-loader__barspinner {
     margin: 5em auto; }
     .initial-loader__barspinner--rect {
-      background-color: #85acb0;
       background-color: var(--brand-secondary); }
   .initial-loader__text {
     line-height: 44px;
@@ -7758,10 +7800,8 @@ table {
   /* postcss-bem-linter: ignore */
   /* postcss-bem-linter: ignore */ }
   .type-wrapper .color1-fill {
-    fill: #ff444f;
     fill: var(--brand-red-coral); }
   .type-wrapper .color2-fill {
-    fill: #85acb0;
     fill: var(--brand-secondary); }
 
 /** @define no-scroll */
@@ -7953,7 +7993,6 @@ table {
       .header__menu-link--active > .header__menu-link-text[title]:after {
         color: var(--text-prominent); }
   .header__logo {
-    background-color: #85acb0;
     background-color: var(--brand-secondary);
     border-radius: 10px;
     color: var(--text-colored-background);
@@ -8084,7 +8123,6 @@ table {
             justify-content: center;
     top: 2px;
     right: 0;
-    background-color: #ff444f;
     background-color: var(--brand-red-coral);
     color: #ffffff; }
 
@@ -8629,10 +8667,8 @@ table {
     font-weight: bold;
     /* postcss-bem-linter: ignore */ }
     .contract-card__type .category-type .color1-fill {
-      fill: #ff444f !important;
       fill: var(--brand-red-coral) !important; }
     .contract-card__type .category-type .color2-fill {
-      fill: #85acb0 !important;
       fill: var(--brand-secondary) !important; }
   .contract-card__symbol {
     margin-left: 0.5rem;
@@ -8956,10 +8992,8 @@ table {
     font-weight: bold;
     /* postcss-bem-linter: ignore */ }
     .positions-drawer-card__type .category-type .color1-fill {
-      fill: #ff444f;
       fill: var(--brand-red-coral); }
     .positions-drawer-card__type .category-type .color2-fill {
-      fill: #85acb0;
       fill: var(--brand-secondary); }
   .positions-drawer-card__symbol {
     margin-left: 0.5rem;
@@ -9189,7 +9223,6 @@ table {
         top: 0;
         height: 6px;
         width: 100%;
-        background-color: #85acb0;
         background-color: var(--brand-secondary); }
       .progress-slider__ticks-step--marked:before {
         -webkit-transform: scale3d(1, 1, 1);
@@ -9224,13 +9257,10 @@ table {
     .progress-slider__line--ticks {
       height: 2px; }
     .progress-slider__line--green {
-      background: #85acb0 !important;
       background: var(--brand-secondary) !important; }
     .progress-slider__line--orange {
-      background: #ff6444 !important;
       background: var(--brand-orange) !important; }
     .progress-slider__line--red {
-      background: #ff444f !important;
       background: var(--brand-red-coral) !important; }
   .progress-slider__infinite-loader {
     position: relative;
@@ -9672,7 +9702,6 @@ table {
     height: 100%;
     border-left: 2px solid var(--general-main-1); }
   .side-menu__title {
-    font-size: 1.6rem;
     font-size: var(--text-size-s);
     font-weight: bold;
     margin: 0 0.8rem;
@@ -9786,12 +9815,10 @@ table {
 
 @-webkit-keyframes colorRed {
   100%, 0% {
-    stroke: #ff444f;
     stroke: var(--brand-red-coral); } }
 
 @keyframes colorRed {
   100%, 0% {
-    stroke: #ff444f;
     stroke: var(--brand-red-coral); } }
 
 .vertical-tab {
@@ -9900,7 +9927,6 @@ table {
       line-height: 1.5;
       color: var(--text-prominent);
       background-color: var(--state-normal);
-      border-left: 4px solid #ff444f;
       border-left: 4px solid var(--brand-red-coral); }
     .vertical-tab__header__link {
       font-weight: normal; }
@@ -10388,7 +10414,6 @@ table {
 .withdraw__email-resend {
   margin-top: 4rem; }
   .withdraw__email-resend-text {
-    color: #ff444f;
     color: var(--brand-red-coral);
     font-weight: bold;
     text-decoration: none;
@@ -10486,7 +10511,6 @@ table {
     display: inline-flex; }
     .payment-agent__radio-circle--selected {
       border-width: 4px;
-      border-color: #ff444f;
       border-color: var(--brand-red-coral); }
 
 .payment-agent__transferred-contact {
@@ -10497,7 +10521,6 @@ table {
 
 .payment-agent__contact {
   text-decoration: none;
-  color: #ff444f;
   color: var(--brand-red-coral); }
 
 .payment-agent__explanation {
