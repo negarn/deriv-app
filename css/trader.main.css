@@ -3206,7 +3206,7 @@ table {
     transition: transform 0.25s ease, opacity 0.25s linear;
     transition: transform 0.25s ease, opacity 0.25s linear, -webkit-transform 0.25s ease;
     width: 231px;
-    z-index: 1;
+    z-index: 2;
     background-color: var(--general-main-2); }
     .time-picker__dialog--enter, .time-picker__dialog--exit {
       opacity: 0;

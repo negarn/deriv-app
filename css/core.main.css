@@ -312,7 +312,7 @@
           flex-direction: row;
   background: var(--general-active);
   color: var(--text-prominent);
-  z-index: 999; }
+  z-index: 1; }
 
 .dc-popover__bubble__icon {
   -webkit-box-flex: 1;
