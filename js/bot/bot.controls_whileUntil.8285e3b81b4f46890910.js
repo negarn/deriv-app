@@ -1,0 +1,15 @@
+(window["webpackJsonp_deriv_bot"] = window["webpackJsonp_deriv_bot"] || []).push([["controls_whileUntil"],{
+
+/***/ "./src/scratch/help-content/help-strings/controls_whileUntil.js":
+/*!**********************************************************************!*\
+  !*** ./src/scratch/help-content/help-strings/controls_whileUntil.js ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _deriv_translations__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @deriv/translations */ \"@deriv/translations\");\n/* harmony import */ var _deriv_translations__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  text: [Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('This block repeats instructions as long as a given condition is true.'), Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('Examples:'), Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('1. In the example below, the instructions are repeated as long as the value of x is less than or equal to 10. Once the value of x reaches 10, the loop is terminated.'), Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('2. In this example, the instructions are repeated as long as the value of x is greater than or equal to 10. Once the value of x drops below 10, the loop is terminated.')]\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvc2NyYXRjaC9oZWxwLWNvbnRlbnQvaGVscC1zdHJpbmdzL2NvbnRyb2xzX3doaWxlVW50aWwuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9AZGVyaXYvYm90Ly4vc3JjL3NjcmF0Y2gvaGVscC1jb250ZW50L2hlbHAtc3RyaW5ncy9jb250cm9sc193aGlsZVVudGlsLmpzPzhjOWMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgbG9jYWxpemUgfSBmcm9tICdAZGVyaXYvdHJhbnNsYXRpb25zJztcblxuZXhwb3J0IGRlZmF1bHQge1xuICAgIHRleHQ6IFtcbiAgICAgICAgbG9jYWxpemUoJ1RoaXMgYmxvY2sgcmVwZWF0cyBpbnN0cnVjdGlvbnMgYXMgbG9uZyBhcyBhIGdpdmVuIGNvbmRpdGlvbiBpcyB0cnVlLicpLFxuICAgICAgICBsb2NhbGl6ZSgnRXhhbXBsZXM6JyksXG4gICAgICAgIGxvY2FsaXplKCcxLiBJbiB0aGUgZXhhbXBsZSBiZWxvdywgdGhlIGluc3RydWN0aW9ucyBhcmUgcmVwZWF0ZWQgYXMgbG9uZyBhcyB0aGUgdmFsdWUgb2YgeCBpcyBsZXNzIHRoYW4gb3IgZXF1YWwgdG8gMTAuIE9uY2UgdGhlIHZhbHVlIG9mIHggcmVhY2hlcyAxMCwgdGhlIGxvb3AgaXMgdGVybWluYXRlZC4nKSxcbiAgICAgICAgbG9jYWxpemUoJzIuIEluIHRoaXMgZXhhbXBsZSwgdGhlIGluc3RydWN0aW9ucyBhcmUgcmVwZWF0ZWQgYXMgbG9uZyBhcyB0aGUgdmFsdWUgb2YgeCBpcyBncmVhdGVyIHRoYW4gb3IgZXF1YWwgdG8gMTAuIE9uY2UgdGhlIHZhbHVlIG9mIHggZHJvcHMgYmVsb3cgMTAsIHRoZSBsb29wIGlzIHRlcm1pbmF0ZWQuJyksXG4gICAgXSxcbn07XG4iXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUFBO0FBRUE7QUFDQTtBQURBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/scratch/help-content/help-strings/controls_whileUntil.js\n");
+
+/***/ })
+
+}]);

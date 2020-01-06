@@ -1,0 +1,15 @@
+(window["webpackJsonp_deriv_bot"] = window["webpackJsonp_deriv_bot"] || []).push([["read_ohlc"],{
+
+/***/ "./src/scratch/help-content/help-strings/read_ohlc.js":
+/*!************************************************************!*\
+  !*** ./src/scratch/help-content/help-strings/read_ohlc.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _deriv_translations__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @deriv/translations */ \"@deriv/translations\");\n/* harmony import */ var _deriv_translations__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  text: [Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('This block gives you the specified candle value for a selected time interval. You can choose which value you want:'), Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('- Open: the opening price'), Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('- High: the highest price'), Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('- Low: the lowest price'), Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('- Close: the closing price'), Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('- Open time: the opening time stamp'), Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('In the example below, the opening price is selected, which is then assigned to a variable called \"op\".')]\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvc2NyYXRjaC9oZWxwLWNvbnRlbnQvaGVscC1zdHJpbmdzL3JlYWRfb2hsYy5qcy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovL0BkZXJpdi9ib3QvLi9zcmMvc2NyYXRjaC9oZWxwLWNvbnRlbnQvaGVscC1zdHJpbmdzL3JlYWRfb2hsYy5qcz8yZWIzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGxvY2FsaXplIH0gZnJvbSAnQGRlcml2L3RyYW5zbGF0aW9ucyc7XG5cbmV4cG9ydCBkZWZhdWx0IHtcbiAgICB0ZXh0OiBbXG4gICAgICAgIGxvY2FsaXplKCdUaGlzIGJsb2NrIGdpdmVzIHlvdSB0aGUgc3BlY2lmaWVkIGNhbmRsZSB2YWx1ZSBmb3IgYSBzZWxlY3RlZCB0aW1lIGludGVydmFsLiBZb3UgY2FuIGNob29zZSB3aGljaCB2YWx1ZSB5b3Ugd2FudDonKSxcbiAgICAgICAgbG9jYWxpemUoJy0gT3BlbjogdGhlIG9wZW5pbmcgcHJpY2UnKSxcbiAgICAgICAgbG9jYWxpemUoJy0gSGlnaDogdGhlIGhpZ2hlc3QgcHJpY2UnKSxcbiAgICAgICAgbG9jYWxpemUoJy0gTG93OiB0aGUgbG93ZXN0IHByaWNlJyksXG4gICAgICAgIGxvY2FsaXplKCctIENsb3NlOiB0aGUgY2xvc2luZyBwcmljZScpLFxuICAgICAgICBsb2NhbGl6ZSgnLSBPcGVuIHRpbWU6IHRoZSBvcGVuaW5nIHRpbWUgc3RhbXAnKSxcbiAgICAgICAgbG9jYWxpemUoJ0luIHRoZSBleGFtcGxlIGJlbG93LCB0aGUgb3BlbmluZyBwcmljZSBpcyBzZWxlY3RlZCwgd2hpY2ggaXMgdGhlbiBhc3NpZ25lZCB0byBhIHZhcmlhYmxlIGNhbGxlZCBcIm9wXCIuJyksXG4gICAgXSxcbn07XG4iXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUFBO0FBRUE7QUFDQTtBQURBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/scratch/help-content/help-strings/read_ohlc.js\n");
+
+/***/ })
+
+}]);

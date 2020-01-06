@@ -1,0 +1,15 @@
+(window["webpackJsonp_deriv_bot"] = window["webpackJsonp_deriv_bot"] || []).push([["math_single"],{
+
+/***/ "./src/scratch/help-content/help-strings/math_single.js":
+/*!**************************************************************!*\
+  !*** ./src/scratch/help-content/help-strings/math_single.js ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _deriv_translations__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @deriv/translations */ \"@deriv/translations\");\n/* harmony import */ var _deriv_translations__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  text: [Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('This block performs the following operations to a given number'), Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('Available operations are:'), Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('- Square root'), Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('- Absolute'), Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('- Negation'), Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('- Natural log'), Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('- Euler’s number (2.71) to the power of a given number'), Object(_deriv_translations__WEBPACK_IMPORTED_MODULE_0__[\"localize\"])('- 10 to the power of a given number')]\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvc2NyYXRjaC9oZWxwLWNvbnRlbnQvaGVscC1zdHJpbmdzL21hdGhfc2luZ2xlLmpzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vQGRlcml2L2JvdC8uL3NyYy9zY3JhdGNoL2hlbHAtY29udGVudC9oZWxwLXN0cmluZ3MvbWF0aF9zaW5nbGUuanM/ZjQ2MyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBsb2NhbGl6ZSB9IGZyb20gJ0BkZXJpdi90cmFuc2xhdGlvbnMnO1xuXG5leHBvcnQgZGVmYXVsdCB7XG4gICAgdGV4dDogW1xuICAgICAgICBsb2NhbGl6ZSgnVGhpcyBibG9jayBwZXJmb3JtcyB0aGUgZm9sbG93aW5nIG9wZXJhdGlvbnMgdG8gYSBnaXZlbiBudW1iZXInKSxcbiAgICAgICAgbG9jYWxpemUoJ0F2YWlsYWJsZSBvcGVyYXRpb25zIGFyZTonKSxcbiAgICAgICAgbG9jYWxpemUoJy0gU3F1YXJlIHJvb3QnKSxcbiAgICAgICAgbG9jYWxpemUoJy0gQWJzb2x1dGUnKSxcbiAgICAgICAgbG9jYWxpemUoJy0gTmVnYXRpb24nKSxcbiAgICAgICAgbG9jYWxpemUoJy0gTmF0dXJhbCBsb2cnKSxcbiAgICAgICAgbG9jYWxpemUoJy0gRXVsZXLigJlzIG51bWJlciAoMi43MSkgdG8gdGhlIHBvd2VyIG9mIGEgZ2l2ZW4gbnVtYmVyJyksXG4gICAgICAgIGxvY2FsaXplKCctIDEwIHRvIHRoZSBwb3dlciBvZiBhIGdpdmVuIG51bWJlcicpLFxuICAgIF0sXG59O1xuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7QUFBQTtBQUVBO0FBQ0E7QUFEQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/scratch/help-content/help-strings/math_single.js\n");
+
+/***/ })
+
+}]);
