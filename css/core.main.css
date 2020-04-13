@@ -1714,7 +1714,7 @@
 .dc-dropdown__hint {
   color: var(--text-less-prominent);
   font-size: var(--text-size-xxs);
-  margin-left: 0.8rem; }
+  margin-left: 1.2rem; }
 
 .dc-dropdown--no-margin .dc-dropdown__display {
   margin: 0; }
@@ -1964,7 +1964,7 @@
 .dc-list__separator {
   display: flex;
   width: 100%;
-  border-bottom: 4px solid var(--general-section-1);
+  border-bottom: 4px solid var(--general-section-2);
   margin: 1.6rem 0 0; }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -12533,6 +12533,10 @@ table {
         content: '('; }
       .cashier__drop-down-display .cashier__drop-down-display-brackets:after {
         content: ')'; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .cashier__drop-down-display {
+          min-height: auto;
+          min-width: auto; } }
     .cashier__drop-down-items, .cashier__drop-down-label {
       justify-content: left; }
     .cashier__drop-down-label {
@@ -12998,13 +13002,11 @@ table {
 /** @define account-transfer; weak */
 .account-transfer__notes {
   color: var(--text-general);
-  margin-top: 5.8rem;
+  padding: 1.6rem 0;
   font-size: var(--text-size-xs);
   line-height: 1.5; }
   @media (min-width: 320px) and (max-width: 767px) {
     .account-transfer__notes {
-      margin: 0;
-      padding: 2.4rem 0 1.6rem;
       font-size: var(--text-size-xxs); } }
 
 .account-transfer__bullet {
@@ -13022,11 +13024,17 @@ table {
 .account-transfer__drop-down {
   min-width: calc(calc(100% - calc(16px + 3.2rem)) / 2);
   width: auto;
-  margin-bottom: 3.4rem; }
+  margin-bottom: 1.7rem; }
   @media (min-width: 320px) and (max-width: 767px) {
     .account-transfer__drop-down {
       width: 100%;
       margin-bottom: 2.4rem; } }
+
+.account-transfer__input {
+  margin-bottom: -0.8rem !important; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .account-transfer__input {
+      margin-bottom: 2.6rem !important; } }
 
 .account-transfer__currency, .account-transfer__balance {
   line-height: 1.43; }
@@ -13049,11 +13057,11 @@ table {
   align-items: center; }
 
 .account-transfer__transfer-from {
-  margin-bottom: 1.8rem;
+  margin-bottom: 3.5rem;
   margin-top: 2.5rem; }
 
 .account-transfer__transfer-to {
-  margin-bottom: 3.2rem; }
+  margin-bottom: 1.7rem; }
 
 .account-transfer__button {
   margin: 4rem auto 0 0.8rem; }
