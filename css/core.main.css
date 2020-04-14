@@ -12945,7 +12945,8 @@ table {
     width: 50.4rem;
     margin: 0 auto 3.2rem; }
   .cashier__done-button {
-    width: 15.6rem; }
+    width: 15.6rem;
+    margin-left: 0.8rem; }
   .cashier__no-balance-icon {
     margin-bottom: 1.6rem; }
   .cashier__no-balance-button {
