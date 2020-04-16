@@ -1517,8 +1517,8 @@
           color: var(--text-general); }
     .composite-calendar__input-fields > .input-field:not(:first-child) {
       margin-left: 8px; }
-  .composite-calendar > .first-month .calendar__body,
-  .composite-calendar > .second-month .calendar__body {
+  .composite-calendar > .first-month .dc-calendar__body,
+  .composite-calendar > .second-month .dc-calendar__body {
     border-bottom: none; }
   .composite-calendar__prepopulated-list {
     padding-top: 50px;
@@ -3251,7 +3251,7 @@
   .contract-card__body {
     border-radius: 4px;
     width: 100%;
-    padding: 4px 12px 0;
+    padding: 4px 12px 8px;
     color: var(--text-prominent);
     display: flex; }
     @media (min-width: 320px) and (max-width: 767px) {
@@ -3303,6 +3303,8 @@
       @media (min-width: 320px) and (max-width: 767px) {
         .contract-card__sell-button .dc-btn--sell {
           width: 100%; } }
+    .contract-card__sell-button .positions-drawer-dialog-toggle {
+      bottom: 60px; }
   .contract-card-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -5895,7 +5897,7 @@
   .dc-mobile-dialog__contracts-modal-list .category-wrapper {
     background-color: var(--general-main-1) !important; }
 
-/** @define trade-container */
+/** @define trade-container; weak */
 .trade-container {
   background: var(--general-main-1);
   /* postcss-bem-linter: ignore */ }
@@ -5945,6 +5947,11 @@
       width: -moz-fit-content;
       width: fit-content;
       margin-left: auto; }
+    .trade-container__fieldset .dc-datepicker .dc-input {
+      border: 1px solid var(--fill-normal);
+      margin-bottom: 0; }
+      .trade-container__fieldset .dc-datepicker .dc-input__field {
+        height: 3.2rem; }
   .trade-container__input {
     align-self: center;
     -webkit-appearance: none;
@@ -6002,6 +6009,8 @@
       text-align: center;
       line-height: 1.5;
       color: inherit; }
+    .trade-container__currency ~ .trade-container__input {
+      padding: 0 30px; }
   .trade-container__price, .trade-container__order-input {
     line-height: 0.9rem;
     border: 0;
@@ -6150,6 +6159,9 @@
 /** @define input-field; weak */
 .input-field .input-wrapper__icon {
   top: 6px; }
+
+.input-field--has-error .dc-input {
+  border: 1px solid #e31c4b !important; }
 
 /** @define purchase-container; weak */
 .purchase-container {
