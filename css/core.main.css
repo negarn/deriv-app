@@ -8516,7 +8516,7 @@ html,
           height: 64px;
           width: 64px;
           margin-bottom: 0.8rem; } }
-    .currency-list__item .text {
+    .currency-list__item-text {
       text-align: center;
       font-size: 1.4rem;
       color: var(--text-general);
@@ -8538,8 +8538,6 @@ html,
     left: 4.8rem;
     top: -4.8rem;
     margin-top: -16px; }
-  .currency-list__popover-container {
-    z-index: 9999 !important; }
 
 .currency-hr {
   height: 2px;
