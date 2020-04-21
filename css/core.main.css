@@ -8538,6 +8538,10 @@ html,
     left: 4.8rem;
     top: -4.8rem;
     margin-top: -16px; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .currency-list__popover {
+        left: 7.8rem;
+        top: -5.8rem; } }
 
 .currency-hr {
   height: 2px;
