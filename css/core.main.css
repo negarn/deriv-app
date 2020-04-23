@@ -8556,7 +8556,7 @@ html,
     margin-top: -16px; }
     @media (min-width: 320px) and (max-width: 767px) {
       .currency-list__popover {
-        left: 7.8rem;
+        left: 15vw;
         top: -5.8rem; } }
 
 .currency-hr {
