@@ -783,6 +783,8 @@
         background-color: var(--general-main-1); }
       .account-form__personal-details .date-of-birth-datepicker .datepicker-native__input {
         height: 3.8rem; } }
+    .account-form__financial-assessment .dc-select-native__placeholder {
+      background-color: var(--general-main-1); }
     .account-form__occupation .dc-native-select__select,
     .account-form__occupation .dc-dropdown__display-text {
       line-height: 1.6rem;
