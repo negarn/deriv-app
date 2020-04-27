@@ -3045,7 +3045,7 @@
   text-transform: unset;
   text-align: left;
   line-height: 1.5;
-  color: var(--text-general); }
+  color: var(--text-less-prominent); }
 
 .dc-button-menu__button--active {
   cursor: auto;
@@ -3065,10 +3065,11 @@
   position: relative;
   border-radius: 4px;
   width: 100%;
-  background-color: var(--state-normal);
+  background-color: var(--state-disabled);
   display: flex; }
 
 .dc-button-menu__wrapper .dc-button-menu__button, .dc-button-menu__wrapper .dc-button-menu__button--active {
+  height: 100%;
   background-color: rgba(0, 0, 0, 0) !important;
   z-index: 1; }
 
@@ -3086,7 +3087,7 @@
   z-index: 0;
   transition: transform 0.25s ease;
   pointer-events: none;
-  background-color: var(--state-active) !important; }
+  background-color: var(--state-normal) !important; }
 
 /*------------------------------------*
  *  # Constants
@@ -4109,7 +4110,7 @@
   vertical-align: middle; }
 
 .dc-tabs__item--header-fit-content {
-  padding: 0px 24px; }
+  padding: 0px 29px; }
 
 .dc-tabs__item--is-hidden {
   display: none; }
@@ -6776,7 +6777,8 @@ html,
     padding: 1rem 1.6rem 1.8rem;
     font-size: var(--text-size-xs); }
     .acc-switcher__new-account-text {
-      margin-left: 0.8rem; }
+      margin-left: 0.8rem;
+      color: var(--text-general); }
     .acc-switcher__new-account-btn {
       margin-left: auto; }
   .acc-switcher__list {
@@ -6831,20 +6833,6 @@ html,
         border-radius: 4px; }
       .acc-switcher__accounts .acc-switcher__account:last-child {
         margin-bottom: 8px; }
-      .acc-switcher__accounts .acc-switcher__account-set-currency {
-        justify-content: flex-end;
-        padding: 0.8rem 0.4rem; }
-        .acc-switcher__accounts .acc-switcher__account-set-currency-link {
-          font-size: 1.2rem;
-          color: var(--button-primary-default);
-          font-weight: bold; }
-          .acc-switcher__accounts .acc-switcher__account-set-currency-link:hover {
-            text-decoration: underline;
-            cursor: pointer; }
-        .acc-switcher__accounts .acc-switcher__account-set-currency:hover {
-          background: var(--general-main-2) !important;
-          cursor: auto;
-          cursor: initial; }
   .acc-switcher__account {
     display: flex;
     align-items: center;
