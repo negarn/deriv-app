@@ -1857,7 +1857,7 @@
 .dc-list {
   position: absolute;
   width: 100%;
-  max-height: 404px;
+  max-height: 200px;
   overflow-y: auto;
   z-index: 2;
   border-radius: 4px;
@@ -1874,12 +1874,40 @@
   white-space: nowrap;
   text-align: center; }
 
-.dc-list__label {
+.dc-list--large {
+  padding-bottom: 1.6rem;
+  max-height: 404px; }
+
+.dc-list--large .dc-list__label {
   padding: 1.6rem 0.8rem 0.8rem;
+  color: var(--text-prominent);
+  height: 4rem; }
+
+.dc-list--large .dc-list__item-text {
+  width: calc(100% - 1.6rem);
+  padding: 1rem 1.6rem;
+  margin: 0 0.8rem; }
+
+.dc-list--large .dc-list__item:hover {
+  border-radius: 4px;
+  width: calc(100% - 1.6rem);
+  margin: 0 0.8rem; }
+
+.dc-list--large .dc-list__item:hover .dc-list__item-text {
+  width: 100%;
+  margin: 0; }
+
+.dc-list--large .dc-list__separator {
+  width: 100%;
+  border-bottom: 4px solid var(--general-section-2);
+  margin: 1.6rem 0 0; }
+
+.dc-list__label {
+  padding: 0.6rem;
   font-size: 1.4rem;
   font-weight: bold;
-  color: var(--text-prominent);
-  height: 4rem;
+  color: var(--brand-red-coral);
+  height: 3.6rem;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -1898,15 +1926,11 @@
   line-height: 1.43;
   color: var(--text-general);
   display: flex;
-  width: calc(100% - 1.6rem);
+  width: 100%;
   justify-content: center;
   pointer-events: none;
   vertical-align: middle;
-  padding: 1rem 1.6rem;
-  margin: 0 0.8rem; }
-
-.dc-list__item:last-child {
-  margin-bottom: 1.6rem; }
+  padding: 0.6rem 1.6rem; }
 
 .dc-list__item-text--left {
   justify-content: flex-start;
@@ -1914,16 +1938,7 @@
 
 .dc-list__item:not(.dc-list__item--disabled):not(.dc-list__item--selected):hover {
   background-color: var(--state-hover);
-  color: var(--text-general);
-  border-radius: 4px;
-  width: calc(100% - 1.6rem);
-  margin-left: 0.8rem;
-  margin-right: 0.8rem; }
-
-.dc-list__item:not(.dc-list__item--disabled):not(.dc-list__item--selected):hover .dc-list__item-text, .dc-list__item:not(.dc-list__item--disabled):not(.dc-list__item--selected):hover .dc-list__item--symbol {
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0; }
+  color: var(--text-general); }
 
 .dc-list__item--selected .dc-list__item-text, .dc-list__item--selected .dc-list__item-symbol, .dc-list__item--selected .dc-list__item-tooltip {
   font-size: 1.4rem;
@@ -1963,9 +1978,9 @@
 
 .dc-list__separator {
   display: flex;
-  width: 100%;
-  border-bottom: 4px solid var(--general-section-2);
-  margin: 1.6rem 0 0; }
+  width: calc(100% - 3.2rem);
+  border-bottom: 1px solid var(--border-normal);
+  margin: 1.6rem; }
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
@@ -2547,6 +2562,7 @@
 .dc-select-native__display {
   height: 38px;
   width: 100%;
+  max-width: calc(100vw - 4rem);
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -2559,7 +2575,9 @@
   overflow: hidden;
   max-width: calc(100% - 4rem);
   text-overflow: ellipsis;
-  display: flex; }
+  display: block;
+  height: 100%;
+  line-height: 3.8rem; }
 
 .dc-select-native__placeholder {
   position: absolute;
@@ -3226,7 +3244,7 @@
   height: 16px;
   transition: 0.3s ease-in-out;
   flex-shrink: 0;
-  margin: 2px 8px 0 0;
+  margin: 0 8px;
   border-radius: 2px;
   align-self: center;
   border: 2px solid var(--text-less-prominent); }
@@ -4092,7 +4110,7 @@
   vertical-align: middle; }
 
 .dc-tabs__item--header-fit-content {
-  padding: 0px 24px; }
+  padding: 0px 29px; }
 
 .dc-tabs__item--is-hidden {
   display: none; }
@@ -4602,6 +4620,7 @@
 
 .dc-vertical-tab__content-container, .dc-vertical-tab__content-inner {
   position: relative;
+  z-index: 0;
   height: 100%;
   width: 100%;
   display: flex; }
@@ -4650,14 +4669,21 @@
 .dc-vertical-tab__tab--floating {
   min-width: 256px;
   padding: 0.8rem;
-  border-radius: 8px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: calc(2.4rem + 41px); }
+  border-radius: 8px; }
 
 .dc-vertical-tab__tab--floating .dc-vertical-tab__header--highlight {
   width: calc(100% - 1.6rem);
   border-radius: 4px; }
+
+.dc-vertical-tab__tab-meta-wrapper--floating {
+  position: -webkit-sticky;
+  position: sticky;
+  top: calc(2.4rem + 41px); }
+
+.dc-vertical-tab__tab-bottom-note {
+  position: -webkit-sticky;
+  position: sticky;
+  margin-top: 1.6rem; }
 
 .dc-vertical-tab__header-title {
   font-size: 1.6rem;
@@ -5197,6 +5223,11 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .dc-modal-header__close {
     margin: 0.8rem; } }
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .dc-modal-header {
+      min-height: 4.8rem; } } }
 
 .dc-modal-body {
   padding: 2.4rem;
@@ -6722,7 +6753,7 @@ html,
     box-shadow: 0 8px 16px 0 var(--shadow-menu);
     right: 0;
     top: calc(100% + 4px);
-    width: 278px;
+    width: 320px;
     background-color: var(--general-main-2); }
     .acc-switcher__wrapper--enter-done {
       opacity: 1;
@@ -6745,36 +6776,15 @@ html,
         height: 100%;
         border-radius: 0; } }
   .acc-switcher__new-account {
-    background-color: transparent;
-    border-radius: 4px;
-    margin: 0 0 16px; }
-    .acc-switcher__new-account-link {
-      background-color: transparent;
-      margin: 0 0 0.8em;
-      padding: 0 0 0 0.8em;
-      display: flex;
-      text-decoration: none;
-      width: 100%;
-      height: 4rem;
-      align-items: center; }
-      .acc-switcher__new-account-link .dc-btn {
-        background-color: transparent;
-        padding: 0; }
-        .acc-switcher__new-account-link .dc-btn__text {
-          color: var(--general-main-1); }
-    .acc-switcher__new-account:hover {
-      background-color: rgba(255, 68, 79, 0.08) !important; }
-    .acc-switcher__new-account .dc-btn__text {
-      font-weight: normal;
-      color: var(--brand-red-coral); }
-    .acc-switcher__new-account .dc-btn {
-      align-items: center;
-      background-color: transparent;
-      display: flex;
-      margin: 0;
-      padding: 0 0 0 0.8rem;
-      height: 4rem;
-      justify-content: left; }
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.6rem 1.8rem;
+    font-size: var(--text-size-xs); }
+    .acc-switcher__new-account-text {
+      margin-left: 0.8rem;
+      color: var(--text-general); }
+    .acc-switcher__new-account-btn {
+      margin-left: auto; }
   .acc-switcher__list {
     border-radius: 4px;
     display: flex;
@@ -6826,34 +6836,16 @@ html,
       .acc-switcher__accounts .acc-switcher__account:only-child {
         border-radius: 4px; }
       .acc-switcher__accounts .acc-switcher__account:last-child {
-        margin-bottom: 16px; }
-      .acc-switcher__accounts .acc-switcher__account-set-currency {
-        justify-content: flex-end;
-        padding: 0.8rem 0.4rem; }
-        .acc-switcher__accounts .acc-switcher__account-set-currency-link {
-          font-size: 1.2rem;
-          color: var(--button-primary-default);
-          font-weight: bold; }
-          .acc-switcher__accounts .acc-switcher__account-set-currency-link:hover {
-            text-decoration: underline;
-            cursor: pointer; }
-        .acc-switcher__accounts .acc-switcher__account-set-currency:hover {
-          background: var(--general-main-2) !important;
-          cursor: auto;
-          cursor: initial; }
-    .acc-switcher__accounts--has-add-account:not(:empty) {
-      margin-bottom: -16px; }
+        margin-bottom: 8px; }
   .acc-switcher__account {
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    padding: 0.8em;
+    padding: 0.3rem 1.6rem;
     position: relative;
     background: var(--general-main-2);
-    text-decoration: none;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em; }
+    text-decoration: none; }
     .acc-switcher__account .acc-switcher__id {
       font-size: 1.4rem;
       color: var(--text-general);
@@ -6936,6 +6928,9 @@ html,
   .acc-switcher__loader {
     margin: 1rem auto !important;
     font-size: 0.8rem; }
+  .acc-switcher__btn {
+    width: calc(100% - 32px);
+    margin: 0 16px 8px; }
 
 /** @define set-currency; weak */
 .set-currency {
@@ -8489,7 +8484,7 @@ html,
         color: var(--text-disabled); }
     .currency-list__item--selected {
       border: 2px solid var(--border-active); }
-      .currency-list__item--selected p.label {
+      .currency-list__item--selected .label {
         font-size: 1.4rem;
         color: var(--text-general);
         font-weight: 700;
@@ -8502,16 +8497,16 @@ html,
       flex-direction: column;
       justify-content: space-between;
       align-items: center; }
-    .currency-list__item svg {
+    .currency-list__item .currency-list__icon {
       height: 48px;
       width: 48px;
       margin-bottom: 1em; }
       @media (min-width: 320px) and (max-width: 767px) {
-        .currency-list__item svg {
+        .currency-list__item .currency-list__icon {
           height: 64px;
           width: 64px;
           margin-bottom: 0.8rem; } }
-    .currency-list__item p {
+    .currency-list__item-text {
       text-align: center;
       font-size: 1.4rem;
       color: var(--text-general);
@@ -8528,6 +8523,15 @@ html,
         padding: 0.8rem 0; } }
   .currency-list__radio-button {
     display: none; }
+  .currency-list__popover {
+    position: relative;
+    left: 4.8rem;
+    top: -4.8rem;
+    margin-top: -16px; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .currency-list__popover {
+        left: 15vw;
+        top: -5.8rem; } }
 
 .currency-hr {
   height: 2px;
@@ -9271,6 +9275,9 @@ html,
 .dc-datepicker__input .dc-input__field::-ms-clear {
   display: none; }
 
+.dc-datepicker__input .dc-input__field::-moz-placeholder {
+  line-height: 4rem; }
+
 .dc-datepicker__input--has-leading-icon .dc-input__field {
   text-align: center; }
 
@@ -9600,6 +9607,17 @@ html,
       @media (min-width: 320px) and (max-width: 767px) {
         .details-form__elements .dc-input label {
           background-color: var(--general-section-2); } }
+    @media (min-width: 1024px) {
+      .details-form__elements .dc-input {
+        /* To get rid of ugly chrome autofill shadow dom-applied background color */ }
+        .details-form__elements .dc-input__field:-webkit-autofill {
+          -webkit-box-shadow: 0 0 0 30px var(--general-main-2) inset !important; }
+          .details-form__elements .dc-input__field:-webkit-autofill:hover, .details-form__elements .dc-input__field:-webkit-autofill:focus, .details-form__elements .dc-input__field:-webkit-autofill:active {
+            -webkit-box-shadow: 0 0 0 30px var(--general-main-2) inset !important; } }
+    .details-form__elements .dc-datepicker__input .dc-input__field {
+      background-color: var(--general-main-2); }
+    .details-form__elements .dc-select-native {
+      margin-bottom: 3.2rem; }
     .details-form__elements .dc-dropdown__display {
       background-color: var(--general-main-2); }
       .details-form__elements .dc-dropdown__display-placeholder-text {
@@ -11589,6 +11607,131 @@ html,
 /**
  * Define Breakpoints here.
  */
+.dc-linear-progress {
+  display: flex;
+  height: 4px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0; }
+
+.dc-linear-progress__bar {
+  height: 100%;
+  transition: width 0.5s cubic-bezier(0.62, 0.01, 0.51, 0.95);
+  background-color: var(--brand-red-coral); }
+
+.dc-linear-progress__countdown {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  font-size: 12px;
+  color: var(--brand-red-coral);
+  font-weight: bold; }
+
+/*------------------------------------*
+ *  # Constants
+ *------------------------------------*/
+/* stylelint-disable color-no-hex */
+/* COLOR PALETTE */
+/* colors */
+/* alpha colors */
+/* gradient colors */
+/* Preserve legacy variables */
+/* Primary */
+/* stylelint-enable color-no-hex */
+/*------------------------------------*
+ *  # SASS Mixins and Functions
+ *------------------------------------*/
+/*
+ * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
+ * Generate typefaces key-value pair of variable name and config
+ * Example:
+   --paragraph-center-bold-black: (14px, center, bold, black)
+ */
+/*
+ * Sets font-size, font-weight, color, text-transform, text-align and line-height
+ * Usage example:
+   @include setTypeface(16px, bold, black, uppercase);
+ */
+/*
+ * Set typefaces by passing a typeface variable name
+ * @param $var   - typeface variable
+ * @param $tt    - text-transform property
+ * @param $align - text-align property
+ * Usage example:
+   @include typeface(--paragraph-bold-black, uppercase, center);
+ */
+/*
+ * Range Slider Thumb styling is set here
+ */
+/*
+ * SVG icons colors
+ */
+/*
+ * Bar Spinner Animation
+ * @param $count    - number of bars
+ * @param $duration - duration of animation
+ * @param $phase    - each bar phase change delay
+ * Usage example:
+   @include createBarspinnerAnimation(5, 1.2s, 0,1);
+ */
+/*
+ * Tooltip colors
+ * @param $color - color property
+ * Usage example:
+   @include tooltipColor($COLOR_RED);
+ */
+/*
+ * Convert Tooltip colors
+ * @param $color - css color property
+ * Usage example:
+   @include convertTooltipColor(var(--status-default));
+ */
+/*
+    Constants
+*/
+/*
+    Variables
+*/
+/*
+    List of all typefaces variables in the format: --$FONT_SIZES-$TEXT_ALIGN-$FONT_WEIGHTS-COLORS.
+    See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
+    Variables name example: --title-center-semibold-red
+ */
+/*
+    to use styles without modifier class on .inline-icon
+    use @extend
+
+    e.g. style icon on parent hover:
+        a:hover .inline-icon {
+            @extend %inline-icon.active;
+        }
+*/
+/**
+ * Define Breakpoints here.
+ */
 /* postcss-bem-linter: ignore */
 html {
   font-size: 62.5%;
@@ -12226,6 +12369,7 @@ table {
 /* stylelint-enable */
 :host,
 :root {
+  --text-size-xxxs: 1rem;
   --text-size-xxs: 1.2rem;
   --text-size-xs: 1.4rem;
   --text-size-s: 1.6rem;
@@ -13398,6 +13542,11 @@ table {
         margin: 0;
         padding: 0;
         text-align: left; } }
+  .cashier__tab-header-note {
+    color: var(--text-general);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 256px; }
   .cashier__modal-tab {
     min-width: 24rem; }
   .cashier__success {
@@ -13434,7 +13583,7 @@ table {
       .cashier__account-switch-icon {
         width: 100%;
         margin: 2.4rem 0 0;
-        height: 280px; } }
+        height: 320px; } }
   .cashier__virtual-header {
     margin-top: 0;
     margin-bottom: 0.8rem; }
@@ -13895,6 +14044,39 @@ table {
 
 .account-transfer__native-select {
   margin-bottom: 2.4rem; }
+
+.account-transfer__receipt .cashier__text--bold {
+  color: var(--text-prominent); }
+
+.account-transfer__receipt .cashier__transferred-amount {
+  color: var(--text-profit-success); }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .account-transfer__transfer-details-from {
+    flex-flow: column-reverse; }
+  .account-transfer__transfer-details-to {
+    flex-flow: column; }
+    .account-transfer__transfer-details-to .cashier__transferred-details {
+      text-align: center; }
+  .account-transfer__receipt .cashier__header {
+    padding-top: 1.6rem;
+    margin-top: 0; }
+  .account-transfer__receipt .cashier__transferred-details {
+    margin-top: 0.8rem; }
+  .account-transfer__receipt .cashier__transferred-amount {
+    margin-bottom: 1.6rem;
+    margin-top: 0; }
+  .account-transfer__receipt .cashier__text--right {
+    text-align: center; }
+  .account-transfer__form-submit {
+    display: flex;
+    flex-flow: row;
+    justify-content: center; }
+    .account-transfer__form-submit .account-transfer__button {
+      margin: 1.6rem 0.4rem 0; } }
+    @media only screen and (min-width: 320px) and (max-width: 767px) and (max-width: 340px) {
+      .account-transfer__form-submit .account-transfer__button .dc-btn__text {
+        font-size: 1.2rem; } }
 
 /* stylelint-disable plugin/selector-bem-pattern */
 /** @define payment-agent-transfer */
