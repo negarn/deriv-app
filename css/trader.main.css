@@ -544,1724 +544,6 @@
             @extend %inline-icon.active;
         }
 */
-.account__inset_header-icon, .account .account-limit-popover {
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */
-  /* postcss-bem-linter: ignore */ }
-  .account__inset_header-icon .color1-fill, .account .account-limit-popover .color1-fill {
-    fill: var(--text-general); }
-  .account__inset_header-icon .color1-stroke, .account .account-limit-popover .color1-stroke {
-    stroke: var(--text-general); }
-  .account__inset_header-icon .color2-fill, .account .account-limit-popover .color2-fill {
-    fill: none; }
-  .account__inset_header-icon .color2-stroke, .account .account-limit-popover .color2-stroke {
-    stroke: none; }
-  .active.account__inset_header-icon, .account .active.account-limit-popover {
-    /* postcss-bem-linter: ignore */
-    /* postcss-bem-linter: ignore */
-    /* postcss-bem-linter: ignore */
-    /* postcss-bem-linter: ignore */ }
-    .active.account__inset_header-icon .color1-fill, .account .active.account-limit-popover .color1-fill {
-      fill: var(--text-prominent); }
-    .active.account__inset_header-icon .color1-stroke, .account .active.account-limit-popover .color1-stroke {
-      stroke: var(--text-prominent); }
-    .active.account__inset_header-icon .color2-fill, .account .active.account-limit-popover .color2-fill {
-      fill: none; }
-    .active.account__inset_header-icon .color2-stroke, .account .active.account-limit-popover .color2-stroke {
-      stroke: none; }
-  .disabled.account__inset_header-icon, .account .disabled.account-limit-popover {
-    /* postcss-bem-linter: ignore */
-    /* postcss-bem-linter: ignore */
-    /* postcss-bem-linter: ignore */
-    /* postcss-bem-linter: ignore */ }
-    .disabled.account__inset_header-icon .color1-fill, .account .disabled.account-limit-popover .color1-fill {
-      fill: var(--text-disabled); }
-    .disabled.account__inset_header-icon .color1-stroke, .account .disabled.account-limit-popover .color1-stroke {
-      stroke: var(--text-disabled); }
-    .disabled.account__inset_header-icon .color2-fill, .account .disabled.account-limit-popover .color2-fill {
-      fill: none; }
-    .disabled.account__inset_header-icon .color2-stroke, .account .disabled.account-limit-popover .color2-stroke {
-      stroke: none; }
-  .white.account__inset_header-icon, .account .white.account-limit-popover {
-    /* postcss-bem-linter: ignore */
-    /* postcss-bem-linter: ignore */ }
-    .white.account__inset_header-icon .color1-fill, .account .white.account-limit-popover .color1-fill {
-      fill: var(--text-prominent); }
-    .white.account__inset_header-icon .color1-stroke, .account .white.account-limit-popover .color1-stroke {
-      stroke: var(--text-prominent); }
-  .border_hover_color.account__inset_header-icon, .account .border_hover_color.account-limit-popover {
-    /* postcss-bem-linter: ignore */
-    /* postcss-bem-linter: ignore */ }
-    .border_hover_color.account__inset_header-icon .color1-fill, .account .border_hover_color.account-limit-popover .color1-fill {
-      fill: var(--text-prominent); }
-    .border_hover_color.account__inset_header-icon .color1-stroke, .account .border_hover_color.account-limit-popover .color1-stroke {
-      stroke: var(--text-prominent); }
-  .secondary.account__inset_header-icon, .account .secondary.account-limit-popover {
-    /* postcss-bem-linter: ignore */
-    /* postcss-bem-linter: ignore */ }
-    .secondary.account__inset_header-icon .color1-fill, .account .secondary.account-limit-popover .color1-fill {
-      fill: var(--text-less-prominent); }
-    .secondary.account__inset_header-icon .color1-stroke, .account .secondary.account-limit-popover .color1-stroke {
-      stroke: var(--text-less-prominent); }
-
-/**
- * Define Breakpoints here.
- */
-.account {
-  margin: 0 16px; }
-  .account .dc-vertical-tab__content {
-    height: calc( 100vh - 48px - 36px - 53px - 2.4rem); }
-  .account__inset_header {
-    box-shadow: inset 0 -1px 0 0 var(--general-section-1); }
-    .account__inset_header-subheading {
-      font-size: var(--text-size-xs);
-      line-height: 1.5;
-      margin-right: 8px;
-      color: var(--text-less-prominent); }
-  .account__inset_header-icon {
-    width: 24px;
-    height: 24px; }
-  .account__tab_container {
-    padding: 0 8px;
-    height: 100%;
-    width: 100%;
-    overflow: hidden; }
-  .account__scrollbars_container {
-    height: 100%;
-    padding-top: 24px;
-    padding-bottom: 64px; }
-    .account__scrollbars_container-wrapper {
-      overflow-x: hidden;
-      overflow-y: auto; }
-    .account__scrollbars_container--grid-layout {
-      display: grid;
-      grid-gap: 4px; }
-      .account__scrollbars_container--grid-layout .dc-input {
-        margin-bottom: 0; }
-      .account__scrollbars_container--grid-layout .dc-dropdown-container {
-        margin-top: 0; }
-        .account__scrollbars_container--grid-layout .dc-dropdown-container .dc-dropdown__display-text,
-        .account__scrollbars_container--grid-layout .dc-dropdown-container .dc-list__item-text {
-          text-transform: unset; }
-      @media (min-width: 320px) and (max-width: 767px) {
-        .account__scrollbars_container--grid-layout {
-          padding: 0 1.6rem;
-          overflow-x: hidden;
-          overflow-y: auto;
-          display: flex;
-          flex-direction: column; } }
-    @media (min-width: 1024px) {
-      .account__scrollbars_container {
-        padding-left: 16px;
-        padding-right: 16px; } }
-    @media (min-width: 320px) and (max-width: 767px) {
-      .account__scrollbars_container {
-        height: unset;
-        padding-top: unset;
-        padding-bottom: unset; } }
-  .account-form {
-    overflow: hidden;
-    height: 100%;
-    width: 100%; }
-    .account-form__header {
-      position: relative;
-      font-size: var(--text-size-xs);
-      font-weight: bold;
-      margin-bottom: 1.6em; }
-      .account-form__header:not(:first-child) {
-        margin-top: 1.6em; }
-      .account-form__header:before {
-        content: '';
-        position: absolute;
-        top: 0.5em;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-top: 1px solid var(--general-section-1); }
-      @media (min-width: 320px) and (max-width: 767px) {
-        .account-form__header {
-          margin-top: 1.6rem; } }
-    .account-form__title {
-      position: absolute;
-      padding-right: 8px;
-      color: var(--text-prominent);
-      background: var(--general-main-1); }
-    .account-form__subtitle {
-      padding-left: 8px;
-      font-weight: normal;
-      color: var(--text-prominent); }
-    .account-form__fieldset {
-      position: relative;
-      max-width: 400px;
-      margin-top: 9px;
-      margin-bottom: 18px; }
-      .account-form__fieldset--2-cols {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 8px; }
-      .account-form__fieldset .datepicker {
-        max-width: unset; }
-        .account-form__fieldset .datepicker__picker {
-          margin-top: 8px; }
-        .account-form__fieldset .datepicker .icon-datepicker {
-          position: absolute;
-          top: 1.2rem;
-          right: 1rem; }
-        .account-form__fieldset .datepicker .calendar__cell--disabled {
-          color: var(--text-disabled) !important; }
-        .account-form__fieldset .datepicker .calendar__cell--other:not(.calendar__cell--today) {
-          color: var(--text-prominent); }
-      .account-form__fieldset .dc-input__label {
-        top: 1.2rem; }
-      @media (min-width: 320px) and (max-width: 767px) {
-        .account-form__fieldset .dc-checkbox__box,
-        .account-form__fieldset .dc-checkbox .dc-icon {
-          width: 2.4rem;
-          height: 2.4rem; }
-        .account-form__fieldset .dc-field-error {
-          top: 4.2rem; } }
-    .account-form__footer {
-      height: 80px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      display: flex;
-      width: 100%;
-      padding: 16px 24px;
-      align-items: center;
-      justify-content: flex-end;
-      z-index: 4;
-      border-radius: 0 4px 4px 0;
-      border-top: 1px solid var(--general-section-1);
-      border-width: 1px;
-      background-color: var(--general-main-1); }
-      .account-form__footer-note {
-        color: var(--text-prominent);
-        font-size: var(--text-size-xxs);
-        height: 4rem;
-        line-height: 1.5;
-        text-align: right;
-        width: 27.6rem; }
-        @media (min-width: 320px) and (max-width: 767px) {
-          .account-form__footer-note {
-            width: auto;
-            text-align: center; } }
-      .account-form__footer-btn {
-        height: 4rem;
-        margin-top: 0;
-        margin-bottom: 0; }
-        @media (min-width: 1024px) {
-          .account-form__footer-btn {
-            margin-left: 1.6rem; } }
-        @media (min-width: 320px) and (max-width: 767px) {
-          .account-form__footer-btn {
-            margin: 0 1.6rem; }
-            .account-form__footer-btn--has-bottom-margin {
-              margin-bottom: 1.6rem; } }
-      .account-form__footer-all-fields-required {
-        color: var(--text-general);
-        text-align: center;
-        padding-bottom: 2.4rem;
-        padding-top: 0.8rem;
-        font-size: 1.2rem; }
-      @media (min-width: 320px) and (max-width: 767px) {
-        .account-form__footer {
-          padding: 16px 0px;
-          flex-direction: column;
-          height: auto;
-          align-items: initial;
-          border-top: 2px solid var(--general-section-1); } }
-    @media (min-width: 320px) and (max-width: 767px) {
-      .account-form__personal-details .account-form__footer-note {
-        font-size: 1rem;
-        height: auto;
-        margin-bottom: 1.6rem; }
-      .account-form__personal-details .dc-checkbox__label {
-        font-size: 1.2rem; }
-      .account-form__personal-details .dc-select-native__placeholder {
-        background-color: var(--general-main-1); }
-      .account-form__personal-details .date-of-birth-datepicker .datepicker-native__input {
-        height: 3.8rem; } }
-    .account-form__occupation .dc-native-select__select,
-    .account-form__occupation .dc-dropdown__display-text {
-      line-height: 1.6rem;
-      text-align: left; }
-  .account__intial-loader {
-    height: calc(100vh - 240px); }
-  .account__text {
-    font-size: 1.4rem;
-    color: var(--text-general);
-    font-weight: 400;
-    text-transform: none;
-    text-align: left;
-    line-height: 1.5;
-    color: var(--text-general); }
-    .account__text--small {
-      font-size: 1.2rem;
-      color: var(--text-general);
-      font-weight: 400;
-      text-transform: none;
-      text-align: left;
-      line-height: 1.25; }
-    .account__text--xsmall {
-      font-size: 1rem;
-      color: var(--text-general);
-      font-weight: 400;
-      text-transform: none;
-      text-align: left;
-      line-height: unset; }
-    .account__text--grey {
-      color: var(--text-less-prominent); }
-  .account .account-management__message {
-    margin-top: 1em;
-    font-weight: bold;
-    font-size: var(--text-size-s);
-    color: var(--text-general); }
-    .account .account-management__message-content {
-      display: flex;
-      width: 100%;
-      height: 100%;
-      margin: 0 16px;
-      align-items: center;
-      flex-direction: column; }
-      .account .account-management__message-content .dc-btn {
-        height: 4rem;
-        margin-top: 3.2rem; }
-        @media (min-width: 320px) and (max-width: 767px) {
-          .account .account-management__message-content .dc-btn {
-            margin: 1.6rem 0;
-            padding: 1.6rem;
-            width: 100%; } }
-    .account .account-management__message-icon {
-      width: 128px;
-      height: 128px;
-      margin-top: 80px; }
-      @media (min-width: 320px) and (max-width: 767px) {
-        .account .account-management__message-icon {
-          margin-top: 4rem;
-          /* iPhone SE screen height fixes due to UI space restrictions */ } }
-  @media only screen and (min-width: 320px) and (max-width: 767px) and (max-height: 480px) {
-    .account .account-management__message-icon {
-      margin-top: 3.2rem; } }
-    .account .account-management__message-title {
-      font-size: var(--text-size-xs);
-      margin-bottom: 1em;
-      text-align: center; }
-    .account .account-management__message-subtitle {
-      font-size: var(--text-size-xxs);
-      font-weight: 400;
-      text-align: center;
-      line-height: 1.5; }
-    .account .account-management__message-wrapper {
-      display: flex;
-      justify-content: center;
-      width: 100%; }
-      @media (min-width: 320px) and (max-width: 767px) {
-        .account .account-management__message-wrapper {
-          overflow-x: hidden;
-          overflow-y: auto; } }
-    @media (min-width: 320px) and (max-width: 767px) {
-      .account .account-management__message {
-        line-height: 20px;
-        text-align: center; } }
-  .account .account-management__text {
-    text-align: center;
-    color: var(--text-general);
-    font-size: var(--text-size-xs);
-    line-height: 1.5; }
-  .account .account-management__text-container {
-    margin-top: 10px;
-    max-width: 467px;
-    margin-bottom: 2em; }
-  .account .account-management-flex-wrapper {
-    display: flex; }
-    .account .account-management-flex-wrapper--space-between {
-      justify-content: space-between; }
-  @media (min-width: 1024px) {
-    .account .account-management-leave-confirm .dc-btn--primary,
-    .account .account-management-submit-success .dc-btn--primary {
-      width: 130px;
-      margin-left: 0.8rem; } }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .account .account-management-leave-confirm,
-    .account .account-management-submit-success {
-      flex-direction: column;
-      width: 100%;
-      margin-top: 1.2rem; }
-      .account .account-management-leave-confirm .dc-btn,
-      .account .account-management-submit-success .dc-btn {
-        padding: 0rem;
-        margin-bottom: 0rem; } }
-  .account .account__text_container {
-    margin-top: 12px; }
-  .account .account-management-table {
-    width: 100%; }
-    .account .account-management-table thead {
-      position: relative; }
-      .account .account-management-table thead tr {
-        padding-bottom: 8px; }
-      .account .account-management-table thead th {
-        font-size: 1.4rem;
-        color: var(--text-general);
-        font-weight: 700;
-        text-transform: none;
-        text-align: left;
-        line-height: 1.5;
-        color: var(--text-prominent); }
-        @media (min-width: 320px) and (max-width: 767px) {
-          .account .account-management-table thead th {
-            font-size: 1.2rem;
-            color: var(--text-general); } }
-    .account .account-management-table tbody tr td {
-      border-bottom: 1px solid var(--general-section-1); }
-    @media (min-width: 1024px) {
-      .account .account-management-table {
-        max-width: 546px; } }
-  .account .account-limit-container {
-    height: 100%;
-    width: 100%; }
-    @media (min-width: 320px) and (max-width: 767px) {
-      .account .account-limit-container-title {
-        padding-bottom: 0.8rem; } }
-    .account .account-limit-container .account-management-table tr th:nth-child(2),
-    .account .account-limit-container .account-management-table tr td:nth-child(2) {
-      text-align: right; }
-    .account .account-limit-container .account-management-table th {
-      padding: 2rem 0 0.8rem;
-      border-bottom: 2px solid var(--general-section-1); }
-    .account .account-limit-container .account-management-table td {
-      line-height: 3.6rem; }
-      .account .account-limit-container .account-management-table td .account-limit-container__extra-info {
-        padding-bottom: 0.8rem; }
-      @media (min-width: 320px) and (max-width: 767px) {
-        .account .account-limit-container .account-management-table td {
-          line-height: 2.4rem; } }
-    @media (min-width: 1024px) {
-      .account .account-limit-container .account-management-flex-wrapper {
-        align-items: center; } }
-    @media (min-width: 320px) and (max-width: 767px) {
-      .account .account-limit-container .account-management-flex-wrapper {
-        flex-direction: column; } }
-    .account .account-limit-container__extra-info {
-      line-height: 1.4rem;
-      color: var(--text-less-prominent);
-      font-size: 1rem;
-      font-weight: normal; }
-    @media (min-width: 320px) and (max-width: 767px) {
-      .account .account-limit-container__main-text {
-        margin-top: 2.4rem;
-        font-size: 1.2rem; }
-      .account .account-limit-container__content {
-        padding: 0 0.8rem; }
-      .account .account-limit-container .account__text {
-        font-size: 1rem; } }
-  .account .account-limit-popover {
-    display: flex;
-    align-content: center;
-    padding-left: 4px; }
-  .account .account-limit-popover-target {
-    height: 100%;
-    display: flex;
-    align-items: center; }
-  .account .account-limit-info__inset_header {
-    display: flex;
-    align-items: center; }
-  .account .account-limit-info * {
-    padding-left: 8px; }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .account .leave-confirm__message-icon {
-      width: 93px; }
-    .account .leave-confirm__message {
-      color: var(--text-prominent); }
-    .account .leave-confirm__text {
-      padding: 0 1.9rem; } }
-  .account .submit-success {
-    margin-top: 100px; }
-    @media (min-width: 320px) and (max-width: 767px) {
-      .account .submit-success__message-icon {
-        width: 96px;
-        height: 90px; }
-      .account .submit-success__message {
-        font-size: 1.4rem;
-        text-align: center;
-        margin-top: 1.6rem; }
-      .account .submit-success__text {
-        padding: 0 1.9rem;
-        font-size: 1rem; } }
-  .account-address__details-section {
-    margin-top: 0.5em; }
-    .account-address__details-section .account-form__fieldset {
-      margin-bottom: 3em; }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .account-page-wrapper {
-      height: 100%; } }
-  .account__confirmation-page {
-    padding: 2.4rem 1.6rem 0; }
-    .account__confirmation-page-title {
-      color: var(--brand-red-coral);
-      height: 20px;
-      font-size: 1.4rem;
-      font-weight: bold;
-      margin-bottom: 0.8rem; }
-    .account__confirmation-page-content {
-      margin-top: 0.8rem;
-      color: var(--text-general);
-      line-height: 1.4rem; }
-    .account__confirmation-page-footer {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      padding: 1.6rem;
-      z-index: 4;
-      border-radius: 0 4px 4px 0;
-      border-top: 2px solid var(--general-section-1); }
-      .account__confirmation-page-footer .dc-btn:first-child {
-        margin-bottom: 1.6rem; }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .account {
-      height: 100%;
-      margin: 0; } }
-
-/** @define account-poa; weak */
-.account-poa__upload-icon {
-  width: 25px; }
-
-.account-poa__upload-section {
-  margin-top: 1em;
-  display: flex;
-  flex-wrap: wrap; }
-
-.account-poa__upload-list {
-  width: 100%;
-  flex: 1;
-  margin-right: 16px; }
-
-.account-poa__upload-file {
-  width: 100%;
-  flex: 1;
-  height: 240px;
-  position: relative; }
-  .account-poa__upload-file .dc-file-dropzone {
-    max-width: 400px; }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .account-poa__upload-file {
-      margin-bottom: 2.4rem; } }
-
-.account-poa__upload-remove-btn {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  top: 8px;
-  right: 8px;
-  cursor: pointer;
-  transition: transform 0.25s linear; }
-  .account-poa__upload-remove-btn:hover {
-    transform: scale(1.25, 1.25); }
-  .account-poa__upload-remove-btn--error circle {
-    fill: var(--status-danger); }
-  .account-poa__upload-remove-btn-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-
-.account-poa__upload-box {
-  display: flex;
-  margin-bottom: 2em;
-  align-items: center;
-  justify-content: flex-start; }
-
-.account-poa__upload-item {
-  min-width: 238px;
-  width: 100%;
-  margin-left: 1em;
-  font-size: var(--text-size-xxs);
-  line-height: 1.5;
-  color: var(--text-prominent); }
-
-.account-poa__details-section {
-  margin-top: 1em;
-  display: flex;
-  flex-wrap: wrap; }
-
-.account-poa__details-description {
-  width: 100%;
-  margin-right: 0.5em;
-  flex: 1; }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .account-poa__details-description {
-      margin-bottom: 2.4rem; } }
-
-.account-poa__details-text {
-  font-size: var(--text-size-xs);
-  line-height: 1.5;
-  color: var(--text-general); }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .account-poa__details-text {
-      font-size: 1.2rem; } }
-
-.account-poa__details-fields {
-  width: 100%;
-  min-width: 400px;
-  flex: 1; }
-  .account-poa__details-fields .account-form__fieldset {
-    margin-bottom: 3em; }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .account-poa__details-fields {
-      min-width: 100%; } }
-
-/** @define forgot-password; weak */
-.forgot-password {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-row-gap: 16px;
-  max-width: 400px;
-  margin: 24px auto 0;
-  color: var(--text-prominent);
-  font-size: var(--text-size-xxs);
-  line-height: 1.5; }
-  .forgot-password__content {
-    display: grid;
-    grid-template-columns: 32px auto;
-    grid-gap: 8px; }
-    .forgot-password__content .inline-icon {
-      width: 32px;
-      height: 32px;
-      margin-right: 8px; }
-
-/** @define form-submit-error-message; weak */
-.form-submit-error-message {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-  font-size: var(--text-size-xxs);
-  font-weight: bold;
-  flex: 1;
-  color: var(--text-prominent); }
-  .form-submit-error-message p {
-    padding-left: 16px; }
-    @media (min-width: 320px) and (max-width: 767px) {
-      .form-submit-error-message p {
-        line-height: 20px; } }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .form-submit-error-message {
-      padding: 0 1.6rem 1rem; } }
-
-/** @define initial-loader; weak */
-.initial-loader--btn .initial-loader__barspinner--rect {
-  background-color: var(--text-colored-background); }
-
-.initial-loader--btn .barspinner {
-  margin: 0 4px 0 -4px; }
-
-/** @define poi-icon-row; weak */
-.poi-icon-row {
-  display: flex;
-  margin-bottom: 16px; }
-  .poi-icon-row__icon-container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    color: var(--text-less-prominent); }
-    .poi-icon-row__icon-container:not(:first-child):not(:last-child) {
-      margin: 0 40px; }
-    .poi-icon-row__icon-container p {
-      font-size: var(--text-size-xxs); }
-    .poi-icon-row__icon-container p:first-of-type {
-      line-height: 1.5;
-      margin-top: 8px;
-      font-weight: bold; }
-    @media (min-width: 320px) and (max-width: 767px) {
-      .poi-icon-row__icon-container:not(:first-child):not(:last-child) {
-        margin: 0; }
-      .poi-icon-row__icon-container .dc-icon {
-        width: 8.8rem;
-        height: auto; }
-      .poi-icon-row__icon-container p {
-        line-height: 20px; } }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .poi-icon-row {
-      display: grid;
-      grid-gap: 2.4rem;
-      grid-template-columns: 1fr 1fr 1fr;
-      margin-top: 4rem; } }
-
-/** @define onfido-container; weak */
-.onfido-container {
-  margin-top: 24px; }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .onfido-container .onfido-sdk-ui-PageTitle-titleWrapper {
-      margin: 0 1.5em 0.4em; }
-    .onfido-container .onfido-sdk-ui-PageTitle-title {
-      text-align: left; }
-    .onfido-container .onfido-sdk-ui-PageTitle-subTitle {
-      text-align: left; } }
-
-/* stylelint-disable */
-.dc-modal__container_financial-assessment-confirmation {
-  width: 440px; }
-  .dc-modal__container_financial-assessment-confirmation .dc-modal-body {
-    padding-top: 1.2rem; }
-
-.dc-modal .leave-confirm__message-content {
-  text-align: center; }
-
-.dc-modal .leave-confirm__message-icon {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2.4rem; }
-
-.dc-modal .leave-confirm__message {
-  margin-bottom: 0.8rem;
-  font-weight: bold; }
-
-.dc-modal .account-management-leave-confirm {
-  display: flex;
-  justify-content: center;
-  margin-top: 2.4rem; }
-  .dc-modal .account-management-leave-confirm :first-child {
-    margin-right: 0.8rem; }
-
-/* stylelint-enable */
-
-/*------------------------------------*
- *  # Constants
- *------------------------------------*/
-/* stylelint-disable color-no-hex */
-/* COLOR PALETTE */
-/* colors */
-/* alpha colors */
-/* gradient colors */
-/* Preserve legacy variables */
-/* Primary */
-/* stylelint-enable color-no-hex */
-/*------------------------------------*
- *  # SASS Mixins and Functions
- *------------------------------------*/
-/*
- * SASS interpolation
- */
-/*
- * PX to EM
- * @param $px - px value to be converted
- * @param $base - base font size (in `em`)
- * Note: 'em' values are calculate based on the element font-size
- *       to properly converts 'px' to 'em', please pass in the element font-size with it
- * Usage example:
-    padding: em(16px, 1.6em); // font-size in 'em'
- */
-/*
- * Set property by passing a property name, and values.
- * @param $property name - padding, margin etc.
- * @param $values        - values in `px` (space separated for multiple values)
- * @param $font-size     - base font-size in `em`
- * Usage example:
-   @include toEm(padding, 8px 16px 8px, 1.6em);
- */
-/*
- * Generate typefaces key-value pair of variable name and config
- * Example:
-   --paragraph-center-bold-black: (14px, center, bold, black)
- */
-/*
- * Sets font-size, font-weight, color, text-transform, text-align and line-height
- * Usage example:
-   @include setTypeface(16px, bold, black, uppercase);
- */
-/*
- * Set typefaces by passing a typeface variable name
- * @param $var   - typeface variable
- * @param $tt    - text-transform property
- * @param $align - text-align property
- * Usage example:
-   @include typeface(--paragraph-bold-black, uppercase, center);
- */
-/*
- * Range Slider Thumb styling is set here
- */
-/*
- * SVG icons colors
- */
-/*
- * Bar Spinner Animation
- * @param $count    - number of bars
- * @param $duration - duration of animation
- * @param $phase    - each bar phase change delay
- * Usage example:
-   @include createBarspinnerAnimation(5, 1.2s, 0,1);
- */
-/*
- * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Convert Tooltip colors
- * @param $color - css color property
- * Usage example:
-   @include convertTooltipColor(var(--status-default));
- */
-/*
-    Constants
-*/
-/*
-    Variables
-*/
-/*
-    List of all typefaces variables in the format: --$FONT_SIZES-$TEXT_ALIGN-$FONT_WEIGHTS-COLORS.
-    See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
-    Variables name example: --title-center-semibold-red
- */
-/*
-    to use styles without modifier class on .inline-icon
-    use @extend
-
-    e.g. style icon on parent hover:
-        a:hover .inline-icon {
-            @extend %inline-icon.active;
-        }
-*/
-/**
- * Define Breakpoints here.
- */
-/** @define data-list; weak */
-.data-list {
-  position: relative; }
-  .data-list__body {
-    flex: 1; }
-  .data-list__footer {
-    width: 100%;
-    background: var(--general-main-1);
-    border-top: 2px solid var(--border-disabled);
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 0px;
-    left: 0px; }
-  .data-list__item {
-    height: calc(100% - 8px);
-    margin-bottom: 8px;
-    background-color: var(--general-section-1);
-    padding: 4px 0px; }
-    .data-list__item--wrapper {
-      text-decoration: none; }
-    @media (min-width: 320px) and (max-width: 767px) {
-      .data-list__item {
-        border-radius: 4px;
-        padding: 0.4rem 0; } }
-  .data-list__row {
-    display: flex;
-    flex-direction: row;
-    padding: 4px 16px;
-    width: 100%; }
-    .data-list__row > * {
-      flex: 1; }
-    .data-list__row-content {
-      font-size: 1.4rem;
-      line-height: 2rem;
-      color: var(--text-general); }
-    .data-list__row-cell--amount {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      flex: none; }
-    .data-list__row-title {
-      font-size: 1.4rem;
-      font-weight: bold;
-      color: var(--text-prominent);
-      line-height: 2rem; }
-      @media (min-width: 320px) and (max-width: 767px) {
-        .data-list__row-title {
-          font-size: 1.2rem; } }
-
-/*------------------------------------*
- *  # Constants
- *------------------------------------*/
-/* stylelint-disable color-no-hex */
-/* COLOR PALETTE */
-/* colors */
-/* alpha colors */
-/* gradient colors */
-/* Preserve legacy variables */
-/* Primary */
-/* stylelint-enable color-no-hex */
-/*------------------------------------*
- *  # SASS Mixins and Functions
- *------------------------------------*/
-/*
- * SASS interpolation
- */
-/*
- * PX to EM
- * @param $px - px value to be converted
- * @param $base - base font size (in `em`)
- * Note: 'em' values are calculate based on the element font-size
- *       to properly converts 'px' to 'em', please pass in the element font-size with it
- * Usage example:
-    padding: em(16px, 1.6em); // font-size in 'em'
- */
-/*
- * Set property by passing a property name, and values.
- * @param $property name - padding, margin etc.
- * @param $values        - values in `px` (space separated for multiple values)
- * @param $font-size     - base font-size in `em`
- * Usage example:
-   @include toEm(padding, 8px 16px 8px, 1.6em);
- */
-/*
- * Generate typefaces key-value pair of variable name and config
- * Example:
-   --paragraph-center-bold-black: (14px, center, bold, black)
- */
-/*
- * Sets font-size, font-weight, color, text-transform, text-align and line-height
- * Usage example:
-   @include setTypeface(16px, bold, black, uppercase);
- */
-/*
- * Set typefaces by passing a typeface variable name
- * @param $var   - typeface variable
- * @param $tt    - text-transform property
- * @param $align - text-align property
- * Usage example:
-   @include typeface(--paragraph-bold-black, uppercase, center);
- */
-/*
- * Range Slider Thumb styling is set here
- */
-/*
- * SVG icons colors
- */
-/*
- * Bar Spinner Animation
- * @param $count    - number of bars
- * @param $duration - duration of animation
- * @param $phase    - each bar phase change delay
- * Usage example:
-   @include createBarspinnerAnimation(5, 1.2s, 0,1);
- */
-/*
- * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Convert Tooltip colors
- * @param $color - css color property
- * Usage example:
-   @include convertTooltipColor(var(--status-default));
- */
-/*
-    Constants
-*/
-/*
-    Variables
-*/
-/*
-    List of all typefaces variables in the format: --$FONT_SIZES-$TEXT_ALIGN-$FONT_WEIGHTS-COLORS.
-    See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
-    Variables name example: --title-center-semibold-red
- */
-/*
-    to use styles without modifier class on .inline-icon
-    use @extend
-
-    e.g. style icon on parent hover:
-        a:hover .inline-icon {
-            @extend %inline-icon.active;
-        }
-*/
-/**
- * Define Breakpoints here.
- */
-/* @define .composite-calendar; weak; */
-.composite-calendar {
-  display: grid;
-  grid-template-columns: 128px minmax(-webkit-min-content, 280px) minmax(-webkit-min-content, 280px);
-  grid-template-columns: 128px minmax(min-content, 280px) minmax(min-content, 280px);
-  position: absolute;
-  top: 36px;
-  right: 0;
-  z-index: 99;
-  border-radius: 4px;
-  background-color: var(--general-main-2);
-  box-shadow: 0 2px 16px 8px var(--shadow-menu); }
-  .composite-calendar .composite-wrapper {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--general-main-1);
-    z-index: 98; }
-  .composite-calendar__input-fields {
-    display: flex;
-    border-radius: 4px; }
-    .composite-calendar__input-fields--fill {
-      width: 100%; }
-      .composite-calendar__input-fields--fill > .input-field {
-        width: 100%; }
-    .composite-calendar__input-fields > .input-field {
-      margin: 0;
-      /* postcss-bem-linter: ignore */
-      /* postcss-bem-linter: ignore */ }
-      .composite-calendar__input-fields > .input-field .color1-fill {
-        fill: var(--text-prominent); }
-      .composite-calendar__input-fields > .input-field .color1-stroke {
-        stroke: var(--text-prominent); }
-      .composite-calendar__input-fields > .input-field .input {
-        height: 32px;
-        background-color: var(--fill-normal);
-        border: 1px solid var(--border-normal);
-        -webkit-appearance: none;
-           -moz-appearance: none;
-                appearance: none; }
-        .composite-calendar__input-fields > .input-field .input:hover {
-          border-color: var(--border-hover); }
-        .composite-calendar__input-fields > .input-field .input:focus, .composite-calendar__input-fields > .input-field .input:active {
-          border-color: var(--border-active); }
-        .composite-calendar__input-fields > .input-field .input::-webkit-input-placeholder {
-          color: var(--text-general); }
-        .composite-calendar__input-fields > .input-field .input::-moz-placeholder {
-          color: var(--text-general); }
-        .composite-calendar__input-fields > .input-field .input:-ms-input-placeholder {
-          color: var(--text-general); }
-        .composite-calendar__input-fields > .input-field .input::-ms-input-placeholder {
-          color: var(--text-general); }
-        .composite-calendar__input-fields > .input-field .input::placeholder {
-          color: var(--text-general); }
-    .composite-calendar__input-fields > .input-field:not(:first-child) {
-      margin-left: 8px; }
-  .composite-calendar > .first-month .dc-calendar__body,
-  .composite-calendar > .second-month .dc-calendar__body {
-    border-bottom: none; }
-  .composite-calendar__prepopulated-list {
-    padding-top: 50px;
-    font-size: 1.4rem;
-    color: var(--text-general);
-    font-weight: 400;
-    text-transform: none;
-    text-align: center;
-    line-height: 1.5;
-    color: var(--text-prominent);
-    background: var(--state-normal); }
-    .composite-calendar__prepopulated-list--is-active {
-      color: var(--text-prominent);
-      background-color: var(--state-active);
-      font-weight: bold; }
-    .composite-calendar__prepopulated-list li {
-      cursor: pointer;
-      padding: 6px 6px 6px 16px;
-      height: 32px;
-      display: flex;
-      align-items: center; }
-      .composite-calendar__prepopulated-list li:hover:not(.composite-calendar__prepopulated-list--is-active) {
-        background: var(--state-hover); }
-
-/* @define composite-calendar-modal; weak; */
-@media (min-width: 320px) and (max-width: 767px) {
-  .composite-calendar-modal__actions {
-    display: flex;
-    padding: 16px;
-    border-top: 2px solid var(--border-disabled); }
-    .composite-calendar-modal__actions > * {
-      flex: 1;
-      margin: 8px; }
-    .composite-calendar-modal__actions-today {
-      width: 100%; }
-  .composite-calendar-modal__radio-group {
-    padding: 16px 16px 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-bottom: 2px solid var(--border-disabled); }
-  .composite-calendar-modal__radio {
-    display: flex;
-    align-items: center;
-    padding: 7px 8px;
-    border: 1px solid;
-    border-color: var(--border-normal);
-    border-radius: 4px;
-    margin: 8px;
-    font-size: 1.4rem; }
-    .composite-calendar-modal__radio-input {
-      display: none; }
-    .composite-calendar-modal__radio-circle {
-      border: 2px solid var(--text-general);
-      border-radius: 50%;
-      box-shadow: 0 0 1px 0 var(--shadow-menu);
-      width: 16px;
-      height: 16px;
-      transition: all 0.3s ease-in-out;
-      margin-right: 8px;
-      align-self: center; }
-      .composite-calendar-modal__radio-circle--selected {
-        border-width: 4px;
-        border-color: var(--brand-red-coral);
-        background: #ffffff; }
-    .composite-calendar-modal__radio-label {
-      color: var(--text-prominent); }
-    .composite-calendar-modal__radio--selected {
-      border-color: var(--brand-secondary);
-      font-weight: bold; }
-  .composite-calendar-modal__custom {
-    padding: 16px; }
-    .composite-calendar-modal__custom-radio {
-      display: inline-flex; }
-    .composite-calendar-modal__custom-date-range {
-      margin: 8px;
-      display: flex;
-      flex-direction: column; }
-      .composite-calendar-modal__custom-date-range-start-date {
-        margin: 16px 0px; }
-      .composite-calendar-modal__custom-date-range-end-date {
-        margin-bottom: 8px; } }
-
-/** @define table */
-.table {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  font-size: 1.4rem;
-  color: var(--text-general);
-  font-weight: 400;
-  text-transform: default;
-  text-align: center;
-  line-height: 1.5;
-  color: var(--text-general); }
-  .table__cell {
-    padding: 0.75em;
-    display: flex;
-    align-items: center; }
-    .table__cell:first-child {
-      padding-left: 0; }
-    .table__cell:last-child {
-      padding-right: 0; }
-  .table__row {
-    display: grid;
-    grid-auto-rows: -webkit-max-content;
-    grid-auto-rows: max-content;
-    padding: 0 1.6em;
-    box-sizing: border-box;
-    text-decoration: none;
-    position: relative; }
-    .table__row, .table__row:active, .table__row:visited {
-      color: var(--text-general); }
-    .table__row--preloader {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      max-height: 64px;
-      width: 100%; }
-  .table__head {
-    border-bottom: 2px solid var(--general-section-1);
-    height: 52px; }
-  .table__head .table__row {
-    color: var(--text-prominent);
-    height: 100%;
-    border-bottom: none; }
-  .table__body {
-    overflow: hidden;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    flex-basis: 0; }
-    .table__body .table__row-link:hover {
-      background-color: var(--state-hover);
-      cursor: pointer; }
-    .table__body .table__row:last-child {
-      border-bottom: none; }
-  .table__head, .table__foot {
-    font-weight: 500;
-    white-space: nowrap; }
-  .table__foot {
-    border-top: 2px solid var(--general-section-1); }
-  .table__foot .table__row {
-    color: var(--text-general);
-    border-bottom: none; }
-
-/** @define reports; weak */
-.reports {
-  height: 100%;
-  /* postcss-bem-linter: ignore */ }
-  .reports__meta {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 24px 16px; }
-    .reports__meta-description--heading {
-      font-size: 1.6rem;
-      color: var(--text-general);
-      font-weight: 700;
-      text-transform: none;
-      text-align: left;
-      line-height: 1.75;
-      color: var(--text-prominent);
-      line-height: 1.55; }
-    .reports__meta-description--paragraph {
-      font-size: 1.4rem;
-      color: var(--text-general);
-      font-weight: 400;
-      text-transform: none;
-      text-align: left;
-      line-height: 1.5;
-      color: var(--text-general); }
-      @media (min-width: 320px) and (max-width: 767px) {
-        .reports__meta-description--paragraph {
-          padding: 0.8rem 0 1.6rem; } }
-    @media (min-width: 320px) and (max-width: 767px) {
-      .reports__meta-description {
-        margin-top: 0.8rem; } }
-    .reports__meta-filter {
-      position: relative;
-      display: flex; }
-    @media (min-width: 1024px) {
-      .reports__meta {
-        align-items: center; } }
-    @media (min-width: 320px) and (max-width: 767px) {
-      .reports__meta {
-        flex-direction: column;
-        padding-bottom: 0; }
-        .reports__meta-filter {
-          padding-bottom: 1.6rem; } }
-  .reports__mobile-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%; }
-  .reports .unknown-icon {
-    margin-left: 8px;
-    fill: var(--text-general);
-    border-radius: 4px; }
-  .reports .dc-tabs--open-positions {
-    flex: 1;
-    grid-template-rows: 36px calc(100% - 36px); }
-    .reports .dc-tabs--open-positions .dc-tabs__content {
-      display: flex;
-      height: 100%; }
-
-/** @define reports-page-wrapper; weak */
-.reports-page-wrapper {
-  height: 100%; }
-
-/** @define statement; weak */
-.statement {
-  /*
-        TABLE STYLES
-    */
-  /*
-        MOBILE CARDS
-    */ }
-  @media (min-width: 1024px) {
-    .statement {
-      height: 100%; } }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .statement {
-      flex: 1; }
-      .statement__data-list-body, .statement__data-list-footer {
-        padding: 0 24px; }
-      .statement__data-list-body {
-        height: 100%; }
-        .statement__data-list-body .action_type {
-          display: flex;
-          flex: none;
-          align-items: center; }
-          .statement__data-list-body .action_type__row-title {
-            display: none; } }
-  .statement__content {
-    width: 100%;
-    max-height: 100%; }
-  .statement__table {
-    height: calc(100% - 42px);
-    flex: 1; }
-  .statement__row {
-    /*                     icon   refId tr_time  transaction cred/debt  balance */
-    grid-template-columns: 0.8fr 1.2fr 1fr 0.8fr 1fr 1fr;
-    /* postcss-bem-linter: ignore */ }
-    .statement__row.statement__row--detail {
-      overflow: hidden;
-      max-height: 63px;
-      height: 63px;
-      display: flex;
-      align-items: center;
-      padding: 0;
-      justify-content: center;
-      background-color: var(--general-section-1);
-      /* postcss-bem-linter: ignore */ }
-      .statement__row.statement__row--detail-text {
-        padding: 1.12em; }
-    .statement__row .date {
-      text-align: left; }
-    .statement__row .table__cell {
-      height: 63px; }
-  .statement .amount,
-  .statement .balance {
-    justify-content: flex-end; }
-  .statement .amount {
-    font-weight: bold; }
-    .statement .amount--profit {
-      color: var(--text-profit-success); }
-    .statement .amount--loss {
-      color: var(--text-loss-danger); }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .statement .refid {
-      display: flex;
-      flex-direction: row; }
-      .statement .refid__row-title {
-        margin-right: 4px; } }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .statement .market-symbol-icon {
-      width: 80px; } }
-  .statement--card-view {
-    background: var(--general-main-2);
-    overflow: hidden; }
-    .statement--card-view .statement__filter {
-      padding: 0 1.2em;
-      border-bottom: 1px solid var(--general-section-1); }
-      .statement--card-view .statement__filter-content {
-        padding: 0;
-        margin: 0 auto;
-        max-width: 450px;
-        display: grid;
-        grid-template-columns: 1fr 3em 1fr;
-        text-align: center; }
-        .statement--card-view .statement__filter-content .datepicker__input-field {
-          width: 100%; }
-      .statement--card-view .statement__filter-label {
-        display: none; }
-    .statement--card-view .statement__content {
-      padding: 0; }
-    .statement--card-view .statement__card-list {
-      padding: 0 1.2em;
-      height: 100%; }
-
-/** @define statement-card */
-.statement-card {
-  /* postcss-bem-linter: ignore */ }
-  .statement-card__header {
-    font-size: 1em;
-    padding: 0.5em;
-    border-bottom: 1px solid var(--general-section-1);
-    display: flex;
-    justify-content: space-between; }
-  .statement-card__refid a {
-    color: #2196f3;
-    text-decoration: none; }
-  .statement-card__body {
-    padding: 0.5em;
-    font-size: 1.2em; }
-  .statement-card__desc {
-    margin-bottom: 0.7em; }
-  .statement-card__row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    font-weight: bold; }
-  .statement-card__cell-text {
-    vertical-align: middle; }
-  .statement-card__amount--sell, .statement-card__amount--deposit {
-    color: var(--text-profit-success); }
-  .statement-card__amount--buy, .statement-card__amount--withdrawal {
-    color: var(--text-loss-danger); }
-  .statement-card__icon {
-    display: inline-block;
-    height: 1.6em;
-    width: 1.6em;
-    background-size: 1.6em 1.6em;
-    vertical-align: middle;
-    margin-right: 0.5em; }
-
-/** @define statement-empty */
-.statement-empty {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .statement-empty__icon {
-    height: 6.4em;
-    width: 6.4em;
-    margin-bottom: 1.4em; }
-  .statement-empty__text {
-    font-size: 1.4em; }
-
-/** @define profit-table; weak */
-.profit-table {
-  /*
-        TABLE STYLES
-    */ }
-  @media (min-width: 1024px) {
-    .profit-table {
-      height: 100%; } }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .profit-table {
-      flex: 1; }
-      .profit-table__data-list-body, .profit-table__data-list-footer {
-        padding: 0 24px; }
-      .profit-table__data-list-body {
-        height: calc(100% - 50px); }
-        .profit-table__data-list-body .sell_time__row-title {
-          display: flex;
-          align-items: center; }
-          .profit-table__data-list-body .sell_time__row-title .dc-icon {
-            margin-left: 4px; }
-      .profit-table__data-list-footer {
-        height: 50px;
-        min-height: 50px;
-        font-weight: bold; }
-        .profit-table__data-list-footer .data-list__row__content {
-          font-size: 1.2rem;
-          color: var(--text-prominent); }
-        .profit-table__data-list-footer .data-list__row {
-          padding: 0; } }
-  .profit-table__content {
-    width: 100%;
-    max-height: 100%; }
-  .profit-table__table {
-    height: calc(100% - 42px);
-    flex: 1; }
-  .profit-table__row {
-    /*                     icon   refId buy_time  buy_price sell_time  sell_price profit/loss */
-    grid-template-columns: 0.8fr 1.2fr 1fr 0.8fr 1fr 1fr 1fr; }
-  @media (min-width: 1024px) {
-    .profit-table .buy_price,
-    .profit-table .sell_price,
-    .profit-table .profit_loss {
-      justify-content: flex-end; } }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .profit-table .buy_price,
-    .profit-table .sell_price,
-    .profit-table .profit_loss {
-      justify-content: center; } }
-  .profit-table .sell_time,
-  .profit-table .purchase_time {
-    text-align: left; }
-  .profit-table .profit_loss {
-    font-weight: bold; }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .profit-table .transaction_id {
-      display: flex;
-      flex-direction: row; }
-      .profit-table .transaction_id__row-title {
-        margin-right: 4px; } }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .profit-table .market-symbol-icon {
-      width: 80px; } }
-  .profit-table .duration-type {
-    flex: none;
-    position: relative;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 16px;
-    font-size: 1.4rem;
-    font-weight: bold; }
-    .profit-table .duration-type__background {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      opacity: 0.16;
-      border-radius: 16px; }
-    .profit-table .duration-type__ticks {
-      color: #ffad3a; }
-      .profit-table .duration-type__ticks__background {
-        background: #ffad3a; }
-    .profit-table .duration-type__seconds {
-      color: #4bb4b3; }
-      .profit-table .duration-type__seconds__background {
-        background: #4bb4b3; }
-    .profit-table .duration-type__minutes {
-      color: #0dc2e7; }
-      .profit-table .duration-type__minutes__background {
-        background: #0dc2e7; }
-    .profit-table .duration-type__hours {
-      color: #1c5ae3; }
-      .profit-table .duration-type__hours__background {
-        background: #1c5ae3; }
-    .profit-table .duration-type__days {
-      color: #722fe4; }
-      .profit-table .duration-type__days__background {
-        background: #722fe4; }
-
-/** @define open-positions; weak */
-.open-positions {
-  height: 100%;
-  /*
-        TABLE STYLES
-    */ }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .open-positions {
-      flex: 1; }
-      .open-positions__data-list-body {
-        height: calc(100% - 95px);
-        padding: 0 2.4rem; }
-        .open-positions__data-list-body .dc-progress-bar__container {
-          max-width: 120px; }
-      .open-positions__data-list-footer {
-        height: 95px;
-        min-height: 95px;
-        font-weight: bold;
-        align-items: flex-start;
-        padding: 1.6rem 4rem 0px; }
-        .open-positions__data-list-footer--title {
-          font-size: 1.4rem;
-          font-weight: bold;
-          color: var(--text-prominent); }
-        .open-positions__data-list-footer--content {
-          flex: 1;
-          padding-left: 32px;
-          display: flex;
-          justify-content: space-between; }
-          .open-positions__data-list-footer--content .purchase,
-          .open-positions__data-list-footer--content .indicative {
-            padding-bottom: 8px; }
-        .open-positions__data-list-footer .data-list__row-title {
-          font-size: 1rem;
-          line-height: 1.4rem; }
-        .open-positions__data-list-footer .data-list__row-content {
-          font-size: 1rem;
-          line-height: 1.4rem;
-          color: var(--text-prominent); } }
-  .open-positions__content {
-    width: 100%;
-    max-height: 100%; }
-  .open-positions__indicative {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-direction: column; }
-    .open-positions__indicative--amount {
-      display: flex;
-      align-items: center;
-      line-height: 16px; }
-    .open-positions__indicative-no-resale-msg {
-      clear: both;
-      text-align: right;
-      font-size: smaller; }
-  .open-positions__profit-loss {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold; }
-    .open-positions__profit-loss--movement {
-      width: 16px;
-      height: 16px; }
-      .open-positions__profit-loss--movement-complete, .open-positions__profit-loss--movement-complete:after {
-        display: none; }
-      .open-positions__profit-loss--movement:after {
-        content: '';
-        width: 16px; }
-    .open-positions__profit-loss--negative {
-      color: #e31c4b; }
-      .open-positions__profit-loss--negative:before {
-        content: '-';
-        color: inherit; }
-    .open-positions__profit-loss--positive {
-      color: var(--brand-secondary); }
-      .open-positions__profit-loss--positive:before {
-        content: '+';
-        color: inherit; }
-  .open-positions__table {
-    height: calc(100% - 24px);
-    flex: 1;
-    margin-top: 20px; }
-  .open-positions__row {
-    /*                     icon   refId buy_price  potential_payout potential_profit  indicative_price rem_time */
-    grid-template-columns: 0.8fr 1.2fr 1fr 1fr 1fr 1fr 1fr;
-    width: 100%; }
-    .open-positions__row-action {
-      display: flex;
-      align-items: center;
-      padding-right: 24px;
-      min-width: 194px; }
-      .open-positions__row-action .remaining-time {
-        margin-left: 0.4rem; }
-      .open-positions__row-action .dc-btn {
-        height: 2.4rem;
-        padding: 0 8px; }
-        .open-positions__row-action .dc-btn + .dc-btn {
-          margin-left: 8px; }
-    .open-positions__row_wrapper {
-      display: flex;
-      flex-direction: row; }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .open-positions__reports-meta {
-      padding-bottom: 0px; } }
-  @media (min-width: 1024px) {
-    .open-positions .buy_price,
-    .open-positions .payout,
-    .open-positions .indicative,
-    .open-positions .profit {
-      justify-content: flex-end; } }
-  .open-positions .type {
-    padding-right: 0; }
-  .open-positions .progress-slider {
-    border: none;
-    margin: 0; }
-    .open-positions .progress-slider__ticks {
-      display: flex;
-      align-items: center;
-      justify-content: space-between; }
-      .open-positions .progress-slider__ticks-step {
-        background: var(--state-hover); }
-      .open-positions .progress-slider__ticks-wrapper {
-        margin-top: 6px; }
-      .open-positions .progress-slider__ticks-caption {
-        padding: 0;
-        margin-right: 8px;
-        white-space: nowrap; }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .open-positions .market-symbol-icon {
-      width: 80px; } }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .open-positions .reference {
-      display: flex;
-      flex-direction: row; }
-      .open-positions .reference__row-title {
-        margin-right: 4px; } }
-
-/** @define open-positions-multiplier; weak */
-.open-positions-multiplier .open-positions__row {
-  /*                     icon   stake multiplier cancellation take_profit  stop_loss potential_profit_loss */
-  grid-template-columns: 0.7fr 1fr 0.7fr 1fr 1fr 1fr 1fr; }
-  .open-positions-multiplier .open-positions__row-action .remaining-time {
-    font-size: inherit; }
-
-/** @define empty-trade-history; weak*/
-.empty-trade-history {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  margin: auto; }
-  .empty-trade-history__icon {
-    width: 96px;
-    height: 96px;
-    margin-bottom: 16px;
-    /* postcss-bem-linter: ignore */
-    /* postcss-bem-linter: ignore */ }
-    .empty-trade-history__icon .color1-fill {
-      fill: var(--text-disabled); }
-    .empty-trade-history__icon .color1-stroke {
-      stroke: var(--text-disabled); }
-  .empty-trade-history__text {
-    font-size: 1.4em;
-    text-align: center;
-    line-height: 20px;
-    color: var(--text-disabled); }
-  .empty-trade-history .dc-btn {
-    width: 100%;
-    height: 40px;
-    border: 1px solid var(--button-secondary-default);
-    color: var(--text-general);
-    background: transparent; }
-    .empty-trade-history .dc-btn:hover {
-      background: var(--button-secondary-hover); }
-
-/*------------------------------------*
- *  # Constants
- *------------------------------------*/
-/* stylelint-disable color-no-hex */
-/* COLOR PALETTE */
-/* colors */
-/* alpha colors */
-/* gradient colors */
-/* Preserve legacy variables */
-/* Primary */
-/* stylelint-enable color-no-hex */
-/*------------------------------------*
- *  # SASS Mixins and Functions
- *------------------------------------*/
-/*
- * SASS interpolation
- */
-/*
- * PX to EM
- * @param $px - px value to be converted
- * @param $base - base font size (in `em`)
- * Note: 'em' values are calculate based on the element font-size
- *       to properly converts 'px' to 'em', please pass in the element font-size with it
- * Usage example:
-    padding: em(16px, 1.6em); // font-size in 'em'
- */
-/*
- * Set property by passing a property name, and values.
- * @param $property name - padding, margin etc.
- * @param $values        - values in `px` (space separated for multiple values)
- * @param $font-size     - base font-size in `em`
- * Usage example:
-   @include toEm(padding, 8px 16px 8px, 1.6em);
- */
-/*
- * Generate typefaces key-value pair of variable name and config
- * Example:
-   --paragraph-center-bold-black: (14px, center, bold, black)
- */
-/*
- * Sets font-size, font-weight, color, text-transform, text-align and line-height
- * Usage example:
-   @include setTypeface(16px, bold, black, uppercase);
- */
-/*
- * Set typefaces by passing a typeface variable name
- * @param $var   - typeface variable
- * @param $tt    - text-transform property
- * @param $align - text-align property
- * Usage example:
-   @include typeface(--paragraph-bold-black, uppercase, center);
- */
-/*
- * Range Slider Thumb styling is set here
- */
-/*
- * SVG icons colors
- */
-/*
- * Bar Spinner Animation
- * @param $count    - number of bars
- * @param $duration - duration of animation
- * @param $phase    - each bar phase change delay
- * Usage example:
-   @include createBarspinnerAnimation(5, 1.2s, 0,1);
- */
-/*
- * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Convert Tooltip colors
- * @param $color - css color property
- * Usage example:
-   @include convertTooltipColor(var(--status-default));
- */
-/*
-    Constants
-*/
-/*
-    Variables
-*/
-/*
-    List of all typefaces variables in the format: --$FONT_SIZES-$TEXT_ALIGN-$FONT_WEIGHTS-COLORS.
-    See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
-    Variables name example: --title-center-semibold-red
- */
-/*
-    to use styles without modifier class on .inline-icon
-    use @extend
-
-    e.g. style icon on parent hover:
-        a:hover .inline-icon {
-            @extend %inline-icon.active;
-        }
-*/
 /**
  * Define Breakpoints here.
  */
@@ -2680,6 +962,10 @@
     transform: translate3d(248px, 0, 0); }
   .app-contents--show-positions-drawer:not(.app-contents--is-mobile) .trade-container .chart-container .cq-top-ui-widgets {
     transform: translate3d(248px, 0, 0); }
+  .app-contents--show-positions-drawer:not(.app-contents--is-mobile) .trade-container .chart-container .sc-toolbar-widget {
+    transform: translate3d(248px, 0, 0); }
+  .app-contents--show-positions-drawer:not(.app-contents--is-mobile) .trade-container .chart-container .stx-panel-control {
+    transform: translate3d(248px, 0, 0); }
   .app-contents--show-positions-drawer:not(.app-contents--is-mobile) .trade-container .chart-container .cq-chart-controls {
     transform: translate3d(130px, 0, 0) !important; }
   .app-contents--show-positions-drawer:not(.app-contents--is-mobile) .trade-container .chart-container .cq-bottom-ui-widgets .digits__container {
@@ -2783,6 +1069,10 @@
             .trade-container__replay .replay-chart__container .smartcharts .ciq-chart .cq-top-ui-widgets .info-box-container .chart-close-btn,
             .trade-container__replay .replay-chart__container .smartcharts .ciq-chart .info-box .info-box-container .chart-close-btn {
               display: none; }
+        .trade-container__replay .replay-chart__container .smartcharts .ciq-chart .sc-toolbar-widget {
+          transition: transform 0.25s ease; }
+        .trade-container__replay .replay-chart__container .smartcharts .ciq-chart .stx-panel-control {
+          transition: transform 0.25s ease; }
         .trade-container__replay .replay-chart__container .smartcharts .ciq-chart .ciq-asset-information {
           top: 75px; }
         .trade-container__replay .replay-chart__container .smartcharts .ciq-chart .stx_jump_today.home > svg {
@@ -2902,6 +1192,10 @@
     left: 9em; }
     .chart-container .cq-chart-control-left .cq-top-ui-widgets .info-box {
       transform: translate3d(0, 0, 0); }
+  .chart-container .cq-chart-control-left .sc-toolbar-widget {
+    transform: translate3d(0, 0, 0); }
+  .chart-container .cq-chart-control-left .stx-panel-control {
+    transform: translate3d(0, 0, 0); }
   .chart-container .cq-chart-control-left .ciq-navigation-widget {
     transform: translate3d(0, 0, 0); }
   .chart-container .ciq-chart .cq-top-ui-widgets,
@@ -2940,29 +1234,33 @@
   .chart-container .ciq-chart .cq-chart-controls {
     transition: max-width 0.25s ease, transform 0.25s ease; }
   .chart-container .ciq-chart .ciq-navigation-widget {
-    transform: translate3d(0, 0, 0); }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .chart-container .ciq-chart .ciq-toolbar-widget {
-      background: transparent;
-      border-width: 0;
-      bottom: 2.8rem;
-      /* postcss-bem-linter: ignore */ }
-      .chart-container .ciq-chart .ciq-toolbar-widget .ciq-chart-mode {
-        background: var(--general-section-1);
-        padding: 0.4rem 0.2rem;
-        width: 4rem;
-        height: 4rem;
-        display: flex;
-        border-radius: 50%;
-        justify-content: center;
-        align-items: center;
-        margin: 0.8rem;
-        opacity: 0.75; }
-        .chart-container .ciq-chart .ciq-toolbar-widget .ciq-chart-mode__menu__timeperiod {
-          top: 0.8rem;
-          left: 0.8rem; }
-        .chart-container .ciq-chart .ciq-toolbar-widget .ciq-chart-mode__menu > .ic-icon {
-          top: 0.6rem; } }
+    transition: transform 0.25s ease; }
+  .chart-container .ciq-chart .stx-panel-control {
+    transition: transform 0.25s ease; }
+  .chart-container .ciq-chart .sc-toolbar-widget {
+    transition: transform 0.25s ease; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .chart-container .ciq-chart .sc-toolbar-widget {
+        background: transparent;
+        border-width: 0;
+        bottom: 2.8rem;
+        /* postcss-bem-linter: ignore */ }
+        .chart-container .ciq-chart .sc-toolbar-widget .sc-chart-mode {
+          background: var(--general-section-1);
+          padding: 0.4rem 0.2rem;
+          width: 4rem;
+          height: 4rem;
+          display: flex;
+          border-radius: 50%;
+          justify-content: center;
+          align-items: center;
+          margin: 0.8rem;
+          opacity: 0.75; }
+          .chart-container .ciq-chart .sc-toolbar-widget .sc-chart-mode__menu__timeperiod {
+            top: 0.8rem;
+            left: 0.8rem; }
+          .chart-container .ciq-chart .sc-toolbar-widget .sc-chart-mode__menu > .ic-icon {
+            top: 0.6rem; } }
   .chart-container .chartContainer {
     background: transparent;
     min-height: 100%; }
@@ -3027,87 +1325,38 @@
       /* postcss-bem-linter: ignore */ }
       .smartcharts-dark .cq-dialog-portal .cq-dialog, .smartcharts-light .cq-dialog-portal .cq-dialog {
         max-width: calc(100% - 36px); }
-    .smartcharts-dark .ciq-chart-type__item, .smartcharts-light .ciq-chart-type__item {
+    .smartcharts-dark .sc-chart-type__item, .smartcharts-light .sc-chart-type__item {
       /* postcss-bem-linter: ignore */ }
-      .smartcharts-dark .ciq-chart-type__item .sc-tooltip,
-      .smartcharts-dark .ciq-chart-type__item .dc-tooltip, .smartcharts-light .ciq-chart-type__item .sc-tooltip,
-      .smartcharts-light .ciq-chart-type__item .dc-tooltip {
+      .smartcharts-dark .sc-chart-type__item .sc-tooltip,
+      .smartcharts-dark .sc-chart-type__item .dc-tooltip, .smartcharts-light .sc-chart-type__item .sc-tooltip,
+      .smartcharts-light .sc-chart-type__item .dc-tooltip {
         display: none; }
-    .smartcharts-dark .ciq-chart-mode, .smartcharts-light .ciq-chart-mode {
+    .smartcharts-dark .sc-chart-mode, .smartcharts-light .sc-chart-mode {
       /* postcss-bem-linter: ignore */ }
-      .smartcharts-dark .ciq-chart-mode__section__item, .smartcharts-light .ciq-chart-mode__section__item {
+      .smartcharts-dark .sc-chart-mode__section__item, .smartcharts-light .sc-chart-mode__section__item {
         /* postcss-bem-linter: ignore */ }
-        .smartcharts-dark .ciq-chart-mode__section__item .cq-interval, .smartcharts-light .ciq-chart-mode__section__item .cq-interval {
+        .smartcharts-dark .sc-chart-mode__section__item .sc-interval, .smartcharts-light .sc-chart-mode__section__item .sc-interval {
           display: grid;
           padding: 1.6rem;
           grid-template-columns: 1fr;
           /* postcss-bem-linter: ignore */
           /* postcss-bem-linter: ignore */
           /* postcss-bem-linter: ignore */ }
-          .smartcharts-dark .ciq-chart-mode__section__item .cq-interval__content, .smartcharts-light .ciq-chart-mode__section__item .cq-interval__content {
+          .smartcharts-dark .sc-chart-mode__section__item .sc-interval__content, .smartcharts-light .sc-chart-mode__section__item .sc-interval__content {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             padding-top: 16px; }
-          .smartcharts-dark .ciq-chart-mode__section__item .cq-interval__item, .smartcharts-light .ciq-chart-mode__section__item .cq-interval__item {
+          .smartcharts-dark .sc-chart-mode__section__item .sc-interval__item, .smartcharts-light .sc-chart-mode__section__item .sc-interval__item {
             width: 100% !important;
             margin: 0;
             /* postcss-bem-linter: ignore */ }
-            .smartcharts-dark .ciq-chart-mode__section__item .cq-interval__item .sc-tooltip,
-            .smartcharts-dark .ciq-chart-mode__section__item .cq-interval__item .dc-tooltip, .smartcharts-light .ciq-chart-mode__section__item .cq-interval__item .sc-tooltip,
-            .smartcharts-light .ciq-chart-mode__section__item .cq-interval__item .dc-tooltip {
+            .smartcharts-dark .sc-chart-mode__section__item .sc-interval__item .sc-tooltip,
+            .smartcharts-dark .sc-chart-mode__section__item .sc-interval__item .dc-tooltip, .smartcharts-light .sc-chart-mode__section__item .sc-interval__item .sc-tooltip,
+            .smartcharts-light .sc-chart-mode__section__item .sc-interval__item .dc-tooltip {
               display: none; }
-          .smartcharts-dark .ciq-chart-mode__section__item .cq-interval__info, .smartcharts-light .ciq-chart-mode__section__item .cq-interval__info {
+          .smartcharts-dark .sc-chart-mode__section__item .sc-interval__info, .smartcharts-light .sc-chart-mode__section__item .sc-interval__info {
             margin-top: 0.4rem;
             padding-left: 0.2rem; } }
-
-/** @define multistep; weak */
-.multistep {
-  width: inherit;
-  height: inherit; }
-  .multistep__header {
-    display: flex;
-    align-items: center;
-    margin: 2.4rem 1.6rem; }
-  .multistep__btn {
-    display: flex;
-    font-size: 1.4rem;
-    font-weight: bold;
-    cursor: pointer;
-    color: var(--text-general); }
-    .multistep__btn-icon {
-      margin-right: 8px; }
-      .multistep__btn-icon .color1-fill {
-        fill: var(--text-general); }
-  .multistep__component {
-    width: 100%;
-    height: 100%; }
-
-/** @define send-email-template */
-.send-email-template {
-  padding: 0 16px; }
-  .send-email-template__title {
-    color: var(--text-prominent);
-    font-size: 1.6rem;
-    font-weight: bold;
-    margin-bottom: 0.8rem;
-    line-height: 1.5; }
-  .send-email-template__subtitle {
-    font-size: 1.4rem;
-    margin-bottom: 1.6rem;
-    color: var(--text-general);
-    line-height: 20px; }
-  .send-email-template__icon {
-    margin-top: 5.6rem;
-    margin-bottom: 1.6rem; }
-  .send-email-template__sent, .send-email-template__cta {
-    text-align: center; }
-  .send-email-template__cta-btn {
-    margin: 3.2rem auto 0; }
-  .send-email-template__btn {
-    margin: 0 auto; }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .send-email-template {
-      margin-bottom: 1.6rem; } }
 
 .contract-drawer {
   width: 240px;
@@ -4433,9 +2682,8 @@
 .allow-equals {
   display: flex;
   align-items: center;
-  position: relative; }
-  .allow-equals__input-field {
-    margin-top: 0.6em; }
+  position: relative;
+  margin-top: 0.6em; }
   .allow-equals__label {
     font-size: 1.4rem;
     color: var(--text-general);
@@ -4446,8 +2694,6 @@
     padding: 0 6.66667px;
     color: var(--text-general);
     cursor: pointer; }
-  .allow-equals__tooltip {
-    margin-top: 1em; }
   @media (min-width: 320px) and (max-width: 767px) {
     .allow-equals__subtitle {
       color: var(--text-less-prominent); } }
@@ -4929,10 +3175,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 100;
   flex-direction: column;
   padding: 0 32px;
-  background-color: var(--overlay-inside-dialog); }
+  background-color: var(--overlay-inside-dialog);
+  z-index: 1000; }
   .market-is-closed-overlay p {
     font-size: 1.4rem;
     color: var(--text-general);
@@ -5208,6 +3454,16 @@
         background: linear-gradient(0deg, var(--purchase-section-2) 0%, var(--purchase-section-2) 50%, var(--purchase-main-2) 50%, var(--purchase-main-2) 100%); } }
   .btn-purchase--disabled, .btn-purchase[disabled] {
     cursor: default; }
+    .btn-purchase--disabled:after, .btn-purchase[disabled]:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.32);
+      z-index: 4;
+      pointer-events: none; }
   .btn-purchase--animated--slide .btn-purchase__icon_wrapper {
     width: 16px;
     height: 16px; }
@@ -5874,6 +4130,25 @@
   .chart-marker-line--dash {
     border-left-style: dashed; }
 
+/** @define sc-toolbar-widget; weak */
+.sc-toolbar-widget--bottom .ciq-menu {
+  margin: 0px; }
+
+/** @define smartcharts-mobile; weak */
+.smartcharts-mobile .cq-modal-dropdown {
+  left: 0px;
+  top: 0px; }
+
+.smartcharts-mobile .sc-chart-type .sc-tooltip__inner,
+.smartcharts-mobile .sc-interval .sc-tooltip__inner {
+  display: none; }
+
+.smartcharts-mobile .cq-chart-title .sc-dialog__body {
+  height: 100% !important; }
+
+.smartcharts-mobile .cq-categorical-display {
+  height: calc(100% - 38px) !important; }
+
 @-webkit-keyframes slide {
   0% {
     transform: translateX(-100%); }
@@ -5939,14 +4214,10 @@
     .trade-container__fieldset > div:first-child {
       margin-top: 0; }
     .trade-container__fieldset-header {
-      height: 1.5rem;
       position: relative; }
       .trade-container__fieldset-header--inline {
-        /* postcss-bem-linter: ignore */ }
-        .trade-container__fieldset-header--inline .dc-popover {
-          position: absolute;
-          top: 0;
-          right: 0; }
+        display: flex;
+        justify-content: flex-end; }
     .trade-container__fieldset-info {
       font-size: 1.4rem;
       color: var(--text-general);
@@ -5954,11 +4225,12 @@
       text-transform: none;
       text-align: left;
       line-height: 1.5;
-      color: var(--text-general); }
+      color: var(--text-general);
+      margin: auto; }
       .trade-container__fieldset-info--left {
-        left: 5px; }
-    .trade-container__fieldset-wrapper--disabled {
-      opacity: 0.32; }
+        transform: translateX(5px); }
+    .trade-container__fieldset-wrapper--disabled .btn-purchase__box-shadow {
+      opacity: 0; }
     .trade-container__fieldset-tooltip-text, .trade-container__fieldset-text {
       margin-top: 0.8rem;
       font-size: 1.2rem;
@@ -6056,6 +4328,11 @@
             display: flex;
             justify-content: flex-end;
             align-items: center; } }
+      @media (min-width: 1024px) {
+        .trade-container__price-info, .trade-container__order-input-info {
+          height: 2.1rem; } }
+      .trade-container__price-info--disabled, .trade-container__order-input-info--disabled {
+        opacity: 0.32; }
       .trade-container__price-info--slide, .trade-container__order-input-info--slide {
         width: 92px;
         height: 8px;
@@ -6093,7 +4370,7 @@
             font-weight: 400;
             text-transform: none;
             text-align: left;
-            line-height: unset;
+            line-height: 1.4;
             color: var(--text-colored-background); } }
       .trade-container__price-info-currency, .trade-container__order-input-info-currency {
         margin-left: 4px;
@@ -6232,7 +4509,7 @@
   .dc-collapsible {
     position: absolute;
     bottom: 0;
-    z-index: 99999;
+    z-index: 999;
     margin: 0 auto;
     left: 0;
     width: calc(100vw - 1.6rem);
