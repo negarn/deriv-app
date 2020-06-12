@@ -1010,7 +1010,7 @@
   position: relative;
   padding: 0.8em 1.2em 0;
   display: flex;
-  min-height: calc(100vh - 83px);
+  min-height: calc(100vh - 84px);
   transition: transform 0.25s ease;
   will-change: transform;
   overflow: hidden; }
@@ -1018,11 +1018,11 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    height: calc(100vh - 108px - 41px);
+    height: calc(100vh - 108px - 53px);
     padding-bottom: 2.4rem; }
     .trade-container__replay .contract-drawer {
       /* prettier-ignore */
-      height: calc(100vh - 48px - 36px - 41px - (8px * 6));
+      height: calc(100% + 2.4rem);
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
       z-index: 1;
@@ -2565,8 +2565,6 @@
     touch-action: manipulation; }
   .input[readonly] {
     cursor: pointer; }
-  .input::-webkit-input-placeholder {
-    border-color: var(--border-normal); }
   .input::-moz-placeholder {
     border-color: var(--border-normal); }
   .input:-ms-input-placeholder {
@@ -3071,7 +3069,8 @@
     width: 100%;
     height: 100%; }
   .contract-type-info__card {
-    min-height: calc(100vh - 268px);
+    min-height: calc(100vh - 210px);
+    max-height: calc(100vh - 268px);
     width: 272px;
     margin-right: 2.4rem;
     display: flex;
@@ -3084,8 +3083,6 @@
       .contract-type-info__card {
         min-height: 535px; } }
   .contract-type-info__content {
-    margin-top: 2.4rem;
-    margin-bottom: auto;
     overflow: hidden;
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */
@@ -3164,6 +3161,9 @@
         background-color: var(--brand-red-coral); }
   .contract-type-info__icon {
     cursor: pointer; }
+  .contract-type-info__scrollbars {
+    margin-top: 2.4rem;
+    margin-bottom: auto; }
 
 /** @define .market-is-closed-overlay */
 .market-is-closed-overlay {
@@ -3529,6 +3529,7 @@
       border-radius: 100%;
       border: 0;
       cursor: pointer;
+      -webkit-transition: box-shadow 0.2s;
       transition: box-shadow 0.2s;
       box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
       background: var(--state-active); }
@@ -3542,6 +3543,7 @@
       border-radius: 100%;
       border: 0;
       cursor: pointer;
+      -moz-transition: box-shadow 0.2s;
       transition: box-shadow 0.2s;
       box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
       background: var(--state-active); }
@@ -3554,6 +3556,7 @@
       border-radius: 100%;
       border: 0;
       cursor: pointer;
+      -ms-transition: box-shadow 0.2s;
       transition: box-shadow 0.2s;
       box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
       background: var(--state-active); }
@@ -4524,4 +4527,11 @@
     .popup-root .dc-toast-error {
       z-index: 9999;
       top: 2em; } }
+
+/** @define market-unavailable-modal */
+@media (min-width: 320px) and (max-width: 767px) {
+  .market-unavailable-modal {
+    /* postcss-bem-linter: ignore */ }
+    .market-unavailable-modal .dc-dialog__footer {
+      flex-wrap: nowrap; } }
 
